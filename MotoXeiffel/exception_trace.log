@@ -1,0 +1,33 @@
+
+gameproject: system execution failed.
+Following is the set of recorded exceptions:
+
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+FENETRE             _invariant             managed_pointer_valid:       
+<0000000003B722C8>  (From MEMORY_STRUCTURE)
+                                           Class invariant violated.     Fail
+-------------------------------------------------------------------------------
+FENETRE             _invariant                                          
+<0000000003B722C8>  (From MEMORY_STRUCTURE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+FENETRE             maker @5                                            
+<0000000003B722C8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+AFFICHABLE          make @1                                             
+<0000000003B722A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+GAME_ENGINE         run_game @3                                         
+<0000000003B705E8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+GAME_ENGINE         make @3                                             
+<0000000003B705E8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @1                                             
+<0000000003B705A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<0000000003B705A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------

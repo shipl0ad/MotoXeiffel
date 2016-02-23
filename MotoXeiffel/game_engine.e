@@ -31,9 +31,11 @@ feature {NONE} -- Initialization
 
 		local
 			message:STRING
+			affichable:AFFICHABLE
 		do
-			message := "shutupbitch"
+			message := "Ouverture de la fenetre"
 			print(message)
+			create affichable.make
 		end
 
 	on_quit(a_timestamp: NATURAL_32)

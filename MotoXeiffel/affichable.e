@@ -13,12 +13,14 @@ create
 
 feature {NONE} -- Initialization
 
-	local
+	make
+
+		local
+
 		fenetre:FENETRE
 
-	make
 		do
-			print("hihi")
+			create fenetre.maker
 		end
 
 

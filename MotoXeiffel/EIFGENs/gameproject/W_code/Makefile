@@ -1,4 +1,4 @@
-INCLUDE_PATH = 
+INCLUDE_PATH =  -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/contrib/library/game2/game_core/spec/include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\SDL2\include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\cpf\spec\include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\SDL2_image\include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\SDL2_ttf\include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/contrib/library/game2/audio_sound_file/spec/include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\libsndfile\include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\OpenAL\include"
 SHELL = /bin/sh
 CC = "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/mingw/bin/gcc"
 CPP = "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/mingw/bin/gcc"
@@ -39,15 +39,30 @@ SYSTEM_IN_DYNAMIC_LIB = gameproject.dll
 .cpp.o:
 	$(CPP) $(CPPFLAGS) -c $<
 
-SUBDIRS = C1 E1
+SUBDIRS = C1 C2 C3 E1
 
-EXTERNALS = 
+EXTERNALS =  \
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\game_core\spec\mingw\win64\lib\sdl_additions.lib" \
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\SDL2\lib\win64\mingw\SDL2.lib" \
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\SDL2\lib\win64\mingw\SDL2main.lib" \
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\cpf\spec\mingw\win64\lib\cpf_additions.lib" \
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\SDL2_image\lib\win64\mingw\SDL2_image.lib" \
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\SDL2_ttf\lib\win64\mingw\SDL2_ttf.lib" \
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\audio_sound_file\spec\mingw\win64\lib\sndfile_additions.lib" \
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\libsndfile\lib\win64\mingw\libsndfile-1.lib" \
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\OpenAL\lib\win64\mingw\OpenAL32.lib"
 
 all:: gameproject.exe
 	echo done > completed.eif
 
 C1/Cobj1.o: Makefile E1/estructure.h
 	cd C1 && $(START_TEST) $(MAKE) Cobj1.o $(END_TEST) && cd ..
+
+C2/Cobj2.o: Makefile E1/estructure.h
+	cd C2 && $(START_TEST) $(MAKE) Cobj2.o $(END_TEST) && cd ..
+
+C3/Cobj3.o: Makefile E1/estructure.h
+	cd C3 && $(START_TEST) $(MAKE) Cobj3.o $(END_TEST) && cd ..
 
 E1/emain.o:  Makefile E1/Makefile
 	$(CP) "$(EIFTEMPLATES)/emain.template" "E1/emain.c"
@@ -86,9 +101,9 @@ E1/einit.o : Makefile E1/Makefile E1/estructure.h
 E1/eparents.o : Makefile E1/Makefile E1/estructure.h
 	cd E1 && $(START_TEST) $(MAKE) eparents.o  $(END_TEST) && cd ..
 
-OBJECTS = E1/eparents.o  E1/einit.o  E1/ececil.o  E1/evisib.o  E1/enames.o  E1/eskelet.o  E1/eplug.o  E1/ecall.o  E1/efrozen.o  E1/epattern.o  E1/eoption.o  C1/Cobj1.o 
+OBJECTS = E1/eparents.o  E1/einit.o  E1/ececil.o  E1/evisib.o  E1/enames.o  E1/eskelet.o  E1/eplug.o  E1/ecall.o  E1/efrozen.o  E1/epattern.o  E1/eoption.o  C3/Cobj3.o C2/Cobj2.o C1/Cobj1.o 
 
-C_OBJECTS = C1/Cobj1.o 
+C_OBJECTS = C3/Cobj3.o C2/Cobj2.o C1/Cobj1.o 
 
 EOBJECTS = E1/eparents.o  E1/einit.o  E1/ececil.o  E1/evisib.o  E1/enames.o  E1/eskelet.o  E1/eplug.o  E1/ecall.o  E1/efrozen.o  E1/epattern.o  E1/eoption.o  
 
@@ -98,7 +113,7 @@ PRECOMP_OBJECTS= "c:\users\steveporndatabase\documents\eiffel user files\15.11\p
 gameproject.exe: E1/emain.o $(OBJECTS) gameproject.res 
 	$(COMMAND_MAKEFILE)
 	$(RM) $@
-	$(CC) $(LDFLAGS) $(CCLDFLAGS) -o gameproject.exe E1/emain.o $(PRECOMP_OBJECTS) gameproject.res $(OBJECTS)  $(EIFLIB) -luser32 -lws2_32 -ladvapi32 -lgdi32 -lshell32 -lmsimg32 -lcomdlg32 -luuid -lole32 -loleaut32 -lcomctl32 -lmpr -lshlwapi -lwinspool -lstdc++ $(ISE_SHAREDLIBS)
+	$(CC) $(LDFLAGS) $(CCLDFLAGS) -o gameproject.exe E1/emain.o $(PRECOMP_OBJECTS) gameproject.res $(OBJECTS) $(EXTERNALS) $(EIFLIB) -luser32 -lws2_32 -ladvapi32 -lgdi32 -lshell32 -lmsimg32 -lcomdlg32 -luuid -lole32 -loleaut32 -lcomctl32 -lmpr -lshlwapi -lwinspool -lstdc++ $(ISE_SHAREDLIBS)
 
 ../../../gameproject.rc:
 	if [ ! -f ../../../gameproject.rc ] ; then $(MV) "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/studio/config/win64/mingw/eiffel.rc" ../../../gameproject.rc ; fi 

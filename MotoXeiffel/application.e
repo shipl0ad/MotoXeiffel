@@ -15,10 +15,14 @@ create
 feature {NONE} -- Initialization
 
 	make
-			-- Run application.
+
+		local
+
+		engine:GAME_ENGINE
+
 		do
 			--| Add your code here
-			print ("Hello Eiffel World!%N")
+			create engine.make
 		end
 
 end

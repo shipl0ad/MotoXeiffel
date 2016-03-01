@@ -24,7 +24,7 @@ feature {NONE} -- Initialization
 			l_image:IMG_IMAGE_FILE
 		do
 			has_error := False
-			create l_image.make ("FELIS.JPG")
+			create l_image.make ("felispetit.png")
 			if l_image.is_openable then
 				l_image.open
 				if l_image.is_open then

@@ -7,21 +7,27 @@ note
 class
 	AFFICHABLE
 
+inherit
+	GAME_ENGINE
+
 create
 
-	make
+	make_affichable
 
 feature {NONE} -- Initialization
 
-	make
+	make_affichable
 
 		local
 
-		fenetre:FENETRE
+			l_moto:MOTO
+			l_window:GAME_WINDOW_RENDERED
 
 		do
-			create fenetre.maker
-		end
+			create l_moto.make (l_window.renderer)
+				l_moto.y := 150
+				l_moto.x := 200
 
+		end
 
 end

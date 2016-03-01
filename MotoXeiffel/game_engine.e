@@ -30,7 +30,6 @@ feature {NONE} -- Initialization
 			-- Create ressources and launch the game
 		local
 			l_window_builder:GAME_WINDOW_RENDERED_BUILDER
-			affichable:AFFICHABLE
 			l_niveau:NIVEAU
 			l_moto:MOTO
 			l_window:GAME_WINDOW_RENDERED
@@ -44,17 +43,24 @@ feature {NONE} -- Initialization
 			l_window.renderer.set_drawing_color (create {GAME_COLOR}.make_rgb (0, 128, 255))
 			create l_niveau.make (l_window.renderer)
 			if not l_niveau.has_error then
-				create affichable.make_affichable
+				create l_moto.make (l_window.renderer)
+				l_moto.y := 150
+				l_moto.x := 200
+				if not l_moto.has_error then
+					game_library.quit_signal_actions.extend (agent on_quit)
+						l_window.key_pressed_actions.extend (agent on_key_pressed(?, ?, l_moto))
+						l_window.key_released_actions.extend (agent on_key_released(?,?,  l_moto))
+						game_library.iteration_actions.extend (agent on_iteration(?, l_moto, l_niveau, l_window.renderer))
+						game_library.launch
+
+				else
+					print("Cannot create the Moto surface.")
+				end
+
 
 			else
 				print("Cannot create the desert surface.")
 			end
-
-			game_library.quit_signal_actions.extend (agent on_quit)
-			l_window.key_pressed_actions.extend (agent on_key_pressed(?, ?, affichable.moto))
-			l_window.key_released_actions.extend (agent on_key_released(?,?,  l_moto))
-			game_library.iteration_actions.extend (agent on_iteration(?, l_moto, l_niveau, l_window.renderer))
-			game_library.launch
 
 		end
 
@@ -64,8 +70,8 @@ feature {NONE} -- Implementation
 	on_iteration(a_timestamp:NATURAL_32; a_moto:MOTO; a_niveau:GAME_TEXTURE; l_renderer:GAME_RENDERER)
 			-- Event that is launch at each iteration.
 		do
-			a_moto.update (a_timestamp)	-- Update Maryo animation and coordinate
-			-- Be sure that Maryo does not get out of the screen
+			a_moto.update (a_timestamp)
+
 			if a_moto.x < 0 then
 				a_moto.x := 0
 			elseif a_moto.x + a_moto.sub_image_width > a_niveau.width then

@@ -24,13 +24,13 @@ feature {NONE} -- Initialization
 			l_image:IMG_IMAGE_FILE
 		do
 			has_error := False
-			create l_image.make ("felispetit.png")
+			create l_image.make ("moto.png")
 			if l_image.is_openable then
 				l_image.open
 				if l_image.is_open then
 					make_from_image (a_renderer, l_image)
 					if not has_error then
-						sub_image_width := width
+						sub_image_width := width // 3
 						sub_image_height := height
 					end
 				else

@@ -9,6 +9,7 @@ class
 
 inherit
 	GAME_LIBRARY_SHARED		-- To use `game_library'
+	AUDIO_LIBRARY_SHARED	-- To use `audio_library'
 	IMG_LIBRARY_SHARED		-- To use `image_file_library'
 
 create
@@ -44,7 +45,7 @@ feature {NONE} -- Initialization
 			create l_niveau.make (l_window.renderer)
 			if not l_niveau.has_error then
 				create l_moto.make (l_window.renderer)
-				l_moto.y := 150
+				l_moto.y := 300
 				l_moto.x := 200
 				if not l_moto.has_error then
 					game_library.quit_signal_actions.extend (agent on_quit)

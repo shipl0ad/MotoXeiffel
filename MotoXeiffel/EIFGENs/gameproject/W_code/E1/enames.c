@@ -5768,6 +5768,215 @@ char *names926 [] =
 "object_comparison",
 };
 
+char *names929 [] =
+{
+"internal_game_library",
+"title",
+"display",
+"is_position_x_centered",
+"is_position_y_centered",
+"is_position_x_undefined",
+"is_position_y_undefined",
+"flags",
+"position_x",
+"position_y",
+"width",
+"height",
+};
+
+char *names930 [] =
+{
+"internal_game_library",
+"title",
+"display",
+"renderer_driver",
+"is_position_x_centered",
+"is_position_y_centered",
+"is_position_x_undefined",
+"is_position_y_undefined",
+"no_default_renderer",
+"must_renderer_support_texture_target",
+"must_renderer_synchronize_update",
+"must_renderer_be_software_rendering",
+"must_renderer_be_hardware_accelerated",
+"flags",
+"position_x",
+"position_y",
+"width",
+"height",
+};
+
+char *names931 [] =
+{
+"internal_game_library",
+"title",
+"display",
+"renderer_driver",
+"is_position_x_centered",
+"is_position_y_centered",
+"is_position_x_undefined",
+"is_position_y_undefined",
+"no_default_renderer",
+"must_renderer_support_texture_target",
+"must_renderer_synchronize_update",
+"must_renderer_be_software_rendering",
+"must_renderer_be_hardware_accelerated",
+"flags",
+"position_x",
+"position_y",
+"width",
+"height",
+};
+
+char *names932 [] =
+{
+"internal_name",
+};
+
+char *names934 [] =
+{
+"managed_pointer",
+"manual_error",
+"animation_coordinates",
+"internal_item_exists",
+"has_error",
+"is_manual_error",
+"shared",
+"is_locked",
+"facing_left",
+"going_left",
+"going_right",
+"old_timestamp",
+"x",
+"y",
+"sub_image_x",
+"sub_image_y",
+"sub_image_width",
+"sub_image_height",
+"internal_item",
+};
+
+char *names936 [] =
+{
+"manual_error",
+"internal_game_library",
+"is_open",
+"has_ressource_error",
+"has_error",
+"is_manual_error",
+"must_free",
+"item",
+"rwop",
+};
+
+char *names937 [] =
+{
+"managed_pointer",
+"manual_error",
+"internal_item_exists",
+"has_error",
+"is_manual_error",
+"shared",
+"is_locked",
+"internal_item",
+};
+
+char *names943 [] =
+{
+"launch_mutex",
+"terminated",
+"thread_id",
+};
+
+char *names945 [] =
+{
+"message",
+"is_open",
+"has_ressource_error",
+"has_error",
+"last_buffer_size",
+};
+
+char *names946 [] =
+{
+"manual_error",
+"has_error",
+"is_manual_error",
+"last_al_error_code",
+"last_alc_error_code",
+};
+
+char *names947 [] =
+{
+"manual_error",
+"launch_mutex",
+"internal_listener",
+"internal_sources",
+"has_error",
+"terminated",
+"is_manual_error",
+"is_thread_executing",
+"must_stop_thread",
+"is_thread_init",
+"last_al_error_code",
+"last_alc_error_code",
+"sound_buffer_size",
+"thread_id",
+"device",
+"context",
+"null",
+};
+
+char *names948 [] =
+{
+"manual_error",
+"has_error",
+"is_manual_error",
+"last_al_error_code",
+"last_alc_error_code",
+};
+
+char *names949 [] =
+{
+"manual_error",
+"has_error",
+"is_manual_error",
+"last_al_error_code",
+"last_alc_error_code",
+};
+
+char *names950 [] =
+{
+"owner",
+"mutex_pointer",
+};
+
+char *names951 [] =
+{
+"manual_error",
+"sound_al_buffer",
+"sound_queued",
+"g_mutex",
+"has_error",
+"is_manual_error",
+"is_open",
+"is_thread_safe",
+"index",
+"last_al_error_code",
+"last_alc_error_code",
+"buffer_size",
+"buffer_tail",
+"buffer_head",
+"temp_buffer",
+};
+
+char *names952 [] =
+{
+"managed_pointer",
+"shared",
+"internal_item",
+};
+
 
 
 #ifdef __cplusplus

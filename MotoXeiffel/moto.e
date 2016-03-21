@@ -162,10 +162,10 @@ feature {NONE} -- implementation
 
 feature {NONE} -- constants
 
-	movement_delta:NATURAL_32 = 10
+	movement_delta:NATURAL_32 = 5
 			-- The delta time between each movement of `Current'
 
-	animation_delta:NATURAL_32 = 100
+	animation_delta:NATURAL_32 = 50
 			-- The delta time between each animation of `Current'
 
 

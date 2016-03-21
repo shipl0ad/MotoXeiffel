@@ -15151,7 +15151,6 @@ extern EIF_REFERENCE F903_9437();
 extern void F904_9438();
 extern void F904_9439();
 extern void F904_9440();
-extern void F904_10128();
 extern void F905_10129();
 extern void F905_9441();
 extern void F905_9442();
@@ -15802,6 +15801,429 @@ extern void F925_10087();
 extern EIF_INTEGER_32 F925_10088();
 extern EIF_REFERENCE F925_10089();
 extern EIF_POINTER F925_10090();
+extern void F929_10444();
+extern void F929_10343();
+extern EIF_NATURAL_32 F929_10344();
+extern void F929_10345();
+extern EIF_BOOLEAN F929_10346();
+extern void F929_10347();
+extern void F929_10348();
+extern void F929_10349();
+extern EIF_BOOLEAN F929_10350();
+extern void F929_10351();
+extern void F929_10352();
+extern void F929_10353();
+extern EIF_BOOLEAN F929_10354();
+extern void F929_10355();
+extern void F929_10356();
+extern void F929_10357();
+extern EIF_BOOLEAN F929_10358();
+extern void F929_10359();
+extern void F929_10360();
+extern void F929_10361();
+extern EIF_BOOLEAN F929_10362();
+extern void F929_10363();
+extern void F929_10364();
+extern void F929_10365();
+extern EIF_BOOLEAN F929_10366();
+extern void F929_10367();
+extern void F929_10368();
+extern void F929_10369();
+extern EIF_BOOLEAN F929_10370();
+extern void F929_10371();
+extern void F929_10372();
+extern void F929_10373();
+extern EIF_BOOLEAN F929_10374();
+extern void F929_10375();
+extern void F929_10376();
+extern void F929_10377();
+extern EIF_REFERENCE F929_10378();
+extern void F929_10379();
+extern EIF_BOOLEAN F929_10380();
+extern void F929_10381();
+extern void F929_10382();
+extern void F929_10383();
+extern EIF_BOOLEAN F929_10384();
+extern void F929_10385();
+extern void F929_10386();
+extern void F929_10387();
+extern EIF_BOOLEAN F929_10388();
+extern void F929_10389();
+extern void F929_10390();
+extern void F929_10391();
+extern EIF_BOOLEAN F929_10392();
+extern void F929_10393();
+extern void F929_10394();
+extern void F929_10395();
+extern EIF_BOOLEAN F929_10396();
+extern void F929_10397();
+extern void F929_10398();
+extern void F929_10399();
+extern EIF_BOOLEAN F929_10400();
+extern void F929_10401();
+extern void F929_10402();
+extern void F929_10403();
+extern EIF_INTEGER_32 F929_10404();
+extern void F929_10405();
+extern EIF_INTEGER_32 F929_10406();
+extern void F929_10407();
+extern EIF_REFERENCE F929_10408();
+extern void F929_10409();
+extern EIF_INTEGER_32 F929_10410();
+extern void F929_10411();
+extern EIF_INTEGER_32 F929_10412();
+extern void F929_10413();
+extern EIF_REFERENCE F929_10414();
+extern void F929_10415();
+extern EIF_REFERENCE F929_10416();
+extern void F929_10417();
+extern void F929_10418();
+extern EIF_BOOLEAN F930_10420();
+extern void F930_10421();
+extern void F930_10422();
+extern void F930_10423();
+extern EIF_BOOLEAN F930_10424();
+extern void F930_10425();
+extern void F930_10426();
+extern void F930_10427();
+extern EIF_BOOLEAN F930_10428();
+extern void F930_10429();
+extern void F930_10430();
+extern void F930_10431();
+extern EIF_BOOLEAN F930_10432();
+extern void F930_10433();
+extern void F930_10434();
+extern void F930_10435();
+extern EIF_BOOLEAN F930_10436();
+extern void F930_10437();
+extern void F930_10438();
+extern void F930_10439();
+extern EIF_REFERENCE F930_10440();
+extern void F930_10441();
+extern void F930_10442();
+extern EIF_REFERENCE F930_10443();
+extern EIF_BOOLEAN F931_10420();
+extern void F931_10421();
+extern void F931_10422();
+extern void F931_10423();
+extern EIF_BOOLEAN F931_10424();
+extern void F931_10425();
+extern void F931_10426();
+extern void F931_10427();
+extern EIF_BOOLEAN F931_10428();
+extern void F931_10429();
+extern void F931_10430();
+extern void F931_10431();
+extern EIF_BOOLEAN F931_10432();
+extern void F931_10433();
+extern void F931_10434();
+extern void F931_10435();
+extern EIF_BOOLEAN F931_10436();
+extern void F931_10437();
+extern void F931_10438();
+extern void F931_10439();
+extern EIF_REFERENCE F931_10440();
+extern void F931_10441();
+extern void F931_10442();
+extern EIF_REFERENCE F931_10443();
+extern EIF_REFERENCE F932_4834();
+extern EIF_REFERENCE F932_4835();
+extern EIF_INTEGER_32 F932_4836();
+extern EIF_INTEGER_32 F932_4837();
+extern EIF_INTEGER_32 F932_4838();
+extern EIF_BOOLEAN F932_4839();
+extern EIF_BOOLEAN F932_4840();
+extern EIF_BOOLEAN F932_4841();
+extern EIF_BOOLEAN F932_4842();
+extern EIF_BOOLEAN F932_4843();
+extern EIF_BOOLEAN F932_4844();
+extern EIF_REFERENCE F932_4845();
+extern EIF_REFERENCE F932_4846();
+extern EIF_REFERENCE F932_4847();
+extern EIF_REFERENCE F932_4848();
+extern EIF_REFERENCE F932_4849();
+extern EIF_REFERENCE F932_4850();
+extern EIF_REFERENCE F932_4851();
+extern EIF_REFERENCE F932_4852();
+extern EIF_BOOLEAN F932_4853();
+extern EIF_BOOLEAN F932_4854();
+extern EIF_REFERENCE F932_4855();
+extern EIF_REFERENCE F932_4856();
+extern EIF_REFERENCE F932_4857();
+extern EIF_REFERENCE F932_4858();
+extern EIF_REFERENCE F932_4859();
+extern EIF_REFERENCE F932_4860();
+extern void F934_10496();
+extern void F935_10497();
+extern EIF_BOOLEAN F936_10509();
+extern EIF_BOOLEAN F936_10510();
+extern EIF_BOOLEAN F936_10511();
+extern EIF_BOOLEAN F936_10512();
+extern void F936_10513();
+extern EIF_POINTER F936_10514();
+extern void F936_10515();
+extern void F936_10498();
+extern EIF_BOOLEAN F936_10499();
+extern EIF_BOOLEAN F936_10500();
+extern EIF_BOOLEAN F936_10501();
+extern EIF_BOOLEAN F936_10502();
+extern EIF_BOOLEAN F936_10503();
+extern EIF_BOOLEAN F936_10504();
+extern EIF_BOOLEAN F936_10505();
+extern EIF_BOOLEAN F936_10506();
+extern EIF_BOOLEAN F936_10507();
+extern EIF_BOOLEAN F936_10508();
+extern void F937_10544();
+extern EIF_NATURAL_32 F934_10540();
+extern void F934_10520();
+extern void F934_10521();
+extern void F934_10522();
+extern void F934_10523();
+extern void F934_10524();
+extern void F934_10525();
+extern EIF_BOOLEAN F934_10526();
+extern EIF_BOOLEAN F934_10527();
+extern EIF_BOOLEAN F934_10528();
+extern EIF_INTEGER_32 F934_10529();
+extern EIF_INTEGER_32 F934_10530();
+extern void F934_10531();
+extern void F934_10532();
+extern EIF_INTEGER_32 F934_10533();
+extern EIF_INTEGER_32 F934_10534();
+extern EIF_INTEGER_32 F934_10535();
+extern EIF_INTEGER_32 F934_10536();
+extern EIF_REFERENCE F934_10537();
+extern EIF_NATURAL_32 F934_10538();
+extern EIF_NATURAL_32 F934_10539();
+extern void F904_10558();
+extern void F904_10559();
+extern void F904_10560();
+extern void F938_10561();
+extern void F939_10595();
+extern void F939_10596();
+extern void F939_10597();
+extern void F939_10598();
+extern EIF_INTEGER_32 F939_10599();
+extern EIF_INTEGER_32 F939_10600();
+extern EIF_INTEGER_32 F939_10601();
+extern EIF_INTEGER_32 F939_10602();
+extern EIF_INTEGER_32 F939_10603();
+extern EIF_INTEGER_32 F939_10604();
+extern EIF_INTEGER_32 F939_10605();
+extern EIF_INTEGER_32 F939_10606();
+extern EIF_INTEGER_32 F939_10607();
+extern EIF_INTEGER_32 F939_10608();
+extern EIF_INTEGER_32 F939_10609();
+extern EIF_INTEGER_32 F939_10610();
+extern EIF_INTEGER_32 F939_10611();
+extern EIF_INTEGER_32 F939_10612();
+extern EIF_INTEGER_32 F939_10613();
+extern EIF_INTEGER_32 F939_10614();
+extern EIF_INTEGER_32 F939_10615();
+extern EIF_INTEGER_32 F939_10616();
+extern EIF_INTEGER_32 F939_10617();
+extern EIF_INTEGER_32 F939_10618();
+extern EIF_INTEGER_32 F939_10619();
+extern EIF_INTEGER_32 F939_10620();
+extern EIF_INTEGER_32 F939_10621();
+extern EIF_INTEGER_32 F939_10622();
+extern EIF_INTEGER_32 F939_10623();
+extern EIF_INTEGER_32 F939_10624();
+extern EIF_INTEGER_32 F939_10625();
+extern EIF_INTEGER_32 F939_10626();
+extern EIF_INTEGER_32 F939_10627();
+extern EIF_INTEGER_32 F939_10569();
+extern EIF_INTEGER_32 F939_10570();
+extern EIF_POINTER F939_10571();
+extern EIF_POINTER F939_10572();
+extern EIF_BOOLEAN F939_10573();
+extern EIF_POINTER F939_10574();
+extern void F939_10575();
+extern void F939_10576();
+extern EIF_POINTER F939_10577();
+extern EIF_BOOLEAN F939_10578();
+extern void F939_10579();
+extern void F939_10580();
+extern void F939_10581();
+extern void F939_10582();
+extern void F939_10583();
+extern EIF_BOOLEAN F939_10584();
+extern void F939_10585();
+extern void F939_10586();
+extern void F939_10587();
+extern void F939_10588();
+extern void F939_10589();
+extern EIF_BOOLEAN F939_10590();
+extern void F939_10591();
+extern void F939_10592();
+extern void F939_10593();
+extern void F939_10594();
+extern void F940_10633();
+extern EIF_REAL_32 F940_10634();
+extern void F940_10635();
+extern EIF_REAL_32 F940_10630();
+extern void F940_10631();
+extern EIF_REAL_32 F940_10632();
+extern EIF_POINTER F941_10636();
+extern EIF_POINTER F941_10637();
+extern void F942_10638();
+extern void F942_10639();
+extern void F943_10640();
+extern EIF_POINTER F943_10641();
+extern EIF_BOOLEAN F943_10642();
+extern void F943_10644();
+extern void F943_10645();
+extern void F943_10646();
+extern void F943_10647();
+extern EIF_BOOLEAN F943_10648();
+extern EIF_BOOLEAN F943_10649();
+extern EIF_BOOLEAN F943_10650();
+extern void F943_10651();
+extern EIF_BOOLEAN F943_10652();
+extern void F943_10653();
+extern EIF_REFERENCE F943_10654();
+extern EIF_REFERENCE F943_10655();
+extern void F943_10656();
+extern void F943_10657();
+extern EIF_BOOLEAN F943_10658();
+extern EIF_POINTER F943_10659();
+extern EIF_REFERENCE F944_10660();
+extern void F945_10804();
+extern EIF_INTEGER_32 F945_10662();
+extern void F946_10670();
+extern void F946_10671();
+extern void F946_10672();
+extern void F946_10673();
+extern void F946_10674();
+extern EIF_BOOLEAN F946_10675();
+extern EIF_BOOLEAN F946_10676();
+extern EIF_INTEGER_32 F946_10677();
+extern EIF_INTEGER_32 F946_10678();
+extern EIF_REFERENCE F946_10679();
+extern void F947_10805();
+extern void F947_10680();
+extern EIF_REFERENCE F947_10681();
+extern void F947_10682();
+extern void F947_10683();
+extern EIF_REFERENCE F947_10684();
+extern EIF_REFERENCE F947_10685();
+extern EIF_BOOLEAN F947_10686();
+extern EIF_INTEGER_32 F947_10687();
+extern void F947_10688();
+extern void F947_10689();
+extern void F947_10690();
+extern EIF_BOOLEAN F947_10691();
+extern void F947_10692();
+extern EIF_INTEGER_32 F947_10693();
+extern void F947_10694();
+extern EIF_REFERENCE F947_10695();
+extern EIF_REFERENCE F947_10696();
+extern void F947_10697();
+extern void F947_10698();
+extern void F947_10699();
+extern EIF_BOOLEAN F947_10700();
+extern EIF_REFERENCE F947_10701();
+extern void F947_10702();
+extern void F947_10703();
+extern EIF_POINTER F947_10704();
+extern EIF_POINTER F947_10705();
+extern EIF_REFERENCE F947_10706();
+extern EIF_REFERENCE F947_10707();
+extern EIF_BOOLEAN F947_10708();
+extern EIF_BOOLEAN F947_10709();
+extern EIF_POINTER F947_10710();
+extern void F947_10711();
+extern void F948_10712();
+extern void F948_10713();
+extern EIF_REFERENCE F948_10714();
+extern EIF_REFERENCE F948_10715();
+extern void F948_10717();
+extern EIF_REFERENCE F948_10719();
+extern void F949_10726();
+extern void F949_10720();
+extern void F949_10721();
+extern EIF_REFERENCE F949_10722();
+extern void F949_10723();
+extern EIF_REFERENCE F949_10724();
+extern void F949_10725();
+extern void F950_10727();
+extern EIF_POINTER F950_10728();
+extern EIF_BOOLEAN F950_10729();
+extern void F950_10730();
+extern EIF_BOOLEAN F950_10731();
+extern void F950_10732();
+extern void F950_10733();
+extern EIF_BOOLEAN F950_10734();
+extern EIF_BOOLEAN F950_10735();
+extern void F950_10736();
+extern EIF_POINTER F950_10737();
+extern EIF_POINTER F950_10738();
+extern void F950_10739();
+extern void F950_10740();
+extern EIF_BOOLEAN F950_10741();
+extern void F950_10742();
+extern void F951_10743();
+extern void F951_10744();
+extern EIF_INTEGER_32 F951_10745();
+extern void F951_10746();
+extern void F951_10747();
+extern void F951_10748();
+extern void F951_10749();
+extern EIF_BOOLEAN F951_10750();
+extern EIF_BOOLEAN F951_10751();
+extern EIF_BOOLEAN F951_10752();
+extern EIF_BOOLEAN F951_10753();
+extern EIF_REAL_32 F951_10754();
+extern void F951_10755();
+extern void F951_10756();
+extern void F951_10757();
+extern void F951_10758();
+extern void F951_10759();
+extern void F951_10760();
+extern EIF_REFERENCE F951_10761();
+extern EIF_BOOLEAN F951_10762();
+extern void F951_10763();
+extern void F951_10764();
+extern EIF_INTEGER_32 F951_10765();
+extern void F951_10766();
+extern void F951_10767();
+extern EIF_INTEGER_32 F951_10768();
+extern EIF_REAL_32 F951_10769();
+extern void F951_10770();
+extern void F951_10771();
+extern void F951_10772();
+extern void F951_10773();
+extern EIF_REFERENCE F951_10774();
+extern EIF_INTEGER_32 F951_10775();
+extern EIF_INTEGER_32 F951_10776();
+extern EIF_NATURAL_32 F951_10777();
+extern EIF_POINTER F951_10778();
+extern EIF_REFERENCE F951_10779();
+extern EIF_INTEGER_32 F951_10780();
+extern EIF_BOOLEAN F951_10781();
+extern EIF_REFERENCE F951_10782();
+extern EIF_INTEGER_32 F952_10788();
+extern EIF_INTEGER_32 F952_10789();
+extern EIF_INTEGER_32 F952_10790();
+extern void F952_10791();
+extern void F952_10792();
+extern EIF_INTEGER_32 F952_10793();
+extern EIF_NATURAL_64 F952_10794();
+extern EIF_INTEGER_32 F952_10795();
+extern void F952_10796();
+extern void F952_10797();
+extern EIF_INTEGER_32 F952_10798();
+extern EIF_BOOLEAN F952_10799();
+extern EIF_INTEGER_32 F952_10800();
+extern EIF_INTEGER_32 F952_10801();
+extern EIF_INTEGER_32 F952_10802();
+extern EIF_INTEGER_32 F952_10803();
+extern void F952_10806();
+extern void F952_10783();
+extern void F952_10784();
+extern void F952_10785();
+extern EIF_INTEGER_32 F952_10786();
+extern EIF_NATURAL_64 F952_10787();
 
 #ifdef __cplusplus
 }
@@ -30958,7 +31380,7 @@ fnptr egc_frozen_init[] = {
 (fnptr) F904_9438,
 (fnptr) F904_9439,
 (fnptr) F904_9440,
-(fnptr) F904_10128,
+NULL,
 (fnptr) F905_10129,
 (fnptr) F905_9441,
 (fnptr) F905_9442,
@@ -31609,6 +32031,454 @@ fnptr egc_frozen_init[] = {
 (fnptr) F925_10088,
 (fnptr) F925_10089,
 (fnptr) F925_10090,
+NULL,
+NULL,
+NULL,
+NULL,
+NULL,
+(fnptr) F929_10444,
+(fnptr) F929_10343,
+(fnptr) F929_10344,
+(fnptr) F929_10345,
+(fnptr) F929_10346,
+(fnptr) F929_10347,
+(fnptr) F929_10348,
+(fnptr) F929_10349,
+(fnptr) F929_10350,
+(fnptr) F929_10351,
+(fnptr) F929_10352,
+(fnptr) F929_10353,
+(fnptr) F929_10354,
+(fnptr) F929_10355,
+(fnptr) F929_10356,
+(fnptr) F929_10357,
+(fnptr) F929_10358,
+(fnptr) F929_10359,
+(fnptr) F929_10360,
+(fnptr) F929_10361,
+(fnptr) F929_10362,
+(fnptr) F929_10363,
+(fnptr) F929_10364,
+(fnptr) F929_10365,
+(fnptr) F929_10366,
+(fnptr) F929_10367,
+(fnptr) F929_10368,
+(fnptr) F929_10369,
+(fnptr) F929_10370,
+(fnptr) F929_10371,
+(fnptr) F929_10372,
+(fnptr) F929_10373,
+(fnptr) F929_10374,
+(fnptr) F929_10375,
+(fnptr) F929_10376,
+(fnptr) F929_10377,
+(fnptr) F929_10378,
+(fnptr) F929_10379,
+(fnptr) F929_10380,
+(fnptr) F929_10381,
+(fnptr) F929_10382,
+(fnptr) F929_10383,
+(fnptr) F929_10384,
+(fnptr) F929_10385,
+(fnptr) F929_10386,
+(fnptr) F929_10387,
+(fnptr) F929_10388,
+(fnptr) F929_10389,
+(fnptr) F929_10390,
+(fnptr) F929_10391,
+(fnptr) F929_10392,
+(fnptr) F929_10393,
+(fnptr) F929_10394,
+(fnptr) F929_10395,
+(fnptr) F929_10396,
+(fnptr) F929_10397,
+(fnptr) F929_10398,
+(fnptr) F929_10399,
+(fnptr) F929_10400,
+(fnptr) F929_10401,
+(fnptr) F929_10402,
+(fnptr) F929_10403,
+(fnptr) F929_10404,
+(fnptr) F929_10405,
+(fnptr) F929_10406,
+(fnptr) F929_10407,
+(fnptr) F929_10408,
+(fnptr) F929_10409,
+(fnptr) F929_10410,
+(fnptr) F929_10411,
+(fnptr) F929_10412,
+(fnptr) F929_10413,
+(fnptr) F929_10414,
+(fnptr) F929_10415,
+(fnptr) F929_10416,
+(fnptr) F929_10417,
+(fnptr) F929_10418,
+(fnptr) F930_10420,
+(fnptr) F930_10421,
+(fnptr) F930_10422,
+(fnptr) F930_10423,
+(fnptr) F930_10424,
+(fnptr) F930_10425,
+(fnptr) F930_10426,
+(fnptr) F930_10427,
+(fnptr) F930_10428,
+(fnptr) F930_10429,
+(fnptr) F930_10430,
+(fnptr) F930_10431,
+(fnptr) F930_10432,
+(fnptr) F930_10433,
+(fnptr) F930_10434,
+(fnptr) F930_10435,
+(fnptr) F930_10436,
+(fnptr) F930_10437,
+(fnptr) F930_10438,
+(fnptr) F930_10439,
+(fnptr) F930_10440,
+(fnptr) F930_10441,
+(fnptr) F930_10442,
+(fnptr) F930_10443,
+(fnptr) F931_10420,
+(fnptr) F931_10421,
+(fnptr) F931_10422,
+(fnptr) F931_10423,
+(fnptr) F931_10424,
+(fnptr) F931_10425,
+(fnptr) F931_10426,
+(fnptr) F931_10427,
+(fnptr) F931_10428,
+(fnptr) F931_10429,
+(fnptr) F931_10430,
+(fnptr) F931_10431,
+(fnptr) F931_10432,
+(fnptr) F931_10433,
+(fnptr) F931_10434,
+(fnptr) F931_10435,
+(fnptr) F931_10436,
+(fnptr) F931_10437,
+(fnptr) F931_10438,
+(fnptr) F931_10439,
+(fnptr) F931_10440,
+(fnptr) F931_10441,
+(fnptr) F931_10442,
+(fnptr) F931_10443,
+(fnptr) F932_4834,
+(fnptr) F932_4835,
+(fnptr) F932_4836,
+(fnptr) F932_4837,
+(fnptr) F932_4838,
+(fnptr) F932_4839,
+(fnptr) F932_4840,
+(fnptr) F932_4841,
+(fnptr) F932_4842,
+(fnptr) F932_4843,
+(fnptr) F932_4844,
+(fnptr) F932_4845,
+(fnptr) F932_4846,
+(fnptr) F932_4847,
+(fnptr) F932_4848,
+(fnptr) F932_4849,
+(fnptr) F932_4850,
+(fnptr) F932_4851,
+(fnptr) F932_4852,
+(fnptr) F932_4853,
+(fnptr) F932_4854,
+(fnptr) F932_4855,
+(fnptr) F932_4856,
+(fnptr) F932_4857,
+(fnptr) F932_4858,
+(fnptr) F932_4859,
+(fnptr) F932_4860,
+NULL,
+NULL,
+NULL,
+NULL,
+NULL,
+NULL,
+NULL,
+NULL,
+NULL,
+NULL,
+NULL,
+NULL,
+NULL,
+NULL,
+NULL,
+NULL,
+NULL,
+NULL,
+NULL,
+(fnptr) F934_10496,
+(fnptr) F935_10497,
+(fnptr) F936_10509,
+(fnptr) F936_10510,
+(fnptr) F936_10511,
+(fnptr) F936_10512,
+(fnptr) F936_10513,
+(fnptr) F936_10514,
+(fnptr) F936_10515,
+(fnptr) F936_10498,
+(fnptr) F936_10499,
+(fnptr) F936_10500,
+(fnptr) F936_10501,
+(fnptr) F936_10502,
+(fnptr) F936_10503,
+(fnptr) F936_10504,
+(fnptr) F936_10505,
+(fnptr) F936_10506,
+(fnptr) F936_10507,
+(fnptr) F936_10508,
+NULL,
+(fnptr) F937_10544,
+(fnptr) F934_10540,
+(fnptr) F934_10520,
+(fnptr) F934_10521,
+(fnptr) F934_10522,
+(fnptr) F934_10523,
+(fnptr) F934_10524,
+(fnptr) F934_10525,
+(fnptr) F934_10526,
+(fnptr) F934_10527,
+(fnptr) F934_10528,
+(fnptr) F934_10529,
+(fnptr) F934_10530,
+(fnptr) F934_10531,
+(fnptr) F934_10532,
+(fnptr) F934_10533,
+(fnptr) F934_10534,
+(fnptr) F934_10535,
+(fnptr) F934_10536,
+(fnptr) F934_10537,
+(fnptr) F934_10538,
+(fnptr) F934_10539,
+(fnptr) F904_10558,
+(fnptr) F904_10559,
+(fnptr) F904_10560,
+(fnptr) F938_10561,
+(fnptr) F939_10595,
+(fnptr) F939_10596,
+(fnptr) F939_10597,
+(fnptr) F939_10598,
+(fnptr) F939_10599,
+(fnptr) F939_10600,
+(fnptr) F939_10601,
+(fnptr) F939_10602,
+(fnptr) F939_10603,
+(fnptr) F939_10604,
+(fnptr) F939_10605,
+(fnptr) F939_10606,
+(fnptr) F939_10607,
+(fnptr) F939_10608,
+(fnptr) F939_10609,
+(fnptr) F939_10610,
+(fnptr) F939_10611,
+(fnptr) F939_10612,
+(fnptr) F939_10613,
+(fnptr) F939_10614,
+(fnptr) F939_10615,
+(fnptr) F939_10616,
+(fnptr) F939_10617,
+(fnptr) F939_10618,
+(fnptr) F939_10619,
+(fnptr) F939_10620,
+(fnptr) F939_10621,
+(fnptr) F939_10622,
+(fnptr) F939_10623,
+(fnptr) F939_10624,
+(fnptr) F939_10625,
+(fnptr) F939_10626,
+(fnptr) F939_10627,
+(fnptr) F939_10569,
+(fnptr) F939_10570,
+(fnptr) F939_10571,
+(fnptr) F939_10572,
+(fnptr) F939_10573,
+(fnptr) F939_10574,
+(fnptr) F939_10575,
+(fnptr) F939_10576,
+(fnptr) F939_10577,
+(fnptr) F939_10578,
+(fnptr) F939_10579,
+(fnptr) F939_10580,
+(fnptr) F939_10581,
+(fnptr) F939_10582,
+(fnptr) F939_10583,
+(fnptr) F939_10584,
+(fnptr) F939_10585,
+(fnptr) F939_10586,
+(fnptr) F939_10587,
+(fnptr) F939_10588,
+(fnptr) F939_10589,
+(fnptr) F939_10590,
+(fnptr) F939_10591,
+(fnptr) F939_10592,
+(fnptr) F939_10593,
+(fnptr) F939_10594,
+(fnptr) F940_10633,
+(fnptr) F940_10634,
+(fnptr) F940_10635,
+(fnptr) F940_10630,
+(fnptr) F940_10631,
+(fnptr) F940_10632,
+(fnptr) F941_10636,
+(fnptr) F941_10637,
+(fnptr) F942_10638,
+(fnptr) F942_10639,
+(fnptr) F943_10640,
+(fnptr) F943_10641,
+(fnptr) F943_10642,
+(fnptr) F943_10644,
+(fnptr) F943_10645,
+(fnptr) F943_10646,
+(fnptr) F943_10647,
+(fnptr) F943_10648,
+(fnptr) F943_10649,
+(fnptr) F943_10650,
+(fnptr) F943_10651,
+(fnptr) F943_10652,
+(fnptr) F943_10653,
+(fnptr) F943_10654,
+(fnptr) F943_10655,
+(fnptr) F943_10656,
+(fnptr) F943_10657,
+(fnptr) F943_10658,
+(fnptr) F943_10659,
+(fnptr) F944_10660,
+(fnptr) F945_10804,
+(fnptr) F945_10662,
+(fnptr) F946_10670,
+(fnptr) F946_10671,
+(fnptr) F946_10672,
+(fnptr) F946_10673,
+(fnptr) F946_10674,
+(fnptr) F946_10675,
+(fnptr) F946_10676,
+(fnptr) F946_10677,
+(fnptr) F946_10678,
+(fnptr) F946_10679,
+(fnptr) F947_10805,
+(fnptr) F947_10680,
+(fnptr) F947_10681,
+(fnptr) F947_10682,
+(fnptr) F947_10683,
+(fnptr) F947_10684,
+(fnptr) F947_10685,
+(fnptr) F947_10686,
+(fnptr) F947_10687,
+(fnptr) F947_10688,
+(fnptr) F947_10689,
+(fnptr) F947_10690,
+(fnptr) F947_10691,
+(fnptr) F947_10692,
+(fnptr) F947_10693,
+(fnptr) F947_10694,
+(fnptr) F947_10695,
+(fnptr) F947_10696,
+(fnptr) F947_10697,
+(fnptr) F947_10698,
+(fnptr) F947_10699,
+(fnptr) F947_10700,
+(fnptr) F947_10701,
+(fnptr) F947_10702,
+(fnptr) F947_10703,
+(fnptr) F947_10704,
+(fnptr) F947_10705,
+(fnptr) F947_10706,
+(fnptr) F947_10707,
+(fnptr) F947_10708,
+(fnptr) F947_10709,
+(fnptr) F947_10710,
+(fnptr) F947_10711,
+(fnptr) F948_10712,
+(fnptr) F948_10713,
+(fnptr) F948_10714,
+(fnptr) F948_10715,
+(fnptr) F948_10717,
+(fnptr) F948_10719,
+(fnptr) F949_10726,
+(fnptr) F949_10720,
+(fnptr) F949_10721,
+(fnptr) F949_10722,
+(fnptr) F949_10723,
+(fnptr) F949_10724,
+(fnptr) F949_10725,
+(fnptr) F950_10727,
+(fnptr) F950_10728,
+(fnptr) F950_10729,
+(fnptr) F950_10730,
+(fnptr) F950_10731,
+(fnptr) F950_10732,
+(fnptr) F950_10733,
+(fnptr) F950_10734,
+(fnptr) F950_10735,
+(fnptr) F950_10736,
+(fnptr) F950_10737,
+(fnptr) F950_10738,
+(fnptr) F950_10739,
+(fnptr) F950_10740,
+(fnptr) F950_10741,
+(fnptr) F950_10742,
+(fnptr) F951_10743,
+(fnptr) F951_10744,
+(fnptr) F951_10745,
+(fnptr) F951_10746,
+(fnptr) F951_10747,
+(fnptr) F951_10748,
+(fnptr) F951_10749,
+(fnptr) F951_10750,
+(fnptr) F951_10751,
+(fnptr) F951_10752,
+(fnptr) F951_10753,
+(fnptr) F951_10754,
+(fnptr) F951_10755,
+(fnptr) F951_10756,
+(fnptr) F951_10757,
+(fnptr) F951_10758,
+(fnptr) F951_10759,
+(fnptr) F951_10760,
+(fnptr) F951_10761,
+(fnptr) F951_10762,
+(fnptr) F951_10763,
+(fnptr) F951_10764,
+(fnptr) F951_10765,
+(fnptr) F951_10766,
+(fnptr) F951_10767,
+(fnptr) F951_10768,
+(fnptr) F951_10769,
+(fnptr) F951_10770,
+(fnptr) F951_10771,
+(fnptr) F951_10772,
+(fnptr) F951_10773,
+(fnptr) F951_10774,
+(fnptr) F951_10775,
+(fnptr) F951_10776,
+(fnptr) F951_10777,
+(fnptr) F951_10778,
+(fnptr) F951_10779,
+(fnptr) F951_10780,
+(fnptr) F951_10781,
+(fnptr) F951_10782,
+(fnptr) F952_10788,
+(fnptr) F952_10789,
+(fnptr) F952_10790,
+(fnptr) F952_10791,
+(fnptr) F952_10792,
+(fnptr) F952_10793,
+(fnptr) F952_10794,
+(fnptr) F952_10795,
+(fnptr) F952_10796,
+(fnptr) F952_10797,
+(fnptr) F952_10798,
+(fnptr) F952_10799,
+(fnptr) F952_10800,
+(fnptr) F952_10801,
+(fnptr) F952_10802,
+(fnptr) F952_10803,
+(fnptr) F952_10806,
+(fnptr) F952_10783,
+(fnptr) F952_10784,
+(fnptr) F952_10785,
+(fnptr) F952_10786,
+(fnptr) F952_10787,
 };
 
 int egc_fpatidtab_init[] = {
@@ -46757,7 +47627,7 @@ int egc_fpatidtab_init[] = {
 5,
 5,
 41,
-0,
+-1,
 0,
 556,
 93,
@@ -47408,6 +48278,454 @@ int egc_fpatidtab_init[] = {
 14,
 0,
 6,
+-1,
+-1,
+-1,
+-1,
+-1,
+0,
+5,
+13,
+41,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+0,
+3,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+14,
+25,
+14,
+25,
+0,
+28,
+14,
+25,
+14,
+25,
+0,
+28,
+0,
+3,
+5,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+0,
+3,
+5,
+0,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+19,
+26,
+5,
+5,
+0,
+3,
+5,
+0,
+0,
+50,
+14,
+14,
+14,
+19,
+19,
+19,
+1,
+1,
+1,
+4,
+4,
+4,
+0,
+0,
+0,
+0,
+4,
+1,
+1,
+0,
+0,
+0,
+0,
+0,
+0,
+-1,
+-1,
+-1,
+-1,
+-1,
+-1,
+-1,
+-1,
+-1,
+-1,
+-1,
+-1,
+-1,
+-1,
+-1,
+-1,
+-1,
+-1,
+-1,
+3,
+5,
+19,
+19,
+19,
+19,
+5,
+6,
+5,
+3,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+-1,
+3,
+13,
+5,
+41,
+41,
+41,
+5,
+5,
+19,
+19,
+19,
+14,
+14,
+25,
+25,
+14,
+14,
+14,
+14,
+0,
+13,
+13,
+604,
+603,
+603,
+5,
+41,
+41,
+41,
+41,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+14,
+53,
+56,
+291,
+77,
+6,
+93,
+93,
+287,
+77,
+235,
+235,
+605,
+605,
+605,
+134,
+605,
+606,
+235,
+235,
+235,
+134,
+605,
+605,
+235,
+607,
+35,
+21,
+35,
+21,
+35,
+21,
+6,
+6,
+5,
+5,
+5,
+6,
+19,
+5,
+3,
+5,
+39,
+19,
+19,
+19,
+5,
+136,
+25,
+0,
+0,
+609,
+3,
+610,
+6,
+0,
+0,
+14,
+5,
+93,
+3,
+558,
+7,
+19,
+19,
+14,
+14,
+0,
+0,
+5,
+0,
+5,
+5,
+0,
+0,
+19,
+14,
+25,
+5,
+5,
+19,
+5,
+14,
+5,
+0,
+50,
+25,
+3,
+5,
+1,
+0,
+5,
+3,
+6,
+6,
+0,
+0,
+19,
+19,
+6,
+5,
+608,
+608,
+0,
+0,
+611,
+50,
+235,
+5,
+612,
+0,
+613,
+50,
+235,
+5,
+6,
+19,
+5,
+19,
+5,
+5,
+19,
+19,
+5,
+6,
+6,
+93,
+93,
+77,
+93,
+25,
+5,
+14,
+25,
+5,
+5,
+5,
+19,
+19,
+19,
+19,
+21,
+35,
+121,
+3,
+3,
+5,
+608,
+0,
+19,
+5,
+5,
+14,
+614,
+5,
+54,
+161,
+234,
+235,
+235,
+5,
+0,
+14,
+14,
+13,
+6,
+0,
+14,
+19,
+0,
+14,
+14,
+14,
+130,
+615,
+53,
+61,
+14,
+25,
+26,
+14,
+19,
+14,
+14,
+14,
+14,
+0,
+5,
+25,
+42,
+14,
+15,
 };
 
 #ifdef __cplusplus

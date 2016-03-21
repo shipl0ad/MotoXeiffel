@@ -303,6 +303,63 @@ void _A888_158_2 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE) , EIF_TYPED_VALU
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) F888_10121)(closed [1].it_r, open [1]);
 }
 
+	/* GAME_ENGINE on_quit */
+void _A904_37_2 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+{
+	GTCX
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(7307, "on_quit", closed [1].it_r))(closed [1].it_r, open [1]);
+}
+
+	/* GAME_ENGINE on_key_pressed */
+void _A904_41_2_3 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+{
+	GTCX
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTVF(8322, "on_key_pressed", closed [1].it_r))(closed [1].it_r, open [1], open [2], closed [2]);
+}
+
+	/* GAME_ENGINE on_key_released */
+void _A904_42_2_3 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+{
+	GTCX
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTVF(8323, "on_key_released", closed [1].it_r))(closed [1].it_r, open [1], open [2], closed [2]);
+}
+
+	/* GAME_ENGINE on_iteration */
+void _A904_40_2 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+{
+	GTCX
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTVF(8321, "on_iteration", closed [1].it_r))(closed [1].it_r, open [1], closed [2], closed [3], closed [4]);
+}
+
+	/* THREAD thr_main */
+void A943_49 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+{
+	EIF_TYPED_VALUE u [1];
+	GTCX
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(8416, "thr_main", Current))(Current, ((u [0].type = SK_INT32), (u [0].it_i4 = arg1), u [0]));
+}
+
+	/* AUDIO_SOURCE close */
+void _A951_84_1 (void(*f_ptr) (EIF_REFERENCE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+{
+	GTCX
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(8518, "close", open [1].it_r))(open [1].it_r);
+}
+
+	/* AUDIO_SOURCE set_thread_safe */
+void _A951_83_1 (void(*f_ptr) (EIF_REFERENCE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+{
+	GTCX
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(8517, "set_thread_safe", open [1].it_r))(open [1].it_r);
+}
+
+	/* AUDIO_SOURCE update_playing */
+void _A951_79_1 (void(*f_ptr) (EIF_REFERENCE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+{
+	GTCX
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(8513, "update_playing", open [1].it_r))(open [1].it_r);
+}
+
 
 static fnptr feif_address_table[] = {
 (fnptr)0,
@@ -310,6 +367,7 @@ static fnptr feif_address_table[] = {
 (fnptr)A170_91,
 (fnptr)A170_157,
 (fnptr)A170_158,
+(fnptr)A943_49,
 };
 
 fnptr *egc_address_table_init = feif_address_table;

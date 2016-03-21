@@ -6,7 +6,7 @@ note
 
 class
 	NIVEAU
-	
+
 inherit
 	GAME_TEXTURE
 		rename
@@ -22,7 +22,7 @@ feature {NONE} -- Initialization
 		local
 			l_image: IMG_IMAGE_FILE
 		do
-			create l_image.make ("desert.png")
+			create l_image.make ("backgr2.png")
 			if l_image.is_openable then
 				l_image.open
 				if l_image.is_open then

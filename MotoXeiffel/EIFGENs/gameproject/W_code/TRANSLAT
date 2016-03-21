@@ -3132,3 +3132,425 @@ haptic	GAME_HAPTIC_DEVICE	make	F925_10087	C2\ga925.c
 haptic	GAME_HAPTIC_DEVICE	index	F925_10088	C2\ga925.c
 haptic	GAME_HAPTIC_DEVICE	name	F925_10089	C2\ga925.c
 haptic	GAME_HAPTIC_DEVICE	internal_open	F925_10090	C2\ga925.c
+audio	AUDIO_EXTERNAL	al_get_error	F939_10569	C3\au939.c
+audio	AUDIO_EXTERNAL	alc_get_error	F939_10570	C3\au939.c
+audio	AUDIO_EXTERNAL	alc_get_string	F939_10571	C3\au939.c
+audio	AUDIO_EXTERNAL	alc_create_context	F939_10572	C3\au939.c
+audio	AUDIO_EXTERNAL	alc_make_context_current	F939_10573	C3\au939.c
+audio	AUDIO_EXTERNAL	alc_get_current_context	F939_10574	C3\au939.c
+audio	AUDIO_EXTERNAL	alc_destroy_context	F939_10575	C3\au939.c
+audio	AUDIO_EXTERNAL	alc_suspend_context	F939_10576	C3\au939.c
+audio	AUDIO_EXTERNAL	alc_open_device	F939_10577	C3\au939.c
+audio	AUDIO_EXTERNAL	alc_close_device	F939_10578	C3\au939.c
+audio	AUDIO_EXTERNAL	al_get_listener_fv	F939_10579	C3\au939.c
+audio	AUDIO_EXTERNAL	al_set_listener_fv	F939_10580	C3\au939.c
+audio	AUDIO_EXTERNAL	al_get_source_fv	F939_10581	C3\au939.c
+audio	AUDIO_EXTERNAL	al_get_source_i	F939_10582	C3\au939.c
+audio	AUDIO_EXTERNAL	al_get_source_f	F939_10583	C3\au939.c
+audio	AUDIO_EXTERNAL	al_is_source	F939_10584	C3\au939.c
+audio	AUDIO_EXTERNAL	al_set_source_fv	F939_10585	C3\au939.c
+audio	AUDIO_EXTERNAL	al_set_source_f	F939_10586	C3\au939.c
+audio	AUDIO_EXTERNAL	al_gen_sources	F939_10587	C3\au939.c
+audio	AUDIO_EXTERNAL	al_delete_sources	F939_10588	C3\au939.c
+audio	AUDIO_EXTERNAL	al_gen_buffers	F939_10589	C3\au939.c
+audio	AUDIO_EXTERNAL	al_is_buffer	F939_10590	C3\au939.c
+audio	AUDIO_EXTERNAL	al_source_queue_buffers	F939_10591	C3\au939.c
+audio	AUDIO_EXTERNAL	al_source_unqueue_buffers	F939_10592	C3\au939.c
+audio	AUDIO_EXTERNAL	al_delete_buffers	F939_10593	C3\au939.c
+audio	AUDIO_EXTERNAL	al_buffer_data	F939_10594	C3\au939.c
+audio	AUDIO_EXTERNAL	al_source_play	F939_10595	C3\au939.c
+audio	AUDIO_EXTERNAL	al_source_pause	F939_10596	C3\au939.c
+audio	AUDIO_EXTERNAL	al_source_stop	F939_10597	C3\au939.c
+audio	AUDIO_EXTERNAL	al_source_rewind	F939_10598	C3\au939.c
+audio	AUDIO_EXTERNAL	alc_all_device_specifier	F939_10599	C3\au939.c
+audio	AUDIO_EXTERNAL	alc_device_specifier	F939_10600	C3\au939.c
+audio	AUDIO_EXTERNAL	alc_invalid_value	F939_10601	C3\au939.c
+audio	AUDIO_EXTERNAL	al_invalid_value	F939_10602	C3\au939.c
+audio	AUDIO_EXTERNAL	al_invalid_enum	F939_10603	C3\au939.c
+audio	AUDIO_EXTERNAL	alc_invalid_enum	F939_10604	C3\au939.c
+audio	AUDIO_EXTERNAL	al_invalid_operation	F939_10605	C3\au939.c
+audio	AUDIO_EXTERNAL	al_invalid_name	F939_10606	C3\au939.c
+audio	AUDIO_EXTERNAL	al_out_of_memory	F939_10607	C3\au939.c
+audio	AUDIO_EXTERNAL	alc_out_of_memory	F939_10608	C3\au939.c
+audio	AUDIO_EXTERNAL	alc_invalid_device	F939_10609	C3\au939.c
+audio	AUDIO_EXTERNAL	alc_invalid_context	F939_10610	C3\au939.c
+audio	AUDIO_EXTERNAL	al_no_error	F939_10611	C3\au939.c
+audio	AUDIO_EXTERNAL	alc_no_error	F939_10612	C3\au939.c
+audio	AUDIO_EXTERNAL	al_position	F939_10613	C3\au939.c
+audio	AUDIO_EXTERNAL	al_velocity	F939_10614	C3\au939.c
+audio	AUDIO_EXTERNAL	al_orientation	F939_10615	C3\au939.c
+audio	AUDIO_EXTERNAL	al_direction	F939_10616	C3\au939.c
+audio	AUDIO_EXTERNAL	al_buffers_processed	F939_10617	C3\au939.c
+audio	AUDIO_EXTERNAL	al_format_mono8	F939_10618	C3\au939.c
+audio	AUDIO_EXTERNAL	al_format_stereo8	F939_10619	C3\au939.c
+audio	AUDIO_EXTERNAL	al_format_mono16	F939_10620	C3\au939.c
+audio	AUDIO_EXTERNAL	al_format_stereo16	F939_10621	C3\au939.c
+audio	AUDIO_EXTERNAL	al_source_state	F939_10622	C3\au939.c
+audio	AUDIO_EXTERNAL	al_initial	F939_10623	C3\au939.c
+audio	AUDIO_EXTERNAL	al_playing	F939_10624	C3\au939.c
+audio	AUDIO_EXTERNAL	al_paused	F939_10625	C3\au939.c
+audio	AUDIO_EXTERNAL	al_stopped	F939_10626	C3\au939.c
+audio	AUDIO_EXTERNAL	al_gain	F939_10627	C3\au939.c
+gameproject	AFFICHABLE	make	F938_10561	C3\af938.c
+gameproject	SON	make	F935_10497	C3\so935.c
+game_shared	GAME_3D_OBJECT	x	F940_10630	C3\ga940.c
+game_shared	GAME_3D_OBJECT	set_x	F940_10631	C3\ga940.c
+game_shared	GAME_3D_OBJECT	y	F940_10632	C3\ga940.c
+game_shared	GAME_3D_OBJECT	set_y	F940_10633	C3\ga940.c
+game_shared	GAME_3D_OBJECT	z	F940_10634	C3\ga940.c
+game_shared	GAME_3D_OBJECT	set_z	F940_10635	C3\ga940.c
+thread	THREAD_ENVIRONMENT	current_thread_id	F941_10636	C3\th941.c
+thread	THREAD_ENVIRONMENT	get_current_id	F941_10637	C3\th941.c
+thread	THREAD_CONTROL	join_all	F942_10638	C3\th942.c
+thread	THREAD_CONTROL	yield	F942_10639	C3\th942.c
+thread	THREAD	make	F943_10640	C3\th943.c
+thread	THREAD	thread_id	F943_10641	C3\th943.c
+thread	THREAD	terminated	F943_10642	C3\th943.c
+thread	THREAD	launch	F943_10644	C3\th943.c
+thread	THREAD	launch_with_attributes	F943_10645	C3\th943.c
+thread	THREAD	exit	F943_10646	C3\th943.c
+thread	THREAD	sleep	F943_10647	C3\th943.c
+thread	THREAD	is_exit_supported	F943_10648	C3\th943.c
+thread	THREAD	is_launchable	F943_10649	C3\th943.c
+thread	THREAD	is_last_launch_successful	F943_10650	C3\th943.c
+thread	THREAD	join	F943_10651	C3\th943.c
+thread	THREAD	join_with_timeout	F943_10652	C3\th943.c
+thread	THREAD	thr_main	F943_10653	C3\th943.c
+thread	THREAD	launch_mutex	F943_10654	C3\th943.c
+thread	THREAD	is_last_launch_successful_cell	F943_10655	C3\th943.c
+thread	THREAD	create_thread_with_attr	F943_10656	C3\th943.c
+thread	THREAD	thread_wait	F943_10657	C3\th943.c
+thread	THREAD	thread_wait_with_timeout	F943_10658	C3\th943.c
+thread	THREAD	last_created_thread	F943_10659	C3\th943.c
+audio	AUDIO_LIBRARY_SHARED	audio_library	F944_10660	C3\au944.c
+audio	AUDIO_SOUND	last_buffer_size	F945_10662	C3\au945.c
+audio	AUDIO_OPENAL_ERROR_MANAGER	clear_error	F946_10670	C3\au946.c
+audio	AUDIO_OPENAL_ERROR_MANAGER	clear_alc_error	F946_10671	C3\au946.c
+audio	AUDIO_OPENAL_ERROR_MANAGER	read_al_error	F946_10672	C3\au946.c
+audio	AUDIO_OPENAL_ERROR_MANAGER	read_alc_error	F946_10673	C3\au946.c
+audio	AUDIO_OPENAL_ERROR_MANAGER	put_manual_error	F946_10674	C3\au946.c
+audio	AUDIO_OPENAL_ERROR_MANAGER	is_error_managable	F946_10675	C3\au946.c
+audio	AUDIO_OPENAL_ERROR_MANAGER	is_manual_error	F946_10676	C3\au946.c
+audio	AUDIO_OPENAL_ERROR_MANAGER	last_al_error_code	F946_10677	C3\au946.c
+audio	AUDIO_OPENAL_ERROR_MANAGER	last_alc_error_code	F946_10678	C3\au946.c
+audio	AUDIO_OPENAL_ERROR_MANAGER	last_error	F946_10679	C3\au946.c
+audio	AUDIO_LIBRARY_CONTROLLER	make	F947_10680	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	devices	F947_10681	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	enable_sound	F947_10682	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	disable_sound	F947_10683	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	device_specifier	F947_10684	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	listener	F947_10685	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	is_sound_enable	F947_10686	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	sound_buffer_size	F947_10687	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	set_sound_buffer_size	F947_10688	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	update	F947_10689	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	launch_in_thread	F947_10690	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	is_thread_executing	F947_10691	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	stop_thread	F947_10692	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	sources_count	F947_10693	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	sources_add	F947_10694	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	last_source_added	F947_10695	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	sources_at	F947_10696	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	sources_remove	F947_10697	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	sources_prune	F947_10698	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	sources_wipe_out	F947_10699	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	sources_has	F947_10700	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	sources	F947_10701	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	quit_library	F947_10702	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	sources_extend	F947_10703	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	device	F947_10704	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	context	F947_10705	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	internal_listener	F947_10706	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	internal_sources	F947_10707	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	must_stop_thread	F947_10708	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	is_thread_init	F947_10709	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	null	F947_10710	C3\au947.c
+audio	AUDIO_LIBRARY_CONTROLLER	execute	F947_10711	C3\au947.c
+audio	AUDIO_3D_OBJECT	set_position	F948_10712	C3\au948.c
+audio	AUDIO_3D_OBJECT	set_velocity	F948_10713	C3\au948.c
+audio	AUDIO_3D_OBJECT	position	F948_10714	C3\au948.c
+audio	AUDIO_3D_OBJECT	velocity	F948_10715	C3\au948.c
+audio	AUDIO_3D_OBJECT	set_params_3_float	F948_10717	C3\au948.c
+audio	AUDIO_3D_OBJECT	params_3_float	F948_10719	C3\au948.c
+audio	AUDIO_LISTENER	initialize	F949_10720	C3\au949.c
+audio	AUDIO_LISTENER	set_orientation	F949_10721	C3\au949.c
+audio	AUDIO_LISTENER	orientation	F949_10722	C3\au949.c
+audio	AUDIO_LISTENER	set_params_6_float	F949_10723	C3\au949.c
+audio	AUDIO_LISTENER	params_6_float	F949_10724	C3\au949.c
+audio	AUDIO_LISTENER	set_params_float_pointer_c	F949_10725	C3\au949.c
+audio	AUDIO_LISTENER	assign_params_float_pointer_c	F949_10726	C3\au949.c
+gameproject	GAME_ENGINE	make	F904_9438	C2\ga904.c
+gameproject	GAME_ENGINE	run_game	F904_9439	C2\ga904.c
+gameproject	GAME_ENGINE	on_iteration	F904_10558	C2\ga904.c
+gameproject	GAME_ENGINE	on_key_pressed	F904_10559	C2\ga904.c
+gameproject	GAME_ENGINE	on_key_released	F904_10560	C2\ga904.c
+gameproject	GAME_ENGINE	on_quit	F904_9440	C2\ga904.c
+graphic	GAME_WINDOW_BUILDER	default_create	F929_10343	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	flags	F929_10344	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_flags	F929_10345	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	is_hidden	F929_10346	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_is_hidden	F929_10347	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	enable_hidden	F929_10348	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	disable_hidden	F929_10349	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	has_border	F929_10350	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_has_border	F929_10351	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	disable_border	F929_10352	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	enable_border	F929_10353	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	is_minimized	F929_10354	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_is_minimized	F929_10355	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	enable_minimized	F929_10356	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	disable_minimized	F929_10357	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	is_maximized	F929_10358	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_is_maximized	F929_10359	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	enable_maximized	F929_10360	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	disable_maximized	F929_10361	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	is_input_grabbed	F929_10362	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_is_input_grabbed	F929_10363	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	enable_input_grabbed	F929_10364	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	disable_input_grabbed	F929_10365	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	is_resizable	F929_10366	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_is_resizable	F929_10367	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	enable_resizable	F929_10368	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	disable_resizable	F929_10369	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	is_fullscreen	F929_10370	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_is_fullscreen	F929_10371	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	enable_fullscreen	F929_10372	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	disable_fullscreen	F929_10373	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	is_fake_fullscreen	F929_10374	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_is_fake_fullscreen	F929_10375	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	enable_fake_fullscreen	F929_10376	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	disable_fake_fullscreen	F929_10377	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	title	F929_10378	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_title	F929_10379	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	is_position_x_centered	F929_10380	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_is_position_x_centered	F929_10381	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	enable_position_x_centered	F929_10382	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	disable_position_x_centered	F929_10383	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	is_position_y_centered	F929_10384	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_is_position_y_centered	F929_10385	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	enable_position_y_centered	F929_10386	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	disable_position_y_centered	F929_10387	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	is_position_centered	F929_10388	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_is_position_centered	F929_10389	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	enable_position_centered	F929_10390	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	disable_position_centered	F929_10391	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	is_position_x_undefined	F929_10392	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_is_position_x_undefined	F929_10393	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	enable_position_x_undefined	F929_10394	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	disable_position_x_undefined	F929_10395	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	is_position_y_undefined	F929_10396	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_is_position_y_undefined	F929_10397	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	enable_position_y_undefined	F929_10398	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	disable_position_y_undefined	F929_10399	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	is_position_undefined	F929_10400	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_is_position_undefined	F929_10401	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	enable_position_undefined	F929_10402	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	disable_position_undefined	F929_10403	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	position_x	F929_10404	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_position_x	F929_10405	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	position_y	F929_10406	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_position_y	F929_10407	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	position	F929_10408	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_position	F929_10409	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	width	F929_10410	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_width	F929_10411	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	height	F929_10412	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_height	F929_10413	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	dimension	F929_10414	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_dimension	F929_10415	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	display	F929_10416	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	set_display	F929_10417	C3\ga929.c
+graphic	GAME_WINDOW_BUILDER	unset_display	F929_10418	C3\ga929.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	no_default_renderer	F930_10420	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	set_no_default_renderer	F930_10421	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	enable_no_default_renderer	F930_10422	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	disable_no_default_renderer	F930_10423	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	must_renderer_support_texture_target	F930_10424	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	set_must_renderer_support_texture_target	F930_10425	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	enable_must_renderer_support_texture_target	F930_10426	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	disable_must_renderer_support_texture_target	F930_10427	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	must_renderer_synchronize_update	F930_10428	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	set_must_renderer_synchronize_update	F930_10429	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	enable_must_renderer_synchronize_update	F930_10430	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	disable_must_renderer_synchronize_update	F930_10431	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	must_renderer_be_software_rendering	F930_10432	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	set_must_renderer_be_software_rendering	F930_10433	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	enable_must_renderer_be_software_rendering	F930_10434	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	disable_must_renderer_be_software_rendering	F930_10435	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	must_renderer_be_hardware_accelerated	F930_10436	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	set_must_renderer_be_hardware_accelerated	F930_10437	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	enable_must_renderer_be_hardware_accelerated	F930_10438	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	disable_must_renderer_be_hardware_accelerated	F930_10439	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	renderer_driver	F930_10440	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	set_renderer_driver	F930_10441	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	unset_renderer_driver	F930_10442	C3\ga930.c
+graphic	GAME_WINDOW_RENDERED_BUILDER	generate_window	F930_10443	C3\ga930.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	no_default_renderer	F931_10420	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	set_no_default_renderer	F931_10421	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	enable_no_default_renderer	F931_10422	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	disable_no_default_renderer	F931_10423	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	must_renderer_support_texture_target	F931_10424	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	set_must_renderer_support_texture_target	F931_10425	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	enable_must_renderer_support_texture_target	F931_10426	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	disable_must_renderer_support_texture_target	F931_10427	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	must_renderer_synchronize_update	F931_10428	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	set_must_renderer_synchronize_update	F931_10429	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	enable_must_renderer_synchronize_update	F931_10430	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	disable_must_renderer_synchronize_update	F931_10431	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	must_renderer_be_software_rendering	F931_10432	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	set_must_renderer_be_software_rendering	F931_10433	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	enable_must_renderer_be_software_rendering	F931_10434	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	disable_must_renderer_be_software_rendering	F931_10435	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	must_renderer_be_hardware_accelerated	F931_10436	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	set_must_renderer_be_hardware_accelerated	F931_10437	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	enable_must_renderer_be_hardware_accelerated	F931_10438	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	disable_must_renderer_be_hardware_accelerated	F931_10439	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	renderer_driver	F931_10440	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	set_renderer_driver	F931_10441	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	unset_renderer_driver	F931_10442	C3\ga931.c
+graphic	reference GAME_WINDOW_RENDERED_BUILDER	generate_window	F931_10443	C3\ga931.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	name	F932_4834	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	generic_parameter_type	F932_4835	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	type_id	F932_4836	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	hash_code	F932_4837	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	generic_parameter_count	F932_4838	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	has_default	F932_4839	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	is_expanded	F932_4840	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	is_attached	F932_4841	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	is_equal	F932_4842	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	is_strictly_conforming_to	F932_4843	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	is_conforming_to	F932_4844	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	adapt	F932_4845	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	attempted	F932_4846	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	attempt	F932_4847	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	default_detachable_value	F932_4848	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	default	F932_4849	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	out	F932_4850	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	debug_output	F932_4851	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	plus	F932_4852	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	same_string	F932_4853	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	is_case_insensitive_equal	F932_4854	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	as_lower	F932_4855	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	as_upper	F932_4856	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	to_string_8	F932_4857	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	to_string_32	F932_4858	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	internal_name	F932_4859	C3\ty932.c
+elks	TYPE [GAME_WINDOW_RENDERED_BUILDER]	runtime_name	F932_4860	C3\ty932.c
+thread	MUTEX	make	F950_10727	C3\mu950.c
+thread	MUTEX	owner	F950_10728	C3\mu950.c
+thread	MUTEX	is_set	F950_10729	C3\mu950.c
+thread	MUTEX	lock	F950_10730	C3\mu950.c
+thread	MUTEX	try_lock	F950_10731	C3\mu950.c
+thread	MUTEX	unlock	F950_10732	C3\mu950.c
+thread	MUTEX	destroy	F950_10733	C3\mu950.c
+thread	MUTEX	trylock	F950_10734	C3\mu950.c
+thread	MUTEX	has_locked	F950_10735	C3\mu950.c
+thread	MUTEX	dispose	F950_10736	C3\mu950.c
+thread	MUTEX	mutex_pointer	F950_10737	C3\mu950.c
+thread	MUTEX	eif_thr_mutex_create	F950_10738	C3\mu950.c
+thread	MUTEX	eif_thr_mutex_lock	F950_10739	C3\mu950.c
+thread	MUTEX	eif_thr_mutex_unlock	F950_10740	C3\mu950.c
+thread	MUTEX	eif_thr_mutex_trylock	F950_10741	C3\mu950.c
+thread	MUTEX	eif_thr_mutex_destroy	F950_10742	C3\mu950.c
+audio	AUDIO_SOURCE	make	F951_10743	C3\au951.c
+audio	AUDIO_SOURCE	initialize_buffers	F951_10744	C3\au951.c
+audio	AUDIO_SOURCE	buffer_size	F951_10745	C3\au951.c
+audio	AUDIO_SOURCE	set_buffer_size	F951_10746	C3\au951.c
+audio	AUDIO_SOURCE	play	F951_10747	C3\au951.c
+audio	AUDIO_SOURCE	pause	F951_10748	C3\au951.c
+audio	AUDIO_SOURCE	stop	F951_10749	C3\au951.c
+audio	AUDIO_SOURCE	is_playing	F951_10750	C3\au951.c
+audio	AUDIO_SOURCE	is_pause	F951_10751	C3\au951.c
+audio	AUDIO_SOURCE	is_stop	F951_10752	C3\au951.c
+audio	AUDIO_SOURCE	is_initial	F951_10753	C3\au951.c
+audio	AUDIO_SOURCE	gain	F951_10754	C3\au951.c
+audio	AUDIO_SOURCE	set_gain	F951_10755	C3\au951.c
+audio	AUDIO_SOURCE	queue_sound_loop	F951_10756	C3\au951.c
+audio	AUDIO_SOURCE	queue_sound	F951_10757	C3\au951.c
+audio	AUDIO_SOURCE	queue_sound_infinite_loop	F951_10758	C3\au951.c
+audio	AUDIO_SOURCE	update_playing	F951_10759	C3\au951.c
+audio	AUDIO_SOURCE	set_direction	F951_10760	C3\au951.c
+audio	AUDIO_SOURCE	direction	F951_10761	C3\au951.c
+audio	AUDIO_SOURCE	is_open	F951_10762	C3\au951.c
+audio	AUDIO_SOURCE	set_thread_safe	F951_10763	C3\au951.c
+audio	AUDIO_SOURCE	close	F951_10764	C3\au951.c
+audio	AUDIO_SOURCE	processed_buffers_number	F951_10765	C3\au951.c
+audio	AUDIO_SOURCE	queue_buffer	F951_10766	C3\au951.c
+audio	AUDIO_SOURCE	unqueue_buffer	F951_10767	C3\au951.c
+audio	AUDIO_SOURCE	param_int_c	F951_10768	C3\au951.c
+audio	AUDIO_SOURCE	param_float_c	F951_10769	C3\au951.c
+audio	AUDIO_SOURCE	set_param_float_c	F951_10770	C3\au951.c
+audio	AUDIO_SOURCE	set_params_float_pointer_c	F951_10771	C3\au951.c
+audio	AUDIO_SOURCE	assign_params_float_pointer_c	F951_10772	C3\au951.c
+audio	AUDIO_SOURCE	dispose	F951_10773	C3\au951.c
+audio	AUDIO_SOURCE	sound_al_buffer	F951_10774	C3\au951.c
+audio	AUDIO_SOURCE	buffer_tail	F951_10775	C3\au951.c
+audio	AUDIO_SOURCE	buffer_head	F951_10776	C3\au951.c
+audio	AUDIO_SOURCE	index	F951_10777	C3\au951.c
+audio	AUDIO_SOURCE	temp_buffer	F951_10778	C3\au951.c
+audio	AUDIO_SOURCE	sound_queued	F951_10779	C3\au951.c
+audio	AUDIO_SOURCE	nb_buffer	F951_10780	C3\au951.c
+audio	AUDIO_SOURCE	is_thread_safe	F951_10781	C3\au951.c
+audio	AUDIO_SOURCE	g_mutex	F951_10782	C3\au951.c
+game_image_file	IMG_IMAGE_FILE	make	F936_10498	C3\im936.c
+game_image_file	IMG_IMAGE_FILE	is_cur	F936_10499	C3\im936.c
+game_image_file	IMG_IMAGE_FILE	is_ico	F936_10500	C3\im936.c
+game_image_file	IMG_IMAGE_FILE	is_bmp	F936_10501	C3\im936.c
+game_image_file	IMG_IMAGE_FILE	is_pnm	F936_10502	C3\im936.c
+game_image_file	IMG_IMAGE_FILE	is_xpm	F936_10503	C3\im936.c
+game_image_file	IMG_IMAGE_FILE	is_xcf	F936_10504	C3\im936.c
+game_image_file	IMG_IMAGE_FILE	is_pcx	F936_10505	C3\im936.c
+game_image_file	IMG_IMAGE_FILE	is_gif	F936_10506	C3\im936.c
+game_image_file	IMG_IMAGE_FILE	is_jpg	F936_10507	C3\im936.c
+game_image_file	IMG_IMAGE_FILE	is_tif	F936_10508	C3\im936.c
+game_image_file	IMG_IMAGE_FILE	is_png	F936_10509	C3\im936.c
+game_image_file	IMG_IMAGE_FILE	is_lbm	F936_10510	C3\im936.c
+game_image_file	IMG_IMAGE_FILE	is_xv	F936_10511	C3\im936.c
+game_image_file	IMG_IMAGE_FILE	is_openable	F936_10512	C3\im936.c
+game_image_file	IMG_IMAGE_FILE	open	F936_10513	C3\im936.c
+game_image_file	IMG_IMAGE_FILE	rwop	F936_10514	C3\im936.c
+game_image_file	IMG_IMAGE_FILE	dispose	F936_10515	C3\im936.c
+gameproject	MOTO	make	F934_10496	C3\mo934.c
+gameproject	MOTO	initialize_animation_coordinate	F934_10520	C3\mo934.c
+gameproject	MOTO	update	F934_10521	C3\mo934.c
+gameproject	MOTO	go_left	F934_10522	C3\mo934.c
+gameproject	MOTO	go_right	F934_10523	C3\mo934.c
+gameproject	MOTO	stop_left	F934_10524	C3\mo934.c
+gameproject	MOTO	stop_right	F934_10525	C3\mo934.c
+gameproject	MOTO	facing_left	F934_10526	C3\mo934.c
+gameproject	MOTO	going_left	F934_10527	C3\mo934.c
+gameproject	MOTO	going_right	F934_10528	C3\mo934.c
+gameproject	MOTO	x	F934_10529	C3\mo934.c
+gameproject	MOTO	y	F934_10530	C3\mo934.c
+gameproject	MOTO	set_x	F934_10531	C3\mo934.c
+gameproject	MOTO	set_y	F934_10532	C3\mo934.c
+gameproject	MOTO	sub_image_x	F934_10533	C3\mo934.c
+gameproject	MOTO	sub_image_y	F934_10534	C3\mo934.c
+gameproject	MOTO	sub_image_width	F934_10535	C3\mo934.c
+gameproject	MOTO	sub_image_height	F934_10536	C3\mo934.c
+gameproject	MOTO	animation_coordinates	F934_10537	C3\mo934.c
+gameproject	MOTO	old_timestamp	F934_10538	C3\mo934.c
+gameproject	MOTO	movement_delta	F934_10539	C3\mo934.c
+gameproject	MOTO	animation_delta	F934_10540	C3\mo934.c
+gameproject	NIVEAU	make	F937_10544	C3\ni937.c
+thread	THREAD_ATTRIBUTES	make	F952_10783	C3\th952.c
+thread	THREAD_ATTRIBUTES	set_priority	F952_10784	C3\th952.c
+thread	THREAD_ATTRIBUTES	set_stack_size	F952_10785	C3\th952.c
+thread	THREAD_ATTRIBUTES	priority	F952_10786	C3\th952.c
+thread	THREAD_ATTRIBUTES	stack_size	F952_10787	C3\th952.c
+thread	THREAD_ATTRIBUTES	default_priority	F952_10788	C3\th952.c
+thread	THREAD_ATTRIBUTES	min_priority	F952_10789	C3\th952.c
+thread	THREAD_ATTRIBUTES	max_priority	F952_10790	C3\th952.c
+thread	THREAD_ATTRIBUTES	c_set_priority	F952_10791	C3\th952.c
+thread	THREAD_ATTRIBUTES	c_set_stack_size	F952_10792	C3\th952.c
+thread	THREAD_ATTRIBUTES	c_priority	F952_10793	C3\th952.c
+thread	THREAD_ATTRIBUTES	c_stack_size	F952_10794	C3\th952.c
+thread	THREAD_ATTRIBUTES	structure_size	F952_10795	C3\th952.c
+thread	THREAD_ATTRIBUTES	set_policy	F952_10796	C3\th952.c
+thread	THREAD_ATTRIBUTES	set_detached	F952_10797	C3\th952.c
+thread	THREAD_ATTRIBUTES	scheduling_policy	F952_10798	C3\th952.c
+thread	THREAD_ATTRIBUTES	detached	F952_10799	C3\th952.c
+thread	THREAD_ATTRIBUTES	default_policy	F952_10800	C3\th952.c
+thread	THREAD_ATTRIBUTES	other	F952_10801	C3\th952.c
+thread	THREAD_ATTRIBUTES	fifo	F952_10802	C3\th952.c
+thread	THREAD_ATTRIBUTES	round_robin	F952_10803	C3\th952.c

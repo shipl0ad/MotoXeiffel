@@ -246,7 +246,7 @@ void F904_9439 (EIF_REFERENCE Current)
 		RTNHOOK(10,1);
 		loc3 = (EIF_REFERENCE) RTCCL(tr1);
 		RTHOOK(11);
-		ui4_1 = ((EIF_INTEGER_32) 150L);
+		ui4_1 = ((EIF_INTEGER_32) 300L);
 		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(8296, "set_y", loc3))(loc3, ui4_1x);
 		RTHOOK(12);
 		ui4_1 = ((EIF_INTEGER_32) 200L);
@@ -463,6 +463,8 @@ void F904_10558 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE a
 #define arg2 arg2x.it_r
 #define arg3 arg3x.it_r
 #define arg4 arg4x.it_r
+	EIF_TYPED_VALUE up1x = {{0}, SK_POINTER};
+#define up1 up1x.it_p
 	EIF_TYPED_VALUE ur1x = {{0}, SK_REF};
 #define ur1 ur1x.it_r
 	EIF_TYPED_VALUE ur8_1x = {{0}, SK_REAL64};
@@ -613,14 +615,19 @@ void F904_10558 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE a
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTVF(7379, "draw_sub_texture_with_scale_rotation_and_mirror", arg4))(arg4, ur1x, ui4_1x, ui4_2x, ui4_3x, ui4_4x, ui4_5x, ui4_6x, ui4_7x, ui4_8x, ui4_9x, ui4_10x, ur8_1x, ub1x, ub2x);
 	RTHOOK(10);
 	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(7370, "present", arg4))(arg4);
+	RTHOOK(11);
+	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8423, Dtype(Current)))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	RTNHOOK(11,1);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(8449, "update", tr1))(tr1);
 	RTVI(Current, RTAL);
 	RTRS;
-	RTHOOK(11);
+	RTHOOK(12);
 	RTDBGLE;
 	RTMD(0);
 	RTLE;
 	RTLO(6);
 	RTEE;
+#undef up1
 #undef ur1
 #undef ur8_1
 #undef ui4_1

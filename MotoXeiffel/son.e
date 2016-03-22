@@ -7,15 +7,21 @@ note
 class
 	SON
 
+inherit
+	AUDIO_LIBRARY_SHARED	-- To use `audio_library'
+	EXCEPTIONS
+
 create
 	make
 
 feature {NONE} -- Initialization
 
 	make
-			-- Initialization for `Current'.
+			-- Run application.
 		do
-			
+
 		end
+
+
 
 end

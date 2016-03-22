@@ -3729,8 +3729,8 @@ static EIF_TYPE_INDEX ptf933[] = {908,0xFFFF};
 static struct eif_par_types par933 = {933, ptf933, (uint16) 1, (uint16) 0, (char) 0};
 
 /* SON */
-static EIF_TYPE_INDEX ptf934[] = {0,0xFFFF};
-static struct eif_par_types par934 = {934, ptf934, (uint16) 1, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf934[] = {943,0xFFF7,61,0xFFFF};
+static struct eif_par_types par934 = {934, ptf934, (uint16) 2, (uint16) 0, (char) 0};
 
 /* IMG_IMAGE_FILE */
 static EIF_TYPE_INDEX ptf935[] = {911,0xFFF7,878,0xFFFF};

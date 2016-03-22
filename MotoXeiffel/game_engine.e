@@ -9,7 +9,6 @@ class
 
 inherit
 	GAME_LIBRARY_SHARED		-- To use `game_library'
-	AUDIO_LIBRARY_SHARED	-- To use `audio_library'
 	IMG_LIBRARY_SHARED		-- To use `image_file_library'
 
 create
@@ -89,6 +88,7 @@ feature {NONE} -- Implementation
 
 			-- Update modification in the screen
 			l_renderer.present
+
 		end
 
 
@@ -100,6 +100,10 @@ feature {NONE} -- Implementation
 					a_moto.go_right(a_timestamp)
 				elseif a_key_state.is_left then
 					a_moto.go_left(a_timestamp)
+				elseif a_key_state.is_up then
+					a_moto.go_up(a_timestamp)
+				elseif a_key_state.is_down then
+					a_moto.go_down(a_timestamp)
 				end
 			end
 		end
@@ -112,6 +116,10 @@ feature {NONE} -- Implementation
 					a_moto.stop_right
 				elseif a_key_state.is_left then
 					a_moto.stop_left
+				elseif a_key_state.is_up then
+					a_moto.stop_up
+				elseif a_key_state.is_down then
+					a_moto.stop_down
 				end
 			end
 		end

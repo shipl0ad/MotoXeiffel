@@ -877,7 +877,7 @@ EIF_TYPED_VALUE F934_10539 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_UINT32;
-	r.it_n4 = (EIF_NATURAL_32) ((EIF_NATURAL_32) 10U);
+	r.it_n4 = (EIF_NATURAL_32) ((EIF_NATURAL_32) 5U);
 	return r;
 }
 
@@ -886,7 +886,7 @@ EIF_TYPED_VALUE F934_10540 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_UINT32;
-	r.it_n4 = (EIF_NATURAL_32) ((EIF_NATURAL_32) 100U);
+	r.it_n4 = (EIF_NATURAL_32) ((EIF_NATURAL_32) 50U);
 	return r;
 }
 

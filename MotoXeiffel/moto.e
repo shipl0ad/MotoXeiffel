@@ -80,6 +80,23 @@ feature -- Access
 					old_timestamp := old_timestamp + (l_delta_time // movement_delta) * movement_delta
 				end
 			end
+			if going_up or going_down then
+				l_coordinate := animation_coordinates.at ((((a_timestamp // animation_delta) \\
+												animation_coordinates.count.to_natural_32) + 1).to_integer_32)
+				sub_image_x := l_coordinate.x
+				sub_image_y := l_coordinate.y
+				l_delta_time := a_timestamp - old_timestamp
+				if l_delta_time // movement_delta > 0 then
+					if going_down then
+						facing_left := False
+						y := y + (l_delta_time // movement_delta).to_integer_32
+					else
+						facing_left := True
+						y := y - (l_delta_time // movement_delta).to_integer_32
+					end
+					old_timestamp := old_timestamp + (l_delta_time // movement_delta) * movement_delta
+				end
+			end
 		end
 
 	go_left(a_timestamp:NATURAL_32)
@@ -94,6 +111,20 @@ feature -- Access
 		do
 			old_timestamp := a_timestamp
 			going_right := True
+		end
+
+	go_up(a_timestamp:NATURAL_32)
+			-- Make `Current' starting to move up
+		do
+			old_timestamp := a_timestamp
+			going_up := True
+		end
+
+	go_down(a_timestamp:NATURAL_32)
+			-- Make `Current' starting to move up
+		do
+			old_timestamp := a_timestamp
+			going_down := True
 		end
 
 	stop_left
@@ -116,12 +147,38 @@ feature -- Access
 			end
 		end
 
+	stop_up
+			-- Make `Current' stop moving to the up
+		do
+			going_up := False
+			if not going_down then
+				sub_image_x := animation_coordinates.first.x	-- Place the image standing still
+				sub_image_y := animation_coordinates.first.y	-- Place the image standing still
+			end
+		end
+
+	stop_down
+			-- Make `Current' stop moving to the up
+		do
+			going_down := False
+			if not going_up then
+				sub_image_x := animation_coordinates.first.x	-- Place the image standing still
+				sub_image_y := animation_coordinates.first.y	-- Place the image standing still
+			end
+		end
+
 	facing_left:BOOLEAN
 
 	going_left:BOOLEAN
 			-- Is `Current' moving left
 
 	going_right:BOOLEAN
+			-- Is `Current' moving right
+
+	going_up:BOOLEAN
+			-- Is `Current' moving right
+
+	going_down:BOOLEAN
 			-- Is `Current' moving right
 
 	x:INTEGER assign set_x

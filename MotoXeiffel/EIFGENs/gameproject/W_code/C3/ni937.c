@@ -78,7 +78,7 @@ void F937_10544 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTHOOK(1);
 	RTDBGAL(Current, 1, 0xF80003A7, 0, 0); /* loc1 */
 	tr1 = RTLN(eif_new_type(935, 0x01).id);
-	tr2 = RTMS_EX_H("desert.png",10,112007271);
+	tr2 = RTMS_EX_H("backgr2.png",11,1474294119);
 	ur1 = tr2;
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(8267, Dtype(tr1)))(tr1, ur1x);
 	RTNHOOK(1,1);

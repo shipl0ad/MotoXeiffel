@@ -91,7 +91,6 @@ static const struct desc_info desc_899[] = {
 	{EIF_GENERIC(egt_19_899), 2909, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_20_899), 2915, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_21_899), 0x00, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 0xFFFFFFFF, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 15057, 0xFFFFFFFF},
 };
 void Init899(void)

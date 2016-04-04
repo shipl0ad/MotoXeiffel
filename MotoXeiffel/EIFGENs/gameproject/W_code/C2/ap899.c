@@ -10,7 +10,7 @@
 extern "C" {
 #endif
 
-extern void F899_10134(EIF_REFERENCE);
+extern void F899_9356(EIF_REFERENCE);
 extern void EIF_Minit899(void);
 
 #ifdef __cplusplus
@@ -33,7 +33,7 @@ extern "C" {
 #endif
 
 /* {APPLICATION}.make */
-void F899_10134 (EIF_REFERENCE Current)
+void F899_9356 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "make";

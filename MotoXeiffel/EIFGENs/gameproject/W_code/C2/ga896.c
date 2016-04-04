@@ -106,7 +106,7 @@ void F896_9352 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE ar
 	RTME(dtype, 0);
 	RTGC;
 	RTDBGEAA(895, Current, 15052);
-	RTCC(arg1, 895, l_feature_name, 1, eif_new_type(869, 0x01), 0x01);
+	RTCC(arg1, 895, l_feature_name, 1, eif_new_type(886, 0x01), 0x01);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
@@ -138,15 +138,15 @@ body:;
 	RTDBGAL(Current, 1, 0x38000000, 1, 0); /* loc1 */
 	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7231, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(5,1);
-	tp1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7541, "item", tr1))(tr1)).it_p);
+	tp1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7617, "item", tr1))(tr1)).it_p);
 	up1 = tp1;
-	tu1_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6415, "red", arg1))(arg1)).it_n1);
+	tu1_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7197, "red", arg1))(arg1)).it_n1);
 	uu1_1 = tu1_1;
-	tu1_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6416, "green", arg1))(arg1)).it_n1);
+	tu1_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7198, "green", arg1))(arg1)).it_n1);
 	uu1_2 = tu1_2;
-	tu1_3 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6417, "blue", arg1))(arg1)).it_n1);
+	tu1_3 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7199, "blue", arg1))(arg1)).it_n1);
 	uu1_3 = tu1_3;
-	tu1_4 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(6418, "alpha", arg1))(arg1)).it_n1);
+	tu1_4 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7200, "alpha", arg1))(arg1)).it_n1);
 	uu1_4 = tu1_4;
 	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5012, 862))(Current, up1x, uu1_1x, uu1_2x, uu1_3x, uu1_4x)).it_n4);
 	RTHOOK(6);

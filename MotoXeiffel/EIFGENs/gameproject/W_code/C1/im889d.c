@@ -22,7 +22,7 @@ static const EIF_TYPE_INDEX egt_9_889 [] = {0xFF01,220,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_889 [] = {0xFF01,220,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_889 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_889 [] = {0xFF01,888,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_889 [] = {0xFF01,879,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_889 [] = {0xFF01,877,0xFFFF};
 
 
 static const struct desc_info desc_889[] = {
@@ -64,7 +64,7 @@ void Init889(void)
 {
 	IDSC(desc_889, 0, 888);
 	IDSC(desc_889 + 1, 1, 888);
-	IDSC(desc_889 + 32, 345, 888);
+	IDSC(desc_889 + 32, 353, 888);
 }
 
 

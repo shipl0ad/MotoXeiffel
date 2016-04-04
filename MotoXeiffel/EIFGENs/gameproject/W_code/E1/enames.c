@@ -4977,18 +4977,20 @@ char *names864 [] =
 
 char *names865 [] =
 {
-"is_open",
-"has_error",
+"id",
 };
 
 char *names866 [] =
 {
+"state",
 "id",
+"x",
+"y",
 };
 
 char *names867 [] =
 {
-"state",
+"button_id",
 "id",
 "x",
 "y",
@@ -5004,42 +5006,18 @@ char *names868 [] =
 
 char *names869 [] =
 {
-"button_id",
-"id",
-"x",
-"y",
-};
-
-char *names870 [] =
-{
-"red_internal",
-"green_internal",
-"blue_internal",
-"alpha_internal",
-};
-
-char *names871 [] =
-{
-"red_internal",
-"green_internal",
-"blue_internal",
-"alpha_internal",
-};
-
-char *names872 [] =
-{
 "message",
 "has_error",
 };
 
-char *names873 [] =
+char *names870 [] =
 {
 "manual_error",
 "has_error",
 "is_manual_error",
 };
 
-char *names874 [] =
+char *names871 [] =
 {
 "manual_error",
 "haptic",
@@ -5049,27 +5027,7 @@ char *names874 [] =
 "index",
 };
 
-char *names875 [] =
-{
-"manual_error",
-"has_error",
-"is_manual_error",
-"virtual_code",
-"physical_code",
-};
-
-char *names876 [] =
-{
-"manual_error",
-"has_error",
-"is_manual_error",
-"repeat",
-"modifier",
-"virtual_code",
-"physical_code",
-};
-
-char *names877 [] =
+char *names872 [] =
 {
 "manual_error",
 "has_error",
@@ -5080,7 +5038,7 @@ char *names877 [] =
 "index",
 };
 
-char *names878 [] =
+char *names873 [] =
 {
 "manual_error",
 "has_error",
@@ -5091,6 +5049,49 @@ char *names878 [] =
 "relative_x",
 "relative_y",
 "index",
+};
+
+char *names874 [] =
+{
+"manual_error",
+"has_error",
+"is_manual_error",
+"virtual_code",
+"physical_code",
+};
+
+char *names875 [] =
+{
+"manual_error",
+"has_error",
+"is_manual_error",
+"repeat",
+"modifier",
+"virtual_code",
+"physical_code",
+};
+
+char *names876 [] =
+{
+"manual_error",
+"has_error",
+"is_manual_error",
+"last_loaded_dollar_gesture_template",
+"last_saved_dollar_gesture_template",
+};
+
+char *names877 [] =
+{
+"manual_error",
+"has_error",
+"is_manual_error",
+};
+
+char *names878 [] =
+{
+"manual_error",
+"has_error",
+"is_manual_error",
 };
 
 char *names879 [] =
@@ -5105,33 +5106,30 @@ char *names880 [] =
 "manual_error",
 "has_error",
 "is_manual_error",
+"is_running",
 };
 
 char *names881 [] =
 {
 "manual_error",
-"has_error",
-"is_manual_error",
-"last_loaded_dollar_gesture_template",
-"last_saved_dollar_gesture_template",
-};
-
-char *names882 [] =
-{
-"manual_error",
-"has_error",
-"is_manual_error",
-};
-
-char *names883 [] =
-{
-"manual_error",
+"finger_motion_actions_internal",
+"finger_motion_events_callback",
+"finger_touched_actions_internal",
+"finger_touched_events_callback",
+"finger_released_actions_internal",
+"finger_released_events_callback",
+"fingers_gesture_actions_internal",
+"fingers_gesture_events_callback",
+"dollar_gesture_actions_internal",
+"dollar_gesture_events_callback",
+"dollar_record_actions_internal",
+"dollar_record_events_callback",
 "has_error",
 "is_manual_error",
 "is_running",
 };
 
-char *names884 [] =
+char *names882 [] =
 {
 "manual_error",
 "axis_motion_actions_internal",
@@ -5151,7 +5149,25 @@ char *names884 [] =
 "is_running",
 };
 
-char *names885 [] =
+char *names883 [] =
+{
+"manual_error",
+"quit_signal_actions_internal",
+"quit_signal_actions_callback",
+"iteration_actions_internal",
+"iteration_actions_callback",
+"joystick_founded_actions_internal",
+"joystick_founded_actions_callback",
+"joystick_removed_actions_internal",
+"joystick_removed_actions_callback",
+"file_dropped_actions_internal",
+"file_dropped_actions_callback",
+"has_error",
+"is_manual_error",
+"is_running",
+};
+
+char *names884 [] =
 {
 "manual_error",
 "show_actions_internal",
@@ -5190,45 +5206,7 @@ char *names885 [] =
 "is_running",
 };
 
-char *names886 [] =
-{
-"manual_error",
-"finger_motion_actions_internal",
-"finger_motion_events_callback",
-"finger_touched_actions_internal",
-"finger_touched_events_callback",
-"finger_released_actions_internal",
-"finger_released_events_callback",
-"fingers_gesture_actions_internal",
-"fingers_gesture_events_callback",
-"dollar_gesture_actions_internal",
-"dollar_gesture_events_callback",
-"dollar_record_actions_internal",
-"dollar_record_events_callback",
-"has_error",
-"is_manual_error",
-"is_running",
-};
-
-char *names887 [] =
-{
-"manual_error",
-"quit_signal_actions_internal",
-"quit_signal_actions_callback",
-"iteration_actions_internal",
-"iteration_actions_callback",
-"joystick_founded_actions_internal",
-"joystick_founded_actions_callback",
-"joystick_removed_actions_internal",
-"joystick_removed_actions_callback",
-"file_dropped_actions_internal",
-"file_dropped_actions_callback",
-"has_error",
-"is_manual_error",
-"is_running",
-};
-
-char *names888 [] =
+char *names885 [] =
 {
 "manual_error",
 "quit_signal_actions_internal",
@@ -5256,6 +5234,28 @@ char *names888 [] =
 "ticks_per_iteration",
 "last_loaded_dollar_gesture_template",
 "last_saved_dollar_gesture_template",
+};
+
+char *names886 [] =
+{
+"is_open",
+"has_error",
+};
+
+char *names887 [] =
+{
+"red_internal",
+"green_internal",
+"blue_internal",
+"alpha_internal",
+};
+
+char *names888 [] =
+{
+"red_internal",
+"green_internal",
+"blue_internal",
+"alpha_internal",
 };
 
 char *names890 [] =
@@ -5347,26 +5347,6 @@ char *names900 [] =
 char *names901 [] =
 {
 "manual_error",
-"internal_game_library",
-"image",
-"internal_pixels",
-"has_error",
-"is_manual_error",
-"is_open",
-};
-
-char *names902 [] =
-{
-"manual_error",
-"internal_game_library",
-"has_error",
-"is_manual_error",
-"index",
-};
-
-char *names903 [] =
-{
-"manual_error",
 "finger_motion_actions_internal",
 "finger_motion_events_callback",
 "finger_touched_actions_internal",
@@ -5389,12 +5369,99 @@ char *names903 [] =
 "index",
 };
 
+char *names902 [] =
+{
+"manual_error",
+"internal_game_library",
+"has_error",
+"is_manual_error",
+"index",
+};
+
+char *names903 [] =
+{
+"manual_error",
+"internal_game_library",
+"image",
+"internal_pixels",
+"has_error",
+"is_manual_error",
+"is_open",
+};
+
 char *names904 [] =
 {
 "internal_game_library",
 };
 
 char *names905 [] =
+{
+"internal_game_library",
+"title",
+"display",
+"is_position_x_centered",
+"is_position_y_centered",
+"is_position_x_undefined",
+"is_position_y_undefined",
+"flags",
+"position_x",
+"position_y",
+"width",
+"height",
+};
+
+char *names906 [] =
+{
+"internal_game_library",
+"title",
+"display",
+"renderer_driver",
+"is_position_x_centered",
+"is_position_y_centered",
+"is_position_x_undefined",
+"is_position_y_undefined",
+"no_default_renderer",
+"must_renderer_support_texture_target",
+"must_renderer_synchronize_update",
+"must_renderer_be_software_rendering",
+"must_renderer_be_hardware_accelerated",
+"flags",
+"position_x",
+"position_y",
+"width",
+"height",
+};
+
+char *names907 [] =
+{
+"internal_game_library",
+"title",
+"display",
+"renderer_driver",
+"is_position_x_centered",
+"is_position_y_centered",
+"is_position_x_undefined",
+"is_position_y_undefined",
+"no_default_renderer",
+"must_renderer_support_texture_target",
+"must_renderer_synchronize_update",
+"must_renderer_be_software_rendering",
+"must_renderer_be_hardware_accelerated",
+"flags",
+"position_x",
+"position_y",
+"width",
+"height",
+};
+
+char *names908 [] =
+{
+"managed_pointer",
+"shared",
+"internal_item",
+};
+
+char *names909 [] =
 {
 "managed_pointer",
 "manual_error",
@@ -5408,56 +5475,13 @@ char *names905 [] =
 "internal_item",
 };
 
-char *names906 [] =
-{
-"managed_pointer",
-"shared",
-"internal_item",
-};
-
-char *names907 [] =
-{
-"managed_pointer",
-"manual_error",
-"shared",
-"has_error",
-"is_manual_error",
-"internal_item",
-};
-
-char *names908 [] =
-{
-"managed_pointer",
-"manual_error",
-"shared",
-"has_error",
-"is_manual_error",
-"index",
-"internal_item",
-};
-
-char *names909 [] =
-{
-"managed_pointer",
-"manual_error",
-"internal_item_exists",
-"has_error",
-"is_manual_error",
-"shared",
-"is_locked",
-"internal_item",
-};
-
 char *names910 [] =
 {
 "managed_pointer",
 "manual_error",
-"shared_structure",
-"object_comparison",
+"shared",
 "has_error",
 "is_manual_error",
-"shared",
-"index",
 "internal_item",
 };
 
@@ -5465,33 +5489,14 @@ char *names911 [] =
 {
 "managed_pointer",
 "manual_error",
-"target",
-"original_target",
 "shared",
 "has_error",
 "is_manual_error",
-"is_dispose",
+"index",
 "internal_item",
 };
 
 char *names912 [] =
-{
-"manual_error",
-"internal_game_library",
-"is_open",
-"has_ressource_error",
-"has_error",
-"is_manual_error",
-"must_free",
-"item",
-};
-
-char *names913 [] =
-{
-"item",
-};
-
-char *names914 [] =
 {
 "manual_error",
 "axis_motion_actions_internal",
@@ -5516,7 +5521,7 @@ char *names914 [] =
 "item",
 };
 
-char *names915 [] =
+char *names913 [] =
 {
 "managed_pointer",
 "manual_error",
@@ -5526,13 +5531,34 @@ char *names915 [] =
 "internal_item",
 };
 
-char *names916 [] =
+char *names914 [] =
 {
+"item",
+};
+
+char *names915 [] =
+{
+"managed_pointer",
 "manual_error",
+"shared_structure",
+"object_comparison",
 "has_error",
 "is_manual_error",
-"must_free_structure",
-"internal_index",
+"shared",
+"index",
+"internal_item",
+};
+
+char *names916 [] =
+{
+"managed_pointer",
+"manual_error",
+"target",
+"original_target",
+"shared",
+"has_error",
+"is_manual_error",
+"is_dispose",
 "internal_item",
 };
 
@@ -5547,6 +5573,41 @@ char *names917 [] =
 };
 
 char *names918 [] =
+{
+"manual_error",
+"has_error",
+"is_manual_error",
+"must_free_structure",
+"internal_index",
+"internal_item",
+};
+
+char *names919 [] =
+{
+"manual_error",
+"internal_game_library",
+"has_error",
+"is_manual_error",
+"is_open",
+"has_ressource_error",
+"must_free",
+"item",
+};
+
+char *names920 [] =
+{
+"manual_error",
+"internal_game_library",
+"has_error",
+"is_manual_error",
+"is_open",
+"has_ressource_error",
+"must_free",
+"item",
+"rwop",
+};
+
+char *names921 [] =
 {
 "managed_pointer",
 "manual_error",
@@ -5583,7 +5644,7 @@ char *names918 [] =
 "internal_item",
 };
 
-char *names919 [] =
+char *names922 [] =
 {
 "manual_error",
 "show_actions_internal",
@@ -5624,49 +5685,7 @@ char *names919 [] =
 "item",
 };
 
-char *names920 [] =
-{
-"manual_error",
-"show_actions_internal",
-"expose_actions_internal",
-"hide_actions_internal",
-"move_actions_internal",
-"resize_actions_internal",
-"size_change_actions_internal",
-"minimize_actions_internal",
-"maximize_actions_internal",
-"restore_actions_internal",
-"mouse_enter_actions_internal",
-"mouse_leave_actions_internal",
-"keyboard_focus_gain_actions_internal",
-"keyboard_focus_lost_actions_internal",
-"close_request_actions_internal",
-"window_events_callback",
-"key_pressed_actions_internal",
-"key_pressed_events_callback",
-"key_released_actions_internal",
-"key_released_events_callback",
-"text_editing_actions_internal",
-"text_editing_events_callback",
-"text_input_actions_internal",
-"text_input_events_callback",
-"mouse_motion_actions_internal",
-"mouse_motion_events_callback",
-"mouse_button_pressed_actions_internal",
-"mouse_button_pressed_events_callback",
-"mouse_button_released_actions_internal",
-"mouse_button_released_events_callback",
-"mouse_wheel_move_actions_internal",
-"mouse_wheel_move_events_callback",
-"internal_game_library",
-"internal_renderer",
-"has_error",
-"is_manual_error",
-"is_events_running",
-"item",
-};
-
-char *names921 [] =
+char *names923 [] =
 {
 "manual_error",
 "show_actions_internal",
@@ -5708,7 +5727,98 @@ char *names921 [] =
 "gl_context",
 };
 
-char *names922 [] =
+char *names924 [] =
+{
+"manual_error",
+"show_actions_internal",
+"expose_actions_internal",
+"hide_actions_internal",
+"move_actions_internal",
+"resize_actions_internal",
+"size_change_actions_internal",
+"minimize_actions_internal",
+"maximize_actions_internal",
+"restore_actions_internal",
+"mouse_enter_actions_internal",
+"mouse_leave_actions_internal",
+"keyboard_focus_gain_actions_internal",
+"keyboard_focus_lost_actions_internal",
+"close_request_actions_internal",
+"window_events_callback",
+"key_pressed_actions_internal",
+"key_pressed_events_callback",
+"key_released_actions_internal",
+"key_released_events_callback",
+"text_editing_actions_internal",
+"text_editing_events_callback",
+"text_input_actions_internal",
+"text_input_events_callback",
+"mouse_motion_actions_internal",
+"mouse_motion_events_callback",
+"mouse_button_pressed_actions_internal",
+"mouse_button_pressed_events_callback",
+"mouse_button_released_actions_internal",
+"mouse_button_released_events_callback",
+"mouse_wheel_move_actions_internal",
+"mouse_wheel_move_events_callback",
+"internal_game_library",
+"internal_renderer",
+"has_error",
+"is_manual_error",
+"is_events_running",
+"item",
+};
+
+char *names925 [] =
+{
+"managed_pointer",
+"manual_error",
+"internal_item_exists",
+"has_error",
+"is_manual_error",
+"shared",
+"is_locked",
+"internal_item",
+};
+
+char *names926 [] =
+{
+"managed_pointer",
+"manual_error",
+"animation_coordinates",
+"internal_item_exists",
+"has_error",
+"is_manual_error",
+"shared",
+"is_locked",
+"facing_left",
+"going_left",
+"going_right",
+"going_up",
+"going_down",
+"old_timestamp",
+"x",
+"y",
+"sub_image_x",
+"sub_image_y",
+"sub_image_width",
+"sub_image_height",
+"internal_item",
+};
+
+char *names927 [] =
+{
+"managed_pointer",
+"manual_error",
+"internal_item_exists",
+"has_error",
+"is_manual_error",
+"shared",
+"is_locked",
+"internal_item",
+};
+
+char *names928 [] =
 {
 "manual_error",
 "internal_game_library",
@@ -5721,7 +5831,7 @@ char *names922 [] =
 "item",
 };
 
-char *names923 [] =
+char *names929 [] =
 {
 "manual_error",
 "internal_game_library",
@@ -5735,7 +5845,7 @@ char *names923 [] =
 "item",
 };
 
-char *names924 [] =
+char *names930 [] =
 {
 "manual_error",
 "internal_game_library",
@@ -5748,7 +5858,7 @@ char *names924 [] =
 "item",
 };
 
-char *names925 [] =
+char *names931 [] =
 {
 "manual_error",
 "internal_game_library",
@@ -5760,72 +5870,6 @@ char *names925 [] =
 "i_gain",
 "index",
 "item",
-};
-
-char *names926 [] =
-{
-"target",
-"object_comparison",
-};
-
-char *names929 [] =
-{
-"internal_game_library",
-"title",
-"display",
-"is_position_x_centered",
-"is_position_y_centered",
-"is_position_x_undefined",
-"is_position_y_undefined",
-"flags",
-"position_x",
-"position_y",
-"width",
-"height",
-};
-
-char *names930 [] =
-{
-"internal_game_library",
-"title",
-"display",
-"renderer_driver",
-"is_position_x_centered",
-"is_position_y_centered",
-"is_position_x_undefined",
-"is_position_y_undefined",
-"no_default_renderer",
-"must_renderer_support_texture_target",
-"must_renderer_synchronize_update",
-"must_renderer_be_software_rendering",
-"must_renderer_be_hardware_accelerated",
-"flags",
-"position_x",
-"position_y",
-"width",
-"height",
-};
-
-char *names931 [] =
-{
-"internal_game_library",
-"title",
-"display",
-"renderer_driver",
-"is_position_x_centered",
-"is_position_y_centered",
-"is_position_x_undefined",
-"is_position_y_undefined",
-"no_default_renderer",
-"must_renderer_support_texture_target",
-"must_renderer_synchronize_update",
-"must_renderer_be_software_rendering",
-"must_renderer_be_hardware_accelerated",
-"flags",
-"position_x",
-"position_y",
-"width",
-"height",
 };
 
 char *names932 [] =
@@ -5833,148 +5877,10 @@ char *names932 [] =
 "internal_name",
 };
 
-char *names934 [] =
+char *names933 [] =
 {
-"managed_pointer",
-"manual_error",
-"animation_coordinates",
-"internal_item_exists",
-"has_error",
-"is_manual_error",
-"shared",
-"is_locked",
-"facing_left",
-"going_left",
-"going_right",
-"old_timestamp",
-"x",
-"y",
-"sub_image_x",
-"sub_image_y",
-"sub_image_width",
-"sub_image_height",
-"internal_item",
-};
-
-char *names936 [] =
-{
-"manual_error",
-"internal_game_library",
-"is_open",
-"has_ressource_error",
-"has_error",
-"is_manual_error",
-"must_free",
-"item",
-"rwop",
-};
-
-char *names937 [] =
-{
-"managed_pointer",
-"manual_error",
-"internal_item_exists",
-"has_error",
-"is_manual_error",
-"shared",
-"is_locked",
-"internal_item",
-};
-
-char *names943 [] =
-{
-"launch_mutex",
-"terminated",
-"thread_id",
-};
-
-char *names945 [] =
-{
-"message",
-"is_open",
-"has_ressource_error",
-"has_error",
-"last_buffer_size",
-};
-
-char *names946 [] =
-{
-"manual_error",
-"has_error",
-"is_manual_error",
-"last_al_error_code",
-"last_alc_error_code",
-};
-
-char *names947 [] =
-{
-"manual_error",
-"launch_mutex",
-"internal_listener",
-"internal_sources",
-"has_error",
-"terminated",
-"is_manual_error",
-"is_thread_executing",
-"must_stop_thread",
-"is_thread_init",
-"last_al_error_code",
-"last_alc_error_code",
-"sound_buffer_size",
-"thread_id",
-"device",
-"context",
-"null",
-};
-
-char *names948 [] =
-{
-"manual_error",
-"has_error",
-"is_manual_error",
-"last_al_error_code",
-"last_alc_error_code",
-};
-
-char *names949 [] =
-{
-"manual_error",
-"has_error",
-"is_manual_error",
-"last_al_error_code",
-"last_alc_error_code",
-};
-
-char *names950 [] =
-{
-"owner",
-"mutex_pointer",
-};
-
-char *names951 [] =
-{
-"manual_error",
-"sound_al_buffer",
-"sound_queued",
-"g_mutex",
-"has_error",
-"is_manual_error",
-"is_open",
-"is_thread_safe",
-"index",
-"last_al_error_code",
-"last_alc_error_code",
-"buffer_size",
-"buffer_tail",
-"buffer_head",
-"temp_buffer",
-};
-
-char *names952 [] =
-{
-"managed_pointer",
-"shared",
-"internal_item",
+"target",
+"object_comparison",
 };
 
 

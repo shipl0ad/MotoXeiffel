@@ -1,5 +1,5 @@
 /*
- * Code for class GAME_RESSOURCE
+ * Code for class GAME_MOUSE_EVENTS_STATE
  */
 
 #include "eif_eiffel.h"
@@ -10,9 +10,9 @@
 extern "C" {
 #endif
 
-extern void F865_8474(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F865_8477(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F865_8478(EIF_REFERENCE);
+extern void F865_8474(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F865_8475(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F865_8476(EIF_REFERENCE);
 extern void EIF_Minit865(void);
 
 #ifdef __cplusplus
@@ -34,13 +34,67 @@ extern "C" {
 extern "C" {
 #endif
 
-/* {GAME_RESSOURCE}.default_create */
-void F865_8474 (EIF_REFERENCE Current)
+/* {GAME_MOUSE_EVENTS_STATE}.make */
+void F865_8474 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
-	char *l_feature_name = "default_create";
+	char *l_feature_name = "make";
 	RTEX;
-	RTCDT;
+#define arg1 arg1x.it_n4
+	RTSN;
+	RTDA;
+	RTLD;
+	
+	if ((arg1x.type & SK_HEAD) == SK_REF) arg1x.it_n4 = * (EIF_NATURAL_32 *) arg1x.it_r;
+	
+	RTLI(1);
+	RTLR(0,Current);
+	RTLIU(1);
+	RTLU (SK_VOID, NULL);
+	RTLU(SK_UINT32,&arg1);
+	RTLU (SK_REF, &Current);
+	
+	RTEAA(l_feature_name, 864, Current, 0, 1, 14155);
+	RTSA(Dtype(Current));
+	RTSC;
+	RTME(Dtype(Current), 0);
+	RTGC;
+	RTDBGEAA(864, Current, 14155);
+	RTIV(Current, RTAL);
+	RTHOOK(1);
+	RTDBGAA(Current, Dtype(Current), 6403, 0x38000000, 1); /* id */
+	*(EIF_NATURAL_32 *)(Current + RTWA(6403, Dtype(Current))) = (EIF_NATURAL_32) arg1;
+	RTVI(Current, RTAL);
+	RTRS;
+	RTHOOK(2);
+	RTDBGLE;
+	RTMD(0);
+	RTLE;
+	RTLO(3);
+	RTEE;
+#undef arg1
+}
+
+/* {GAME_MOUSE_EVENTS_STATE}.id */
+EIF_TYPED_VALUE F865_8475 (EIF_REFERENCE Current)
+{
+	EIF_TYPED_VALUE r;
+	r.type = SK_UINT32;
+	r.it_n4 = *(EIF_NATURAL_32 *)(Current + RTWA(6403,Dtype(Current)));
+	return r;
+}
+
+
+/* {GAME_MOUSE_EVENTS_STATE}.is_touch_device */
+EIF_TYPED_VALUE F865_8476 (EIF_REFERENCE Current)
+{
+	GTCX
+	char *l_feature_name = "is_touch_device";
+	RTEX;
+	EIF_NATURAL_32 tu4_1;
+	EIF_NATURAL_32 tu4_2;
+	EIF_BOOLEAN Result = ((EIF_BOOLEAN) 0);
+	
 	RTSN;
 	RTDA;
 	RTLD;
@@ -48,51 +102,31 @@ void F865_8474 (EIF_REFERENCE Current)
 	RTLI(1);
 	RTLR(0,Current);
 	RTLIU(1);
-	RTLU (SK_VOID, NULL);
+	RTLU (SK_BOOL, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 864, Current, 0, 0, 14155);
-	RTSA(dtype);
+	RTEAA(l_feature_name, 864, Current, 0, 0, 14157);
+	RTSA(Dtype(Current));
 	RTSC;
-	RTME(dtype, 0);
+	RTME(Dtype(Current), 0);
 	RTGC;
-	RTDBGEAA(864, Current, 14155);
+	RTDBGEAA(864, Current, 14157);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAA(Current, dtype, 6404, 0x04000000, 1); /* is_open */
-	*(EIF_BOOLEAN *)(Current + RTWA(6404, dtype)) = (EIF_BOOLEAN) (EIF_BOOLEAN) 0;
-	RTHOOK(2);
-	RTDBGAA(Current, dtype, 6405, 0x04000000, 1); /* has_error */
-	*(EIF_BOOLEAN *)(Current + RTWA(6405, dtype)) = (EIF_BOOLEAN) (EIF_BOOLEAN) 0;
+	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
+	tu4_1 = *(EIF_NATURAL_32 *)(Current + RTWA(6403, Dtype(Current)));
+	tu4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6267, 862))(Current)).it_n4);
+	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(tu4_1 == tu4_2);
 	RTVI(Current, RTAL);
 	RTRS;
-	RTHOOK(3);
+	RTHOOK(2);
 	RTDBGLE;
 	RTMD(0);
 	RTLE;
 	RTLO(2);
 	RTEE;
+	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
-
-/* {GAME_RESSOURCE}.is_open */
-EIF_TYPED_VALUE F865_8477 (EIF_REFERENCE Current)
-{
-	EIF_TYPED_VALUE r;
-	r.type = SK_BOOL;
-	r.it_b = *(EIF_BOOLEAN *)(Current + RTWA(6404,Dtype(Current)));
-	return r;
-}
-
-
-/* {GAME_RESSOURCE}.has_error */
-EIF_TYPED_VALUE F865_8478 (EIF_REFERENCE Current)
-{
-	EIF_TYPED_VALUE r;
-	r.type = SK_BOOL;
-	r.it_b = *(EIF_BOOLEAN *)(Current + RTWA(6405,Dtype(Current)));
-	return r;
-}
-
 
 void EIF_Minit865 (void)
 {

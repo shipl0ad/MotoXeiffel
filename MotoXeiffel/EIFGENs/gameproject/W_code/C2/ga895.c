@@ -20,7 +20,7 @@ extern EIF_TYPED_VALUE F895_9348(EIF_REFERENCE);
 extern void F895_9349(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F895_9350(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F895_9351(EIF_REFERENCE);
-extern void F895_10123(EIF_REFERENCE, int);
+extern void F895_10278(EIF_REFERENCE, int);
 extern void EIF_Minit895(void);
 
 #ifdef __cplusplus
@@ -94,7 +94,7 @@ void F895_9342 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE ar
 	RTME(dtype, 0);
 	RTGC;
 	RTDBGEAA(894, Current, 15042);
-	RTCC(arg2, 894, l_feature_name, 2, eif_new_type(915, 0x01), 0x01);
+	RTCC(arg2, 894, l_feature_name, 2, eif_new_type(916, 0x01), 0x01);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
@@ -104,7 +104,7 @@ void F895_9342 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE ar
 		RTCK;
 		RTHOOK(2);
 		RTCT("not_indexed", EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7459, "is_indexed", arg2))(arg2)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7535, "is_indexed", arg2))(arg2)).it_b);
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -131,14 +131,14 @@ body:;
 	RTDBGAA(Current, dtype, 7230, 0x10000000, 1); /* pitch */
 	*(EIF_INTEGER_32 *)(Current + RTWA(7230, dtype)) = (EIF_INTEGER_32) arg5;
 	RTHOOK(7);
-	RTDBGAA(Current, dtype, 7231, 0xF8000393, 0); /* pixel_format */
+	RTDBGAA(Current, dtype, 7231, 0xF8000394, 0); /* pixel_format */
 	RTAR(Current, arg2);
 	*(EIF_REFERENCE *)(Current + RTWA(7231, dtype)) = (EIF_REFERENCE) RTCCL(arg2);
 	RTHOOK(8);
 	RTDBGAA(Current, dtype, 7235, 0x10000000, 1); /* bytes_per_pixel */
 	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7231, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(8,1);
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7537, "bytes_per_pixel", tr1))(tr1)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7613, "bytes_per_pixel", tr1))(tr1)).it_i4);
 	*(EIF_INTEGER_32 *)(Current + RTWA(7235, dtype)) = (EIF_INTEGER_32) ti4_1;
 	RTHOOK(9);
 	RTDBGAA(Current, dtype, 7232, 0x04000000, 1); /* is_valid */
@@ -356,7 +356,7 @@ EIF_TYPED_VALUE F895_9351 (EIF_REFERENCE Current)
 
 
 /* {GAME_PIXEL_BUFFER}._invariant */
-void F895_10123 (EIF_REFERENCE Current, int where)
+void F895_10278 (EIF_REFERENCE Current, int where)
 {
 	GTCX
 	char *l_feature_name = "_invariant";
@@ -373,12 +373,12 @@ void F895_10123 (EIF_REFERENCE Current, int where)
 	RTLIU(1);
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
-	RTEAINV(l_feature_name, 894, Current, 0, 10122);
+	RTEAINV(l_feature_name, 894, Current, 0, 10277);
 	RTSA(dtype);
 	RTME(dtype, 0);
 	RTIT("exists", Current);
 	tb1 = '\01';
-	tb2 = *(EIF_BOOLEAN *)(Current + RTWA(6440, dtype));
+	tb2 = *(EIF_BOOLEAN *)(Current + RTWA(6414, dtype));
 	if ((EIF_BOOLEAN) !tb2) {
 		tp1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7227, dtype))(Current)).it_p);
 		tb2 = !tp1;

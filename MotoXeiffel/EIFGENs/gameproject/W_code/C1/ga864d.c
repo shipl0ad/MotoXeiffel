@@ -70,7 +70,7 @@ void Init864(void)
 {
 	IDSC(desc_864, 0, 863);
 	IDSC(desc_864 + 1, 1, 863);
-	IDSC(desc_864 + 32, 405, 863);
+	IDSC(desc_864 + 32, 406, 863);
 }
 
 

@@ -7,4 +7,12 @@ note
 class
 	MENU
 
+inherit
+	IMAGE
+		redefine
+			make
+		end
+
+
+
 end

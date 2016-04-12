@@ -11,7 +11,7 @@ case "$O" in
 esac
 echo "Compiling C code in C2"
 $spitshell >Makefile <<!GROK!THIS!
-INCLUDE_PATH =  -I"\$(EIFFEL_LIBRARY)/contrib/library/game2/game_core/spec/include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2\include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\cpf\spec\include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2_image\include"
+INCLUDE_PATH =  -I"\$(EIFFEL_LIBRARY)/contrib/library/game2/game_core/spec/include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2\include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\cpf\spec\include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2_ttf\include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2_image\include"
 SHELL = /bin/sh
 CC = $cc
 CPP = $cpp
@@ -55,15 +55,15 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C2_c.o 
 
-OLDOBJECTS =  ap908.o ap908d.o en907.o en907d.o ga903.o ga903d.o mo897.o mo897d.o \
-	ba898.o ba898d.o ga910.o ga910d.o ga911.o ga911d.o im896.o im896d.o \
-	im894.o im894d.o ga915.o ga915d.o ga921.o ga921d.o ga906.o ga906d.o \
-	ga895.o ga895d.o ga909.o ga909d.o im923.o im923d.o ga925.o ga925d.o \
-	ga920.o ga920d.o ga905.o ga905d.o ga919.o ga919d.o ga918.o ga918d.o \
-	ga924.o ga924d.o ga893.o ga893d.o ga914.o ga914d.o ga904.o ga904d.o \
-	ga917.o ga917d.o ga922.o ga922d.o ga916.o ga916d.o ga899.o ga899d.o \
-	ga902.o ga902d.o ga913.o ga913d.o ga912.o ga912d.o ga901.o ga901d.o \
-	ga900.o ga900d.o 
+OLDOBJECTS =  ap910.o ap910d.o en909.o en909d.o ga905.o ga905d.o mo900.o mo900d.o \
+	ba899.o ba899d.o ga912.o ga912d.o ga913.o ga913d.o im898.o im898d.o \
+	im896.o im896d.o ga917.o ga917d.o ga923.o ga923d.o ga908.o ga908d.o \
+	ga897.o ga897d.o ga911.o ga911d.o ga922.o ga922d.o im925.o im925d.o \
+	ga921.o ga921d.o ga907.o ga907d.o ga920.o ga920d.o ga895.o ga895d.o \
+	ga916.o ga916d.o ga919.o ga919d.o ga906.o ga906d.o ga924.o ga924d.o \
+	ga901.o ga901d.o ga918.o ga918d.o ga904.o ga904d.o ga915.o ga915d.o \
+	ga914.o ga914d.o ga894.o ga894d.o ga893.o ga893d.o ga903.o ga903d.o \
+	ga902.o ga902d.o 
 
 all: Cobj2.o
 

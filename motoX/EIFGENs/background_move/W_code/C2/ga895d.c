@@ -1,5 +1,5 @@
 /*
- * Class GAME_RENDER_TARGET
+ * Class GAME_DRAWING_TOOLS
  */
 
 #include "eif_macros.h"
@@ -22,6 +22,7 @@ static const EIF_TYPE_INDEX egt_9_895 [] = {0xFF01,220,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_895 [] = {0xFF01,220,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_895 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_895 [] = {0xFF01,894,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_895 [] = {0xFF01,0xFFF9,4,174,206,206,206,206,0xFFFF};
 
 
 static const struct desc_info desc_895[] = {
@@ -57,11 +58,13 @@ static const struct desc_info desc_895[] = {
 	{EIF_NON_GENERIC(0x06FD /*894*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01AF /*215*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_895), 30, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_895), 15098, 0xFFFFFFFF},
 };
 void Init895(void)
 {
 	IDSC(desc_895, 0, 894);
 	IDSC(desc_895 + 1, 1, 894);
+	IDSC(desc_895 + 32, 388, 894);
 }
 
 

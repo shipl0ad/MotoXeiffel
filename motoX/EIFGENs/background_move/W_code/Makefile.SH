@@ -11,7 +11,7 @@ case "$O" in
 esac
 echo "Preparing C compilation"
 $spitshell >Makefile <<!GROK!THIS!
-INCLUDE_PATH =  -I"\$(EIFFEL_LIBRARY)/contrib/library/game2/game_core/spec/include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2\include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\cpf\spec\include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2_image\include"
+INCLUDE_PATH =  -I"\$(EIFFEL_LIBRARY)/contrib/library/game2/game_core/spec/include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2\include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\cpf\spec\include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2_ttf\include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2_image\include"
 SHELL = /bin/sh
 CC = $cc
 CPP = $cpp
@@ -60,6 +60,7 @@ EXTERNALS =  \
 	"$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2\lib\$(ISE_PLATFORM)\$(ISE_C_COMPILER)\SDL2.lib" \
 	"$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2\lib\$(ISE_PLATFORM)\$(ISE_C_COMPILER)\SDL2main.lib" \
 	"$(EIFFEL_LIBRARY)\contrib\library\game2\cpf\spec\$(ISE_C_COMPILER)\$(ISE_PLATFORM)\lib\cpf_additions.lib" \
+	"$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2_ttf\lib\$(ISE_PLATFORM)\$(ISE_C_COMPILER)\SDL2_ttf.lib" \
 	"$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2_image\lib\$(ISE_PLATFORM)\$(ISE_C_COMPILER)\SDL2_image.lib"
 
 all: background_move
@@ -115,7 +116,7 @@ E1/eparents.o: Makefile E1/Makefile E1/estructure.h
 
 OBJECTS= C3/Cobj3.o C2/Cobj2.o C1/Cobj1.o  E1/eoption.o E1/epattern.o E1/efrozen.o E1/ecall.o E1/eplug.o E1/eskelet.o E1/enames.o E1/evisib.o E1/ececil.o E1/einit.o E1/eparents.o
 
-PRECOMP_OBJECTS= "c:\users\dankcpu\documents\eiffel user files\15.12\precomp\spec\win64\EIFGENs\base-safe\W_code\precomp.lib"
+PRECOMP_OBJECTS= "c:\users\steveporndatabase\documents\eiffel user files\15.11\precomp\spec\win64\EIFGENs\base-safe\W_code\precomp.lib"
 
 
 background_move: $(OBJECTS)  E1/emain.o Makefile

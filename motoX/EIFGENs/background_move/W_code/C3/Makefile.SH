@@ -11,7 +11,7 @@ case "$O" in
 esac
 echo "Compiling C code in C3"
 $spitshell >Makefile <<!GROK!THIS!
-INCLUDE_PATH =  -I"\$(EIFFEL_LIBRARY)/contrib/library/game2/game_core/spec/include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2\include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\cpf\spec\include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2_image\include"
+INCLUDE_PATH =  -I"\$(EIFFEL_LIBRARY)/contrib/library/game2/game_core/spec/include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2\include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\cpf\spec\include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2_ttf\include" -I"\$(EIFFEL_LIBRARY)\contrib\library\game2\C_lib_win\SDL2_image\include"
 SHELL = /bin/sh
 CC = $cc
 CPP = $cpp
@@ -55,10 +55,14 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C3_c.o 
 
-OLDOBJECTS =  ty939.o ty939d.o ga929.o ga929d.o qu935.o qu935d.o ga927.o ga927d.o \
-	pa936.o pa936d.o so937.o so937d.o co940.o co940d.o ga926.o ga926d.o \
-	ga933.o ga933d.o ch934.o ch934d.o ga932.o ga932d.o ga928.o ga928d.o \
-	re938.o re938d.o eq941.o eq941d.o ga930.o ga930d.o ga931.o ga931d.o 
+OLDOBJECTS =  ty937.o ty937d.o ga930.o ga930d.o qu941.o qu941d.o te932.o te932d.o \
+	ga928.o ga928d.o pa940.o pa940d.o so942.o so942d.o ga927.o ga927d.o \
+	co938.o co938d.o ga936.o ga936d.o ga929.o ga929d.o ch944.o ch944d.o \
+	ga931.o ga931d.o ga935.o ga935d.o ga926.o ga926d.o re943.o re943d.o \
+	eq939.o eq939d.o ga933.o ga933d.o ga934.o ga934d.o te953.o te953d.o \
+	te954.o te954d.o te951.o te951d.o cp956.o cp956d.o cp949.o cp949d.o \
+	te950.o te950d.o cp946.o cp946d.o ga955.o ga955d.o ga948.o ga948d.o \
+	mu952.o mu952d.o sh945.o sh945d.o th947.o th947d.o 
 
 all: Cobj3.o
 

@@ -22,6 +22,9 @@ feature {NONE} -- Initialization
 			l_window_builder:GAME_WINDOW_RENDERED_BUILDER
 			l_sorter:QUICK_SORTER[IMAGE]
 			l_comparator:IMAGE_COMPARATOR
+			l_font:TEXT_FONT
+			font:TEXT_FONT_CPF
+			l_text:TEXT_SURFACE_BLENDED
 		do
 			has_error := False
 			create l_window_builder
@@ -139,7 +142,7 @@ feature {NONE} -- Implementation
 					moto.go_right
 					print("mouvement vers la droite")
 				elseif a_key_state.is_down then
-					print("ecran en bas")
+					print("brake")
 				end
 			end
 		end

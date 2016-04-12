@@ -1,5 +1,5 @@
 /*
- * Class GAME_DRAWING_TOOLS
+ * Class GAME_FINGERS_GESTURE
  */
 
 #include "eif_macros.h"
@@ -22,7 +22,6 @@ static const EIF_TYPE_INDEX egt_9_893 [] = {0xFF01,220,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_893 [] = {0xFF01,220,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_893 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_893 [] = {0xFF01,892,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_893 [] = {0xFF01,0xFFF9,4,174,206,206,206,206,0xFFFF};
 
 
 static const struct desc_info desc_893[] = {
@@ -58,13 +57,20 @@ static const struct desc_info desc_893[] = {
 	{EIF_NON_GENERIC(0x06F9 /*892*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01AF /*215*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_893), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_893), 15062, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 15088, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0167 /*179*/), 15089, 4},
+	{EIF_NON_GENERIC(0x0167 /*179*/), 15090, 8},
+	{EIF_NON_GENERIC(0x0191 /*200*/), 15091, 0},
+	{EIF_GENERIC(NULL), 15092, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0167 /*179*/), 15093, 12},
+	{EIF_NON_GENERIC(0x0167 /*179*/), 15094, 16},
 };
 void Init893(void)
 {
 	IDSC(desc_893, 0, 892);
 	IDSC(desc_893 + 1, 1, 892);
-	IDSC(desc_893 + 32, 385, 892);
+	IDSC(desc_893 + 32, 423, 892);
+	IDSC(desc_893 + 36, 419, 892);
 }
 
 

@@ -10,6 +10,7 @@
 		<library name="base" location="$ISE_LIBRARY\library\base\base-safe.ecf"/>
 		<library name="base_extension" location="$ISE_LIBRARY\library\base_extension\base_extension-safe.ecf"/>
 		<library name="game_core" location="$ISE_LIBRARY\contrib\library\game2\game_core\game_core-safe.ecf"/>
+		<library name="game_text" location="$EIFFEL_LIBRARY\contrib\library\game2\game_text\game_text-safe.ecf"/>
 		<library name="game_image_file" location="$ISE_LIBRARY\contrib\library\game2\game_image_file\game_image_file-safe.ecf"/>
 		<cluster name="background_move" location=".\" recursive="true">
 			<file_rule>

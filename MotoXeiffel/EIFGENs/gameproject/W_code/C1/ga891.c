@@ -1,5 +1,5 @@
 /*
- * Code for class GAME_DOLLAR_GESTURE
+ * Code for class GAME_FINGERS_GESTURE
  */
 
 #include "eif_eiffel.h"
@@ -10,9 +10,9 @@
 extern "C" {
 #endif
 
-extern void F891_9335(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F891_9336(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F891_9337(EIF_REFERENCE);
+extern void F891_9340(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F891_9341(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F891_9342(EIF_REFERENCE);
 extern void EIF_Minit891(void);
 
 #ifdef __cplusplus
@@ -34,13 +34,13 @@ extern "C" {
 extern "C" {
 #endif
 
-/* {GAME_DOLLAR_GESTURE}.make */
-void F891_9335 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x, EIF_TYPED_VALUE arg3x, EIF_TYPED_VALUE arg4x, EIF_TYPED_VALUE arg5x)
+/* {GAME_FINGERS_GESTURE}.make */
+void F891_9340 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x, EIF_TYPED_VALUE arg3x, EIF_TYPED_VALUE arg4x, EIF_TYPED_VALUE arg5x)
 {
 	GTCX
 	char *l_feature_name = "make";
 	RTEX;
-#define arg1 arg1x.it_i8
+#define arg1 arg1x.it_r4
 #define arg2 arg2x.it_r4
 #define arg3 arg3x.it_r4
 #define arg4 arg4x.it_r4
@@ -60,37 +60,37 @@ void F891_9335 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE ar
 	if ((arg4x.type & SK_HEAD) == SK_REF) arg4x.it_r4 = * (EIF_REAL_32 *) arg4x.it_r;
 	if ((arg3x.type & SK_HEAD) == SK_REF) arg3x.it_r4 = * (EIF_REAL_32 *) arg3x.it_r;
 	if ((arg2x.type & SK_HEAD) == SK_REF) arg2x.it_r4 = * (EIF_REAL_32 *) arg2x.it_r;
-	if ((arg1x.type & SK_HEAD) == SK_REF) arg1x.it_i8 = * (EIF_INTEGER_64 *) arg1x.it_r;
+	if ((arg1x.type & SK_HEAD) == SK_REF) arg1x.it_r4 = * (EIF_REAL_32 *) arg1x.it_r;
 	
 	RTLI(1);
 	RTLR(0,Current);
 	RTLIU(1);
 	RTLU (SK_VOID, NULL);
-	RTLU(SK_INT64,&arg1);
+	RTLU(SK_REAL32,&arg1);
 	RTLU(SK_REAL32,&arg2);
 	RTLU(SK_REAL32,&arg3);
 	RTLU(SK_REAL32,&arg4);
 	RTLU(SK_UINT32,&arg5);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 890, Current, 0, 5, 15034);
+	RTEAA(l_feature_name, 890, Current, 0, 5, 15039);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(890, Current, 15034);
+	RTDBGEAA(890, Current, 15039);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	ur4_1 = arg2;
-	ur4_2 = arg3;
+	ur4_1 = arg1;
+	ur4_2 = arg2;
 	uu4_1 = arg5;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(7215, dtype))(Current, ur4_1x, ur4_2x, uu4_1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(7220, dtype))(Current, ur4_1x, ur4_2x, uu4_1x);
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 7220, 0x24000000, 1); /* template_hash */
-	*(EIF_INTEGER_64 *)(Current + RTWA(7220, dtype)) = (EIF_INTEGER_64) arg1;
+	RTDBGAA(Current, dtype, 7225, 0x18000000, 1); /* distance */
+	*(EIF_REAL_32 *)(Current + RTWA(7225, dtype)) = (EIF_REAL_32) arg3;
 	RTHOOK(3);
-	RTDBGAA(Current, dtype, 7221, 0x18000000, 1); /* difference */
-	*(EIF_REAL_32 *)(Current + RTWA(7221, dtype)) = (EIF_REAL_32) arg4;
+	RTDBGAA(Current, dtype, 7226, 0x18000000, 1); /* angle */
+	*(EIF_REAL_32 *)(Current + RTWA(7226, dtype)) = (EIF_REAL_32) arg4;
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(4);
@@ -109,22 +109,22 @@ void F891_9335 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE ar
 #undef arg1
 }
 
-/* {GAME_DOLLAR_GESTURE}.template_hash */
-EIF_TYPED_VALUE F891_9336 (EIF_REFERENCE Current)
+/* {GAME_FINGERS_GESTURE}.distance */
+EIF_TYPED_VALUE F891_9341 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
-	r.type = SK_INT64;
-	r.it_i8 = *(EIF_INTEGER_64 *)(Current + RTWA(7220,Dtype(Current)));
+	r.type = SK_REAL32;
+	r.it_r4 = *(EIF_REAL_32 *)(Current + RTWA(7225,Dtype(Current)));
 	return r;
 }
 
 
-/* {GAME_DOLLAR_GESTURE}.difference */
-EIF_TYPED_VALUE F891_9337 (EIF_REFERENCE Current)
+/* {GAME_FINGERS_GESTURE}.angle */
+EIF_TYPED_VALUE F891_9342 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_REAL32;
-	r.it_r4 = *(EIF_REAL_32 *)(Current + RTWA(7221,Dtype(Current)));
+	r.it_r4 = *(EIF_REAL_32 *)(Current + RTWA(7226,Dtype(Current)));
 	return r;
 }
 

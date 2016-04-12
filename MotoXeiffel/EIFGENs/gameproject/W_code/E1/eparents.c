@@ -3564,11 +3564,11 @@ static struct eif_par_types par888 = {888, ptf888, (uint16) 1, (uint16) 0, (char
 static EIF_TYPE_INDEX ptf889[] = {0,0xFFFF};
 static struct eif_par_types par889 = {889, ptf889, (uint16) 1, (uint16) 0, (char) 0};
 
-/* GAME_DOLLAR_GESTURE */
+/* GAME_FINGERS_GESTURE */
 static EIF_TYPE_INDEX ptf890[] = {889,0xFFFF};
 static struct eif_par_types par890 = {890, ptf890, (uint16) 1, (uint16) 0, (char) 0};
 
-/* GAME_FINGERS_GESTURE */
+/* GAME_DOLLAR_GESTURE */
 static EIF_TYPE_INDEX ptf891[] = {889,0xFFFF};
 static struct eif_par_types par891 = {891, ptf891, (uint16) 1, (uint16) 0, (char) 0};
 
@@ -3648,12 +3648,12 @@ static struct eif_par_types par909 = {909, ptf909, (uint16) 2, (uint16) 0, (char
 static EIF_TYPE_INDEX ptf910[] = {46,0xFFF7,869,0xFFFF};
 static struct eif_par_types par910 = {910, ptf910, (uint16) 2, (uint16) 0, (char) 0};
 
-/* GAME_JOYSTICK */
-static EIF_TYPE_INDEX ptf911[] = {150,0xFFF7,881,0xFFF7,899,0xFFFF};
-static struct eif_par_types par911 = {911, ptf911, (uint16) 3, (uint16) 0, (char) 0};
-
 /* GAME_CURSOR */
-static EIF_TYPE_INDEX ptf912[] = {46,0xFFF7,869,0xFFF7,150,0xFFFF};
+static EIF_TYPE_INDEX ptf911[] = {869,0xFFF7,150,0xFFFF};
+static struct eif_par_types par911 = {911, ptf911, (uint16) 2, (uint16) 0, (char) 0};
+
+/* GAME_JOYSTICK */
+static EIF_TYPE_INDEX ptf912[] = {150,0xFFF7,881,0xFFF7,899,0xFFFF};
 static struct eif_par_types par912 = {912, ptf912, (uint16) 3, (uint16) 0, (char) 0};
 
 /* GAME_WINDOW_MANAGER */
@@ -3728,12 +3728,12 @@ static struct eif_par_types par929 = {929, ptf929, (uint16) 1, (uint16) 0, (char
 static EIF_TYPE_INDEX ptf930[] = {927,0xFFFF};
 static struct eif_par_types par930 = {930, ptf930, (uint16) 1, (uint16) 0, (char) 0};
 
-/* TYPE [GAME_WINDOW_RENDERED_BUILDER] */
-static EIF_TYPE_INDEX ptf931[] = {172,0xFFF7,105,0xFFF7,138,0xFFFF};
+/* CHAIN_INDEXABLE_ITERATOR [G#1] */
+static EIF_TYPE_INDEX ptf931[] = {322,0xFFF8,1,0xFFF7,326,0xFFF8,1,0xFFF7,324,0xFFF8,1,0xFFFF};
 static struct eif_par_types par931 = {931, ptf931, (uint16) 3, (uint16) 1, (char) 0};
 
-/* CHAIN_INDEXABLE_ITERATOR [G#1] */
-static EIF_TYPE_INDEX ptf932[] = {322,0xFFF8,1,0xFFF7,326,0xFFF8,1,0xFFF7,324,0xFFF8,1,0xFFFF};
+/* TYPE [GAME_WINDOW_RENDERED_BUILDER] */
+static EIF_TYPE_INDEX ptf932[] = {172,0xFFF7,105,0xFFF7,138,0xFFFF};
 static struct eif_par_types par932 = {932, ptf932, (uint16) 3, (uint16) 1, (char) 0};
 
 int egc_partab_size_init = 932;

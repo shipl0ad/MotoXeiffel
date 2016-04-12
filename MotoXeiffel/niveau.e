@@ -35,42 +35,42 @@ feature {NONE} -- Initialization
 			end
 		end
 
---feature -- Access
+feature -- Access
 
---	bg_move_left
---			-- Change the image to draw by moving the drawing area to the left.
---		do
---			sub_texture_x:=sub_texture_x+velocity
---		end
+	bg_move_left
+			-- Change the image to draw by moving the drawing area to the left.
+		do
+			sub_texture_x:=sub_texture_x+velocity
+		end
 
---	bg_move_right
---			-- Change the image to draw by moving the drawing area to the riht.
---		do
---			sub_texture_x:=sub_texture_x-velocity
---		end
+	bg_move_right
+			-- Change the image to draw by moving the drawing area to the riht.
+		do
+			sub_texture_x:=sub_texture_x-velocity
+		end
 
---	bg_move_up
---			-- Change the image to draw by moving up the drawing area.
---		do
---			sub_texture_y:=sub_texture_y+velocity
---		end
+	bg_move_up
+			-- Change the image to draw by moving up the drawing area.
+		do
+			sub_texture_y:=sub_texture_y+velocity
+		end
 
---	bg_move_down
---			-- Change the image to draw by moving down the drawing area.
---		do
---			sub_texture_y:=sub_texture_y-velocity
---		end
+	bg_move_down
+			-- Change the image to draw by moving down the drawing area.
+		do
+			sub_texture_y:=sub_texture_y-velocity
+		end
 
---	velocity:INTEGER
---			-- The speed of the {BACKGROUND} movement.
+	velocity:INTEGER
+			-- The speed of the {BACKGROUND} movement.
 
---	set_velocity(a_velocity:INTEGER)
---			-- Change the speed of the {BACKGROUND} movement `velocity' to `a_velocity'.
---		require
---			Velocity_Is_Positive: a_velocity>0
---		do
---			velocity:=a_velocity
---		end
+	set_velocity(a_velocity:INTEGER)
+			-- Change the speed of the {BACKGROUND} movement `velocity' to `a_velocity'.
+		require
+			Velocity_Is_Positive: a_velocity>0
+		do
+			velocity:=a_velocity
+		end
 
 
 end

@@ -5270,8 +5270,8 @@ char *names891 [] =
 "fingers_count",
 "x",
 "y",
-"difference",
-"template_hash",
+"distance",
+"angle",
 };
 
 char *names892 [] =
@@ -5279,8 +5279,8 @@ char *names892 [] =
 "fingers_count",
 "x",
 "y",
-"distance",
-"angle",
+"difference",
+"template_hash",
 };
 
 char *names895 [] =
@@ -5499,6 +5499,15 @@ char *names911 [] =
 char *names912 [] =
 {
 "manual_error",
+"has_error",
+"is_manual_error",
+"shared",
+"item",
+};
+
+char *names913 [] =
+{
+"manual_error",
 "axis_motion_actions_internal",
 "axis_motion_events_callback",
 "ball_motion_actions_internal",
@@ -5519,16 +5528,6 @@ char *names912 [] =
 "is_events_running",
 "index",
 "item",
-};
-
-char *names913 [] =
-{
-"managed_pointer",
-"manual_error",
-"shared",
-"has_error",
-"is_manual_error",
-"internal_item",
 };
 
 char *names914 [] =
@@ -5773,6 +5772,7 @@ char *names925 [] =
 {
 "managed_pointer",
 "manual_error",
+"other",
 "internal_item_exists",
 "has_error",
 "is_manual_error",
@@ -5785,6 +5785,7 @@ char *names926 [] =
 {
 "managed_pointer",
 "manual_error",
+"other",
 "animation_coordinates",
 "internal_item_exists",
 "has_error",
@@ -5810,6 +5811,7 @@ char *names927 [] =
 {
 "managed_pointer",
 "manual_error",
+"other",
 "internal_item_exists",
 "has_error",
 "is_manual_error",
@@ -5874,13 +5876,13 @@ char *names931 [] =
 
 char *names932 [] =
 {
-"internal_name",
+"target",
+"object_comparison",
 };
 
 char *names933 [] =
 {
-"target",
-"object_comparison",
+"internal_name",
 };
 
 

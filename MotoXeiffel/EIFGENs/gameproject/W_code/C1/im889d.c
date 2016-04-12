@@ -58,7 +58,7 @@ static const struct desc_info desc_889[] = {
 	{EIF_NON_GENERIC(0x06F1 /*888*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01AF /*215*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_889), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_889), 15029, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_889), 15034, 0xFFFFFFFF},
 };
 void Init889(void)
 {

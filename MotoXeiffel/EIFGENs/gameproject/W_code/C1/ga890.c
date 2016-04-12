@@ -10,10 +10,10 @@
 extern "C" {
 #endif
 
-extern void F890_9331(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F890_9332(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F890_9333(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F890_9334(EIF_REFERENCE);
+extern void F890_9336(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F890_9337(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F890_9338(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F890_9339(EIF_REFERENCE);
 extern void EIF_Minit890(void);
 
 #ifdef __cplusplus
@@ -36,7 +36,7 @@ extern "C" {
 #endif
 
 /* {GAME_GESTURE}.make */
-void F890_9331 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x, EIF_TYPED_VALUE arg3x)
+void F890_9336 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x, EIF_TYPED_VALUE arg3x)
 {
 	GTCX
 	char *l_feature_name = "make";
@@ -62,22 +62,22 @@ void F890_9331 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE ar
 	RTLU(SK_UINT32,&arg3);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 889, Current, 0, 3, 15030);
+	RTEAA(l_feature_name, 889, Current, 0, 3, 15035);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(889, Current, 15030);
+	RTDBGEAA(889, Current, 15035);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAA(Current, dtype, 7216, 0x18000000, 1); /* x */
-	*(EIF_REAL_32 *)(Current + RTWA(7216, dtype)) = (EIF_REAL_32) arg1;
+	RTDBGAA(Current, dtype, 7221, 0x18000000, 1); /* x */
+	*(EIF_REAL_32 *)(Current + RTWA(7221, dtype)) = (EIF_REAL_32) arg1;
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 7217, 0x18000000, 1); /* y */
-	*(EIF_REAL_32 *)(Current + RTWA(7217, dtype)) = (EIF_REAL_32) arg2;
+	RTDBGAA(Current, dtype, 7222, 0x18000000, 1); /* y */
+	*(EIF_REAL_32 *)(Current + RTWA(7222, dtype)) = (EIF_REAL_32) arg2;
 	RTHOOK(3);
-	RTDBGAA(Current, dtype, 7218, 0x38000000, 1); /* fingers_count */
-	*(EIF_NATURAL_32 *)(Current + RTWA(7218, dtype)) = (EIF_NATURAL_32) arg3;
+	RTDBGAA(Current, dtype, 7223, 0x38000000, 1); /* fingers_count */
+	*(EIF_NATURAL_32 *)(Current + RTWA(7223, dtype)) = (EIF_NATURAL_32) arg3;
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(4);
@@ -92,31 +92,31 @@ void F890_9331 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE ar
 }
 
 /* {GAME_GESTURE}.x */
-EIF_TYPED_VALUE F890_9332 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F890_9337 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_REAL32;
-	r.it_r4 = *(EIF_REAL_32 *)(Current + RTWA(7216,Dtype(Current)));
+	r.it_r4 = *(EIF_REAL_32 *)(Current + RTWA(7221,Dtype(Current)));
 	return r;
 }
 
 
 /* {GAME_GESTURE}.y */
-EIF_TYPED_VALUE F890_9333 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F890_9338 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_REAL32;
-	r.it_r4 = *(EIF_REAL_32 *)(Current + RTWA(7217,Dtype(Current)));
+	r.it_r4 = *(EIF_REAL_32 *)(Current + RTWA(7222,Dtype(Current)));
 	return r;
 }
 
 
 /* {GAME_GESTURE}.fingers_count */
-EIF_TYPED_VALUE F890_9334 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F890_9339 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_UINT32;
-	r.it_n4 = *(EIF_NATURAL_32 *)(Current + RTWA(7218,Dtype(Current)));
+	r.it_n4 = *(EIF_NATURAL_32 *)(Current + RTWA(7223,Dtype(Current)));
 	return r;
 }
 

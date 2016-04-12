@@ -59,10 +59,10 @@ OLDOBJECTS =  ga888.o ga888d.o ga875.o ga875d.o im889.o im889d.o ga863.o ga863d.
 	ga887.o ga887d.o ga870.o ga870d.o ga879.o ga879d.o ga874.o ga874d.o \
 	ga885.o ga885d.o im878.o im878d.o ga886.o ga886d.o ga869.o ga869d.o \
 	im862.o im862d.o im877.o im877d.o ga884.o ga884d.o ga883.o ga883d.o \
-	ga876.o ga876d.o ga868.o ga868d.o ga865.o ga865d.o ga866.o ga866d.o \
-	ga867.o ga867d.o ga880.o ga880d.o ga861.o ga861d.o ga882.o ga882d.o \
-	ga872.o ga872d.o ga881.o ga881d.o ga864.o ga864d.o ga871.o ga871d.o \
-	ga892.o ga892d.o ga891.o ga891d.o ga873.o ga873d.o ga890.o ga890d.o 
+	ga876.o ga876d.o ga866.o ga866d.o ga867.o ga867d.o ga868.o ga868d.o \
+	ga865.o ga865d.o ga880.o ga880d.o ga861.o ga861d.o ga882.o ga882d.o \
+	ga872.o ga872d.o ga881.o ga881d.o ga864.o ga864d.o ga892.o ga892d.o \
+	ga891.o ga891d.o ga873.o ga873d.o ga871.o ga871d.o ga890.o ga890d.o 
 
 all: Cobj1.o
 

@@ -10,12 +10,12 @@
 extern "C" {
 #endif
 
-extern void F901_9379(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F901_9380(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F901_9381(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F901_9382(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F901_9383(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F901_9384(EIF_REFERENCE);
+extern void F901_9384(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F901_9385(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F901_9386(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F901_9387(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F901_9388(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F901_9389(EIF_REFERENCE);
 extern void EIF_Minit901(void);
 
 #ifdef __cplusplus
@@ -38,7 +38,7 @@ extern "C" {
 #endif
 
 /* {GAME_TOUCH_DEVICE}.make */
-void F901_9379 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F901_9384 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "make";
@@ -69,27 +69,27 @@ void F901_9379 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_INT32,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 900, Current, 0, 1, 15081);
+	RTEAA(l_feature_name, 900, Current, 0, 1, 15086);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(900, Current, 15081);
+	RTDBGEAA(900, Current, 15086);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAA(Current, dtype, 7254, 0x24000000, 1); /* index */
+	RTDBGAA(Current, dtype, 7259, 0x24000000, 1); /* index */
 	ui4_1 = arg1;
-	ti8_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5130, 862))(Current, ui4_1x)).it_i8);
-	*(EIF_INTEGER_64 *)(Current + RTWA(7254, dtype)) = (EIF_INTEGER_64) ti8_1;
+	ti8_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5131, 862))(Current, ui4_1x)).it_i8);
+	*(EIF_INTEGER_64 *)(Current + RTWA(7259, dtype)) = (EIF_INTEGER_64) ti8_1;
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 7253, 0xF8000398, 0); /* events_controller */
-	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7247, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	RTDBGAA(Current, dtype, 7258, 0xF8000398, 0); /* events_controller */
+	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7252, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(2,1);
-	tr2 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7187, "events_controller", tr1))(tr1)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
+	tr2 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7192, "events_controller", tr1))(tr1)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
 	RTAR(Current, tr2);
-	*(EIF_REFERENCE *)(Current + RTWA(7253, dtype)) = (EIF_REFERENCE) RTCCL(tr2);
+	*(EIF_REFERENCE *)(Current + RTWA(7258, dtype)) = (EIF_REFERENCE) RTCCL(tr2);
 	RTHOOK(3);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6972, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6974, dtype))(Current);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(4);
@@ -105,7 +105,7 @@ void F901_9379 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 }
 
 /* {GAME_TOUCH_DEVICE}.finger_count */
-EIF_TYPED_VALUE F901_9380 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F901_9385 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "finger_count";
@@ -125,18 +125,18 @@ EIF_TYPED_VALUE F901_9380 (EIF_REFERENCE Current)
 	RTLU (SK_INT32, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 900, Current, 0, 0, 15082);
+	RTEAA(l_feature_name, 900, Current, 0, 0, 15087);
 	RTSA(Dtype(Current));
 	RTSC;
 	RTME(Dtype(Current), 0);
 	RTGC;
-	RTDBGEAA(900, Current, 15082);
+	RTDBGEAA(900, Current, 15087);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x10000000, 1,0); /* Result */
-	ti8_1 = *(EIF_INTEGER_64 *)(Current + RTWA(7254, Dtype(Current)));
+	ti8_1 = *(EIF_INTEGER_64 *)(Current + RTWA(7259, Dtype(Current)));
 	ui8_1 = ti8_1;
-	Result = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5131, 862))(Current, ui8_1x)).it_i4);
+	Result = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5132, 862))(Current, ui8_1x)).it_i4);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -150,7 +150,7 @@ EIF_TYPED_VALUE F901_9380 (EIF_REFERENCE Current)
 }
 
 /* {GAME_TOUCH_DEVICE}.finger_with_number */
-EIF_TYPED_VALUE F901_9381 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F901_9386 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "finger_with_number";
@@ -179,12 +179,12 @@ EIF_TYPED_VALUE F901_9381 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_INT32,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 900, Current, 0, 1, 15083);
+	RTEAA(l_feature_name, 900, Current, 0, 1, 15088);
 	RTSA(Dtype(Current));
 	RTSC;
 	RTME(Dtype(Current), 0);
 	RTGC;
-	RTDBGEAA(900, Current, 15083);
+	RTDBGEAA(900, Current, 15088);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
@@ -201,7 +201,7 @@ body:;
 	tr1 = RTLN(eif_new_type(871, 0x01).id);
 	ur1 = RTCCL(Current);
 	ui4_1 = arg1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWC(6431, Dtype(tr1)))(tr1, ur1x, ui4_1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWC(6433, Dtype(tr1)))(tr1, ur1x, ui4_1x);
 	RTNHOOK(2,1);
 	Result = (EIF_REFERENCE) RTCCL(tr1);
 	RTVI(Current, RTAL);
@@ -219,7 +219,7 @@ body:;
 }
 
 /* {GAME_TOUCH_DEVICE}.fingers */
-EIF_TYPED_VALUE F901_9382 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F901_9387 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "fingers";
@@ -250,12 +250,12 @@ EIF_TYPED_VALUE F901_9382 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Current);
 	RTLU(SK_INT32, &loc1);
 	
-	RTEAA(l_feature_name, 900, Current, 1, 0, 15084);
+	RTEAA(l_feature_name, 900, Current, 1, 0, 15089);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(900, Current, 15084);
+	RTDBGEAA(900, Current, 15089);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0xF8000166, 0,0); /* Result */
@@ -267,7 +267,7 @@ EIF_TYPED_VALUE F901_9382 (EIF_REFERENCE Current)
 		typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 		tr1 = RTLN(typres0.id);
 	}
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7250, dtype))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7255, dtype))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3422, Dtype(tr1)))(tr1, ui4_1x);
 	RTNHOOK(1,1);
@@ -277,11 +277,11 @@ EIF_TYPED_VALUE F901_9382 (EIF_REFERENCE Current)
 	loc1 = (EIF_INTEGER_32) ((EIF_INTEGER_32) 1L);
 	for (;;) {
 		RTHOOK(3);
-		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7250, dtype))(Current)).it_i4);
+		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7255, dtype))(Current)).it_i4);
 		if ((EIF_BOOLEAN) (loc1 > ti4_1)) break;
 		RTHOOK(4);
 		ui4_1 = loc1;
-		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(7251, dtype))(Current, ui4_1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(7256, dtype))(Current, ui4_1x)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 		ur1 = RTCCL(tr1);
 		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1711, "extend", Result))(Result, ur1x);
 		RTHOOK(5);
@@ -303,21 +303,21 @@ EIF_TYPED_VALUE F901_9382 (EIF_REFERENCE Current)
 }
 
 /* {GAME_TOUCH_DEVICE}.index */
-EIF_TYPED_VALUE F901_9383 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F901_9388 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_INT64;
-	r.it_i8 = *(EIF_INTEGER_64 *)(Current + RTWA(7254,Dtype(Current)));
+	r.it_i8 = *(EIF_INTEGER_64 *)(Current + RTWA(7259,Dtype(Current)));
 	return r;
 }
 
 
 /* {GAME_TOUCH_DEVICE}.events_controller */
-EIF_TYPED_VALUE F901_9384 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F901_9389 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_REF;
-	r.it_r = *(EIF_REFERENCE *)(Current + RTWA(7253,Dtype(Current)));
+	r.it_r = *(EIF_REFERENCE *)(Current + RTWA(7258,Dtype(Current)));
 	return r;
 }
 

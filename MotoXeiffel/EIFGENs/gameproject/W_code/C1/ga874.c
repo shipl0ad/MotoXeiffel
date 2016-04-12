@@ -10,10 +10,8 @@
 extern "C" {
 #endif
 
-extern void F874_8525(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern void F874_8526(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F874_8527(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F874_8528(EIF_REFERENCE);
+extern void F874_8527(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern void F874_8528(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern EIF_TYPED_VALUE F874_8529(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F874_8530(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F874_8531(EIF_REFERENCE);
@@ -493,6 +491,8 @@ extern EIF_TYPED_VALUE F874_9004(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F874_9005(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F874_9006(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F874_9007(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F874_9008(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F874_9009(EIF_REFERENCE);
 extern void EIF_Minit874(void);
 
 #ifdef __cplusplus
@@ -515,7 +515,7 @@ extern "C" {
 #endif
 
 /* {GAME_KEY}.make_from_physical_code */
-void F874_8525 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F874_8527 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "make_from_physical_code";
@@ -538,22 +538,22 @@ void F874_8525 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_INT32,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 873, Current, 0, 1, 14206);
+	RTEAA(l_feature_name, 873, Current, 0, 1, 14208);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(873, Current, 14206);
+	RTDBGEAA(873, Current, 14208);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAA(Current, dtype, 6442, 0x10000000, 1); /* physical_code */
-	*(EIF_INTEGER_32 *)(Current + RTWA(6442, dtype)) = (EIF_INTEGER_32) arg1;
+	RTDBGAA(Current, dtype, 6444, 0x10000000, 1); /* physical_code */
+	*(EIF_INTEGER_32 *)(Current + RTWA(6444, dtype)) = (EIF_INTEGER_32) arg1;
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 6441, 0x10000000, 1); /* virtual_code */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, dtype));
+	RTDBGAA(Current, dtype, 6443, 0x10000000, 1); /* virtual_code */
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, dtype));
 	ui4_1 = ti4_1;
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(4944, 862))(Current, ui4_1x)).it_i4);
-	*(EIF_INTEGER_32 *)(Current + RTWA(6441, dtype)) = (EIF_INTEGER_32) ti4_1;
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(4945, 862))(Current, ui4_1x)).it_i4);
+	*(EIF_INTEGER_32 *)(Current + RTWA(6443, dtype)) = (EIF_INTEGER_32) ti4_1;
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(3);
@@ -567,7 +567,7 @@ void F874_8525 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 }
 
 /* {GAME_KEY}.make_from_virtual_code */
-void F874_8526 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F874_8528 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "make_from_virtual_code";
@@ -590,22 +590,22 @@ void F874_8526 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_INT32,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 873, Current, 0, 1, 14207);
+	RTEAA(l_feature_name, 873, Current, 0, 1, 14209);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(873, Current, 14207);
+	RTDBGEAA(873, Current, 14209);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAA(Current, dtype, 6441, 0x10000000, 1); /* virtual_code */
-	*(EIF_INTEGER_32 *)(Current + RTWA(6441, dtype)) = (EIF_INTEGER_32) arg1;
+	RTDBGAA(Current, dtype, 6443, 0x10000000, 1); /* virtual_code */
+	*(EIF_INTEGER_32 *)(Current + RTWA(6443, dtype)) = (EIF_INTEGER_32) arg1;
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 6442, 0x10000000, 1); /* physical_code */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, dtype));
+	RTDBGAA(Current, dtype, 6444, 0x10000000, 1); /* physical_code */
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, dtype));
 	ui4_1 = ti4_1;
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(4945, 862))(Current, ui4_1x)).it_i4);
-	*(EIF_INTEGER_32 *)(Current + RTWA(6442, dtype)) = (EIF_INTEGER_32) ti4_1;
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(4946, 862))(Current, ui4_1x)).it_i4);
+	*(EIF_INTEGER_32 *)(Current + RTWA(6444, dtype)) = (EIF_INTEGER_32) ti4_1;
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(3);
@@ -619,27 +619,27 @@ void F874_8526 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 }
 
 /* {GAME_KEY}.virtual_code */
-EIF_TYPED_VALUE F874_8527 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F874_8529 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_INT32;
-	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(6441,Dtype(Current)));
+	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(6443,Dtype(Current)));
 	return r;
 }
 
 
 /* {GAME_KEY}.physical_code */
-EIF_TYPED_VALUE F874_8528 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F874_8530 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_INT32;
-	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(6442,Dtype(Current)));
+	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(6444,Dtype(Current)));
 	return r;
 }
 
 
 /* {GAME_KEY}.unicode_out */
-EIF_TYPED_VALUE F874_8529 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F874_8531 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "unicode_out";
@@ -666,12 +666,12 @@ EIF_TYPED_VALUE F874_8529 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 873, Current, 0, 0, 14210);
+	RTEAA(l_feature_name, 873, Current, 0, 0, 14212);
 	RTSA(Dtype(Current));
 	RTSC;
 	RTME(Dtype(Current), 0);
 	RTGC;
-	RTDBGEAA(873, Current, 14210);
+	RTDBGEAA(873, Current, 14212);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0xF80000D9, 0,0); /* Result */
@@ -696,7 +696,7 @@ EIF_TYPED_VALUE F874_8529 (EIF_REFERENCE Current)
 }
 
 /* {GAME_KEY}.out */
-EIF_TYPED_VALUE F874_8530 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F874_8532 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "out";
@@ -728,18 +728,18 @@ EIF_TYPED_VALUE F874_8530 (EIF_REFERENCE Current)
 	RTLU(SK_POINTER, &loc1);
 	RTLU(SK_REF, &loc2);
 	
-	RTEAA(l_feature_name, 873, Current, 2, 0, 14211);
+	RTEAA(l_feature_name, 873, Current, 2, 0, 14213);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(873, Current, 14211);
+	RTDBGEAA(873, Current, 14213);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 1, 0x40000000, 1, 0); /* loc1 */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, dtype));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, dtype));
 	ui4_1 = ti4_1;
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(4943, 862))(Current, ui4_1x)).it_p);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(4944, 862))(Current, ui4_1x)).it_p);
 	RTHOOK(2);
 	tb1 = !loc1;
 	if ((EIF_BOOLEAN) !tb1) {
@@ -782,96 +782,10 @@ EIF_TYPED_VALUE F874_8530 (EIF_REFERENCE Current)
 }
 
 /* {GAME_KEY}.is_unknown */
-EIF_TYPED_VALUE F874_8531 (EIF_REFERENCE Current)
-{
-	GTCX
-	char *l_feature_name = "is_unknown";
-	RTEX;
-	EIF_INTEGER_32 ti4_1;
-	EIF_INTEGER_32 ti4_2;
-	EIF_BOOLEAN Result = ((EIF_BOOLEAN) 0);
-	
-	RTSN;
-	RTDA;
-	RTLD;
-	
-	RTLI(1);
-	RTLR(0,Current);
-	RTLIU(1);
-	RTLU (SK_BOOL, &Result);
-	RTLU (SK_REF, &Current);
-	
-	RTEAA(l_feature_name, 873, Current, 0, 0, 14212);
-	RTSA(Dtype(Current));
-	RTSC;
-	RTME(Dtype(Current), 0);
-	RTGC;
-	RTDBGEAA(873, Current, 14212);
-	RTIV(Current, RTAL);
-	RTHOOK(1);
-	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
-	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6026, 862))(Current)).it_i4);
-	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
-	RTVI(Current, RTAL);
-	RTRS;
-	RTHOOK(2);
-	RTDBGLE;
-	RTMD(0);
-	RTLE;
-	RTLO(2);
-	RTEE;
-	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
-}
-
-/* {GAME_KEY}.is_return */
-EIF_TYPED_VALUE F874_8532 (EIF_REFERENCE Current)
-{
-	GTCX
-	char *l_feature_name = "is_return";
-	RTEX;
-	EIF_INTEGER_32 ti4_1;
-	EIF_INTEGER_32 ti4_2;
-	EIF_BOOLEAN Result = ((EIF_BOOLEAN) 0);
-	
-	RTSN;
-	RTDA;
-	RTLD;
-	
-	RTLI(1);
-	RTLR(0,Current);
-	RTLIU(1);
-	RTLU (SK_BOOL, &Result);
-	RTLU (SK_REF, &Current);
-	
-	RTEAA(l_feature_name, 873, Current, 0, 0, 14213);
-	RTSA(Dtype(Current));
-	RTSC;
-	RTME(Dtype(Current), 0);
-	RTGC;
-	RTDBGEAA(873, Current, 14213);
-	RTIV(Current, RTAL);
-	RTHOOK(1);
-	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
-	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6027, 862))(Current)).it_i4);
-	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
-	RTVI(Current, RTAL);
-	RTRS;
-	RTHOOK(2);
-	RTDBGLE;
-	RTMD(0);
-	RTLE;
-	RTLO(2);
-	RTEE;
-	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
-}
-
-/* {GAME_KEY}.is_escape */
 EIF_TYPED_VALUE F874_8533 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_escape";
+	char *l_feature_name = "is_unknown";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -896,7 +810,7 @@ EIF_TYPED_VALUE F874_8533 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6028, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -910,11 +824,11 @@ EIF_TYPED_VALUE F874_8533 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_backspace */
+/* {GAME_KEY}.is_return */
 EIF_TYPED_VALUE F874_8534 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_backspace";
+	char *l_feature_name = "is_return";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -939,7 +853,7 @@ EIF_TYPED_VALUE F874_8534 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6029, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -953,11 +867,11 @@ EIF_TYPED_VALUE F874_8534 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_tab */
+/* {GAME_KEY}.is_escape */
 EIF_TYPED_VALUE F874_8535 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_tab";
+	char *l_feature_name = "is_escape";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -982,7 +896,7 @@ EIF_TYPED_VALUE F874_8535 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6030, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -996,11 +910,11 @@ EIF_TYPED_VALUE F874_8535 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_space */
+/* {GAME_KEY}.is_backspace */
 EIF_TYPED_VALUE F874_8536 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_space";
+	char *l_feature_name = "is_backspace";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1025,7 +939,7 @@ EIF_TYPED_VALUE F874_8536 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6031, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1039,11 +953,11 @@ EIF_TYPED_VALUE F874_8536 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_exclaim */
+/* {GAME_KEY}.is_tab */
 EIF_TYPED_VALUE F874_8537 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_exclaim";
+	char *l_feature_name = "is_tab";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1068,7 +982,7 @@ EIF_TYPED_VALUE F874_8537 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6032, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1082,11 +996,11 @@ EIF_TYPED_VALUE F874_8537 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_double_quote */
+/* {GAME_KEY}.is_space */
 EIF_TYPED_VALUE F874_8538 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_double_quote";
+	char *l_feature_name = "is_space";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1111,7 +1025,7 @@ EIF_TYPED_VALUE F874_8538 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6033, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1125,11 +1039,11 @@ EIF_TYPED_VALUE F874_8538 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_hash */
+/* {GAME_KEY}.is_exclaim */
 EIF_TYPED_VALUE F874_8539 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_hash";
+	char *l_feature_name = "is_exclaim";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1154,7 +1068,7 @@ EIF_TYPED_VALUE F874_8539 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6034, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1168,11 +1082,11 @@ EIF_TYPED_VALUE F874_8539 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_percent */
+/* {GAME_KEY}.is_double_quote */
 EIF_TYPED_VALUE F874_8540 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_percent";
+	char *l_feature_name = "is_double_quote";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1197,7 +1111,7 @@ EIF_TYPED_VALUE F874_8540 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6035, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1211,11 +1125,11 @@ EIF_TYPED_VALUE F874_8540 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_dollar */
+/* {GAME_KEY}.is_hash */
 EIF_TYPED_VALUE F874_8541 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_dollar";
+	char *l_feature_name = "is_hash";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1240,7 +1154,7 @@ EIF_TYPED_VALUE F874_8541 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6036, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1254,11 +1168,11 @@ EIF_TYPED_VALUE F874_8541 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_ampersand */
+/* {GAME_KEY}.is_percent */
 EIF_TYPED_VALUE F874_8542 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_ampersand";
+	char *l_feature_name = "is_percent";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1283,7 +1197,7 @@ EIF_TYPED_VALUE F874_8542 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6037, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1297,11 +1211,11 @@ EIF_TYPED_VALUE F874_8542 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_quote */
+/* {GAME_KEY}.is_dollar */
 EIF_TYPED_VALUE F874_8543 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_quote";
+	char *l_feature_name = "is_dollar";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1326,7 +1240,7 @@ EIF_TYPED_VALUE F874_8543 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6038, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1340,11 +1254,11 @@ EIF_TYPED_VALUE F874_8543 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_left_parenthesis */
+/* {GAME_KEY}.is_ampersand */
 EIF_TYPED_VALUE F874_8544 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_left_parenthesis";
+	char *l_feature_name = "is_ampersand";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1369,7 +1283,7 @@ EIF_TYPED_VALUE F874_8544 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6039, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1383,11 +1297,11 @@ EIF_TYPED_VALUE F874_8544 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_right_parenthesis */
+/* {GAME_KEY}.is_quote */
 EIF_TYPED_VALUE F874_8545 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_right_parenthesis";
+	char *l_feature_name = "is_quote";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1412,7 +1326,7 @@ EIF_TYPED_VALUE F874_8545 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6040, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1426,11 +1340,11 @@ EIF_TYPED_VALUE F874_8545 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_asterisk */
+/* {GAME_KEY}.is_left_parenthesis */
 EIF_TYPED_VALUE F874_8546 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_asterisk";
+	char *l_feature_name = "is_left_parenthesis";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1455,7 +1369,7 @@ EIF_TYPED_VALUE F874_8546 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6041, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1469,11 +1383,11 @@ EIF_TYPED_VALUE F874_8546 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_plus */
+/* {GAME_KEY}.is_right_parenthesis */
 EIF_TYPED_VALUE F874_8547 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_plus";
+	char *l_feature_name = "is_right_parenthesis";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1498,7 +1412,7 @@ EIF_TYPED_VALUE F874_8547 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6042, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1512,11 +1426,11 @@ EIF_TYPED_VALUE F874_8547 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_comma */
+/* {GAME_KEY}.is_asterisk */
 EIF_TYPED_VALUE F874_8548 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_comma";
+	char *l_feature_name = "is_asterisk";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1541,7 +1455,7 @@ EIF_TYPED_VALUE F874_8548 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6043, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1555,11 +1469,11 @@ EIF_TYPED_VALUE F874_8548 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_minus */
+/* {GAME_KEY}.is_plus */
 EIF_TYPED_VALUE F874_8549 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_minus";
+	char *l_feature_name = "is_plus";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1584,7 +1498,7 @@ EIF_TYPED_VALUE F874_8549 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6044, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1598,11 +1512,11 @@ EIF_TYPED_VALUE F874_8549 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_period */
+/* {GAME_KEY}.is_comma */
 EIF_TYPED_VALUE F874_8550 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_period";
+	char *l_feature_name = "is_comma";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1627,7 +1541,7 @@ EIF_TYPED_VALUE F874_8550 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6045, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1641,11 +1555,11 @@ EIF_TYPED_VALUE F874_8550 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_slash */
+/* {GAME_KEY}.is_minus */
 EIF_TYPED_VALUE F874_8551 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_slash";
+	char *l_feature_name = "is_minus";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1670,7 +1584,7 @@ EIF_TYPED_VALUE F874_8551 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6046, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1684,11 +1598,11 @@ EIF_TYPED_VALUE F874_8551 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_0 */
+/* {GAME_KEY}.is_period */
 EIF_TYPED_VALUE F874_8552 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_0";
+	char *l_feature_name = "is_period";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1713,7 +1627,7 @@ EIF_TYPED_VALUE F874_8552 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6047, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1727,11 +1641,11 @@ EIF_TYPED_VALUE F874_8552 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_1 */
+/* {GAME_KEY}.is_slash */
 EIF_TYPED_VALUE F874_8553 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_1";
+	char *l_feature_name = "is_slash";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1756,7 +1670,7 @@ EIF_TYPED_VALUE F874_8553 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6048, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1770,11 +1684,11 @@ EIF_TYPED_VALUE F874_8553 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_2 */
+/* {GAME_KEY}.is_0 */
 EIF_TYPED_VALUE F874_8554 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_2";
+	char *l_feature_name = "is_0";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1799,7 +1713,7 @@ EIF_TYPED_VALUE F874_8554 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6049, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1813,11 +1727,11 @@ EIF_TYPED_VALUE F874_8554 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_3 */
+/* {GAME_KEY}.is_1 */
 EIF_TYPED_VALUE F874_8555 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_3";
+	char *l_feature_name = "is_1";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1842,7 +1756,7 @@ EIF_TYPED_VALUE F874_8555 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6050, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1856,11 +1770,11 @@ EIF_TYPED_VALUE F874_8555 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_4 */
+/* {GAME_KEY}.is_2 */
 EIF_TYPED_VALUE F874_8556 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_4";
+	char *l_feature_name = "is_2";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1885,7 +1799,7 @@ EIF_TYPED_VALUE F874_8556 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6051, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1899,11 +1813,11 @@ EIF_TYPED_VALUE F874_8556 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_5 */
+/* {GAME_KEY}.is_3 */
 EIF_TYPED_VALUE F874_8557 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_5";
+	char *l_feature_name = "is_3";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1928,7 +1842,7 @@ EIF_TYPED_VALUE F874_8557 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6052, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1942,11 +1856,11 @@ EIF_TYPED_VALUE F874_8557 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_6 */
+/* {GAME_KEY}.is_4 */
 EIF_TYPED_VALUE F874_8558 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_6";
+	char *l_feature_name = "is_4";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -1971,7 +1885,7 @@ EIF_TYPED_VALUE F874_8558 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6053, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -1985,11 +1899,11 @@ EIF_TYPED_VALUE F874_8558 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_7 */
+/* {GAME_KEY}.is_5 */
 EIF_TYPED_VALUE F874_8559 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_7";
+	char *l_feature_name = "is_5";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2014,7 +1928,7 @@ EIF_TYPED_VALUE F874_8559 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6054, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2028,11 +1942,11 @@ EIF_TYPED_VALUE F874_8559 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_8 */
+/* {GAME_KEY}.is_6 */
 EIF_TYPED_VALUE F874_8560 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_8";
+	char *l_feature_name = "is_6";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2057,7 +1971,7 @@ EIF_TYPED_VALUE F874_8560 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6055, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2071,11 +1985,11 @@ EIF_TYPED_VALUE F874_8560 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_9 */
+/* {GAME_KEY}.is_7 */
 EIF_TYPED_VALUE F874_8561 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_9";
+	char *l_feature_name = "is_7";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2100,7 +2014,7 @@ EIF_TYPED_VALUE F874_8561 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6056, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2114,11 +2028,11 @@ EIF_TYPED_VALUE F874_8561 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_colon */
+/* {GAME_KEY}.is_8 */
 EIF_TYPED_VALUE F874_8562 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_colon";
+	char *l_feature_name = "is_8";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2143,7 +2057,7 @@ EIF_TYPED_VALUE F874_8562 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6057, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2157,11 +2071,11 @@ EIF_TYPED_VALUE F874_8562 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_semicolon */
+/* {GAME_KEY}.is_9 */
 EIF_TYPED_VALUE F874_8563 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_semicolon";
+	char *l_feature_name = "is_9";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2186,7 +2100,7 @@ EIF_TYPED_VALUE F874_8563 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6058, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2200,11 +2114,11 @@ EIF_TYPED_VALUE F874_8563 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_less */
+/* {GAME_KEY}.is_colon */
 EIF_TYPED_VALUE F874_8564 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_less";
+	char *l_feature_name = "is_colon";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2229,7 +2143,7 @@ EIF_TYPED_VALUE F874_8564 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6059, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2243,11 +2157,11 @@ EIF_TYPED_VALUE F874_8564 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_equals */
+/* {GAME_KEY}.is_semicolon */
 EIF_TYPED_VALUE F874_8565 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_equals";
+	char *l_feature_name = "is_semicolon";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2272,7 +2186,7 @@ EIF_TYPED_VALUE F874_8565 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6060, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2286,11 +2200,11 @@ EIF_TYPED_VALUE F874_8565 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_greater */
+/* {GAME_KEY}.is_less */
 EIF_TYPED_VALUE F874_8566 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_greater";
+	char *l_feature_name = "is_less";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2315,7 +2229,7 @@ EIF_TYPED_VALUE F874_8566 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6061, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2329,11 +2243,11 @@ EIF_TYPED_VALUE F874_8566 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_question_mark */
+/* {GAME_KEY}.is_equals */
 EIF_TYPED_VALUE F874_8567 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_question_mark";
+	char *l_feature_name = "is_equals";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2358,7 +2272,7 @@ EIF_TYPED_VALUE F874_8567 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6062, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2372,11 +2286,11 @@ EIF_TYPED_VALUE F874_8567 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_at */
+/* {GAME_KEY}.is_greater */
 EIF_TYPED_VALUE F874_8568 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_at";
+	char *l_feature_name = "is_greater";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2401,7 +2315,7 @@ EIF_TYPED_VALUE F874_8568 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6063, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2415,11 +2329,11 @@ EIF_TYPED_VALUE F874_8568 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_left_bracket */
+/* {GAME_KEY}.is_question_mark */
 EIF_TYPED_VALUE F874_8569 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_left_bracket";
+	char *l_feature_name = "is_question_mark";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2444,7 +2358,7 @@ EIF_TYPED_VALUE F874_8569 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6064, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2458,11 +2372,11 @@ EIF_TYPED_VALUE F874_8569 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_backslash */
+/* {GAME_KEY}.is_at */
 EIF_TYPED_VALUE F874_8570 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_backslash";
+	char *l_feature_name = "is_at";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2487,7 +2401,7 @@ EIF_TYPED_VALUE F874_8570 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6065, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2501,11 +2415,11 @@ EIF_TYPED_VALUE F874_8570 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_right_bracket */
+/* {GAME_KEY}.is_left_bracket */
 EIF_TYPED_VALUE F874_8571 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_right_bracket";
+	char *l_feature_name = "is_left_bracket";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2530,7 +2444,7 @@ EIF_TYPED_VALUE F874_8571 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6066, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2544,11 +2458,11 @@ EIF_TYPED_VALUE F874_8571 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_caret */
+/* {GAME_KEY}.is_backslash */
 EIF_TYPED_VALUE F874_8572 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_caret";
+	char *l_feature_name = "is_backslash";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2573,7 +2487,7 @@ EIF_TYPED_VALUE F874_8572 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6067, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2587,11 +2501,11 @@ EIF_TYPED_VALUE F874_8572 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_underscore */
+/* {GAME_KEY}.is_right_bracket */
 EIF_TYPED_VALUE F874_8573 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_underscore";
+	char *l_feature_name = "is_right_bracket";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2616,7 +2530,7 @@ EIF_TYPED_VALUE F874_8573 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6068, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2630,11 +2544,11 @@ EIF_TYPED_VALUE F874_8573 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_backquote */
+/* {GAME_KEY}.is_caret */
 EIF_TYPED_VALUE F874_8574 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_backquote";
+	char *l_feature_name = "is_caret";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2659,7 +2573,7 @@ EIF_TYPED_VALUE F874_8574 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6069, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2673,11 +2587,11 @@ EIF_TYPED_VALUE F874_8574 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_a */
+/* {GAME_KEY}.is_underscore */
 EIF_TYPED_VALUE F874_8575 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_a";
+	char *l_feature_name = "is_underscore";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2702,7 +2616,7 @@ EIF_TYPED_VALUE F874_8575 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6070, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2716,11 +2630,11 @@ EIF_TYPED_VALUE F874_8575 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_b */
+/* {GAME_KEY}.is_backquote */
 EIF_TYPED_VALUE F874_8576 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_b";
+	char *l_feature_name = "is_backquote";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2745,7 +2659,7 @@ EIF_TYPED_VALUE F874_8576 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6071, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2759,11 +2673,11 @@ EIF_TYPED_VALUE F874_8576 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_c */
+/* {GAME_KEY}.is_a */
 EIF_TYPED_VALUE F874_8577 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_c";
+	char *l_feature_name = "is_a";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2788,7 +2702,7 @@ EIF_TYPED_VALUE F874_8577 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6072, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2802,11 +2716,11 @@ EIF_TYPED_VALUE F874_8577 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_d */
+/* {GAME_KEY}.is_b */
 EIF_TYPED_VALUE F874_8578 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_d";
+	char *l_feature_name = "is_b";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2831,7 +2745,7 @@ EIF_TYPED_VALUE F874_8578 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6073, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2845,11 +2759,11 @@ EIF_TYPED_VALUE F874_8578 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_e */
+/* {GAME_KEY}.is_c */
 EIF_TYPED_VALUE F874_8579 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_e";
+	char *l_feature_name = "is_c";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2874,7 +2788,7 @@ EIF_TYPED_VALUE F874_8579 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6074, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2888,11 +2802,11 @@ EIF_TYPED_VALUE F874_8579 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f */
+/* {GAME_KEY}.is_d */
 EIF_TYPED_VALUE F874_8580 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f";
+	char *l_feature_name = "is_d";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2917,7 +2831,7 @@ EIF_TYPED_VALUE F874_8580 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6075, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2931,11 +2845,11 @@ EIF_TYPED_VALUE F874_8580 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_g */
+/* {GAME_KEY}.is_e */
 EIF_TYPED_VALUE F874_8581 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_g";
+	char *l_feature_name = "is_e";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -2960,7 +2874,7 @@ EIF_TYPED_VALUE F874_8581 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6076, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -2974,11 +2888,11 @@ EIF_TYPED_VALUE F874_8581 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_h */
+/* {GAME_KEY}.is_f */
 EIF_TYPED_VALUE F874_8582 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_h";
+	char *l_feature_name = "is_f";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3003,7 +2917,7 @@ EIF_TYPED_VALUE F874_8582 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6077, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3017,11 +2931,11 @@ EIF_TYPED_VALUE F874_8582 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_i */
+/* {GAME_KEY}.is_g */
 EIF_TYPED_VALUE F874_8583 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_i";
+	char *l_feature_name = "is_g";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3046,7 +2960,7 @@ EIF_TYPED_VALUE F874_8583 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6078, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3060,11 +2974,11 @@ EIF_TYPED_VALUE F874_8583 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_j */
+/* {GAME_KEY}.is_h */
 EIF_TYPED_VALUE F874_8584 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_j";
+	char *l_feature_name = "is_h";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3089,7 +3003,7 @@ EIF_TYPED_VALUE F874_8584 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6079, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3103,11 +3017,11 @@ EIF_TYPED_VALUE F874_8584 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_k */
+/* {GAME_KEY}.is_i */
 EIF_TYPED_VALUE F874_8585 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_k";
+	char *l_feature_name = "is_i";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3132,7 +3046,7 @@ EIF_TYPED_VALUE F874_8585 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6080, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3146,11 +3060,11 @@ EIF_TYPED_VALUE F874_8585 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_l */
+/* {GAME_KEY}.is_j */
 EIF_TYPED_VALUE F874_8586 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_l";
+	char *l_feature_name = "is_j";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3175,7 +3089,7 @@ EIF_TYPED_VALUE F874_8586 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6081, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3189,11 +3103,11 @@ EIF_TYPED_VALUE F874_8586 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_m */
+/* {GAME_KEY}.is_k */
 EIF_TYPED_VALUE F874_8587 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_m";
+	char *l_feature_name = "is_k";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3218,7 +3132,7 @@ EIF_TYPED_VALUE F874_8587 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6082, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3232,11 +3146,11 @@ EIF_TYPED_VALUE F874_8587 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_n */
+/* {GAME_KEY}.is_l */
 EIF_TYPED_VALUE F874_8588 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_n";
+	char *l_feature_name = "is_l";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3261,7 +3175,7 @@ EIF_TYPED_VALUE F874_8588 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6083, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3275,11 +3189,11 @@ EIF_TYPED_VALUE F874_8588 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_o */
+/* {GAME_KEY}.is_m */
 EIF_TYPED_VALUE F874_8589 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_o";
+	char *l_feature_name = "is_m";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3304,7 +3218,7 @@ EIF_TYPED_VALUE F874_8589 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6084, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3318,11 +3232,11 @@ EIF_TYPED_VALUE F874_8589 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_p */
+/* {GAME_KEY}.is_n */
 EIF_TYPED_VALUE F874_8590 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_p";
+	char *l_feature_name = "is_n";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3347,7 +3261,7 @@ EIF_TYPED_VALUE F874_8590 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6085, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3361,11 +3275,11 @@ EIF_TYPED_VALUE F874_8590 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_q */
+/* {GAME_KEY}.is_o */
 EIF_TYPED_VALUE F874_8591 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_q";
+	char *l_feature_name = "is_o";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3390,7 +3304,7 @@ EIF_TYPED_VALUE F874_8591 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6086, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3404,11 +3318,11 @@ EIF_TYPED_VALUE F874_8591 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_r */
+/* {GAME_KEY}.is_p */
 EIF_TYPED_VALUE F874_8592 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_r";
+	char *l_feature_name = "is_p";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3433,7 +3347,7 @@ EIF_TYPED_VALUE F874_8592 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6087, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3447,11 +3361,11 @@ EIF_TYPED_VALUE F874_8592 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_s */
+/* {GAME_KEY}.is_q */
 EIF_TYPED_VALUE F874_8593 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_s";
+	char *l_feature_name = "is_q";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3476,7 +3390,7 @@ EIF_TYPED_VALUE F874_8593 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6088, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3490,11 +3404,11 @@ EIF_TYPED_VALUE F874_8593 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_t */
+/* {GAME_KEY}.is_r */
 EIF_TYPED_VALUE F874_8594 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_t";
+	char *l_feature_name = "is_r";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3519,7 +3433,7 @@ EIF_TYPED_VALUE F874_8594 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6089, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3533,11 +3447,11 @@ EIF_TYPED_VALUE F874_8594 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_u */
+/* {GAME_KEY}.is_s */
 EIF_TYPED_VALUE F874_8595 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_u";
+	char *l_feature_name = "is_s";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3562,7 +3476,7 @@ EIF_TYPED_VALUE F874_8595 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6090, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3576,11 +3490,11 @@ EIF_TYPED_VALUE F874_8595 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_v */
+/* {GAME_KEY}.is_t */
 EIF_TYPED_VALUE F874_8596 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_v";
+	char *l_feature_name = "is_t";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3605,7 +3519,7 @@ EIF_TYPED_VALUE F874_8596 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6091, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3619,11 +3533,11 @@ EIF_TYPED_VALUE F874_8596 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_w */
+/* {GAME_KEY}.is_u */
 EIF_TYPED_VALUE F874_8597 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_w";
+	char *l_feature_name = "is_u";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3648,7 +3562,7 @@ EIF_TYPED_VALUE F874_8597 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6092, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3662,11 +3576,11 @@ EIF_TYPED_VALUE F874_8597 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_x */
+/* {GAME_KEY}.is_v */
 EIF_TYPED_VALUE F874_8598 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_x";
+	char *l_feature_name = "is_v";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3691,7 +3605,7 @@ EIF_TYPED_VALUE F874_8598 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6093, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3705,11 +3619,11 @@ EIF_TYPED_VALUE F874_8598 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_y */
+/* {GAME_KEY}.is_w */
 EIF_TYPED_VALUE F874_8599 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_y";
+	char *l_feature_name = "is_w";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3734,7 +3648,7 @@ EIF_TYPED_VALUE F874_8599 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6094, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3748,11 +3662,11 @@ EIF_TYPED_VALUE F874_8599 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_z */
+/* {GAME_KEY}.is_x */
 EIF_TYPED_VALUE F874_8600 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_z";
+	char *l_feature_name = "is_x";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3777,7 +3691,7 @@ EIF_TYPED_VALUE F874_8600 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6095, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3791,11 +3705,11 @@ EIF_TYPED_VALUE F874_8600 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_caps_lock */
+/* {GAME_KEY}.is_y */
 EIF_TYPED_VALUE F874_8601 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_caps_lock";
+	char *l_feature_name = "is_y";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3820,7 +3734,7 @@ EIF_TYPED_VALUE F874_8601 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6096, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3834,11 +3748,11 @@ EIF_TYPED_VALUE F874_8601 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f1 */
+/* {GAME_KEY}.is_z */
 EIF_TYPED_VALUE F874_8602 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f1";
+	char *l_feature_name = "is_z";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3863,7 +3777,7 @@ EIF_TYPED_VALUE F874_8602 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6097, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3877,11 +3791,11 @@ EIF_TYPED_VALUE F874_8602 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f2 */
+/* {GAME_KEY}.is_caps_lock */
 EIF_TYPED_VALUE F874_8603 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f2";
+	char *l_feature_name = "is_caps_lock";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3906,7 +3820,7 @@ EIF_TYPED_VALUE F874_8603 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6098, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3920,11 +3834,11 @@ EIF_TYPED_VALUE F874_8603 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f3 */
+/* {GAME_KEY}.is_f1 */
 EIF_TYPED_VALUE F874_8604 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f3";
+	char *l_feature_name = "is_f1";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3949,7 +3863,7 @@ EIF_TYPED_VALUE F874_8604 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6099, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -3963,11 +3877,11 @@ EIF_TYPED_VALUE F874_8604 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f4 */
+/* {GAME_KEY}.is_f2 */
 EIF_TYPED_VALUE F874_8605 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f4";
+	char *l_feature_name = "is_f2";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -3992,7 +3906,7 @@ EIF_TYPED_VALUE F874_8605 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6100, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4006,11 +3920,11 @@ EIF_TYPED_VALUE F874_8605 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f5 */
+/* {GAME_KEY}.is_f3 */
 EIF_TYPED_VALUE F874_8606 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f5";
+	char *l_feature_name = "is_f3";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4035,7 +3949,7 @@ EIF_TYPED_VALUE F874_8606 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6101, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4049,11 +3963,11 @@ EIF_TYPED_VALUE F874_8606 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f6 */
+/* {GAME_KEY}.is_f4 */
 EIF_TYPED_VALUE F874_8607 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f6";
+	char *l_feature_name = "is_f4";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4078,7 +3992,7 @@ EIF_TYPED_VALUE F874_8607 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6102, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4092,11 +4006,11 @@ EIF_TYPED_VALUE F874_8607 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f7 */
+/* {GAME_KEY}.is_f5 */
 EIF_TYPED_VALUE F874_8608 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f7";
+	char *l_feature_name = "is_f5";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4121,7 +4035,7 @@ EIF_TYPED_VALUE F874_8608 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6103, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4135,11 +4049,11 @@ EIF_TYPED_VALUE F874_8608 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f8 */
+/* {GAME_KEY}.is_f6 */
 EIF_TYPED_VALUE F874_8609 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f8";
+	char *l_feature_name = "is_f6";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4164,7 +4078,7 @@ EIF_TYPED_VALUE F874_8609 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6104, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4178,11 +4092,11 @@ EIF_TYPED_VALUE F874_8609 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f9 */
+/* {GAME_KEY}.is_f7 */
 EIF_TYPED_VALUE F874_8610 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f9";
+	char *l_feature_name = "is_f7";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4207,7 +4121,7 @@ EIF_TYPED_VALUE F874_8610 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6105, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4221,11 +4135,11 @@ EIF_TYPED_VALUE F874_8610 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f10 */
+/* {GAME_KEY}.is_f8 */
 EIF_TYPED_VALUE F874_8611 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f10";
+	char *l_feature_name = "is_f8";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4250,7 +4164,7 @@ EIF_TYPED_VALUE F874_8611 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6106, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4264,11 +4178,11 @@ EIF_TYPED_VALUE F874_8611 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f11 */
+/* {GAME_KEY}.is_f9 */
 EIF_TYPED_VALUE F874_8612 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f11";
+	char *l_feature_name = "is_f9";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4293,7 +4207,7 @@ EIF_TYPED_VALUE F874_8612 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6107, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4307,11 +4221,11 @@ EIF_TYPED_VALUE F874_8612 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f12 */
+/* {GAME_KEY}.is_f10 */
 EIF_TYPED_VALUE F874_8613 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f12";
+	char *l_feature_name = "is_f10";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4336,7 +4250,7 @@ EIF_TYPED_VALUE F874_8613 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6108, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4350,11 +4264,11 @@ EIF_TYPED_VALUE F874_8613 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_print_screen */
+/* {GAME_KEY}.is_f11 */
 EIF_TYPED_VALUE F874_8614 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_print_screen";
+	char *l_feature_name = "is_f11";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4379,7 +4293,7 @@ EIF_TYPED_VALUE F874_8614 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6109, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4393,11 +4307,11 @@ EIF_TYPED_VALUE F874_8614 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_scroll_lock */
+/* {GAME_KEY}.is_f12 */
 EIF_TYPED_VALUE F874_8615 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_scroll_lock";
+	char *l_feature_name = "is_f12";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4422,7 +4336,7 @@ EIF_TYPED_VALUE F874_8615 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6110, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4436,11 +4350,11 @@ EIF_TYPED_VALUE F874_8615 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_pause */
+/* {GAME_KEY}.is_print_screen */
 EIF_TYPED_VALUE F874_8616 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_pause";
+	char *l_feature_name = "is_print_screen";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4465,7 +4379,7 @@ EIF_TYPED_VALUE F874_8616 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6111, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4479,11 +4393,11 @@ EIF_TYPED_VALUE F874_8616 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_insert */
+/* {GAME_KEY}.is_scroll_lock */
 EIF_TYPED_VALUE F874_8617 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_insert";
+	char *l_feature_name = "is_scroll_lock";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4508,7 +4422,7 @@ EIF_TYPED_VALUE F874_8617 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6112, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4522,11 +4436,11 @@ EIF_TYPED_VALUE F874_8617 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_home */
+/* {GAME_KEY}.is_pause */
 EIF_TYPED_VALUE F874_8618 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_home";
+	char *l_feature_name = "is_pause";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4551,7 +4465,7 @@ EIF_TYPED_VALUE F874_8618 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6113, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4565,11 +4479,11 @@ EIF_TYPED_VALUE F874_8618 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_page_up */
+/* {GAME_KEY}.is_insert */
 EIF_TYPED_VALUE F874_8619 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_page_up";
+	char *l_feature_name = "is_insert";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4594,7 +4508,7 @@ EIF_TYPED_VALUE F874_8619 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6114, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4608,11 +4522,11 @@ EIF_TYPED_VALUE F874_8619 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_delete */
+/* {GAME_KEY}.is_home */
 EIF_TYPED_VALUE F874_8620 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_delete";
+	char *l_feature_name = "is_home";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4637,7 +4551,7 @@ EIF_TYPED_VALUE F874_8620 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6115, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4651,11 +4565,11 @@ EIF_TYPED_VALUE F874_8620 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_end */
+/* {GAME_KEY}.is_page_up */
 EIF_TYPED_VALUE F874_8621 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_end";
+	char *l_feature_name = "is_page_up";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4680,7 +4594,7 @@ EIF_TYPED_VALUE F874_8621 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6116, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4694,11 +4608,11 @@ EIF_TYPED_VALUE F874_8621 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_page_down */
+/* {GAME_KEY}.is_delete */
 EIF_TYPED_VALUE F874_8622 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_page_down";
+	char *l_feature_name = "is_delete";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4723,7 +4637,7 @@ EIF_TYPED_VALUE F874_8622 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6117, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4737,11 +4651,11 @@ EIF_TYPED_VALUE F874_8622 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_right */
+/* {GAME_KEY}.is_end */
 EIF_TYPED_VALUE F874_8623 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_right";
+	char *l_feature_name = "is_end";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4766,7 +4680,7 @@ EIF_TYPED_VALUE F874_8623 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6118, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4780,11 +4694,11 @@ EIF_TYPED_VALUE F874_8623 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_left */
+/* {GAME_KEY}.is_page_down */
 EIF_TYPED_VALUE F874_8624 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_left";
+	char *l_feature_name = "is_page_down";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4809,7 +4723,7 @@ EIF_TYPED_VALUE F874_8624 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6119, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4823,11 +4737,11 @@ EIF_TYPED_VALUE F874_8624 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_down */
+/* {GAME_KEY}.is_right */
 EIF_TYPED_VALUE F874_8625 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_down";
+	char *l_feature_name = "is_right";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4852,7 +4766,7 @@ EIF_TYPED_VALUE F874_8625 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6120, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4866,11 +4780,11 @@ EIF_TYPED_VALUE F874_8625 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_up */
+/* {GAME_KEY}.is_left */
 EIF_TYPED_VALUE F874_8626 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_up";
+	char *l_feature_name = "is_left";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4895,7 +4809,7 @@ EIF_TYPED_VALUE F874_8626 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6121, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4909,11 +4823,11 @@ EIF_TYPED_VALUE F874_8626 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_numlock_clear */
+/* {GAME_KEY}.is_down */
 EIF_TYPED_VALUE F874_8627 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_numlock_clear";
+	char *l_feature_name = "is_down";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4938,7 +4852,7 @@ EIF_TYPED_VALUE F874_8627 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6122, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4952,11 +4866,11 @@ EIF_TYPED_VALUE F874_8627 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_divide */
+/* {GAME_KEY}.is_up */
 EIF_TYPED_VALUE F874_8628 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_divide";
+	char *l_feature_name = "is_up";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -4981,7 +4895,7 @@ EIF_TYPED_VALUE F874_8628 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6123, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -4995,11 +4909,11 @@ EIF_TYPED_VALUE F874_8628 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_multiply */
+/* {GAME_KEY}.is_numlock_clear */
 EIF_TYPED_VALUE F874_8629 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_multiply";
+	char *l_feature_name = "is_numlock_clear";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5024,7 +4938,7 @@ EIF_TYPED_VALUE F874_8629 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6124, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5038,11 +4952,11 @@ EIF_TYPED_VALUE F874_8629 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_minus */
+/* {GAME_KEY}.is_keypad_divide */
 EIF_TYPED_VALUE F874_8630 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_minus";
+	char *l_feature_name = "is_keypad_divide";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5067,7 +4981,7 @@ EIF_TYPED_VALUE F874_8630 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6125, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5081,11 +4995,11 @@ EIF_TYPED_VALUE F874_8630 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_plus */
+/* {GAME_KEY}.is_keypad_multiply */
 EIF_TYPED_VALUE F874_8631 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_plus";
+	char *l_feature_name = "is_keypad_multiply";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5110,7 +5024,7 @@ EIF_TYPED_VALUE F874_8631 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6126, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5124,11 +5038,11 @@ EIF_TYPED_VALUE F874_8631 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_enter */
+/* {GAME_KEY}.is_keypad_minus */
 EIF_TYPED_VALUE F874_8632 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_enter";
+	char *l_feature_name = "is_keypad_minus";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5153,7 +5067,7 @@ EIF_TYPED_VALUE F874_8632 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6127, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5167,11 +5081,11 @@ EIF_TYPED_VALUE F874_8632 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_1 */
+/* {GAME_KEY}.is_keypad_plus */
 EIF_TYPED_VALUE F874_8633 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_1";
+	char *l_feature_name = "is_keypad_plus";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5196,7 +5110,7 @@ EIF_TYPED_VALUE F874_8633 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6128, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5210,11 +5124,11 @@ EIF_TYPED_VALUE F874_8633 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_2 */
+/* {GAME_KEY}.is_keypad_enter */
 EIF_TYPED_VALUE F874_8634 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_2";
+	char *l_feature_name = "is_keypad_enter";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5239,7 +5153,7 @@ EIF_TYPED_VALUE F874_8634 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6129, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5253,11 +5167,11 @@ EIF_TYPED_VALUE F874_8634 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_3 */
+/* {GAME_KEY}.is_keypad_1 */
 EIF_TYPED_VALUE F874_8635 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_3";
+	char *l_feature_name = "is_keypad_1";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5282,7 +5196,7 @@ EIF_TYPED_VALUE F874_8635 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6130, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5296,11 +5210,11 @@ EIF_TYPED_VALUE F874_8635 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_4 */
+/* {GAME_KEY}.is_keypad_2 */
 EIF_TYPED_VALUE F874_8636 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_4";
+	char *l_feature_name = "is_keypad_2";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5325,7 +5239,7 @@ EIF_TYPED_VALUE F874_8636 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6131, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5339,11 +5253,11 @@ EIF_TYPED_VALUE F874_8636 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_5 */
+/* {GAME_KEY}.is_keypad_3 */
 EIF_TYPED_VALUE F874_8637 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_5";
+	char *l_feature_name = "is_keypad_3";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5368,7 +5282,7 @@ EIF_TYPED_VALUE F874_8637 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6132, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5382,11 +5296,11 @@ EIF_TYPED_VALUE F874_8637 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_6 */
+/* {GAME_KEY}.is_keypad_4 */
 EIF_TYPED_VALUE F874_8638 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_6";
+	char *l_feature_name = "is_keypad_4";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5411,7 +5325,7 @@ EIF_TYPED_VALUE F874_8638 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6133, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5425,11 +5339,11 @@ EIF_TYPED_VALUE F874_8638 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_7 */
+/* {GAME_KEY}.is_keypad_5 */
 EIF_TYPED_VALUE F874_8639 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_7";
+	char *l_feature_name = "is_keypad_5";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5454,7 +5368,7 @@ EIF_TYPED_VALUE F874_8639 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6134, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5468,11 +5382,11 @@ EIF_TYPED_VALUE F874_8639 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_8 */
+/* {GAME_KEY}.is_keypad_6 */
 EIF_TYPED_VALUE F874_8640 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_8";
+	char *l_feature_name = "is_keypad_6";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5497,7 +5411,7 @@ EIF_TYPED_VALUE F874_8640 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6135, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5511,11 +5425,11 @@ EIF_TYPED_VALUE F874_8640 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_9 */
+/* {GAME_KEY}.is_keypad_7 */
 EIF_TYPED_VALUE F874_8641 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_9";
+	char *l_feature_name = "is_keypad_7";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5540,7 +5454,7 @@ EIF_TYPED_VALUE F874_8641 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6136, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5554,11 +5468,11 @@ EIF_TYPED_VALUE F874_8641 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_0 */
+/* {GAME_KEY}.is_keypad_8 */
 EIF_TYPED_VALUE F874_8642 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_0";
+	char *l_feature_name = "is_keypad_8";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5583,7 +5497,7 @@ EIF_TYPED_VALUE F874_8642 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6137, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5597,11 +5511,11 @@ EIF_TYPED_VALUE F874_8642 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_period */
+/* {GAME_KEY}.is_keypad_9 */
 EIF_TYPED_VALUE F874_8643 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_period";
+	char *l_feature_name = "is_keypad_9";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5626,7 +5540,7 @@ EIF_TYPED_VALUE F874_8643 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6138, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5640,11 +5554,11 @@ EIF_TYPED_VALUE F874_8643 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_application */
+/* {GAME_KEY}.is_keypad_0 */
 EIF_TYPED_VALUE F874_8644 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_application";
+	char *l_feature_name = "is_keypad_0";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5669,7 +5583,7 @@ EIF_TYPED_VALUE F874_8644 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6139, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5683,11 +5597,11 @@ EIF_TYPED_VALUE F874_8644 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_power */
+/* {GAME_KEY}.is_keypad_period */
 EIF_TYPED_VALUE F874_8645 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_power";
+	char *l_feature_name = "is_keypad_period";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5712,7 +5626,7 @@ EIF_TYPED_VALUE F874_8645 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6140, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5726,11 +5640,11 @@ EIF_TYPED_VALUE F874_8645 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_kp_equals */
+/* {GAME_KEY}.is_application */
 EIF_TYPED_VALUE F874_8646 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_kp_equals";
+	char *l_feature_name = "is_application";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5755,7 +5669,7 @@ EIF_TYPED_VALUE F874_8646 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6141, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5769,11 +5683,11 @@ EIF_TYPED_VALUE F874_8646 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f13 */
+/* {GAME_KEY}.is_power */
 EIF_TYPED_VALUE F874_8647 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f13";
+	char *l_feature_name = "is_power";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5798,7 +5712,7 @@ EIF_TYPED_VALUE F874_8647 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6142, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5812,11 +5726,11 @@ EIF_TYPED_VALUE F874_8647 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f14 */
+/* {GAME_KEY}.is_kp_equals */
 EIF_TYPED_VALUE F874_8648 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f14";
+	char *l_feature_name = "is_kp_equals";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5841,7 +5755,7 @@ EIF_TYPED_VALUE F874_8648 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6143, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5855,11 +5769,11 @@ EIF_TYPED_VALUE F874_8648 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f15 */
+/* {GAME_KEY}.is_f13 */
 EIF_TYPED_VALUE F874_8649 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f15";
+	char *l_feature_name = "is_f13";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5884,7 +5798,7 @@ EIF_TYPED_VALUE F874_8649 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6144, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5898,11 +5812,11 @@ EIF_TYPED_VALUE F874_8649 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f16 */
+/* {GAME_KEY}.is_f14 */
 EIF_TYPED_VALUE F874_8650 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f16";
+	char *l_feature_name = "is_f14";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5927,7 +5841,7 @@ EIF_TYPED_VALUE F874_8650 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6145, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5941,11 +5855,11 @@ EIF_TYPED_VALUE F874_8650 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f17 */
+/* {GAME_KEY}.is_f15 */
 EIF_TYPED_VALUE F874_8651 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f17";
+	char *l_feature_name = "is_f15";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -5970,7 +5884,7 @@ EIF_TYPED_VALUE F874_8651 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6146, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -5984,11 +5898,11 @@ EIF_TYPED_VALUE F874_8651 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f18 */
+/* {GAME_KEY}.is_f16 */
 EIF_TYPED_VALUE F874_8652 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f18";
+	char *l_feature_name = "is_f16";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6013,7 +5927,7 @@ EIF_TYPED_VALUE F874_8652 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6147, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6027,11 +5941,11 @@ EIF_TYPED_VALUE F874_8652 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f19 */
+/* {GAME_KEY}.is_f17 */
 EIF_TYPED_VALUE F874_8653 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f19";
+	char *l_feature_name = "is_f17";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6056,7 +5970,7 @@ EIF_TYPED_VALUE F874_8653 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6148, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6070,11 +5984,11 @@ EIF_TYPED_VALUE F874_8653 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f20 */
+/* {GAME_KEY}.is_f18 */
 EIF_TYPED_VALUE F874_8654 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f20";
+	char *l_feature_name = "is_f18";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6099,7 +6013,7 @@ EIF_TYPED_VALUE F874_8654 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6149, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6113,11 +6027,11 @@ EIF_TYPED_VALUE F874_8654 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f21 */
+/* {GAME_KEY}.is_f19 */
 EIF_TYPED_VALUE F874_8655 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f21";
+	char *l_feature_name = "is_f19";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6142,7 +6056,7 @@ EIF_TYPED_VALUE F874_8655 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6150, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6156,11 +6070,11 @@ EIF_TYPED_VALUE F874_8655 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f22 */
+/* {GAME_KEY}.is_f20 */
 EIF_TYPED_VALUE F874_8656 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f22";
+	char *l_feature_name = "is_f20";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6185,7 +6099,7 @@ EIF_TYPED_VALUE F874_8656 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6151, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6199,11 +6113,11 @@ EIF_TYPED_VALUE F874_8656 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f23 */
+/* {GAME_KEY}.is_f21 */
 EIF_TYPED_VALUE F874_8657 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f23";
+	char *l_feature_name = "is_f21";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6228,7 +6142,7 @@ EIF_TYPED_VALUE F874_8657 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6152, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6242,11 +6156,11 @@ EIF_TYPED_VALUE F874_8657 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_f24 */
+/* {GAME_KEY}.is_f22 */
 EIF_TYPED_VALUE F874_8658 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_f24";
+	char *l_feature_name = "is_f22";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6271,7 +6185,7 @@ EIF_TYPED_VALUE F874_8658 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6153, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6285,11 +6199,11 @@ EIF_TYPED_VALUE F874_8658 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_execute */
+/* {GAME_KEY}.is_f23 */
 EIF_TYPED_VALUE F874_8659 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_execute";
+	char *l_feature_name = "is_f23";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6314,7 +6228,7 @@ EIF_TYPED_VALUE F874_8659 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6154, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6328,11 +6242,11 @@ EIF_TYPED_VALUE F874_8659 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_help */
+/* {GAME_KEY}.is_f24 */
 EIF_TYPED_VALUE F874_8660 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_help";
+	char *l_feature_name = "is_f24";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6357,7 +6271,7 @@ EIF_TYPED_VALUE F874_8660 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6155, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6371,11 +6285,11 @@ EIF_TYPED_VALUE F874_8660 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_menu */
+/* {GAME_KEY}.is_execute */
 EIF_TYPED_VALUE F874_8661 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_menu";
+	char *l_feature_name = "is_execute";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6400,7 +6314,7 @@ EIF_TYPED_VALUE F874_8661 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6156, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6414,11 +6328,11 @@ EIF_TYPED_VALUE F874_8661 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_select */
+/* {GAME_KEY}.is_help */
 EIF_TYPED_VALUE F874_8662 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_select";
+	char *l_feature_name = "is_help";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6443,7 +6357,7 @@ EIF_TYPED_VALUE F874_8662 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6157, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6457,11 +6371,11 @@ EIF_TYPED_VALUE F874_8662 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_stop */
+/* {GAME_KEY}.is_menu */
 EIF_TYPED_VALUE F874_8663 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_stop";
+	char *l_feature_name = "is_menu";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6486,7 +6400,7 @@ EIF_TYPED_VALUE F874_8663 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6158, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6500,11 +6414,11 @@ EIF_TYPED_VALUE F874_8663 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_again */
+/* {GAME_KEY}.is_select */
 EIF_TYPED_VALUE F874_8664 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_again";
+	char *l_feature_name = "is_select";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6529,7 +6443,7 @@ EIF_TYPED_VALUE F874_8664 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6159, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6543,11 +6457,11 @@ EIF_TYPED_VALUE F874_8664 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_undo */
+/* {GAME_KEY}.is_stop */
 EIF_TYPED_VALUE F874_8665 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_undo";
+	char *l_feature_name = "is_stop";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6572,7 +6486,7 @@ EIF_TYPED_VALUE F874_8665 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6160, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6586,11 +6500,11 @@ EIF_TYPED_VALUE F874_8665 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_cut */
+/* {GAME_KEY}.is_again */
 EIF_TYPED_VALUE F874_8666 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_cut";
+	char *l_feature_name = "is_again";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6615,7 +6529,7 @@ EIF_TYPED_VALUE F874_8666 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6161, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6629,11 +6543,11 @@ EIF_TYPED_VALUE F874_8666 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_copy */
+/* {GAME_KEY}.is_undo */
 EIF_TYPED_VALUE F874_8667 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_copy";
+	char *l_feature_name = "is_undo";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6658,7 +6572,7 @@ EIF_TYPED_VALUE F874_8667 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6162, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6672,11 +6586,11 @@ EIF_TYPED_VALUE F874_8667 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_paste */
+/* {GAME_KEY}.is_cut */
 EIF_TYPED_VALUE F874_8668 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_paste";
+	char *l_feature_name = "is_cut";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6701,7 +6615,7 @@ EIF_TYPED_VALUE F874_8668 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6163, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6715,11 +6629,11 @@ EIF_TYPED_VALUE F874_8668 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_find */
+/* {GAME_KEY}.is_copy */
 EIF_TYPED_VALUE F874_8669 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_find";
+	char *l_feature_name = "is_copy";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6744,7 +6658,7 @@ EIF_TYPED_VALUE F874_8669 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6164, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6758,11 +6672,11 @@ EIF_TYPED_VALUE F874_8669 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_mute */
+/* {GAME_KEY}.is_paste */
 EIF_TYPED_VALUE F874_8670 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_mute";
+	char *l_feature_name = "is_paste";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6787,7 +6701,7 @@ EIF_TYPED_VALUE F874_8670 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6165, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6801,11 +6715,11 @@ EIF_TYPED_VALUE F874_8670 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_volume_up */
+/* {GAME_KEY}.is_find */
 EIF_TYPED_VALUE F874_8671 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_volume_up";
+	char *l_feature_name = "is_find";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6830,7 +6744,7 @@ EIF_TYPED_VALUE F874_8671 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6166, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6844,11 +6758,11 @@ EIF_TYPED_VALUE F874_8671 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_volume_down */
+/* {GAME_KEY}.is_mute */
 EIF_TYPED_VALUE F874_8672 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_volume_down";
+	char *l_feature_name = "is_mute";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6873,7 +6787,7 @@ EIF_TYPED_VALUE F874_8672 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6167, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6887,11 +6801,11 @@ EIF_TYPED_VALUE F874_8672 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_comma */
+/* {GAME_KEY}.is_volume_up */
 EIF_TYPED_VALUE F874_8673 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_comma";
+	char *l_feature_name = "is_volume_up";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6916,7 +6830,7 @@ EIF_TYPED_VALUE F874_8673 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6168, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6930,11 +6844,11 @@ EIF_TYPED_VALUE F874_8673 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_as400_keypad_equals */
+/* {GAME_KEY}.is_volume_down */
 EIF_TYPED_VALUE F874_8674 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_as400_keypad_equals";
+	char *l_feature_name = "is_volume_down";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -6959,7 +6873,7 @@ EIF_TYPED_VALUE F874_8674 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6169, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -6973,11 +6887,11 @@ EIF_TYPED_VALUE F874_8674 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_erase_eaze_alternate_erase */
+/* {GAME_KEY}.is_keypad_comma */
 EIF_TYPED_VALUE F874_8675 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_erase_eaze_alternate_erase";
+	char *l_feature_name = "is_keypad_comma";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7002,7 +6916,7 @@ EIF_TYPED_VALUE F874_8675 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6170, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7016,11 +6930,11 @@ EIF_TYPED_VALUE F874_8675 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_sysreq */
+/* {GAME_KEY}.is_as400_keypad_equals */
 EIF_TYPED_VALUE F874_8676 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_sysreq";
+	char *l_feature_name = "is_as400_keypad_equals";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7045,7 +6959,7 @@ EIF_TYPED_VALUE F874_8676 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6171, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7059,11 +6973,11 @@ EIF_TYPED_VALUE F874_8676 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_cancel */
+/* {GAME_KEY}.is_erase_eaze_alternate_erase */
 EIF_TYPED_VALUE F874_8677 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_cancel";
+	char *l_feature_name = "is_erase_eaze_alternate_erase";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7088,7 +7002,7 @@ EIF_TYPED_VALUE F874_8677 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6172, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7102,11 +7016,11 @@ EIF_TYPED_VALUE F874_8677 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_clear */
+/* {GAME_KEY}.is_sysreq */
 EIF_TYPED_VALUE F874_8678 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_clear";
+	char *l_feature_name = "is_sysreq";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7131,7 +7045,7 @@ EIF_TYPED_VALUE F874_8678 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6173, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7145,11 +7059,11 @@ EIF_TYPED_VALUE F874_8678 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_prior */
+/* {GAME_KEY}.is_cancel */
 EIF_TYPED_VALUE F874_8679 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_prior";
+	char *l_feature_name = "is_cancel";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7174,7 +7088,7 @@ EIF_TYPED_VALUE F874_8679 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6174, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7188,11 +7102,11 @@ EIF_TYPED_VALUE F874_8679 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_return2 */
+/* {GAME_KEY}.is_clear */
 EIF_TYPED_VALUE F874_8680 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_return2";
+	char *l_feature_name = "is_clear";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7217,7 +7131,7 @@ EIF_TYPED_VALUE F874_8680 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6175, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7231,11 +7145,11 @@ EIF_TYPED_VALUE F874_8680 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_separator */
+/* {GAME_KEY}.is_prior */
 EIF_TYPED_VALUE F874_8681 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_separator";
+	char *l_feature_name = "is_prior";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7260,7 +7174,7 @@ EIF_TYPED_VALUE F874_8681 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6176, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7274,11 +7188,11 @@ EIF_TYPED_VALUE F874_8681 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_out */
+/* {GAME_KEY}.is_return2 */
 EIF_TYPED_VALUE F874_8682 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_out";
+	char *l_feature_name = "is_return2";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7303,7 +7217,7 @@ EIF_TYPED_VALUE F874_8682 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6177, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7317,11 +7231,11 @@ EIF_TYPED_VALUE F874_8682 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_oper */
+/* {GAME_KEY}.is_separator */
 EIF_TYPED_VALUE F874_8683 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_oper";
+	char *l_feature_name = "is_separator";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7346,7 +7260,7 @@ EIF_TYPED_VALUE F874_8683 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6178, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7360,11 +7274,11 @@ EIF_TYPED_VALUE F874_8683 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_clear_again */
+/* {GAME_KEY}.is_out */
 EIF_TYPED_VALUE F874_8684 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_clear_again";
+	char *l_feature_name = "is_out";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7389,7 +7303,7 @@ EIF_TYPED_VALUE F874_8684 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6179, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7403,11 +7317,11 @@ EIF_TYPED_VALUE F874_8684 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_crsel */
+/* {GAME_KEY}.is_oper */
 EIF_TYPED_VALUE F874_8685 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_crsel";
+	char *l_feature_name = "is_oper";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7432,7 +7346,7 @@ EIF_TYPED_VALUE F874_8685 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6180, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7446,11 +7360,11 @@ EIF_TYPED_VALUE F874_8685 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_exsel */
+/* {GAME_KEY}.is_clear_again */
 EIF_TYPED_VALUE F874_8686 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_exsel";
+	char *l_feature_name = "is_clear_again";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7475,7 +7389,7 @@ EIF_TYPED_VALUE F874_8686 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6181, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7489,11 +7403,11 @@ EIF_TYPED_VALUE F874_8686 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_00 */
+/* {GAME_KEY}.is_crsel */
 EIF_TYPED_VALUE F874_8687 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_00";
+	char *l_feature_name = "is_crsel";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7518,7 +7432,7 @@ EIF_TYPED_VALUE F874_8687 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6182, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7532,11 +7446,11 @@ EIF_TYPED_VALUE F874_8687 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_000 */
+/* {GAME_KEY}.is_exsel */
 EIF_TYPED_VALUE F874_8688 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_000";
+	char *l_feature_name = "is_exsel";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7561,7 +7475,7 @@ EIF_TYPED_VALUE F874_8688 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6183, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7575,11 +7489,11 @@ EIF_TYPED_VALUE F874_8688 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_thousands_separator */
+/* {GAME_KEY}.is_keypad_00 */
 EIF_TYPED_VALUE F874_8689 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_thousands_separator";
+	char *l_feature_name = "is_keypad_00";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7604,7 +7518,7 @@ EIF_TYPED_VALUE F874_8689 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6184, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7618,11 +7532,11 @@ EIF_TYPED_VALUE F874_8689 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_decimal_separator */
+/* {GAME_KEY}.is_keypad_000 */
 EIF_TYPED_VALUE F874_8690 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_decimal_separator";
+	char *l_feature_name = "is_keypad_000";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7647,7 +7561,7 @@ EIF_TYPED_VALUE F874_8690 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6185, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7661,11 +7575,11 @@ EIF_TYPED_VALUE F874_8690 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_currency_unit */
+/* {GAME_KEY}.is_thousands_separator */
 EIF_TYPED_VALUE F874_8691 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_currency_unit";
+	char *l_feature_name = "is_thousands_separator";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7690,7 +7604,7 @@ EIF_TYPED_VALUE F874_8691 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6186, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7704,11 +7618,11 @@ EIF_TYPED_VALUE F874_8691 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_currency_sub_unit */
+/* {GAME_KEY}.is_decimal_separator */
 EIF_TYPED_VALUE F874_8692 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_currency_sub_unit";
+	char *l_feature_name = "is_decimal_separator";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7733,7 +7647,7 @@ EIF_TYPED_VALUE F874_8692 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6187, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7747,11 +7661,11 @@ EIF_TYPED_VALUE F874_8692 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_left_parenthesis */
+/* {GAME_KEY}.is_currency_unit */
 EIF_TYPED_VALUE F874_8693 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_left_parenthesis";
+	char *l_feature_name = "is_currency_unit";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7776,7 +7690,7 @@ EIF_TYPED_VALUE F874_8693 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6188, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7790,11 +7704,11 @@ EIF_TYPED_VALUE F874_8693 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_right_parenthesis */
+/* {GAME_KEY}.is_currency_sub_unit */
 EIF_TYPED_VALUE F874_8694 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_right_parenthesis";
+	char *l_feature_name = "is_currency_sub_unit";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7819,7 +7733,7 @@ EIF_TYPED_VALUE F874_8694 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6189, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7833,11 +7747,11 @@ EIF_TYPED_VALUE F874_8694 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_left_brace */
+/* {GAME_KEY}.is_keypad_left_parenthesis */
 EIF_TYPED_VALUE F874_8695 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_left_brace";
+	char *l_feature_name = "is_keypad_left_parenthesis";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7862,7 +7776,7 @@ EIF_TYPED_VALUE F874_8695 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6190, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7876,11 +7790,11 @@ EIF_TYPED_VALUE F874_8695 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_right_brace */
+/* {GAME_KEY}.is_keypad_right_parenthesis */
 EIF_TYPED_VALUE F874_8696 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_right_brace";
+	char *l_feature_name = "is_keypad_right_parenthesis";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7905,7 +7819,7 @@ EIF_TYPED_VALUE F874_8696 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6191, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7919,11 +7833,11 @@ EIF_TYPED_VALUE F874_8696 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_tab */
+/* {GAME_KEY}.is_keypad_left_brace */
 EIF_TYPED_VALUE F874_8697 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_tab";
+	char *l_feature_name = "is_keypad_left_brace";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7948,7 +7862,7 @@ EIF_TYPED_VALUE F874_8697 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6192, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -7962,11 +7876,11 @@ EIF_TYPED_VALUE F874_8697 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_backspace */
+/* {GAME_KEY}.is_keypad_right_brace */
 EIF_TYPED_VALUE F874_8698 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_backspace";
+	char *l_feature_name = "is_keypad_right_brace";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -7991,7 +7905,7 @@ EIF_TYPED_VALUE F874_8698 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6193, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8005,11 +7919,11 @@ EIF_TYPED_VALUE F874_8698 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_a */
+/* {GAME_KEY}.is_keypad_tab */
 EIF_TYPED_VALUE F874_8699 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_a";
+	char *l_feature_name = "is_keypad_tab";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8034,7 +7948,7 @@ EIF_TYPED_VALUE F874_8699 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6194, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8048,11 +7962,11 @@ EIF_TYPED_VALUE F874_8699 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_b */
+/* {GAME_KEY}.is_keypad_backspace */
 EIF_TYPED_VALUE F874_8700 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_b";
+	char *l_feature_name = "is_keypad_backspace";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8077,7 +7991,7 @@ EIF_TYPED_VALUE F874_8700 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6195, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8091,11 +8005,11 @@ EIF_TYPED_VALUE F874_8700 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_c */
+/* {GAME_KEY}.is_keypad_a */
 EIF_TYPED_VALUE F874_8701 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_c";
+	char *l_feature_name = "is_keypad_a";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8120,7 +8034,7 @@ EIF_TYPED_VALUE F874_8701 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6196, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8134,11 +8048,11 @@ EIF_TYPED_VALUE F874_8701 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_d */
+/* {GAME_KEY}.is_keypad_b */
 EIF_TYPED_VALUE F874_8702 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_d";
+	char *l_feature_name = "is_keypad_b";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8163,7 +8077,7 @@ EIF_TYPED_VALUE F874_8702 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6197, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8177,11 +8091,11 @@ EIF_TYPED_VALUE F874_8702 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_e */
+/* {GAME_KEY}.is_keypad_c */
 EIF_TYPED_VALUE F874_8703 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_e";
+	char *l_feature_name = "is_keypad_c";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8206,7 +8120,7 @@ EIF_TYPED_VALUE F874_8703 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6198, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8220,11 +8134,11 @@ EIF_TYPED_VALUE F874_8703 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_f */
+/* {GAME_KEY}.is_keypad_d */
 EIF_TYPED_VALUE F874_8704 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_f";
+	char *l_feature_name = "is_keypad_d";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8249,7 +8163,7 @@ EIF_TYPED_VALUE F874_8704 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6199, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8263,11 +8177,11 @@ EIF_TYPED_VALUE F874_8704 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_xor */
+/* {GAME_KEY}.is_keypad_e */
 EIF_TYPED_VALUE F874_8705 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_xor";
+	char *l_feature_name = "is_keypad_e";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8292,7 +8206,7 @@ EIF_TYPED_VALUE F874_8705 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6200, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8306,11 +8220,11 @@ EIF_TYPED_VALUE F874_8705 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_power */
+/* {GAME_KEY}.is_keypad_f */
 EIF_TYPED_VALUE F874_8706 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_power";
+	char *l_feature_name = "is_keypad_f";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8335,7 +8249,7 @@ EIF_TYPED_VALUE F874_8706 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6201, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8349,11 +8263,11 @@ EIF_TYPED_VALUE F874_8706 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_percent */
+/* {GAME_KEY}.is_keypad_xor */
 EIF_TYPED_VALUE F874_8707 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_percent";
+	char *l_feature_name = "is_keypad_xor";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8378,7 +8292,7 @@ EIF_TYPED_VALUE F874_8707 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6202, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8392,11 +8306,11 @@ EIF_TYPED_VALUE F874_8707 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_less */
+/* {GAME_KEY}.is_keypad_power */
 EIF_TYPED_VALUE F874_8708 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_less";
+	char *l_feature_name = "is_keypad_power";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8421,7 +8335,7 @@ EIF_TYPED_VALUE F874_8708 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6203, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8435,11 +8349,11 @@ EIF_TYPED_VALUE F874_8708 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_greater */
+/* {GAME_KEY}.is_keypad_percent */
 EIF_TYPED_VALUE F874_8709 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_greater";
+	char *l_feature_name = "is_keypad_percent";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8464,7 +8378,7 @@ EIF_TYPED_VALUE F874_8709 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6204, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8478,11 +8392,11 @@ EIF_TYPED_VALUE F874_8709 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_ampersand */
+/* {GAME_KEY}.is_keypad_less */
 EIF_TYPED_VALUE F874_8710 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_ampersand";
+	char *l_feature_name = "is_keypad_less";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8507,7 +8421,7 @@ EIF_TYPED_VALUE F874_8710 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6205, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8521,11 +8435,11 @@ EIF_TYPED_VALUE F874_8710 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_double_ampersand */
+/* {GAME_KEY}.is_keypad_greater */
 EIF_TYPED_VALUE F874_8711 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_double_ampersand";
+	char *l_feature_name = "is_keypad_greater";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8550,7 +8464,7 @@ EIF_TYPED_VALUE F874_8711 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6206, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8564,11 +8478,11 @@ EIF_TYPED_VALUE F874_8711 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_vertical_bar */
+/* {GAME_KEY}.is_keypad_ampersand */
 EIF_TYPED_VALUE F874_8712 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_vertical_bar";
+	char *l_feature_name = "is_keypad_ampersand";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8593,7 +8507,7 @@ EIF_TYPED_VALUE F874_8712 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6207, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8607,11 +8521,11 @@ EIF_TYPED_VALUE F874_8712 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_double_vertical_bar */
+/* {GAME_KEY}.is_keypad_double_ampersand */
 EIF_TYPED_VALUE F874_8713 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_double_vertical_bar";
+	char *l_feature_name = "is_keypad_double_ampersand";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8636,7 +8550,7 @@ EIF_TYPED_VALUE F874_8713 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6208, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8650,11 +8564,11 @@ EIF_TYPED_VALUE F874_8713 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_colon */
+/* {GAME_KEY}.is_keypad_vertical_bar */
 EIF_TYPED_VALUE F874_8714 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_colon";
+	char *l_feature_name = "is_keypad_vertical_bar";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8679,7 +8593,7 @@ EIF_TYPED_VALUE F874_8714 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6209, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8693,11 +8607,11 @@ EIF_TYPED_VALUE F874_8714 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_hash */
+/* {GAME_KEY}.is_keypad_double_vertical_bar */
 EIF_TYPED_VALUE F874_8715 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_hash";
+	char *l_feature_name = "is_keypad_double_vertical_bar";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8722,7 +8636,7 @@ EIF_TYPED_VALUE F874_8715 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6210, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8736,11 +8650,11 @@ EIF_TYPED_VALUE F874_8715 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_space */
+/* {GAME_KEY}.is_keypad_colon */
 EIF_TYPED_VALUE F874_8716 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_space";
+	char *l_feature_name = "is_keypad_colon";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8765,7 +8679,7 @@ EIF_TYPED_VALUE F874_8716 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6211, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8779,11 +8693,11 @@ EIF_TYPED_VALUE F874_8716 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_at */
+/* {GAME_KEY}.is_keypad_hash */
 EIF_TYPED_VALUE F874_8717 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_at";
+	char *l_feature_name = "is_keypad_hash";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8808,7 +8722,7 @@ EIF_TYPED_VALUE F874_8717 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6212, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8822,11 +8736,11 @@ EIF_TYPED_VALUE F874_8717 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_exclamation_mark */
+/* {GAME_KEY}.is_keypad_space */
 EIF_TYPED_VALUE F874_8718 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_exclamation_mark";
+	char *l_feature_name = "is_keypad_space";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8851,7 +8765,7 @@ EIF_TYPED_VALUE F874_8718 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6213, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8865,11 +8779,11 @@ EIF_TYPED_VALUE F874_8718 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_mem_store */
+/* {GAME_KEY}.is_keypad_at */
 EIF_TYPED_VALUE F874_8719 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_mem_store";
+	char *l_feature_name = "is_keypad_at";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8894,7 +8808,7 @@ EIF_TYPED_VALUE F874_8719 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6214, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8908,11 +8822,11 @@ EIF_TYPED_VALUE F874_8719 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_mem_recall */
+/* {GAME_KEY}.is_keypad_exclamation_mark */
 EIF_TYPED_VALUE F874_8720 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_mem_recall";
+	char *l_feature_name = "is_keypad_exclamation_mark";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8937,7 +8851,7 @@ EIF_TYPED_VALUE F874_8720 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6215, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8951,11 +8865,11 @@ EIF_TYPED_VALUE F874_8720 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_mem_clear */
+/* {GAME_KEY}.is_keypad_mem_store */
 EIF_TYPED_VALUE F874_8721 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_mem_clear";
+	char *l_feature_name = "is_keypad_mem_store";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -8980,7 +8894,7 @@ EIF_TYPED_VALUE F874_8721 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6216, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -8994,11 +8908,11 @@ EIF_TYPED_VALUE F874_8721 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_mem_add */
+/* {GAME_KEY}.is_keypad_mem_recall */
 EIF_TYPED_VALUE F874_8722 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_mem_add";
+	char *l_feature_name = "is_keypad_mem_recall";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9023,7 +8937,7 @@ EIF_TYPED_VALUE F874_8722 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6217, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9037,11 +8951,11 @@ EIF_TYPED_VALUE F874_8722 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_mem_subtract */
+/* {GAME_KEY}.is_keypad_mem_clear */
 EIF_TYPED_VALUE F874_8723 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_mem_subtract";
+	char *l_feature_name = "is_keypad_mem_clear";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9066,7 +8980,7 @@ EIF_TYPED_VALUE F874_8723 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6218, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9080,11 +8994,11 @@ EIF_TYPED_VALUE F874_8723 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_mem_multiply */
+/* {GAME_KEY}.is_keypad_mem_add */
 EIF_TYPED_VALUE F874_8724 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_mem_multiply";
+	char *l_feature_name = "is_keypad_mem_add";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9109,7 +9023,7 @@ EIF_TYPED_VALUE F874_8724 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6219, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9123,11 +9037,11 @@ EIF_TYPED_VALUE F874_8724 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_mem_divide */
+/* {GAME_KEY}.is_keypad_mem_subtract */
 EIF_TYPED_VALUE F874_8725 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_mem_divide";
+	char *l_feature_name = "is_keypad_mem_subtract";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9152,7 +9066,7 @@ EIF_TYPED_VALUE F874_8725 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6220, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9166,11 +9080,11 @@ EIF_TYPED_VALUE F874_8725 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_plus_minus */
+/* {GAME_KEY}.is_keypad_mem_multiply */
 EIF_TYPED_VALUE F874_8726 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_plus_minus";
+	char *l_feature_name = "is_keypad_mem_multiply";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9195,7 +9109,7 @@ EIF_TYPED_VALUE F874_8726 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6221, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9209,11 +9123,11 @@ EIF_TYPED_VALUE F874_8726 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_clear */
+/* {GAME_KEY}.is_keypad_mem_divide */
 EIF_TYPED_VALUE F874_8727 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_clear";
+	char *l_feature_name = "is_keypad_mem_divide";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9238,7 +9152,7 @@ EIF_TYPED_VALUE F874_8727 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6222, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9252,11 +9166,11 @@ EIF_TYPED_VALUE F874_8727 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_clear_entry */
+/* {GAME_KEY}.is_keypad_plus_minus */
 EIF_TYPED_VALUE F874_8728 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_clear_entry";
+	char *l_feature_name = "is_keypad_plus_minus";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9281,7 +9195,7 @@ EIF_TYPED_VALUE F874_8728 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6223, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9295,11 +9209,11 @@ EIF_TYPED_VALUE F874_8728 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_binary */
+/* {GAME_KEY}.is_keypad_clear */
 EIF_TYPED_VALUE F874_8729 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_binary";
+	char *l_feature_name = "is_keypad_clear";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9324,7 +9238,7 @@ EIF_TYPED_VALUE F874_8729 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6224, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9338,11 +9252,11 @@ EIF_TYPED_VALUE F874_8729 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_octal */
+/* {GAME_KEY}.is_keypad_clear_entry */
 EIF_TYPED_VALUE F874_8730 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_octal";
+	char *l_feature_name = "is_keypad_clear_entry";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9367,7 +9281,7 @@ EIF_TYPED_VALUE F874_8730 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6225, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9381,11 +9295,11 @@ EIF_TYPED_VALUE F874_8730 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_decimal */
+/* {GAME_KEY}.is_keypad_binary */
 EIF_TYPED_VALUE F874_8731 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_decimal";
+	char *l_feature_name = "is_keypad_binary";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9410,7 +9324,7 @@ EIF_TYPED_VALUE F874_8731 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6226, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9424,11 +9338,11 @@ EIF_TYPED_VALUE F874_8731 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keypad_hexadecimal */
+/* {GAME_KEY}.is_keypad_octal */
 EIF_TYPED_VALUE F874_8732 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keypad_hexadecimal";
+	char *l_feature_name = "is_keypad_octal";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9453,7 +9367,7 @@ EIF_TYPED_VALUE F874_8732 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6227, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9467,11 +9381,11 @@ EIF_TYPED_VALUE F874_8732 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_left_ctrl */
+/* {GAME_KEY}.is_keypad_decimal */
 EIF_TYPED_VALUE F874_8733 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_left_ctrl";
+	char *l_feature_name = "is_keypad_decimal";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9496,7 +9410,7 @@ EIF_TYPED_VALUE F874_8733 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6228, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9510,11 +9424,11 @@ EIF_TYPED_VALUE F874_8733 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_left_shift */
+/* {GAME_KEY}.is_keypad_hexadecimal */
 EIF_TYPED_VALUE F874_8734 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_left_shift";
+	char *l_feature_name = "is_keypad_hexadecimal";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9539,7 +9453,7 @@ EIF_TYPED_VALUE F874_8734 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6229, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9553,11 +9467,11 @@ EIF_TYPED_VALUE F874_8734 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_left_alt */
+/* {GAME_KEY}.is_left_ctrl */
 EIF_TYPED_VALUE F874_8735 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_left_alt";
+	char *l_feature_name = "is_left_ctrl";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9582,7 +9496,7 @@ EIF_TYPED_VALUE F874_8735 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6230, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9596,11 +9510,11 @@ EIF_TYPED_VALUE F874_8735 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_left_gui */
+/* {GAME_KEY}.is_left_shift */
 EIF_TYPED_VALUE F874_8736 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_left_gui";
+	char *l_feature_name = "is_left_shift";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9625,7 +9539,7 @@ EIF_TYPED_VALUE F874_8736 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6231, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9639,11 +9553,11 @@ EIF_TYPED_VALUE F874_8736 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_right_ctrl */
+/* {GAME_KEY}.is_left_alt */
 EIF_TYPED_VALUE F874_8737 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_right_ctrl";
+	char *l_feature_name = "is_left_alt";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9668,7 +9582,7 @@ EIF_TYPED_VALUE F874_8737 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6232, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9682,11 +9596,11 @@ EIF_TYPED_VALUE F874_8737 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_right_shift */
+/* {GAME_KEY}.is_left_gui */
 EIF_TYPED_VALUE F874_8738 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_right_shift";
+	char *l_feature_name = "is_left_gui";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9711,7 +9625,7 @@ EIF_TYPED_VALUE F874_8738 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6233, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9725,11 +9639,11 @@ EIF_TYPED_VALUE F874_8738 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_right_alt */
+/* {GAME_KEY}.is_right_ctrl */
 EIF_TYPED_VALUE F874_8739 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_right_alt";
+	char *l_feature_name = "is_right_ctrl";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9754,7 +9668,7 @@ EIF_TYPED_VALUE F874_8739 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6234, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9768,11 +9682,11 @@ EIF_TYPED_VALUE F874_8739 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_right_gui */
+/* {GAME_KEY}.is_right_shift */
 EIF_TYPED_VALUE F874_8740 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_right_gui";
+	char *l_feature_name = "is_right_shift";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9797,7 +9711,7 @@ EIF_TYPED_VALUE F874_8740 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6235, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9811,11 +9725,11 @@ EIF_TYPED_VALUE F874_8740 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_mode */
+/* {GAME_KEY}.is_right_alt */
 EIF_TYPED_VALUE F874_8741 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_mode";
+	char *l_feature_name = "is_right_alt";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9840,7 +9754,7 @@ EIF_TYPED_VALUE F874_8741 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6236, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9854,11 +9768,11 @@ EIF_TYPED_VALUE F874_8741 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_audio_next */
+/* {GAME_KEY}.is_right_gui */
 EIF_TYPED_VALUE F874_8742 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_audio_next";
+	char *l_feature_name = "is_right_gui";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9883,7 +9797,7 @@ EIF_TYPED_VALUE F874_8742 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6237, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9897,11 +9811,11 @@ EIF_TYPED_VALUE F874_8742 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_audio_prev */
+/* {GAME_KEY}.is_mode */
 EIF_TYPED_VALUE F874_8743 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_audio_prev";
+	char *l_feature_name = "is_mode";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9926,7 +9840,7 @@ EIF_TYPED_VALUE F874_8743 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6238, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9940,11 +9854,11 @@ EIF_TYPED_VALUE F874_8743 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_audio_stop */
+/* {GAME_KEY}.is_audio_next */
 EIF_TYPED_VALUE F874_8744 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_audio_stop";
+	char *l_feature_name = "is_audio_next";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -9969,7 +9883,7 @@ EIF_TYPED_VALUE F874_8744 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6239, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -9983,11 +9897,11 @@ EIF_TYPED_VALUE F874_8744 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_audio_play */
+/* {GAME_KEY}.is_audio_prev */
 EIF_TYPED_VALUE F874_8745 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_audio_play";
+	char *l_feature_name = "is_audio_prev";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10012,7 +9926,7 @@ EIF_TYPED_VALUE F874_8745 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6240, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10026,11 +9940,11 @@ EIF_TYPED_VALUE F874_8745 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_audio_mute */
+/* {GAME_KEY}.is_audio_stop */
 EIF_TYPED_VALUE F874_8746 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_audio_mute";
+	char *l_feature_name = "is_audio_stop";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10055,7 +9969,7 @@ EIF_TYPED_VALUE F874_8746 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6241, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10069,11 +9983,11 @@ EIF_TYPED_VALUE F874_8746 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_media_select */
+/* {GAME_KEY}.is_audio_play */
 EIF_TYPED_VALUE F874_8747 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_media_select";
+	char *l_feature_name = "is_audio_play";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10098,7 +10012,7 @@ EIF_TYPED_VALUE F874_8747 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6242, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10112,11 +10026,11 @@ EIF_TYPED_VALUE F874_8747 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_www */
+/* {GAME_KEY}.is_audio_mute */
 EIF_TYPED_VALUE F874_8748 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_www";
+	char *l_feature_name = "is_audio_mute";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10141,7 +10055,7 @@ EIF_TYPED_VALUE F874_8748 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6243, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10155,11 +10069,11 @@ EIF_TYPED_VALUE F874_8748 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_mail */
+/* {GAME_KEY}.is_media_select */
 EIF_TYPED_VALUE F874_8749 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_mail";
+	char *l_feature_name = "is_media_select";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10184,7 +10098,7 @@ EIF_TYPED_VALUE F874_8749 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6244, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10198,11 +10112,11 @@ EIF_TYPED_VALUE F874_8749 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_calculator */
+/* {GAME_KEY}.is_www */
 EIF_TYPED_VALUE F874_8750 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_calculator";
+	char *l_feature_name = "is_www";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10227,7 +10141,7 @@ EIF_TYPED_VALUE F874_8750 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6245, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10241,11 +10155,11 @@ EIF_TYPED_VALUE F874_8750 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_computer */
+/* {GAME_KEY}.is_mail */
 EIF_TYPED_VALUE F874_8751 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_computer";
+	char *l_feature_name = "is_mail";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10270,7 +10184,7 @@ EIF_TYPED_VALUE F874_8751 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6246, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10284,11 +10198,11 @@ EIF_TYPED_VALUE F874_8751 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_application_control_search */
+/* {GAME_KEY}.is_calculator */
 EIF_TYPED_VALUE F874_8752 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_application_control_search";
+	char *l_feature_name = "is_calculator";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10313,7 +10227,7 @@ EIF_TYPED_VALUE F874_8752 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6247, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10327,11 +10241,11 @@ EIF_TYPED_VALUE F874_8752 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_application_control_home */
+/* {GAME_KEY}.is_computer */
 EIF_TYPED_VALUE F874_8753 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_application_control_home";
+	char *l_feature_name = "is_computer";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10356,7 +10270,7 @@ EIF_TYPED_VALUE F874_8753 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6248, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10370,11 +10284,11 @@ EIF_TYPED_VALUE F874_8753 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_application_control_back */
+/* {GAME_KEY}.is_application_control_search */
 EIF_TYPED_VALUE F874_8754 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_application_control_back";
+	char *l_feature_name = "is_application_control_search";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10399,7 +10313,7 @@ EIF_TYPED_VALUE F874_8754 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6249, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10413,11 +10327,11 @@ EIF_TYPED_VALUE F874_8754 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_application_control_forward */
+/* {GAME_KEY}.is_application_control_home */
 EIF_TYPED_VALUE F874_8755 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_application_control_forward";
+	char *l_feature_name = "is_application_control_home";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10442,7 +10356,7 @@ EIF_TYPED_VALUE F874_8755 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6250, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10456,11 +10370,11 @@ EIF_TYPED_VALUE F874_8755 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_application_control_stop */
+/* {GAME_KEY}.is_application_control_back */
 EIF_TYPED_VALUE F874_8756 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_application_control_stop";
+	char *l_feature_name = "is_application_control_back";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10485,7 +10399,7 @@ EIF_TYPED_VALUE F874_8756 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6251, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10499,11 +10413,11 @@ EIF_TYPED_VALUE F874_8756 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_application_control_refresh */
+/* {GAME_KEY}.is_application_control_forward */
 EIF_TYPED_VALUE F874_8757 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_application_control_refresh";
+	char *l_feature_name = "is_application_control_forward";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10528,7 +10442,7 @@ EIF_TYPED_VALUE F874_8757 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6252, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10542,11 +10456,11 @@ EIF_TYPED_VALUE F874_8757 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_application_control_bookmarks */
+/* {GAME_KEY}.is_application_control_stop */
 EIF_TYPED_VALUE F874_8758 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_application_control_bookmarks";
+	char *l_feature_name = "is_application_control_stop";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10571,7 +10485,7 @@ EIF_TYPED_VALUE F874_8758 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6253, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10585,11 +10499,11 @@ EIF_TYPED_VALUE F874_8758 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_brightnessdown */
+/* {GAME_KEY}.is_application_control_refresh */
 EIF_TYPED_VALUE F874_8759 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_brightnessdown";
+	char *l_feature_name = "is_application_control_refresh";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10614,7 +10528,7 @@ EIF_TYPED_VALUE F874_8759 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6254, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10628,11 +10542,11 @@ EIF_TYPED_VALUE F874_8759 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_brightness_up */
+/* {GAME_KEY}.is_application_control_bookmarks */
 EIF_TYPED_VALUE F874_8760 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_brightness_up";
+	char *l_feature_name = "is_application_control_bookmarks";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10657,7 +10571,7 @@ EIF_TYPED_VALUE F874_8760 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6255, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10671,11 +10585,11 @@ EIF_TYPED_VALUE F874_8760 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_display_switch */
+/* {GAME_KEY}.is_brightnessdown */
 EIF_TYPED_VALUE F874_8761 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_display_switch";
+	char *l_feature_name = "is_brightnessdown";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10700,7 +10614,7 @@ EIF_TYPED_VALUE F874_8761 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6256, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10714,11 +10628,11 @@ EIF_TYPED_VALUE F874_8761 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keyboard_illumination_toggle */
+/* {GAME_KEY}.is_brightness_up */
 EIF_TYPED_VALUE F874_8762 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keyboard_illumination_toggle";
+	char *l_feature_name = "is_brightness_up";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10743,7 +10657,7 @@ EIF_TYPED_VALUE F874_8762 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6257, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10757,11 +10671,11 @@ EIF_TYPED_VALUE F874_8762 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keyboard_illumination_down */
+/* {GAME_KEY}.is_display_switch */
 EIF_TYPED_VALUE F874_8763 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keyboard_illumination_down";
+	char *l_feature_name = "is_display_switch";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10786,7 +10700,7 @@ EIF_TYPED_VALUE F874_8763 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6258, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10800,11 +10714,11 @@ EIF_TYPED_VALUE F874_8763 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_keyboard_illuminationup */
+/* {GAME_KEY}.is_keyboard_illumination_toggle */
 EIF_TYPED_VALUE F874_8764 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_keyboard_illuminationup";
+	char *l_feature_name = "is_keyboard_illumination_toggle";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10829,7 +10743,7 @@ EIF_TYPED_VALUE F874_8764 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6259, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10843,11 +10757,11 @@ EIF_TYPED_VALUE F874_8764 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_eject */
+/* {GAME_KEY}.is_keyboard_illumination_down */
 EIF_TYPED_VALUE F874_8765 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_eject";
+	char *l_feature_name = "is_keyboard_illumination_down";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10872,7 +10786,7 @@ EIF_TYPED_VALUE F874_8765 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6260, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10886,11 +10800,11 @@ EIF_TYPED_VALUE F874_8765 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_sleep */
+/* {GAME_KEY}.is_keyboard_illuminationup */
 EIF_TYPED_VALUE F874_8766 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_sleep";
+	char *l_feature_name = "is_keyboard_illuminationup";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10915,7 +10829,7 @@ EIF_TYPED_VALUE F874_8766 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6441, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6261, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -10929,11 +10843,11 @@ EIF_TYPED_VALUE F874_8766 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_unknown */
+/* {GAME_KEY}.is_eject */
 EIF_TYPED_VALUE F874_8767 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_unknown";
+	char *l_feature_name = "is_eject";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -10958,8 +10872,8 @@ EIF_TYPED_VALUE F874_8767 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
-	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5785, 862))(Current)).it_i4);
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
+	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6262, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
 	RTRS;
@@ -10972,11 +10886,11 @@ EIF_TYPED_VALUE F874_8767 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_a */
+/* {GAME_KEY}.is_sleep */
 EIF_TYPED_VALUE F874_8768 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_a";
+	char *l_feature_name = "is_sleep";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11001,8 +10915,8 @@ EIF_TYPED_VALUE F874_8768 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
-	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5786, 862))(Current)).it_i4);
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6443, Dtype(Current)));
+	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6263, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
 	RTRS;
@@ -11015,11 +10929,11 @@ EIF_TYPED_VALUE F874_8768 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_b */
+/* {GAME_KEY}.is_physical_unknown */
 EIF_TYPED_VALUE F874_8769 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_b";
+	char *l_feature_name = "is_physical_unknown";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11044,7 +10958,7 @@ EIF_TYPED_VALUE F874_8769 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5787, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11058,11 +10972,11 @@ EIF_TYPED_VALUE F874_8769 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_c */
+/* {GAME_KEY}.is_physical_a */
 EIF_TYPED_VALUE F874_8770 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_c";
+	char *l_feature_name = "is_physical_a";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11087,7 +11001,7 @@ EIF_TYPED_VALUE F874_8770 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5788, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11101,11 +11015,11 @@ EIF_TYPED_VALUE F874_8770 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_d */
+/* {GAME_KEY}.is_physical_b */
 EIF_TYPED_VALUE F874_8771 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_d";
+	char *l_feature_name = "is_physical_b";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11130,7 +11044,7 @@ EIF_TYPED_VALUE F874_8771 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5789, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11144,11 +11058,11 @@ EIF_TYPED_VALUE F874_8771 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_e */
+/* {GAME_KEY}.is_physical_c */
 EIF_TYPED_VALUE F874_8772 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_e";
+	char *l_feature_name = "is_physical_c";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11173,7 +11087,7 @@ EIF_TYPED_VALUE F874_8772 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5790, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11187,11 +11101,11 @@ EIF_TYPED_VALUE F874_8772 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f */
+/* {GAME_KEY}.is_physical_d */
 EIF_TYPED_VALUE F874_8773 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f";
+	char *l_feature_name = "is_physical_d";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11216,7 +11130,7 @@ EIF_TYPED_VALUE F874_8773 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5791, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11230,11 +11144,11 @@ EIF_TYPED_VALUE F874_8773 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_g */
+/* {GAME_KEY}.is_physical_e */
 EIF_TYPED_VALUE F874_8774 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_g";
+	char *l_feature_name = "is_physical_e";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11259,7 +11173,7 @@ EIF_TYPED_VALUE F874_8774 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5792, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11273,11 +11187,11 @@ EIF_TYPED_VALUE F874_8774 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_h */
+/* {GAME_KEY}.is_physical_f */
 EIF_TYPED_VALUE F874_8775 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_h";
+	char *l_feature_name = "is_physical_f";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11302,7 +11216,7 @@ EIF_TYPED_VALUE F874_8775 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5793, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11316,11 +11230,11 @@ EIF_TYPED_VALUE F874_8775 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_i */
+/* {GAME_KEY}.is_physical_g */
 EIF_TYPED_VALUE F874_8776 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_i";
+	char *l_feature_name = "is_physical_g";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11345,7 +11259,7 @@ EIF_TYPED_VALUE F874_8776 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5794, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11359,11 +11273,11 @@ EIF_TYPED_VALUE F874_8776 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_j */
+/* {GAME_KEY}.is_physical_h */
 EIF_TYPED_VALUE F874_8777 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_j";
+	char *l_feature_name = "is_physical_h";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11388,7 +11302,7 @@ EIF_TYPED_VALUE F874_8777 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5795, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11402,11 +11316,11 @@ EIF_TYPED_VALUE F874_8777 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_k */
+/* {GAME_KEY}.is_physical_i */
 EIF_TYPED_VALUE F874_8778 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_k";
+	char *l_feature_name = "is_physical_i";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11431,7 +11345,7 @@ EIF_TYPED_VALUE F874_8778 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5796, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11445,11 +11359,11 @@ EIF_TYPED_VALUE F874_8778 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_l */
+/* {GAME_KEY}.is_physical_j */
 EIF_TYPED_VALUE F874_8779 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_l";
+	char *l_feature_name = "is_physical_j";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11474,7 +11388,7 @@ EIF_TYPED_VALUE F874_8779 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5797, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11488,11 +11402,11 @@ EIF_TYPED_VALUE F874_8779 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_m */
+/* {GAME_KEY}.is_physical_k */
 EIF_TYPED_VALUE F874_8780 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_m";
+	char *l_feature_name = "is_physical_k";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11517,7 +11431,7 @@ EIF_TYPED_VALUE F874_8780 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5798, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11531,11 +11445,11 @@ EIF_TYPED_VALUE F874_8780 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_n */
+/* {GAME_KEY}.is_physical_l */
 EIF_TYPED_VALUE F874_8781 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_n";
+	char *l_feature_name = "is_physical_l";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11560,7 +11474,7 @@ EIF_TYPED_VALUE F874_8781 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5799, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11574,11 +11488,11 @@ EIF_TYPED_VALUE F874_8781 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_o */
+/* {GAME_KEY}.is_physical_m */
 EIF_TYPED_VALUE F874_8782 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_o";
+	char *l_feature_name = "is_physical_m";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11603,7 +11517,7 @@ EIF_TYPED_VALUE F874_8782 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5800, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11617,11 +11531,11 @@ EIF_TYPED_VALUE F874_8782 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_p */
+/* {GAME_KEY}.is_physical_n */
 EIF_TYPED_VALUE F874_8783 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_p";
+	char *l_feature_name = "is_physical_n";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11646,7 +11560,7 @@ EIF_TYPED_VALUE F874_8783 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5801, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11660,11 +11574,11 @@ EIF_TYPED_VALUE F874_8783 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_q */
+/* {GAME_KEY}.is_physical_o */
 EIF_TYPED_VALUE F874_8784 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_q";
+	char *l_feature_name = "is_physical_o";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11689,7 +11603,7 @@ EIF_TYPED_VALUE F874_8784 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5802, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11703,11 +11617,11 @@ EIF_TYPED_VALUE F874_8784 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_r */
+/* {GAME_KEY}.is_physical_p */
 EIF_TYPED_VALUE F874_8785 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_r";
+	char *l_feature_name = "is_physical_p";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11732,7 +11646,7 @@ EIF_TYPED_VALUE F874_8785 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5803, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11746,11 +11660,11 @@ EIF_TYPED_VALUE F874_8785 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_s */
+/* {GAME_KEY}.is_physical_q */
 EIF_TYPED_VALUE F874_8786 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_s";
+	char *l_feature_name = "is_physical_q";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11775,7 +11689,7 @@ EIF_TYPED_VALUE F874_8786 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5804, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11789,11 +11703,11 @@ EIF_TYPED_VALUE F874_8786 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_t */
+/* {GAME_KEY}.is_physical_r */
 EIF_TYPED_VALUE F874_8787 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_t";
+	char *l_feature_name = "is_physical_r";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11818,7 +11732,7 @@ EIF_TYPED_VALUE F874_8787 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5805, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11832,11 +11746,11 @@ EIF_TYPED_VALUE F874_8787 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_u */
+/* {GAME_KEY}.is_physical_s */
 EIF_TYPED_VALUE F874_8788 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_u";
+	char *l_feature_name = "is_physical_s";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11861,7 +11775,7 @@ EIF_TYPED_VALUE F874_8788 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5806, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11875,11 +11789,11 @@ EIF_TYPED_VALUE F874_8788 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_v */
+/* {GAME_KEY}.is_physical_t */
 EIF_TYPED_VALUE F874_8789 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_v";
+	char *l_feature_name = "is_physical_t";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11904,7 +11818,7 @@ EIF_TYPED_VALUE F874_8789 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5807, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11918,11 +11832,11 @@ EIF_TYPED_VALUE F874_8789 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_w */
+/* {GAME_KEY}.is_physical_u */
 EIF_TYPED_VALUE F874_8790 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_w";
+	char *l_feature_name = "is_physical_u";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11947,7 +11861,7 @@ EIF_TYPED_VALUE F874_8790 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5808, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -11961,11 +11875,11 @@ EIF_TYPED_VALUE F874_8790 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_x */
+/* {GAME_KEY}.is_physical_v */
 EIF_TYPED_VALUE F874_8791 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_x";
+	char *l_feature_name = "is_physical_v";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -11990,7 +11904,7 @@ EIF_TYPED_VALUE F874_8791 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5809, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12004,11 +11918,11 @@ EIF_TYPED_VALUE F874_8791 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_y */
+/* {GAME_KEY}.is_physical_w */
 EIF_TYPED_VALUE F874_8792 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_y";
+	char *l_feature_name = "is_physical_w";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12033,7 +11947,7 @@ EIF_TYPED_VALUE F874_8792 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5810, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12047,11 +11961,11 @@ EIF_TYPED_VALUE F874_8792 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_z */
+/* {GAME_KEY}.is_physical_x */
 EIF_TYPED_VALUE F874_8793 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_z";
+	char *l_feature_name = "is_physical_x";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12076,7 +11990,7 @@ EIF_TYPED_VALUE F874_8793 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5811, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12090,11 +12004,11 @@ EIF_TYPED_VALUE F874_8793 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_1 */
+/* {GAME_KEY}.is_physical_y */
 EIF_TYPED_VALUE F874_8794 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_1";
+	char *l_feature_name = "is_physical_y";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12119,7 +12033,7 @@ EIF_TYPED_VALUE F874_8794 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5812, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12133,11 +12047,11 @@ EIF_TYPED_VALUE F874_8794 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_2 */
+/* {GAME_KEY}.is_physical_z */
 EIF_TYPED_VALUE F874_8795 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_2";
+	char *l_feature_name = "is_physical_z";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12162,7 +12076,7 @@ EIF_TYPED_VALUE F874_8795 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5813, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12176,11 +12090,11 @@ EIF_TYPED_VALUE F874_8795 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_3 */
+/* {GAME_KEY}.is_physical_1 */
 EIF_TYPED_VALUE F874_8796 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_3";
+	char *l_feature_name = "is_physical_1";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12205,7 +12119,7 @@ EIF_TYPED_VALUE F874_8796 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5814, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12219,11 +12133,11 @@ EIF_TYPED_VALUE F874_8796 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_4 */
+/* {GAME_KEY}.is_physical_2 */
 EIF_TYPED_VALUE F874_8797 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_4";
+	char *l_feature_name = "is_physical_2";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12248,7 +12162,7 @@ EIF_TYPED_VALUE F874_8797 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5815, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12262,11 +12176,11 @@ EIF_TYPED_VALUE F874_8797 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_5 */
+/* {GAME_KEY}.is_physical_3 */
 EIF_TYPED_VALUE F874_8798 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_5";
+	char *l_feature_name = "is_physical_3";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12291,7 +12205,7 @@ EIF_TYPED_VALUE F874_8798 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5816, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12305,11 +12219,11 @@ EIF_TYPED_VALUE F874_8798 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_6 */
+/* {GAME_KEY}.is_physical_4 */
 EIF_TYPED_VALUE F874_8799 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_6";
+	char *l_feature_name = "is_physical_4";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12334,7 +12248,7 @@ EIF_TYPED_VALUE F874_8799 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5817, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12348,11 +12262,11 @@ EIF_TYPED_VALUE F874_8799 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_7 */
+/* {GAME_KEY}.is_physical_5 */
 EIF_TYPED_VALUE F874_8800 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_7";
+	char *l_feature_name = "is_physical_5";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12377,7 +12291,7 @@ EIF_TYPED_VALUE F874_8800 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5818, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12391,11 +12305,11 @@ EIF_TYPED_VALUE F874_8800 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_8 */
+/* {GAME_KEY}.is_physical_6 */
 EIF_TYPED_VALUE F874_8801 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_8";
+	char *l_feature_name = "is_physical_6";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12420,7 +12334,7 @@ EIF_TYPED_VALUE F874_8801 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5819, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12434,11 +12348,11 @@ EIF_TYPED_VALUE F874_8801 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_9 */
+/* {GAME_KEY}.is_physical_7 */
 EIF_TYPED_VALUE F874_8802 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_9";
+	char *l_feature_name = "is_physical_7";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12463,7 +12377,7 @@ EIF_TYPED_VALUE F874_8802 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5820, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12477,11 +12391,11 @@ EIF_TYPED_VALUE F874_8802 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_0 */
+/* {GAME_KEY}.is_physical_8 */
 EIF_TYPED_VALUE F874_8803 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_0";
+	char *l_feature_name = "is_physical_8";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12506,7 +12420,7 @@ EIF_TYPED_VALUE F874_8803 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5821, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12520,11 +12434,11 @@ EIF_TYPED_VALUE F874_8803 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_return */
+/* {GAME_KEY}.is_physical_9 */
 EIF_TYPED_VALUE F874_8804 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_return";
+	char *l_feature_name = "is_physical_9";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12549,7 +12463,7 @@ EIF_TYPED_VALUE F874_8804 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5822, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12563,11 +12477,11 @@ EIF_TYPED_VALUE F874_8804 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_escape */
+/* {GAME_KEY}.is_physical_0 */
 EIF_TYPED_VALUE F874_8805 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_escape";
+	char *l_feature_name = "is_physical_0";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12592,7 +12506,7 @@ EIF_TYPED_VALUE F874_8805 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5823, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12606,11 +12520,11 @@ EIF_TYPED_VALUE F874_8805 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_backspace */
+/* {GAME_KEY}.is_physical_return */
 EIF_TYPED_VALUE F874_8806 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_backspace";
+	char *l_feature_name = "is_physical_return";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12635,7 +12549,7 @@ EIF_TYPED_VALUE F874_8806 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5824, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12649,11 +12563,11 @@ EIF_TYPED_VALUE F874_8806 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_tab */
+/* {GAME_KEY}.is_physical_escape */
 EIF_TYPED_VALUE F874_8807 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_tab";
+	char *l_feature_name = "is_physical_escape";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12678,7 +12592,7 @@ EIF_TYPED_VALUE F874_8807 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5825, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12692,11 +12606,11 @@ EIF_TYPED_VALUE F874_8807 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_space */
+/* {GAME_KEY}.is_physical_backspace */
 EIF_TYPED_VALUE F874_8808 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_space";
+	char *l_feature_name = "is_physical_backspace";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12721,7 +12635,7 @@ EIF_TYPED_VALUE F874_8808 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5826, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12735,11 +12649,11 @@ EIF_TYPED_VALUE F874_8808 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_minus */
+/* {GAME_KEY}.is_physical_tab */
 EIF_TYPED_VALUE F874_8809 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_minus";
+	char *l_feature_name = "is_physical_tab";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12764,7 +12678,7 @@ EIF_TYPED_VALUE F874_8809 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5827, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12778,11 +12692,11 @@ EIF_TYPED_VALUE F874_8809 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_equals */
+/* {GAME_KEY}.is_physical_space */
 EIF_TYPED_VALUE F874_8810 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_equals";
+	char *l_feature_name = "is_physical_space";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12807,7 +12721,7 @@ EIF_TYPED_VALUE F874_8810 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5828, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12821,11 +12735,11 @@ EIF_TYPED_VALUE F874_8810 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_left_bracket */
+/* {GAME_KEY}.is_physical_minus */
 EIF_TYPED_VALUE F874_8811 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_left_bracket";
+	char *l_feature_name = "is_physical_minus";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12850,7 +12764,7 @@ EIF_TYPED_VALUE F874_8811 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5829, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12864,11 +12778,11 @@ EIF_TYPED_VALUE F874_8811 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_right_bracket */
+/* {GAME_KEY}.is_physical_equals */
 EIF_TYPED_VALUE F874_8812 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_right_bracket";
+	char *l_feature_name = "is_physical_equals";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12893,7 +12807,7 @@ EIF_TYPED_VALUE F874_8812 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5830, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12907,11 +12821,11 @@ EIF_TYPED_VALUE F874_8812 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_backslash */
+/* {GAME_KEY}.is_physical_left_bracket */
 EIF_TYPED_VALUE F874_8813 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_backslash";
+	char *l_feature_name = "is_physical_left_bracket";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12936,7 +12850,7 @@ EIF_TYPED_VALUE F874_8813 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5831, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12950,11 +12864,11 @@ EIF_TYPED_VALUE F874_8813 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_iso_hash */
+/* {GAME_KEY}.is_physical_right_bracket */
 EIF_TYPED_VALUE F874_8814 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_iso_hash";
+	char *l_feature_name = "is_physical_right_bracket";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -12979,7 +12893,7 @@ EIF_TYPED_VALUE F874_8814 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5832, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -12993,11 +12907,11 @@ EIF_TYPED_VALUE F874_8814 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_semicolon */
+/* {GAME_KEY}.is_physical_backslash */
 EIF_TYPED_VALUE F874_8815 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_semicolon";
+	char *l_feature_name = "is_physical_backslash";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13022,7 +12936,7 @@ EIF_TYPED_VALUE F874_8815 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5833, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13036,11 +12950,11 @@ EIF_TYPED_VALUE F874_8815 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_apostrophe */
+/* {GAME_KEY}.is_physical_iso_hash */
 EIF_TYPED_VALUE F874_8816 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_apostrophe";
+	char *l_feature_name = "is_physical_iso_hash";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13065,7 +12979,7 @@ EIF_TYPED_VALUE F874_8816 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5834, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13079,11 +12993,11 @@ EIF_TYPED_VALUE F874_8816 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_grave_accent */
+/* {GAME_KEY}.is_physical_semicolon */
 EIF_TYPED_VALUE F874_8817 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_grave_accent";
+	char *l_feature_name = "is_physical_semicolon";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13108,7 +13022,7 @@ EIF_TYPED_VALUE F874_8817 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5835, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13122,11 +13036,11 @@ EIF_TYPED_VALUE F874_8817 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_comma */
+/* {GAME_KEY}.is_physical_apostrophe */
 EIF_TYPED_VALUE F874_8818 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_comma";
+	char *l_feature_name = "is_physical_apostrophe";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13151,7 +13065,7 @@ EIF_TYPED_VALUE F874_8818 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5836, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13165,11 +13079,11 @@ EIF_TYPED_VALUE F874_8818 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_period */
+/* {GAME_KEY}.is_physical_grave_accent */
 EIF_TYPED_VALUE F874_8819 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_period";
+	char *l_feature_name = "is_physical_grave_accent";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13194,7 +13108,7 @@ EIF_TYPED_VALUE F874_8819 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5837, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13208,11 +13122,11 @@ EIF_TYPED_VALUE F874_8819 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_slash */
+/* {GAME_KEY}.is_physical_comma */
 EIF_TYPED_VALUE F874_8820 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_slash";
+	char *l_feature_name = "is_physical_comma";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13237,7 +13151,7 @@ EIF_TYPED_VALUE F874_8820 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5838, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13251,11 +13165,11 @@ EIF_TYPED_VALUE F874_8820 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_caps_lock */
+/* {GAME_KEY}.is_physical_period */
 EIF_TYPED_VALUE F874_8821 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_caps_lock";
+	char *l_feature_name = "is_physical_period";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13280,7 +13194,7 @@ EIF_TYPED_VALUE F874_8821 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5839, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13294,11 +13208,11 @@ EIF_TYPED_VALUE F874_8821 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f1 */
+/* {GAME_KEY}.is_physical_slash */
 EIF_TYPED_VALUE F874_8822 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f1";
+	char *l_feature_name = "is_physical_slash";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13323,7 +13237,7 @@ EIF_TYPED_VALUE F874_8822 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5840, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13337,11 +13251,11 @@ EIF_TYPED_VALUE F874_8822 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f2 */
+/* {GAME_KEY}.is_physical_caps_lock */
 EIF_TYPED_VALUE F874_8823 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f2";
+	char *l_feature_name = "is_physical_caps_lock";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13366,7 +13280,7 @@ EIF_TYPED_VALUE F874_8823 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5841, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13380,11 +13294,11 @@ EIF_TYPED_VALUE F874_8823 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f3 */
+/* {GAME_KEY}.is_physical_f1 */
 EIF_TYPED_VALUE F874_8824 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f3";
+	char *l_feature_name = "is_physical_f1";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13409,7 +13323,7 @@ EIF_TYPED_VALUE F874_8824 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5842, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13423,11 +13337,11 @@ EIF_TYPED_VALUE F874_8824 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f4 */
+/* {GAME_KEY}.is_physical_f2 */
 EIF_TYPED_VALUE F874_8825 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f4";
+	char *l_feature_name = "is_physical_f2";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13452,7 +13366,7 @@ EIF_TYPED_VALUE F874_8825 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5843, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13466,11 +13380,11 @@ EIF_TYPED_VALUE F874_8825 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f5 */
+/* {GAME_KEY}.is_physical_f3 */
 EIF_TYPED_VALUE F874_8826 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f5";
+	char *l_feature_name = "is_physical_f3";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13495,7 +13409,7 @@ EIF_TYPED_VALUE F874_8826 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5844, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13509,11 +13423,11 @@ EIF_TYPED_VALUE F874_8826 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f6 */
+/* {GAME_KEY}.is_physical_f4 */
 EIF_TYPED_VALUE F874_8827 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f6";
+	char *l_feature_name = "is_physical_f4";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13538,7 +13452,7 @@ EIF_TYPED_VALUE F874_8827 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5845, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13552,11 +13466,11 @@ EIF_TYPED_VALUE F874_8827 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f7 */
+/* {GAME_KEY}.is_physical_f5 */
 EIF_TYPED_VALUE F874_8828 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f7";
+	char *l_feature_name = "is_physical_f5";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13581,7 +13495,7 @@ EIF_TYPED_VALUE F874_8828 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5846, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13595,11 +13509,11 @@ EIF_TYPED_VALUE F874_8828 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f8 */
+/* {GAME_KEY}.is_physical_f6 */
 EIF_TYPED_VALUE F874_8829 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f8";
+	char *l_feature_name = "is_physical_f6";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13624,7 +13538,7 @@ EIF_TYPED_VALUE F874_8829 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5847, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13638,11 +13552,11 @@ EIF_TYPED_VALUE F874_8829 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f9 */
+/* {GAME_KEY}.is_physical_f7 */
 EIF_TYPED_VALUE F874_8830 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f9";
+	char *l_feature_name = "is_physical_f7";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13667,7 +13581,7 @@ EIF_TYPED_VALUE F874_8830 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5848, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13681,11 +13595,11 @@ EIF_TYPED_VALUE F874_8830 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f10 */
+/* {GAME_KEY}.is_physical_f8 */
 EIF_TYPED_VALUE F874_8831 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f10";
+	char *l_feature_name = "is_physical_f8";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13710,7 +13624,7 @@ EIF_TYPED_VALUE F874_8831 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5849, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13724,11 +13638,11 @@ EIF_TYPED_VALUE F874_8831 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f11 */
+/* {GAME_KEY}.is_physical_f9 */
 EIF_TYPED_VALUE F874_8832 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f11";
+	char *l_feature_name = "is_physical_f9";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13753,7 +13667,7 @@ EIF_TYPED_VALUE F874_8832 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5850, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13767,11 +13681,11 @@ EIF_TYPED_VALUE F874_8832 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f12 */
+/* {GAME_KEY}.is_physical_f10 */
 EIF_TYPED_VALUE F874_8833 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f12";
+	char *l_feature_name = "is_physical_f10";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13796,7 +13710,7 @@ EIF_TYPED_VALUE F874_8833 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5851, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13810,11 +13724,11 @@ EIF_TYPED_VALUE F874_8833 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_print_screen */
+/* {GAME_KEY}.is_physical_f11 */
 EIF_TYPED_VALUE F874_8834 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_print_screen";
+	char *l_feature_name = "is_physical_f11";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13839,7 +13753,7 @@ EIF_TYPED_VALUE F874_8834 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5852, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13853,11 +13767,11 @@ EIF_TYPED_VALUE F874_8834 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_scroll_lock */
+/* {GAME_KEY}.is_physical_f12 */
 EIF_TYPED_VALUE F874_8835 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_scroll_lock";
+	char *l_feature_name = "is_physical_f12";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13882,7 +13796,7 @@ EIF_TYPED_VALUE F874_8835 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5853, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13896,11 +13810,11 @@ EIF_TYPED_VALUE F874_8835 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_pause */
+/* {GAME_KEY}.is_physical_print_screen */
 EIF_TYPED_VALUE F874_8836 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_pause";
+	char *l_feature_name = "is_physical_print_screen";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13925,7 +13839,7 @@ EIF_TYPED_VALUE F874_8836 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5854, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13939,11 +13853,11 @@ EIF_TYPED_VALUE F874_8836 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_insert */
+/* {GAME_KEY}.is_physical_scroll_lock */
 EIF_TYPED_VALUE F874_8837 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_insert";
+	char *l_feature_name = "is_physical_scroll_lock";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -13968,7 +13882,7 @@ EIF_TYPED_VALUE F874_8837 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5855, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -13982,11 +13896,11 @@ EIF_TYPED_VALUE F874_8837 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_home */
+/* {GAME_KEY}.is_physical_pause */
 EIF_TYPED_VALUE F874_8838 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_home";
+	char *l_feature_name = "is_physical_pause";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14011,7 +13925,7 @@ EIF_TYPED_VALUE F874_8838 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5856, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14025,11 +13939,11 @@ EIF_TYPED_VALUE F874_8838 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_page_up */
+/* {GAME_KEY}.is_physical_insert */
 EIF_TYPED_VALUE F874_8839 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_page_up";
+	char *l_feature_name = "is_physical_insert";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14054,7 +13968,7 @@ EIF_TYPED_VALUE F874_8839 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5857, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14068,11 +13982,11 @@ EIF_TYPED_VALUE F874_8839 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_delete */
+/* {GAME_KEY}.is_physical_home */
 EIF_TYPED_VALUE F874_8840 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_delete";
+	char *l_feature_name = "is_physical_home";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14097,7 +14011,7 @@ EIF_TYPED_VALUE F874_8840 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5858, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14111,11 +14025,11 @@ EIF_TYPED_VALUE F874_8840 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_end */
+/* {GAME_KEY}.is_physical_page_up */
 EIF_TYPED_VALUE F874_8841 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_end";
+	char *l_feature_name = "is_physical_page_up";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14140,7 +14054,7 @@ EIF_TYPED_VALUE F874_8841 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5859, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14154,11 +14068,11 @@ EIF_TYPED_VALUE F874_8841 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_page_down */
+/* {GAME_KEY}.is_physical_delete */
 EIF_TYPED_VALUE F874_8842 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_page_down";
+	char *l_feature_name = "is_physical_delete";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14183,7 +14097,7 @@ EIF_TYPED_VALUE F874_8842 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5860, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14197,11 +14111,11 @@ EIF_TYPED_VALUE F874_8842 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_right */
+/* {GAME_KEY}.is_physical_end */
 EIF_TYPED_VALUE F874_8843 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_right";
+	char *l_feature_name = "is_physical_end";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14226,7 +14140,7 @@ EIF_TYPED_VALUE F874_8843 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5861, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14240,11 +14154,11 @@ EIF_TYPED_VALUE F874_8843 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_left */
+/* {GAME_KEY}.is_physical_page_down */
 EIF_TYPED_VALUE F874_8844 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_left";
+	char *l_feature_name = "is_physical_page_down";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14269,7 +14183,7 @@ EIF_TYPED_VALUE F874_8844 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5862, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14283,11 +14197,11 @@ EIF_TYPED_VALUE F874_8844 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_down */
+/* {GAME_KEY}.is_physical_right */
 EIF_TYPED_VALUE F874_8845 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_down";
+	char *l_feature_name = "is_physical_right";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14312,7 +14226,7 @@ EIF_TYPED_VALUE F874_8845 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5863, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14326,11 +14240,11 @@ EIF_TYPED_VALUE F874_8845 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_up */
+/* {GAME_KEY}.is_physical_left */
 EIF_TYPED_VALUE F874_8846 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_up";
+	char *l_feature_name = "is_physical_left";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14355,7 +14269,7 @@ EIF_TYPED_VALUE F874_8846 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5864, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14369,11 +14283,11 @@ EIF_TYPED_VALUE F874_8846 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_num_lock_clear */
+/* {GAME_KEY}.is_physical_down */
 EIF_TYPED_VALUE F874_8847 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_num_lock_clear";
+	char *l_feature_name = "is_physical_down";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14398,7 +14312,7 @@ EIF_TYPED_VALUE F874_8847 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5865, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14412,11 +14326,11 @@ EIF_TYPED_VALUE F874_8847 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_divide */
+/* {GAME_KEY}.is_physical_up */
 EIF_TYPED_VALUE F874_8848 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_divide";
+	char *l_feature_name = "is_physical_up";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14441,7 +14355,7 @@ EIF_TYPED_VALUE F874_8848 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5866, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14455,11 +14369,11 @@ EIF_TYPED_VALUE F874_8848 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_multiply */
+/* {GAME_KEY}.is_physical_num_lock_clear */
 EIF_TYPED_VALUE F874_8849 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_multiply";
+	char *l_feature_name = "is_physical_num_lock_clear";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14484,7 +14398,7 @@ EIF_TYPED_VALUE F874_8849 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5867, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14498,11 +14412,11 @@ EIF_TYPED_VALUE F874_8849 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_minus */
+/* {GAME_KEY}.is_physical_keypad_divide */
 EIF_TYPED_VALUE F874_8850 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_minus";
+	char *l_feature_name = "is_physical_keypad_divide";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14527,7 +14441,7 @@ EIF_TYPED_VALUE F874_8850 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5868, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14541,11 +14455,11 @@ EIF_TYPED_VALUE F874_8850 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_plus */
+/* {GAME_KEY}.is_physical_keypad_multiply */
 EIF_TYPED_VALUE F874_8851 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_plus";
+	char *l_feature_name = "is_physical_keypad_multiply";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14570,7 +14484,7 @@ EIF_TYPED_VALUE F874_8851 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5869, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14584,11 +14498,11 @@ EIF_TYPED_VALUE F874_8851 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_enter */
+/* {GAME_KEY}.is_physical_keypad_minus */
 EIF_TYPED_VALUE F874_8852 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_enter";
+	char *l_feature_name = "is_physical_keypad_minus";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14613,7 +14527,7 @@ EIF_TYPED_VALUE F874_8852 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5870, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14627,11 +14541,11 @@ EIF_TYPED_VALUE F874_8852 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_1 */
+/* {GAME_KEY}.is_physical_keypad_plus */
 EIF_TYPED_VALUE F874_8853 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_1";
+	char *l_feature_name = "is_physical_keypad_plus";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14656,7 +14570,7 @@ EIF_TYPED_VALUE F874_8853 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5871, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14670,11 +14584,11 @@ EIF_TYPED_VALUE F874_8853 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_2 */
+/* {GAME_KEY}.is_physical_keypad_enter */
 EIF_TYPED_VALUE F874_8854 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_2";
+	char *l_feature_name = "is_physical_keypad_enter";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14699,7 +14613,7 @@ EIF_TYPED_VALUE F874_8854 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5872, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14713,11 +14627,11 @@ EIF_TYPED_VALUE F874_8854 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_3 */
+/* {GAME_KEY}.is_physical_keypad_1 */
 EIF_TYPED_VALUE F874_8855 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_3";
+	char *l_feature_name = "is_physical_keypad_1";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14742,7 +14656,7 @@ EIF_TYPED_VALUE F874_8855 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5873, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14756,11 +14670,11 @@ EIF_TYPED_VALUE F874_8855 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_4 */
+/* {GAME_KEY}.is_physical_keypad_2 */
 EIF_TYPED_VALUE F874_8856 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_4";
+	char *l_feature_name = "is_physical_keypad_2";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14785,7 +14699,7 @@ EIF_TYPED_VALUE F874_8856 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5874, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14799,11 +14713,11 @@ EIF_TYPED_VALUE F874_8856 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_5 */
+/* {GAME_KEY}.is_physical_keypad_3 */
 EIF_TYPED_VALUE F874_8857 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_5";
+	char *l_feature_name = "is_physical_keypad_3";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14828,7 +14742,7 @@ EIF_TYPED_VALUE F874_8857 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5875, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14842,11 +14756,11 @@ EIF_TYPED_VALUE F874_8857 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_6 */
+/* {GAME_KEY}.is_physical_keypad_4 */
 EIF_TYPED_VALUE F874_8858 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_6";
+	char *l_feature_name = "is_physical_keypad_4";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14871,7 +14785,7 @@ EIF_TYPED_VALUE F874_8858 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5876, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14885,11 +14799,11 @@ EIF_TYPED_VALUE F874_8858 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_7 */
+/* {GAME_KEY}.is_physical_keypad_5 */
 EIF_TYPED_VALUE F874_8859 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_7";
+	char *l_feature_name = "is_physical_keypad_5";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14914,7 +14828,7 @@ EIF_TYPED_VALUE F874_8859 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5877, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14928,11 +14842,11 @@ EIF_TYPED_VALUE F874_8859 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_8 */
+/* {GAME_KEY}.is_physical_keypad_6 */
 EIF_TYPED_VALUE F874_8860 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_8";
+	char *l_feature_name = "is_physical_keypad_6";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -14957,7 +14871,7 @@ EIF_TYPED_VALUE F874_8860 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5878, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -14971,11 +14885,11 @@ EIF_TYPED_VALUE F874_8860 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_9 */
+/* {GAME_KEY}.is_physical_keypad_7 */
 EIF_TYPED_VALUE F874_8861 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_9";
+	char *l_feature_name = "is_physical_keypad_7";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15000,7 +14914,7 @@ EIF_TYPED_VALUE F874_8861 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5879, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15014,11 +14928,11 @@ EIF_TYPED_VALUE F874_8861 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_0 */
+/* {GAME_KEY}.is_physical_keypad_8 */
 EIF_TYPED_VALUE F874_8862 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_0";
+	char *l_feature_name = "is_physical_keypad_8";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15043,7 +14957,7 @@ EIF_TYPED_VALUE F874_8862 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5880, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15057,11 +14971,11 @@ EIF_TYPED_VALUE F874_8862 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_period */
+/* {GAME_KEY}.is_physical_keypad_9 */
 EIF_TYPED_VALUE F874_8863 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_period";
+	char *l_feature_name = "is_physical_keypad_9";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15086,7 +15000,7 @@ EIF_TYPED_VALUE F874_8863 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5881, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15100,11 +15014,11 @@ EIF_TYPED_VALUE F874_8863 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_iso_backslash */
+/* {GAME_KEY}.is_physical_keypad_0 */
 EIF_TYPED_VALUE F874_8864 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_iso_backslash";
+	char *l_feature_name = "is_physical_keypad_0";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15129,7 +15043,7 @@ EIF_TYPED_VALUE F874_8864 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5882, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15143,11 +15057,11 @@ EIF_TYPED_VALUE F874_8864 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_application */
+/* {GAME_KEY}.is_physical_keypad_period */
 EIF_TYPED_VALUE F874_8865 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_application";
+	char *l_feature_name = "is_physical_keypad_period";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15172,7 +15086,7 @@ EIF_TYPED_VALUE F874_8865 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5883, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15186,11 +15100,11 @@ EIF_TYPED_VALUE F874_8865 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_power */
+/* {GAME_KEY}.is_physical_iso_backslash */
 EIF_TYPED_VALUE F874_8866 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_power";
+	char *l_feature_name = "is_physical_iso_backslash";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15215,7 +15129,7 @@ EIF_TYPED_VALUE F874_8866 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5884, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15229,11 +15143,11 @@ EIF_TYPED_VALUE F874_8866 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_equals */
+/* {GAME_KEY}.is_physical_application */
 EIF_TYPED_VALUE F874_8867 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_equals";
+	char *l_feature_name = "is_physical_application";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15258,7 +15172,7 @@ EIF_TYPED_VALUE F874_8867 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5885, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15272,11 +15186,11 @@ EIF_TYPED_VALUE F874_8867 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f13 */
+/* {GAME_KEY}.is_physical_power */
 EIF_TYPED_VALUE F874_8868 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f13";
+	char *l_feature_name = "is_physical_power";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15301,7 +15215,7 @@ EIF_TYPED_VALUE F874_8868 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5886, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15315,11 +15229,11 @@ EIF_TYPED_VALUE F874_8868 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f14 */
+/* {GAME_KEY}.is_physical_keypad_equals */
 EIF_TYPED_VALUE F874_8869 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f14";
+	char *l_feature_name = "is_physical_keypad_equals";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15344,7 +15258,7 @@ EIF_TYPED_VALUE F874_8869 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5887, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15358,11 +15272,11 @@ EIF_TYPED_VALUE F874_8869 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f15 */
+/* {GAME_KEY}.is_physical_f13 */
 EIF_TYPED_VALUE F874_8870 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f15";
+	char *l_feature_name = "is_physical_f13";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15387,7 +15301,7 @@ EIF_TYPED_VALUE F874_8870 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5888, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15401,11 +15315,11 @@ EIF_TYPED_VALUE F874_8870 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f16 */
+/* {GAME_KEY}.is_physical_f14 */
 EIF_TYPED_VALUE F874_8871 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f16";
+	char *l_feature_name = "is_physical_f14";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15430,7 +15344,7 @@ EIF_TYPED_VALUE F874_8871 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5889, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15444,11 +15358,11 @@ EIF_TYPED_VALUE F874_8871 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f17 */
+/* {GAME_KEY}.is_physical_f15 */
 EIF_TYPED_VALUE F874_8872 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f17";
+	char *l_feature_name = "is_physical_f15";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15473,7 +15387,7 @@ EIF_TYPED_VALUE F874_8872 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5890, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15487,11 +15401,11 @@ EIF_TYPED_VALUE F874_8872 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f18 */
+/* {GAME_KEY}.is_physical_f16 */
 EIF_TYPED_VALUE F874_8873 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f18";
+	char *l_feature_name = "is_physical_f16";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15516,7 +15430,7 @@ EIF_TYPED_VALUE F874_8873 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5891, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15530,11 +15444,11 @@ EIF_TYPED_VALUE F874_8873 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f19 */
+/* {GAME_KEY}.is_physical_f17 */
 EIF_TYPED_VALUE F874_8874 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f19";
+	char *l_feature_name = "is_physical_f17";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15559,7 +15473,7 @@ EIF_TYPED_VALUE F874_8874 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5892, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15573,11 +15487,11 @@ EIF_TYPED_VALUE F874_8874 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f20 */
+/* {GAME_KEY}.is_physical_f18 */
 EIF_TYPED_VALUE F874_8875 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f20";
+	char *l_feature_name = "is_physical_f18";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15602,7 +15516,7 @@ EIF_TYPED_VALUE F874_8875 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5893, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15616,11 +15530,11 @@ EIF_TYPED_VALUE F874_8875 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f21 */
+/* {GAME_KEY}.is_physical_f19 */
 EIF_TYPED_VALUE F874_8876 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f21";
+	char *l_feature_name = "is_physical_f19";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15645,7 +15559,7 @@ EIF_TYPED_VALUE F874_8876 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5894, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15659,11 +15573,11 @@ EIF_TYPED_VALUE F874_8876 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f22 */
+/* {GAME_KEY}.is_physical_f20 */
 EIF_TYPED_VALUE F874_8877 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f22";
+	char *l_feature_name = "is_physical_f20";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15688,7 +15602,7 @@ EIF_TYPED_VALUE F874_8877 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5895, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15702,11 +15616,11 @@ EIF_TYPED_VALUE F874_8877 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f23 */
+/* {GAME_KEY}.is_physical_f21 */
 EIF_TYPED_VALUE F874_8878 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f23";
+	char *l_feature_name = "is_physical_f21";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15731,7 +15645,7 @@ EIF_TYPED_VALUE F874_8878 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5896, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15745,11 +15659,11 @@ EIF_TYPED_VALUE F874_8878 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_f24 */
+/* {GAME_KEY}.is_physical_f22 */
 EIF_TYPED_VALUE F874_8879 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_f24";
+	char *l_feature_name = "is_physical_f22";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15774,7 +15688,7 @@ EIF_TYPED_VALUE F874_8879 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5897, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15788,11 +15702,11 @@ EIF_TYPED_VALUE F874_8879 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_execute */
+/* {GAME_KEY}.is_physical_f23 */
 EIF_TYPED_VALUE F874_8880 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_execute";
+	char *l_feature_name = "is_physical_f23";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15817,7 +15731,7 @@ EIF_TYPED_VALUE F874_8880 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5898, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15831,11 +15745,11 @@ EIF_TYPED_VALUE F874_8880 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_help */
+/* {GAME_KEY}.is_physical_f24 */
 EIF_TYPED_VALUE F874_8881 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_help";
+	char *l_feature_name = "is_physical_f24";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15860,7 +15774,7 @@ EIF_TYPED_VALUE F874_8881 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5899, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15874,11 +15788,11 @@ EIF_TYPED_VALUE F874_8881 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_menu */
+/* {GAME_KEY}.is_physical_execute */
 EIF_TYPED_VALUE F874_8882 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_menu";
+	char *l_feature_name = "is_physical_execute";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15903,7 +15817,7 @@ EIF_TYPED_VALUE F874_8882 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5900, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15917,11 +15831,11 @@ EIF_TYPED_VALUE F874_8882 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_select */
+/* {GAME_KEY}.is_physical_help */
 EIF_TYPED_VALUE F874_8883 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_select";
+	char *l_feature_name = "is_physical_help";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15946,7 +15860,7 @@ EIF_TYPED_VALUE F874_8883 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5901, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -15960,11 +15874,11 @@ EIF_TYPED_VALUE F874_8883 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_stop */
+/* {GAME_KEY}.is_physical_menu */
 EIF_TYPED_VALUE F874_8884 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_stop";
+	char *l_feature_name = "is_physical_menu";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -15989,7 +15903,7 @@ EIF_TYPED_VALUE F874_8884 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5902, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16003,11 +15917,11 @@ EIF_TYPED_VALUE F874_8884 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_again */
+/* {GAME_KEY}.is_physical_select */
 EIF_TYPED_VALUE F874_8885 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_again";
+	char *l_feature_name = "is_physical_select";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16032,7 +15946,7 @@ EIF_TYPED_VALUE F874_8885 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5903, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16046,11 +15960,11 @@ EIF_TYPED_VALUE F874_8885 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_undo */
+/* {GAME_KEY}.is_physical_stop */
 EIF_TYPED_VALUE F874_8886 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_undo";
+	char *l_feature_name = "is_physical_stop";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16075,7 +15989,7 @@ EIF_TYPED_VALUE F874_8886 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5904, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16089,11 +16003,11 @@ EIF_TYPED_VALUE F874_8886 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_cut */
+/* {GAME_KEY}.is_physical_again */
 EIF_TYPED_VALUE F874_8887 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_cut";
+	char *l_feature_name = "is_physical_again";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16118,7 +16032,7 @@ EIF_TYPED_VALUE F874_8887 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5905, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16132,11 +16046,11 @@ EIF_TYPED_VALUE F874_8887 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_copy */
+/* {GAME_KEY}.is_physical_undo */
 EIF_TYPED_VALUE F874_8888 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_copy";
+	char *l_feature_name = "is_physical_undo";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16161,7 +16075,7 @@ EIF_TYPED_VALUE F874_8888 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5906, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16175,11 +16089,11 @@ EIF_TYPED_VALUE F874_8888 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_paste */
+/* {GAME_KEY}.is_physical_cut */
 EIF_TYPED_VALUE F874_8889 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_paste";
+	char *l_feature_name = "is_physical_cut";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16204,7 +16118,7 @@ EIF_TYPED_VALUE F874_8889 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5907, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16218,11 +16132,11 @@ EIF_TYPED_VALUE F874_8889 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_find */
+/* {GAME_KEY}.is_physical_copy */
 EIF_TYPED_VALUE F874_8890 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_find";
+	char *l_feature_name = "is_physical_copy";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16247,7 +16161,7 @@ EIF_TYPED_VALUE F874_8890 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5908, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16261,11 +16175,11 @@ EIF_TYPED_VALUE F874_8890 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_mute */
+/* {GAME_KEY}.is_physical_paste */
 EIF_TYPED_VALUE F874_8891 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_mute";
+	char *l_feature_name = "is_physical_paste";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16290,7 +16204,7 @@ EIF_TYPED_VALUE F874_8891 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5909, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16304,11 +16218,11 @@ EIF_TYPED_VALUE F874_8891 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_volume_up */
+/* {GAME_KEY}.is_physical_find */
 EIF_TYPED_VALUE F874_8892 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_volume_up";
+	char *l_feature_name = "is_physical_find";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16333,7 +16247,7 @@ EIF_TYPED_VALUE F874_8892 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5910, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16347,11 +16261,11 @@ EIF_TYPED_VALUE F874_8892 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_volume_down */
+/* {GAME_KEY}.is_physical_mute */
 EIF_TYPED_VALUE F874_8893 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_volume_down";
+	char *l_feature_name = "is_physical_mute";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16376,7 +16290,7 @@ EIF_TYPED_VALUE F874_8893 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5911, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16390,11 +16304,11 @@ EIF_TYPED_VALUE F874_8893 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_comma */
+/* {GAME_KEY}.is_physical_volume_up */
 EIF_TYPED_VALUE F874_8894 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_comma";
+	char *l_feature_name = "is_physical_volume_up";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16419,7 +16333,7 @@ EIF_TYPED_VALUE F874_8894 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5912, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16433,11 +16347,11 @@ EIF_TYPED_VALUE F874_8894 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_as400_keypad_equals */
+/* {GAME_KEY}.is_physical_volume_down */
 EIF_TYPED_VALUE F874_8895 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_as400_keypad_equals";
+	char *l_feature_name = "is_physical_volume_down";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16462,7 +16376,7 @@ EIF_TYPED_VALUE F874_8895 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5913, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16476,11 +16390,11 @@ EIF_TYPED_VALUE F874_8895 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_international_1 */
+/* {GAME_KEY}.is_physical_keypad_comma */
 EIF_TYPED_VALUE F874_8896 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_international_1";
+	char *l_feature_name = "is_physical_keypad_comma";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16505,7 +16419,7 @@ EIF_TYPED_VALUE F874_8896 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5914, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16519,11 +16433,11 @@ EIF_TYPED_VALUE F874_8896 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_international_2 */
+/* {GAME_KEY}.is_physical_as400_keypad_equals */
 EIF_TYPED_VALUE F874_8897 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_international_2";
+	char *l_feature_name = "is_physical_as400_keypad_equals";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16548,7 +16462,7 @@ EIF_TYPED_VALUE F874_8897 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5915, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16562,11 +16476,11 @@ EIF_TYPED_VALUE F874_8897 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_international_3 */
+/* {GAME_KEY}.is_physical_international_1 */
 EIF_TYPED_VALUE F874_8898 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_international_3";
+	char *l_feature_name = "is_physical_international_1";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16591,7 +16505,7 @@ EIF_TYPED_VALUE F874_8898 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5916, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16605,11 +16519,11 @@ EIF_TYPED_VALUE F874_8898 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_international_4 */
+/* {GAME_KEY}.is_physical_international_2 */
 EIF_TYPED_VALUE F874_8899 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_international_4";
+	char *l_feature_name = "is_physical_international_2";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16634,7 +16548,7 @@ EIF_TYPED_VALUE F874_8899 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5917, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16648,11 +16562,11 @@ EIF_TYPED_VALUE F874_8899 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_international_5 */
+/* {GAME_KEY}.is_physical_international_3 */
 EIF_TYPED_VALUE F874_8900 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_international_5";
+	char *l_feature_name = "is_physical_international_3";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16677,7 +16591,7 @@ EIF_TYPED_VALUE F874_8900 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5918, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16691,11 +16605,11 @@ EIF_TYPED_VALUE F874_8900 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_internationa_6 */
+/* {GAME_KEY}.is_physical_international_4 */
 EIF_TYPED_VALUE F874_8901 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_internationa_6";
+	char *l_feature_name = "is_physical_international_4";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16720,7 +16634,7 @@ EIF_TYPED_VALUE F874_8901 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5919, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16734,11 +16648,11 @@ EIF_TYPED_VALUE F874_8901 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_international_7 */
+/* {GAME_KEY}.is_physical_international_5 */
 EIF_TYPED_VALUE F874_8902 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_international_7";
+	char *l_feature_name = "is_physical_international_5";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16763,7 +16677,7 @@ EIF_TYPED_VALUE F874_8902 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5920, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16777,11 +16691,11 @@ EIF_TYPED_VALUE F874_8902 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_international_8 */
+/* {GAME_KEY}.is_physical_internationa_6 */
 EIF_TYPED_VALUE F874_8903 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_international_8";
+	char *l_feature_name = "is_physical_internationa_6";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16806,7 +16720,7 @@ EIF_TYPED_VALUE F874_8903 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5921, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16820,11 +16734,11 @@ EIF_TYPED_VALUE F874_8903 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_international_9 */
+/* {GAME_KEY}.is_physical_international_7 */
 EIF_TYPED_VALUE F874_8904 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_international_9";
+	char *l_feature_name = "is_physical_international_7";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16849,7 +16763,7 @@ EIF_TYPED_VALUE F874_8904 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5922, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16863,11 +16777,11 @@ EIF_TYPED_VALUE F874_8904 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_lang_1 */
+/* {GAME_KEY}.is_physical_international_8 */
 EIF_TYPED_VALUE F874_8905 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_lang_1";
+	char *l_feature_name = "is_physical_international_8";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16892,7 +16806,7 @@ EIF_TYPED_VALUE F874_8905 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5923, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16906,11 +16820,11 @@ EIF_TYPED_VALUE F874_8905 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_lang_2 */
+/* {GAME_KEY}.is_physical_international_9 */
 EIF_TYPED_VALUE F874_8906 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_lang_2";
+	char *l_feature_name = "is_physical_international_9";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16935,7 +16849,7 @@ EIF_TYPED_VALUE F874_8906 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5924, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16949,11 +16863,11 @@ EIF_TYPED_VALUE F874_8906 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_lang_3 */
+/* {GAME_KEY}.is_physical_lang_1 */
 EIF_TYPED_VALUE F874_8907 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_lang_3";
+	char *l_feature_name = "is_physical_lang_1";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -16978,7 +16892,7 @@ EIF_TYPED_VALUE F874_8907 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5925, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -16992,11 +16906,11 @@ EIF_TYPED_VALUE F874_8907 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_lang_4 */
+/* {GAME_KEY}.is_physical_lang_2 */
 EIF_TYPED_VALUE F874_8908 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_lang_4";
+	char *l_feature_name = "is_physical_lang_2";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17021,7 +16935,7 @@ EIF_TYPED_VALUE F874_8908 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5926, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17035,11 +16949,11 @@ EIF_TYPED_VALUE F874_8908 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_lang_5 */
+/* {GAME_KEY}.is_physical_lang_3 */
 EIF_TYPED_VALUE F874_8909 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_lang_5";
+	char *l_feature_name = "is_physical_lang_3";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17064,7 +16978,7 @@ EIF_TYPED_VALUE F874_8909 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5927, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17078,11 +16992,11 @@ EIF_TYPED_VALUE F874_8909 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_lang_6 */
+/* {GAME_KEY}.is_physical_lang_4 */
 EIF_TYPED_VALUE F874_8910 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_lang_6";
+	char *l_feature_name = "is_physical_lang_4";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17107,7 +17021,7 @@ EIF_TYPED_VALUE F874_8910 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5928, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17121,11 +17035,11 @@ EIF_TYPED_VALUE F874_8910 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_lang_7 */
+/* {GAME_KEY}.is_physical_lang_5 */
 EIF_TYPED_VALUE F874_8911 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_lang_7";
+	char *l_feature_name = "is_physical_lang_5";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17150,7 +17064,7 @@ EIF_TYPED_VALUE F874_8911 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5929, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17164,11 +17078,11 @@ EIF_TYPED_VALUE F874_8911 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_lang_8 */
+/* {GAME_KEY}.is_physical_lang_6 */
 EIF_TYPED_VALUE F874_8912 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_lang_8";
+	char *l_feature_name = "is_physical_lang_6";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17193,7 +17107,7 @@ EIF_TYPED_VALUE F874_8912 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5930, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17207,11 +17121,11 @@ EIF_TYPED_VALUE F874_8912 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_lang_9 */
+/* {GAME_KEY}.is_physical_lang_7 */
 EIF_TYPED_VALUE F874_8913 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_lang_9";
+	char *l_feature_name = "is_physical_lang_7";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17236,7 +17150,7 @@ EIF_TYPED_VALUE F874_8913 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5931, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17250,11 +17164,11 @@ EIF_TYPED_VALUE F874_8913 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_erase_eaze_alternate_erase */
+/* {GAME_KEY}.is_physical_lang_8 */
 EIF_TYPED_VALUE F874_8914 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_erase_eaze_alternate_erase";
+	char *l_feature_name = "is_physical_lang_8";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17279,7 +17193,7 @@ EIF_TYPED_VALUE F874_8914 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5932, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17293,11 +17207,11 @@ EIF_TYPED_VALUE F874_8914 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_sysreq */
+/* {GAME_KEY}.is_physical_lang_9 */
 EIF_TYPED_VALUE F874_8915 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_sysreq";
+	char *l_feature_name = "is_physical_lang_9";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17322,7 +17236,7 @@ EIF_TYPED_VALUE F874_8915 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5933, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17336,11 +17250,11 @@ EIF_TYPED_VALUE F874_8915 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_cancel */
+/* {GAME_KEY}.is_physical_erase_eaze_alternate_erase */
 EIF_TYPED_VALUE F874_8916 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_cancel";
+	char *l_feature_name = "is_physical_erase_eaze_alternate_erase";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17365,7 +17279,7 @@ EIF_TYPED_VALUE F874_8916 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5934, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17379,11 +17293,11 @@ EIF_TYPED_VALUE F874_8916 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_clear */
+/* {GAME_KEY}.is_physical_sysreq */
 EIF_TYPED_VALUE F874_8917 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_clear";
+	char *l_feature_name = "is_physical_sysreq";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17408,7 +17322,7 @@ EIF_TYPED_VALUE F874_8917 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5935, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17422,11 +17336,11 @@ EIF_TYPED_VALUE F874_8917 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_prior */
+/* {GAME_KEY}.is_physical_cancel */
 EIF_TYPED_VALUE F874_8918 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_prior";
+	char *l_feature_name = "is_physical_cancel";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17451,7 +17365,7 @@ EIF_TYPED_VALUE F874_8918 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5936, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17465,11 +17379,11 @@ EIF_TYPED_VALUE F874_8918 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_return_2 */
+/* {GAME_KEY}.is_physical_clear */
 EIF_TYPED_VALUE F874_8919 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_return_2";
+	char *l_feature_name = "is_physical_clear";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17494,7 +17408,7 @@ EIF_TYPED_VALUE F874_8919 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5937, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17508,11 +17422,11 @@ EIF_TYPED_VALUE F874_8919 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_separator */
+/* {GAME_KEY}.is_physical_prior */
 EIF_TYPED_VALUE F874_8920 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_separator";
+	char *l_feature_name = "is_physical_prior";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17537,7 +17451,7 @@ EIF_TYPED_VALUE F874_8920 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5938, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17551,11 +17465,11 @@ EIF_TYPED_VALUE F874_8920 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_out */
+/* {GAME_KEY}.is_physical_return_2 */
 EIF_TYPED_VALUE F874_8921 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_out";
+	char *l_feature_name = "is_physical_return_2";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17580,7 +17494,7 @@ EIF_TYPED_VALUE F874_8921 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5939, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17594,11 +17508,11 @@ EIF_TYPED_VALUE F874_8921 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_oper */
+/* {GAME_KEY}.is_physical_separator */
 EIF_TYPED_VALUE F874_8922 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_oper";
+	char *l_feature_name = "is_physical_separator";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17623,7 +17537,7 @@ EIF_TYPED_VALUE F874_8922 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5940, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17637,11 +17551,11 @@ EIF_TYPED_VALUE F874_8922 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_clear_again */
+/* {GAME_KEY}.is_physical_out */
 EIF_TYPED_VALUE F874_8923 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_clear_again";
+	char *l_feature_name = "is_physical_out";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17666,7 +17580,7 @@ EIF_TYPED_VALUE F874_8923 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5941, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17680,11 +17594,11 @@ EIF_TYPED_VALUE F874_8923 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_crsel */
+/* {GAME_KEY}.is_physical_oper */
 EIF_TYPED_VALUE F874_8924 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_crsel";
+	char *l_feature_name = "is_physical_oper";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17709,7 +17623,7 @@ EIF_TYPED_VALUE F874_8924 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5942, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17723,11 +17637,11 @@ EIF_TYPED_VALUE F874_8924 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_exsel */
+/* {GAME_KEY}.is_physical_clear_again */
 EIF_TYPED_VALUE F874_8925 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_exsel";
+	char *l_feature_name = "is_physical_clear_again";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17752,7 +17666,7 @@ EIF_TYPED_VALUE F874_8925 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5943, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17766,11 +17680,11 @@ EIF_TYPED_VALUE F874_8925 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_00 */
+/* {GAME_KEY}.is_physical_crsel */
 EIF_TYPED_VALUE F874_8926 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_00";
+	char *l_feature_name = "is_physical_crsel";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17795,7 +17709,7 @@ EIF_TYPED_VALUE F874_8926 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5944, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17809,11 +17723,11 @@ EIF_TYPED_VALUE F874_8926 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_000 */
+/* {GAME_KEY}.is_physical_exsel */
 EIF_TYPED_VALUE F874_8927 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_000";
+	char *l_feature_name = "is_physical_exsel";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17838,7 +17752,7 @@ EIF_TYPED_VALUE F874_8927 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5945, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17852,11 +17766,11 @@ EIF_TYPED_VALUE F874_8927 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_thousands_separator */
+/* {GAME_KEY}.is_physical_keypad_00 */
 EIF_TYPED_VALUE F874_8928 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_thousands_separator";
+	char *l_feature_name = "is_physical_keypad_00";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17881,7 +17795,7 @@ EIF_TYPED_VALUE F874_8928 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5946, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17895,11 +17809,11 @@ EIF_TYPED_VALUE F874_8928 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_decimal_separator */
+/* {GAME_KEY}.is_physical_keypad_000 */
 EIF_TYPED_VALUE F874_8929 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_decimal_separator";
+	char *l_feature_name = "is_physical_keypad_000";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17924,7 +17838,7 @@ EIF_TYPED_VALUE F874_8929 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5947, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17938,11 +17852,11 @@ EIF_TYPED_VALUE F874_8929 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_currency_unit */
+/* {GAME_KEY}.is_physical_thousands_separator */
 EIF_TYPED_VALUE F874_8930 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_currency_unit";
+	char *l_feature_name = "is_physical_thousands_separator";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -17967,7 +17881,7 @@ EIF_TYPED_VALUE F874_8930 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5948, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -17981,11 +17895,11 @@ EIF_TYPED_VALUE F874_8930 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_currency_sub_unit */
+/* {GAME_KEY}.is_physical_decimal_separator */
 EIF_TYPED_VALUE F874_8931 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_currency_sub_unit";
+	char *l_feature_name = "is_physical_decimal_separator";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18010,7 +17924,7 @@ EIF_TYPED_VALUE F874_8931 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5949, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18024,11 +17938,11 @@ EIF_TYPED_VALUE F874_8931 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_left_parenthesis */
+/* {GAME_KEY}.is_physical_currency_unit */
 EIF_TYPED_VALUE F874_8932 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_left_parenthesis";
+	char *l_feature_name = "is_physical_currency_unit";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18053,7 +17967,7 @@ EIF_TYPED_VALUE F874_8932 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5950, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18067,11 +17981,11 @@ EIF_TYPED_VALUE F874_8932 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_right_parenthesis */
+/* {GAME_KEY}.is_physical_currency_sub_unit */
 EIF_TYPED_VALUE F874_8933 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_right_parenthesis";
+	char *l_feature_name = "is_physical_currency_sub_unit";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18096,7 +18010,7 @@ EIF_TYPED_VALUE F874_8933 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5951, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18110,11 +18024,11 @@ EIF_TYPED_VALUE F874_8933 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_left_brace */
+/* {GAME_KEY}.is_physical_keypad_left_parenthesis */
 EIF_TYPED_VALUE F874_8934 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_left_brace";
+	char *l_feature_name = "is_physical_keypad_left_parenthesis";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18139,7 +18053,7 @@ EIF_TYPED_VALUE F874_8934 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5952, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18153,11 +18067,11 @@ EIF_TYPED_VALUE F874_8934 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_rightbrace */
+/* {GAME_KEY}.is_physical_keypad_right_parenthesis */
 EIF_TYPED_VALUE F874_8935 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_rightbrace";
+	char *l_feature_name = "is_physical_keypad_right_parenthesis";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18182,7 +18096,7 @@ EIF_TYPED_VALUE F874_8935 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5953, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18196,11 +18110,11 @@ EIF_TYPED_VALUE F874_8935 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_tab */
+/* {GAME_KEY}.is_physical_keypad_left_brace */
 EIF_TYPED_VALUE F874_8936 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_tab";
+	char *l_feature_name = "is_physical_keypad_left_brace";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18225,7 +18139,7 @@ EIF_TYPED_VALUE F874_8936 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5954, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18239,11 +18153,11 @@ EIF_TYPED_VALUE F874_8936 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_backspace */
+/* {GAME_KEY}.is_physical_keypad_rightbrace */
 EIF_TYPED_VALUE F874_8937 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_backspace";
+	char *l_feature_name = "is_physical_keypad_rightbrace";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18268,7 +18182,7 @@ EIF_TYPED_VALUE F874_8937 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5955, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18282,11 +18196,11 @@ EIF_TYPED_VALUE F874_8937 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_a */
+/* {GAME_KEY}.is_physical_keypad_tab */
 EIF_TYPED_VALUE F874_8938 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_a";
+	char *l_feature_name = "is_physical_keypad_tab";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18311,7 +18225,7 @@ EIF_TYPED_VALUE F874_8938 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5956, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18325,11 +18239,11 @@ EIF_TYPED_VALUE F874_8938 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_b */
+/* {GAME_KEY}.is_physical_keypad_backspace */
 EIF_TYPED_VALUE F874_8939 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_b";
+	char *l_feature_name = "is_physical_keypad_backspace";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18354,7 +18268,7 @@ EIF_TYPED_VALUE F874_8939 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5957, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18368,11 +18282,11 @@ EIF_TYPED_VALUE F874_8939 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_c */
+/* {GAME_KEY}.is_physical_keypad_a */
 EIF_TYPED_VALUE F874_8940 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_c";
+	char *l_feature_name = "is_physical_keypad_a";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18397,7 +18311,7 @@ EIF_TYPED_VALUE F874_8940 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5958, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18411,11 +18325,11 @@ EIF_TYPED_VALUE F874_8940 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_d */
+/* {GAME_KEY}.is_physical_keypad_b */
 EIF_TYPED_VALUE F874_8941 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_d";
+	char *l_feature_name = "is_physical_keypad_b";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18440,7 +18354,7 @@ EIF_TYPED_VALUE F874_8941 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5959, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18454,11 +18368,11 @@ EIF_TYPED_VALUE F874_8941 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_e */
+/* {GAME_KEY}.is_physical_keypad_c */
 EIF_TYPED_VALUE F874_8942 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_e";
+	char *l_feature_name = "is_physical_keypad_c";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18483,7 +18397,7 @@ EIF_TYPED_VALUE F874_8942 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5960, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18497,11 +18411,11 @@ EIF_TYPED_VALUE F874_8942 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_f */
+/* {GAME_KEY}.is_physical_keypad_d */
 EIF_TYPED_VALUE F874_8943 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_f";
+	char *l_feature_name = "is_physical_keypad_d";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18526,7 +18440,7 @@ EIF_TYPED_VALUE F874_8943 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5961, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18540,11 +18454,11 @@ EIF_TYPED_VALUE F874_8943 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_xor */
+/* {GAME_KEY}.is_physical_keypad_e */
 EIF_TYPED_VALUE F874_8944 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_xor";
+	char *l_feature_name = "is_physical_keypad_e";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18569,7 +18483,7 @@ EIF_TYPED_VALUE F874_8944 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5962, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18583,11 +18497,11 @@ EIF_TYPED_VALUE F874_8944 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_power */
+/* {GAME_KEY}.is_physical_keypad_f */
 EIF_TYPED_VALUE F874_8945 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_power";
+	char *l_feature_name = "is_physical_keypad_f";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18612,7 +18526,7 @@ EIF_TYPED_VALUE F874_8945 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5963, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18626,11 +18540,11 @@ EIF_TYPED_VALUE F874_8945 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_percent */
+/* {GAME_KEY}.is_physical_keypad_xor */
 EIF_TYPED_VALUE F874_8946 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_percent";
+	char *l_feature_name = "is_physical_keypad_xor";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18655,7 +18569,7 @@ EIF_TYPED_VALUE F874_8946 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5964, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18669,11 +18583,11 @@ EIF_TYPED_VALUE F874_8946 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_less */
+/* {GAME_KEY}.is_physical_keypad_power */
 EIF_TYPED_VALUE F874_8947 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_less";
+	char *l_feature_name = "is_physical_keypad_power";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18698,7 +18612,7 @@ EIF_TYPED_VALUE F874_8947 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5965, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18712,11 +18626,11 @@ EIF_TYPED_VALUE F874_8947 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_greater */
+/* {GAME_KEY}.is_physical_keypad_percent */
 EIF_TYPED_VALUE F874_8948 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_greater";
+	char *l_feature_name = "is_physical_keypad_percent";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18741,7 +18655,7 @@ EIF_TYPED_VALUE F874_8948 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5966, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18755,11 +18669,11 @@ EIF_TYPED_VALUE F874_8948 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_ampersand */
+/* {GAME_KEY}.is_physical_keypad_less */
 EIF_TYPED_VALUE F874_8949 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_ampersand";
+	char *l_feature_name = "is_physical_keypad_less";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18784,7 +18698,7 @@ EIF_TYPED_VALUE F874_8949 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5967, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18798,11 +18712,11 @@ EIF_TYPED_VALUE F874_8949 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_double_ampersand */
+/* {GAME_KEY}.is_physical_keypad_greater */
 EIF_TYPED_VALUE F874_8950 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_double_ampersand";
+	char *l_feature_name = "is_physical_keypad_greater";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18827,7 +18741,7 @@ EIF_TYPED_VALUE F874_8950 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5968, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18841,11 +18755,11 @@ EIF_TYPED_VALUE F874_8950 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_vertical_bar */
+/* {GAME_KEY}.is_physical_keypad_ampersand */
 EIF_TYPED_VALUE F874_8951 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_vertical_bar";
+	char *l_feature_name = "is_physical_keypad_ampersand";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18870,7 +18784,7 @@ EIF_TYPED_VALUE F874_8951 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5969, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18884,11 +18798,11 @@ EIF_TYPED_VALUE F874_8951 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_double_vertical_bar */
+/* {GAME_KEY}.is_physical_keypad_double_ampersand */
 EIF_TYPED_VALUE F874_8952 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_double_vertical_bar";
+	char *l_feature_name = "is_physical_keypad_double_ampersand";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18913,7 +18827,7 @@ EIF_TYPED_VALUE F874_8952 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5970, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18927,11 +18841,11 @@ EIF_TYPED_VALUE F874_8952 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_colon */
+/* {GAME_KEY}.is_physical_keypad_vertical_bar */
 EIF_TYPED_VALUE F874_8953 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_colon";
+	char *l_feature_name = "is_physical_keypad_vertical_bar";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18956,7 +18870,7 @@ EIF_TYPED_VALUE F874_8953 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5971, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -18970,11 +18884,11 @@ EIF_TYPED_VALUE F874_8953 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_hash */
+/* {GAME_KEY}.is_physical_keypad_double_vertical_bar */
 EIF_TYPED_VALUE F874_8954 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_hash";
+	char *l_feature_name = "is_physical_keypad_double_vertical_bar";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -18999,7 +18913,7 @@ EIF_TYPED_VALUE F874_8954 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5972, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19013,11 +18927,11 @@ EIF_TYPED_VALUE F874_8954 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_space */
+/* {GAME_KEY}.is_physical_keypad_colon */
 EIF_TYPED_VALUE F874_8955 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_space";
+	char *l_feature_name = "is_physical_keypad_colon";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19042,7 +18956,7 @@ EIF_TYPED_VALUE F874_8955 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5973, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19056,11 +18970,11 @@ EIF_TYPED_VALUE F874_8955 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_at */
+/* {GAME_KEY}.is_physical_keypad_hash */
 EIF_TYPED_VALUE F874_8956 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_at";
+	char *l_feature_name = "is_physical_keypad_hash";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19085,7 +18999,7 @@ EIF_TYPED_VALUE F874_8956 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5974, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19099,11 +19013,11 @@ EIF_TYPED_VALUE F874_8956 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_exclamation_mark */
+/* {GAME_KEY}.is_physical_keypad_space */
 EIF_TYPED_VALUE F874_8957 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_exclamation_mark";
+	char *l_feature_name = "is_physical_keypad_space";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19128,7 +19042,7 @@ EIF_TYPED_VALUE F874_8957 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5975, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19142,11 +19056,11 @@ EIF_TYPED_VALUE F874_8957 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_mem_store */
+/* {GAME_KEY}.is_physical_keypad_at */
 EIF_TYPED_VALUE F874_8958 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_mem_store";
+	char *l_feature_name = "is_physical_keypad_at";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19171,7 +19085,7 @@ EIF_TYPED_VALUE F874_8958 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5976, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19185,11 +19099,11 @@ EIF_TYPED_VALUE F874_8958 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_mem_recall */
+/* {GAME_KEY}.is_physical_keypad_exclamation_mark */
 EIF_TYPED_VALUE F874_8959 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_mem_recall";
+	char *l_feature_name = "is_physical_keypad_exclamation_mark";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19214,7 +19128,7 @@ EIF_TYPED_VALUE F874_8959 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5977, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19228,11 +19142,11 @@ EIF_TYPED_VALUE F874_8959 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_mem_clear */
+/* {GAME_KEY}.is_physical_keypad_mem_store */
 EIF_TYPED_VALUE F874_8960 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_mem_clear";
+	char *l_feature_name = "is_physical_keypad_mem_store";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19257,7 +19171,7 @@ EIF_TYPED_VALUE F874_8960 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5978, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19271,11 +19185,11 @@ EIF_TYPED_VALUE F874_8960 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_mem_add */
+/* {GAME_KEY}.is_physical_keypad_mem_recall */
 EIF_TYPED_VALUE F874_8961 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_mem_add";
+	char *l_feature_name = "is_physical_keypad_mem_recall";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19300,7 +19214,7 @@ EIF_TYPED_VALUE F874_8961 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5979, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19314,11 +19228,11 @@ EIF_TYPED_VALUE F874_8961 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_mem_subtract */
+/* {GAME_KEY}.is_physical_keypad_mem_clear */
 EIF_TYPED_VALUE F874_8962 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_mem_subtract";
+	char *l_feature_name = "is_physical_keypad_mem_clear";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19343,7 +19257,7 @@ EIF_TYPED_VALUE F874_8962 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5980, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19357,11 +19271,11 @@ EIF_TYPED_VALUE F874_8962 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_mem_multiply */
+/* {GAME_KEY}.is_physical_keypad_mem_add */
 EIF_TYPED_VALUE F874_8963 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_mem_multiply";
+	char *l_feature_name = "is_physical_keypad_mem_add";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19386,7 +19300,7 @@ EIF_TYPED_VALUE F874_8963 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5981, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19400,11 +19314,11 @@ EIF_TYPED_VALUE F874_8963 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_mem_divide */
+/* {GAME_KEY}.is_physical_keypad_mem_subtract */
 EIF_TYPED_VALUE F874_8964 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_mem_divide";
+	char *l_feature_name = "is_physical_keypad_mem_subtract";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19429,7 +19343,7 @@ EIF_TYPED_VALUE F874_8964 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5982, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19443,11 +19357,11 @@ EIF_TYPED_VALUE F874_8964 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_plus_minus */
+/* {GAME_KEY}.is_physical_keypad_mem_multiply */
 EIF_TYPED_VALUE F874_8965 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_plus_minus";
+	char *l_feature_name = "is_physical_keypad_mem_multiply";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19472,7 +19386,7 @@ EIF_TYPED_VALUE F874_8965 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5983, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19486,11 +19400,11 @@ EIF_TYPED_VALUE F874_8965 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_clear */
+/* {GAME_KEY}.is_physical_keypad_mem_divide */
 EIF_TYPED_VALUE F874_8966 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_clear";
+	char *l_feature_name = "is_physical_keypad_mem_divide";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19515,7 +19429,7 @@ EIF_TYPED_VALUE F874_8966 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5984, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19529,11 +19443,11 @@ EIF_TYPED_VALUE F874_8966 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_clear_entry */
+/* {GAME_KEY}.is_physical_keypad_plus_minus */
 EIF_TYPED_VALUE F874_8967 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_clear_entry";
+	char *l_feature_name = "is_physical_keypad_plus_minus";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19558,7 +19472,7 @@ EIF_TYPED_VALUE F874_8967 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5985, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19572,11 +19486,11 @@ EIF_TYPED_VALUE F874_8967 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_binary */
+/* {GAME_KEY}.is_physical_keypad_clear */
 EIF_TYPED_VALUE F874_8968 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_binary";
+	char *l_feature_name = "is_physical_keypad_clear";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19601,7 +19515,7 @@ EIF_TYPED_VALUE F874_8968 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5986, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19615,11 +19529,11 @@ EIF_TYPED_VALUE F874_8968 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_octal */
+/* {GAME_KEY}.is_physical_keypad_clear_entry */
 EIF_TYPED_VALUE F874_8969 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_octal";
+	char *l_feature_name = "is_physical_keypad_clear_entry";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19644,7 +19558,7 @@ EIF_TYPED_VALUE F874_8969 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5987, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19658,11 +19572,11 @@ EIF_TYPED_VALUE F874_8969 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_decimal */
+/* {GAME_KEY}.is_physical_keypad_binary */
 EIF_TYPED_VALUE F874_8970 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_decimal";
+	char *l_feature_name = "is_physical_keypad_binary";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19687,7 +19601,7 @@ EIF_TYPED_VALUE F874_8970 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5988, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19701,11 +19615,11 @@ EIF_TYPED_VALUE F874_8970 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keypad_hexadecimal */
+/* {GAME_KEY}.is_physical_keypad_octal */
 EIF_TYPED_VALUE F874_8971 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keypad_hexadecimal";
+	char *l_feature_name = "is_physical_keypad_octal";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19730,7 +19644,7 @@ EIF_TYPED_VALUE F874_8971 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5989, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19744,11 +19658,11 @@ EIF_TYPED_VALUE F874_8971 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_left_ctrl */
+/* {GAME_KEY}.is_physical_keypad_decimal */
 EIF_TYPED_VALUE F874_8972 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_left_ctrl";
+	char *l_feature_name = "is_physical_keypad_decimal";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19773,7 +19687,7 @@ EIF_TYPED_VALUE F874_8972 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5990, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19787,11 +19701,11 @@ EIF_TYPED_VALUE F874_8972 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_left_shift */
+/* {GAME_KEY}.is_physical_keypad_hexadecimal */
 EIF_TYPED_VALUE F874_8973 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_left_shift";
+	char *l_feature_name = "is_physical_keypad_hexadecimal";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19816,7 +19730,7 @@ EIF_TYPED_VALUE F874_8973 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5991, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19830,11 +19744,11 @@ EIF_TYPED_VALUE F874_8973 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_left_alt */
+/* {GAME_KEY}.is_physical_left_ctrl */
 EIF_TYPED_VALUE F874_8974 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_left_alt";
+	char *l_feature_name = "is_physical_left_ctrl";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19859,7 +19773,7 @@ EIF_TYPED_VALUE F874_8974 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5992, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19873,11 +19787,11 @@ EIF_TYPED_VALUE F874_8974 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_left_gui */
+/* {GAME_KEY}.is_physical_left_shift */
 EIF_TYPED_VALUE F874_8975 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_left_gui";
+	char *l_feature_name = "is_physical_left_shift";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19902,7 +19816,7 @@ EIF_TYPED_VALUE F874_8975 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5993, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19916,11 +19830,11 @@ EIF_TYPED_VALUE F874_8975 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_right_ctrl */
+/* {GAME_KEY}.is_physical_left_alt */
 EIF_TYPED_VALUE F874_8976 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_right_ctrl";
+	char *l_feature_name = "is_physical_left_alt";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19945,7 +19859,7 @@ EIF_TYPED_VALUE F874_8976 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5994, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -19959,11 +19873,11 @@ EIF_TYPED_VALUE F874_8976 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_right_shift */
+/* {GAME_KEY}.is_physical_left_gui */
 EIF_TYPED_VALUE F874_8977 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_right_shift";
+	char *l_feature_name = "is_physical_left_gui";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -19988,7 +19902,7 @@ EIF_TYPED_VALUE F874_8977 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5995, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20002,11 +19916,11 @@ EIF_TYPED_VALUE F874_8977 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_right_alt */
+/* {GAME_KEY}.is_physical_right_ctrl */
 EIF_TYPED_VALUE F874_8978 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_right_alt";
+	char *l_feature_name = "is_physical_right_ctrl";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20031,7 +19945,7 @@ EIF_TYPED_VALUE F874_8978 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5996, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20045,11 +19959,11 @@ EIF_TYPED_VALUE F874_8978 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_right_gui */
+/* {GAME_KEY}.is_physical_right_shift */
 EIF_TYPED_VALUE F874_8979 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_right_gui";
+	char *l_feature_name = "is_physical_right_shift";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20074,7 +19988,7 @@ EIF_TYPED_VALUE F874_8979 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5997, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20088,11 +20002,11 @@ EIF_TYPED_VALUE F874_8979 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_mode */
+/* {GAME_KEY}.is_physical_right_alt */
 EIF_TYPED_VALUE F874_8980 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_mode";
+	char *l_feature_name = "is_physical_right_alt";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20117,7 +20031,7 @@ EIF_TYPED_VALUE F874_8980 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5998, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20131,11 +20045,11 @@ EIF_TYPED_VALUE F874_8980 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_audio_next */
+/* {GAME_KEY}.is_physical_right_gui */
 EIF_TYPED_VALUE F874_8981 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_audio_next";
+	char *l_feature_name = "is_physical_right_gui";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20160,7 +20074,7 @@ EIF_TYPED_VALUE F874_8981 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5999, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20174,11 +20088,11 @@ EIF_TYPED_VALUE F874_8981 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_audio_prev */
+/* {GAME_KEY}.is_physical_mode */
 EIF_TYPED_VALUE F874_8982 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_audio_prev";
+	char *l_feature_name = "is_physical_mode";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20203,7 +20117,7 @@ EIF_TYPED_VALUE F874_8982 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6000, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20217,11 +20131,11 @@ EIF_TYPED_VALUE F874_8982 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_audio_stop */
+/* {GAME_KEY}.is_physical_audio_next */
 EIF_TYPED_VALUE F874_8983 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_audio_stop";
+	char *l_feature_name = "is_physical_audio_next";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20246,7 +20160,7 @@ EIF_TYPED_VALUE F874_8983 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6001, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20260,11 +20174,11 @@ EIF_TYPED_VALUE F874_8983 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_audio_play */
+/* {GAME_KEY}.is_physical_audio_prev */
 EIF_TYPED_VALUE F874_8984 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_audio_play";
+	char *l_feature_name = "is_physical_audio_prev";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20289,7 +20203,7 @@ EIF_TYPED_VALUE F874_8984 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6002, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20303,11 +20217,11 @@ EIF_TYPED_VALUE F874_8984 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_audio_mute */
+/* {GAME_KEY}.is_physical_audio_stop */
 EIF_TYPED_VALUE F874_8985 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_audio_mute";
+	char *l_feature_name = "is_physical_audio_stop";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20332,7 +20246,7 @@ EIF_TYPED_VALUE F874_8985 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6003, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20346,11 +20260,11 @@ EIF_TYPED_VALUE F874_8985 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_media_select */
+/* {GAME_KEY}.is_physical_audio_play */
 EIF_TYPED_VALUE F874_8986 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_media_select";
+	char *l_feature_name = "is_physical_audio_play";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20375,7 +20289,7 @@ EIF_TYPED_VALUE F874_8986 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6004, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20389,11 +20303,11 @@ EIF_TYPED_VALUE F874_8986 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_www */
+/* {GAME_KEY}.is_physical_audio_mute */
 EIF_TYPED_VALUE F874_8987 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_www";
+	char *l_feature_name = "is_physical_audio_mute";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20418,7 +20332,7 @@ EIF_TYPED_VALUE F874_8987 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6005, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20432,11 +20346,11 @@ EIF_TYPED_VALUE F874_8987 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_mail */
+/* {GAME_KEY}.is_physical_media_select */
 EIF_TYPED_VALUE F874_8988 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_mail";
+	char *l_feature_name = "is_physical_media_select";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20461,7 +20375,7 @@ EIF_TYPED_VALUE F874_8988 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6006, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20475,11 +20389,11 @@ EIF_TYPED_VALUE F874_8988 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_calculator */
+/* {GAME_KEY}.is_physical_www */
 EIF_TYPED_VALUE F874_8989 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_calculator";
+	char *l_feature_name = "is_physical_www";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20504,7 +20418,7 @@ EIF_TYPED_VALUE F874_8989 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6007, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20518,11 +20432,11 @@ EIF_TYPED_VALUE F874_8989 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_computer */
+/* {GAME_KEY}.is_physical_mail */
 EIF_TYPED_VALUE F874_8990 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_computer";
+	char *l_feature_name = "is_physical_mail";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20547,7 +20461,7 @@ EIF_TYPED_VALUE F874_8990 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6008, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20561,11 +20475,11 @@ EIF_TYPED_VALUE F874_8990 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_application_control_search */
+/* {GAME_KEY}.is_physical_calculator */
 EIF_TYPED_VALUE F874_8991 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_application_control_search";
+	char *l_feature_name = "is_physical_calculator";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20590,7 +20504,7 @@ EIF_TYPED_VALUE F874_8991 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6009, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20604,11 +20518,11 @@ EIF_TYPED_VALUE F874_8991 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_application_control_home */
+/* {GAME_KEY}.is_physical_computer */
 EIF_TYPED_VALUE F874_8992 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_application_control_home";
+	char *l_feature_name = "is_physical_computer";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20633,7 +20547,7 @@ EIF_TYPED_VALUE F874_8992 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6010, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20647,11 +20561,11 @@ EIF_TYPED_VALUE F874_8992 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_application_control_back */
+/* {GAME_KEY}.is_physical_application_control_search */
 EIF_TYPED_VALUE F874_8993 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_application_control_back";
+	char *l_feature_name = "is_physical_application_control_search";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20676,7 +20590,7 @@ EIF_TYPED_VALUE F874_8993 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6011, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20690,11 +20604,11 @@ EIF_TYPED_VALUE F874_8993 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_application_control_forward */
+/* {GAME_KEY}.is_physical_application_control_home */
 EIF_TYPED_VALUE F874_8994 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_application_control_forward";
+	char *l_feature_name = "is_physical_application_control_home";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20719,7 +20633,7 @@ EIF_TYPED_VALUE F874_8994 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6012, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20733,11 +20647,11 @@ EIF_TYPED_VALUE F874_8994 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_application_control_stop */
+/* {GAME_KEY}.is_physical_application_control_back */
 EIF_TYPED_VALUE F874_8995 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_application_control_stop";
+	char *l_feature_name = "is_physical_application_control_back";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20762,7 +20676,7 @@ EIF_TYPED_VALUE F874_8995 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6013, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20776,11 +20690,11 @@ EIF_TYPED_VALUE F874_8995 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_application_control_refresh */
+/* {GAME_KEY}.is_physical_application_control_forward */
 EIF_TYPED_VALUE F874_8996 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_application_control_refresh";
+	char *l_feature_name = "is_physical_application_control_forward";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20805,7 +20719,7 @@ EIF_TYPED_VALUE F874_8996 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6014, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20819,11 +20733,11 @@ EIF_TYPED_VALUE F874_8996 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_application_control_bookmarks */
+/* {GAME_KEY}.is_physical_application_control_stop */
 EIF_TYPED_VALUE F874_8997 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_application_control_bookmarks";
+	char *l_feature_name = "is_physical_application_control_stop";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20848,7 +20762,7 @@ EIF_TYPED_VALUE F874_8997 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6015, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20862,11 +20776,11 @@ EIF_TYPED_VALUE F874_8997 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_brightness_down */
+/* {GAME_KEY}.is_physical_application_control_refresh */
 EIF_TYPED_VALUE F874_8998 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_brightness_down";
+	char *l_feature_name = "is_physical_application_control_refresh";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20891,7 +20805,7 @@ EIF_TYPED_VALUE F874_8998 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6016, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20905,11 +20819,11 @@ EIF_TYPED_VALUE F874_8998 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_brightness_up */
+/* {GAME_KEY}.is_physical_application_control_bookmarks */
 EIF_TYPED_VALUE F874_8999 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_brightness_up";
+	char *l_feature_name = "is_physical_application_control_bookmarks";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20934,7 +20848,7 @@ EIF_TYPED_VALUE F874_8999 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6017, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20948,11 +20862,11 @@ EIF_TYPED_VALUE F874_8999 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_display_switch */
+/* {GAME_KEY}.is_physical_brightness_down */
 EIF_TYPED_VALUE F874_9000 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_display_switch";
+	char *l_feature_name = "is_physical_brightness_down";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -20977,7 +20891,7 @@ EIF_TYPED_VALUE F874_9000 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6018, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -20991,11 +20905,11 @@ EIF_TYPED_VALUE F874_9000 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keyboard_illumination_toggle */
+/* {GAME_KEY}.is_physical_brightness_up */
 EIF_TYPED_VALUE F874_9001 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keyboard_illumination_toggle";
+	char *l_feature_name = "is_physical_brightness_up";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -21020,7 +20934,7 @@ EIF_TYPED_VALUE F874_9001 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6019, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -21034,11 +20948,11 @@ EIF_TYPED_VALUE F874_9001 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keyboard_illumination_down */
+/* {GAME_KEY}.is_physical_display_switch */
 EIF_TYPED_VALUE F874_9002 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keyboard_illumination_down";
+	char *l_feature_name = "is_physical_display_switch";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -21063,7 +20977,7 @@ EIF_TYPED_VALUE F874_9002 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6020, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -21077,11 +20991,11 @@ EIF_TYPED_VALUE F874_9002 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_keyboard_illumination_up */
+/* {GAME_KEY}.is_physical_keyboard_illumination_toggle */
 EIF_TYPED_VALUE F874_9003 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_keyboard_illumination_up";
+	char *l_feature_name = "is_physical_keyboard_illumination_toggle";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -21106,7 +21020,7 @@ EIF_TYPED_VALUE F874_9003 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6021, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -21120,11 +21034,11 @@ EIF_TYPED_VALUE F874_9003 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_eject */
+/* {GAME_KEY}.is_physical_keyboard_illumination_down */
 EIF_TYPED_VALUE F874_9004 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_eject";
+	char *l_feature_name = "is_physical_keyboard_illumination_down";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -21149,7 +21063,7 @@ EIF_TYPED_VALUE F874_9004 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6022, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -21163,11 +21077,11 @@ EIF_TYPED_VALUE F874_9004 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_sleep */
+/* {GAME_KEY}.is_physical_keyboard_illumination_up */
 EIF_TYPED_VALUE F874_9005 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_sleep";
+	char *l_feature_name = "is_physical_keyboard_illumination_up";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -21192,7 +21106,7 @@ EIF_TYPED_VALUE F874_9005 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6023, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -21206,11 +21120,11 @@ EIF_TYPED_VALUE F874_9005 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_app_1 */
+/* {GAME_KEY}.is_physical_eject */
 EIF_TYPED_VALUE F874_9006 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_app_1";
+	char *l_feature_name = "is_physical_eject";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -21235,7 +21149,7 @@ EIF_TYPED_VALUE F874_9006 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6024, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
@@ -21249,11 +21163,11 @@ EIF_TYPED_VALUE F874_9006 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
 }
 
-/* {GAME_KEY}.is_physical_app_2 */
+/* {GAME_KEY}.is_physical_sleep */
 EIF_TYPED_VALUE F874_9007 (EIF_REFERENCE Current)
 {
 	GTCX
-	char *l_feature_name = "is_physical_app_2";
+	char *l_feature_name = "is_physical_sleep";
 	RTEX;
 	EIF_INTEGER_32 ti4_1;
 	EIF_INTEGER_32 ti4_2;
@@ -21278,8 +21192,94 @@ EIF_TYPED_VALUE F874_9007 (EIF_REFERENCE Current)
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6442, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
 	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6025, 862))(Current)).it_i4);
+	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
+	RTVI(Current, RTAL);
+	RTRS;
+	RTHOOK(2);
+	RTDBGLE;
+	RTMD(0);
+	RTLE;
+	RTLO(2);
+	RTEE;
+	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
+}
+
+/* {GAME_KEY}.is_physical_app_1 */
+EIF_TYPED_VALUE F874_9008 (EIF_REFERENCE Current)
+{
+	GTCX
+	char *l_feature_name = "is_physical_app_1";
+	RTEX;
+	EIF_INTEGER_32 ti4_1;
+	EIF_INTEGER_32 ti4_2;
+	EIF_BOOLEAN Result = ((EIF_BOOLEAN) 0);
+	
+	RTSN;
+	RTDA;
+	RTLD;
+	
+	RTLI(1);
+	RTLR(0,Current);
+	RTLIU(1);
+	RTLU (SK_BOOL, &Result);
+	RTLU (SK_REF, &Current);
+	
+	RTEAA(l_feature_name, 873, Current, 0, 0, 14689);
+	RTSA(Dtype(Current));
+	RTSC;
+	RTME(Dtype(Current), 0);
+	RTGC;
+	RTDBGEAA(873, Current, 14689);
+	RTIV(Current, RTAL);
+	RTHOOK(1);
+	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
+	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6026, 862))(Current)).it_i4);
+	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
+	RTVI(Current, RTAL);
+	RTRS;
+	RTHOOK(2);
+	RTDBGLE;
+	RTMD(0);
+	RTLE;
+	RTLO(2);
+	RTEE;
+	{ EIF_TYPED_VALUE r; r.type = SK_BOOL; r.it_b = Result; return r; }
+}
+
+/* {GAME_KEY}.is_physical_app_2 */
+EIF_TYPED_VALUE F874_9009 (EIF_REFERENCE Current)
+{
+	GTCX
+	char *l_feature_name = "is_physical_app_2";
+	RTEX;
+	EIF_INTEGER_32 ti4_1;
+	EIF_INTEGER_32 ti4_2;
+	EIF_BOOLEAN Result = ((EIF_BOOLEAN) 0);
+	
+	RTSN;
+	RTDA;
+	RTLD;
+	
+	RTLI(1);
+	RTLR(0,Current);
+	RTLIU(1);
+	RTLU (SK_BOOL, &Result);
+	RTLU (SK_REF, &Current);
+	
+	RTEAA(l_feature_name, 873, Current, 0, 0, 14690);
+	RTSA(Dtype(Current));
+	RTSC;
+	RTME(Dtype(Current), 0);
+	RTGC;
+	RTDBGEAA(873, Current, 14690);
+	RTIV(Current, RTAL);
+	RTHOOK(1);
+	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(6444, Dtype(Current)));
+	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6027, 862))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
 	RTRS;

@@ -10,7 +10,7 @@
 extern "C" {
 #endif
 
-extern void F866_8477(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+extern void F866_8479(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
 extern void EIF_Minit866(void);
 
 #ifdef __cplusplus
@@ -33,7 +33,7 @@ extern "C" {
 #endif
 
 /* {GAME_MOUSE_MOTION_STATE}.make */
-void F866_8477 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x, EIF_TYPED_VALUE arg3x, EIF_TYPED_VALUE arg4x)
+void F866_8479 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x, EIF_TYPED_VALUE arg3x, EIF_TYPED_VALUE arg4x)
 {
 	GTCX
 	char *l_feature_name = "make";
@@ -64,25 +64,25 @@ void F866_8477 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE ar
 	RTLU(SK_INT32,&arg4);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 865, Current, 0, 4, 14158);
+	RTEAA(l_feature_name, 865, Current, 0, 4, 14160);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(865, Current, 14158);
+	RTDBGEAA(865, Current, 14160);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	uu4_1 = arg1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(6402, dtype))(Current, uu4_1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(6404, dtype))(Current, uu4_1x);
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 6401, 0x38000000, 1); /* state */
-	*(EIF_NATURAL_32 *)(Current + RTWA(6401, dtype)) = (EIF_NATURAL_32) arg2;
+	RTDBGAA(Current, dtype, 6403, 0x38000000, 1); /* state */
+	*(EIF_NATURAL_32 *)(Current + RTWA(6403, dtype)) = (EIF_NATURAL_32) arg2;
 	RTHOOK(3);
-	RTDBGAA(Current, dtype, 6394, 0x10000000, 1); /* x */
-	*(EIF_INTEGER_32 *)(Current + RTWA(6394, dtype)) = (EIF_INTEGER_32) arg3;
+	RTDBGAA(Current, dtype, 6396, 0x10000000, 1); /* x */
+	*(EIF_INTEGER_32 *)(Current + RTWA(6396, dtype)) = (EIF_INTEGER_32) arg3;
 	RTHOOK(4);
-	RTDBGAA(Current, dtype, 6395, 0x10000000, 1); /* y */
-	*(EIF_INTEGER_32 *)(Current + RTWA(6395, dtype)) = (EIF_INTEGER_32) arg4;
+	RTDBGAA(Current, dtype, 6397, 0x10000000, 1); /* y */
+	*(EIF_INTEGER_32 *)(Current + RTWA(6397, dtype)) = (EIF_INTEGER_32) arg4;
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(5);

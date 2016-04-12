@@ -1,34 +1,34 @@
-INCLUDE_PATH =  -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/contrib/library/game2/game_core/spec/include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\SDL2\include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\cpf\spec\include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\SDL2_image\include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\SDL2_ttf\include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\OpenAL\include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/contrib/library/game2/audio_sound_file/spec/include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\libsndfile\include"
+INCLUDE_PATH =  -I"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/contrib/library/game2/game_core/spec/include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL\contrib\library\game2\C_lib_win\SDL2\include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL\contrib\library\game2\cpf\spec\include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL\contrib\library\game2\C_lib_win\SDL2_image\include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL\contrib\library\game2\C_lib_win\SDL2_ttf\include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL\contrib\library\game2\C_lib_win\OpenAL\include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/contrib/library/game2/audio_sound_file/spec/include" -I"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL\contrib\library\game2\C_lib_win\libsndfile\include"
 SHELL = /bin/sh
-CC = "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/mingw/bin/gcc"
-CPP = "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/mingw/bin/gcc"
-CFLAGS = -O0 -pipe -imacros eif_config.mingw.h -D_WIN32_WINNT=0x0500 -DWINVER=0x0500 -D_UNICODE -DUNICODE   -DEIF_IEEE_BEHAVIOR -DWORKBENCH -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/studio/spec/win64/include" -I. $(INCLUDE_PATH)
-CPPFLAGS = -O0 -pipe -imacros eif_config.mingw.h -D_WIN32_WINNT=0x0500 -DWINVER=0x0500 -D_UNICODE -DUNICODE   -DWORKBENCH -I"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/studio/spec/win64/include" -I. $(INCLUDE_PATH)
+CC = "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/mingw/bin/gcc"
+CPP = "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/mingw/bin/gcc"
+CFLAGS = -O0 -pipe -imacros eif_config.mingw.h -D_WIN32_WINNT=0x0500 -DWINVER=0x0500 -D_UNICODE -DUNICODE   -DEIF_IEEE_BEHAVIOR -DWORKBENCH -I"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/studio/spec/win64/include" -I. $(INCLUDE_PATH)
+CPPFLAGS = -O0 -pipe -imacros eif_config.mingw.h -D_WIN32_WINNT=0x0500 -DWINVER=0x0500 -D_UNICODE -DUNICODE   -DWORKBENCH -I"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/studio/spec/win64/include" -I. $(INCLUDE_PATH)
 LDFLAGS = 
 CCLDFLAGS =   -mconsole
 LDSHAREDFLAGS =  
-EIFLIB = "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/studio/spec/win64/lib/mingw/wkbench.a"
-EIFTEMPLATES = C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/studio/config/win64/templates
+EIFLIB = "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/studio/spec/win64/lib/mingw/wkbench.a"
+EIFTEMPLATES = C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/studio/config/win64/templates
 LIBS = 
-MAKE = "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/msys/1.0/bin/make.exe"
-AR = "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/mingw/bin/ar"
-LD = "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/mingw/bin/ld"
+MAKE = "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/msys/1.0/bin/make.exe"
+AR = "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/mingw/bin/ar"
+LD = "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/mingw/bin/ld"
 MKDEP =   --
-MV = "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/msys/1.0/bin/cp"
-CP = "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/msys/1.0/bin/cp"
-RANLIB = "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/mingw/bin/ranlib.exe"
-RM = "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/msys/1.0/bin/rm" -f
+MV = "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/msys/1.0/bin/cp"
+CP = "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/msys/1.0/bin/cp"
+RANLIB = "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/mingw/bin/ranlib.exe"
+RM = "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/msys/1.0/bin/rm" -f
 FILE_EXIST = 
-RMDIR = "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/msys/1.0/bin/rd"
-X2C = "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/studio/spec/win64/bin/x2c.exe"
-SHAREDLINK = "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/mingw/bin/dllwrap"
+RMDIR = "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/msys/1.0/bin/rd"
+X2C = "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/studio/spec/win64/bin/x2c.exe"
+SHAREDLINK = "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/mingw/bin/dllwrap"
 SHAREDLIBS = -luser32 -lws2_32 -ladvapi32 -lgdi32 -lshell32 -lmsimg32 -lcomdlg32 -luuid -lole32 -loleaut32 -lcomctl32 -lmpr -lshlwapi -lwinspool -lstdc++ 
 SHARED_SUFFIX = .dll
 COMMAND_MAKEFILE = 
 START_TEST = if [ ! -f finished ] ; then 
 END_TEST = ; fi 
-CREATE_TEST = "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/msys/1.0/bin/touch" finished
-PATH := C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/mingw/libexec/gcc/mingw32/3.4.2;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\80\Tools\Binn\;C:\wamp2\bin\php\php5.5.12;C:\ProgramData\ComposerSetup\bin 
+CREATE_TEST = "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/msys/1.0/bin/touch" finished
+PATH := C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/mingw/libexec/gcc/mingw32/3.4.2;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\DMIX;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd 
 SYSTEM_IN_DYNAMIC_LIB = gameproject.dll 
 
 .SUFFIXES:.cpp .o 
@@ -42,15 +42,15 @@ SYSTEM_IN_DYNAMIC_LIB = gameproject.dll
 SUBDIRS = C1 C2 C3 E1
 
 EXTERNALS =  \
-	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\game_core\spec\mingw\win64\lib\sdl_additions.lib" \
-	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\SDL2\lib\win64\mingw\SDL2.lib" \
-	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\SDL2\lib\win64\mingw\SDL2main.lib" \
-	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\cpf\spec\mingw\win64\lib\cpf_additions.lib" \
-	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\SDL2_image\lib\win64\mingw\SDL2_image.lib" \
-	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\SDL2_ttf\lib\win64\mingw\SDL2_ttf.lib" \
-	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\OpenAL\lib\win64\mingw\OpenAL32.lib" \
-	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\audio_sound_file\spec\mingw\win64\lib\sndfile_additions.lib" \
-	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL\contrib\library\game2\C_lib_win\libsndfile\lib\win64\mingw\libsndfile-1.lib"
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL\contrib\library\game2\game_core\spec\mingw\win64\lib\sdl_additions.lib" \
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL\contrib\library\game2\C_lib_win\SDL2\lib\win64\mingw\SDL2.lib" \
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL\contrib\library\game2\C_lib_win\SDL2\lib\win64\mingw\SDL2main.lib" \
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL\contrib\library\game2\cpf\spec\mingw\win64\lib\cpf_additions.lib" \
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL\contrib\library\game2\C_lib_win\SDL2_image\lib\win64\mingw\SDL2_image.lib" \
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL\contrib\library\game2\C_lib_win\SDL2_ttf\lib\win64\mingw\SDL2_ttf.lib" \
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL\contrib\library\game2\C_lib_win\OpenAL\lib\win64\mingw\OpenAL32.lib" \
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL\contrib\library\game2\audio_sound_file\spec\mingw\win64\lib\sndfile_additions.lib" \
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL\contrib\library\game2\C_lib_win\libsndfile\lib\win64\mingw\libsndfile-1.lib"
 
 all:: gameproject.exe
 	echo done > completed.eif
@@ -107,7 +107,7 @@ C_OBJECTS = C3/Cobj3.o C2/Cobj2.o C1/Cobj1.o
 
 EOBJECTS = E1/eparents.o  E1/einit.o  E1/ececil.o  E1/evisib.o  E1/enames.o  E1/eskelet.o  E1/eplug.o  E1/ecall.o  E1/efrozen.o  E1/epattern.o  E1/eoption.o  
 
-PRECOMP_OBJECTS= "c:\users\steveporndatabase\documents\eiffel user files\15.11\precomp\spec\win64\EIFGENs\base-safe\W_code/mingw/precomp.lib"
+PRECOMP_OBJECTS= "c:\users\dankcpu\documents\eiffel user files\15.12\precomp\spec\win64\EIFGENs\base-safe\W_code/mingw/precomp.lib"
 
 
 gameproject.exe: E1/emain.o $(OBJECTS) gameproject.res 
@@ -116,10 +116,10 @@ gameproject.exe: E1/emain.o $(OBJECTS) gameproject.res
 	$(CC) $(LDFLAGS) $(CCLDFLAGS) -o gameproject.exe E1/emain.o $(PRECOMP_OBJECTS) gameproject.res $(OBJECTS) $(EXTERNALS) $(EIFLIB) -luser32 -lws2_32 -ladvapi32 -lgdi32 -lshell32 -lmsimg32 -lcomdlg32 -luuid -lole32 -loleaut32 -lcomctl32 -lmpr -lshlwapi -lwinspool -lstdc++ $(ISE_SHAREDLIBS)
 
 ../../../gameproject.rc:
-	if [ ! -f ../../../gameproject.rc ] ; then $(MV) "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/studio/config/win64/mingw/eiffel.rc" ../../../gameproject.rc ; fi 
+	if [ ! -f ../../../gameproject.rc ] ; then $(MV) "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/studio/config/win64/mingw/eiffel.rc" ../../../gameproject.rc ; fi 
 
 gameproject.res: ../../../gameproject.rc Makefile
-	"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/mingw/bin/windres" --preprocessor='"C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/mingw/bin/cpp.exe"' -I../../.. ../../../gameproject.rc -O coff -o gameproject.res
+	"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/mingw/bin/windres" --preprocessor='"C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/mingw/bin/cpp.exe"' -I../../.. ../../../gameproject.rc -O coff -o gameproject.res
 
 RCECIL = wmalloc.o wgarcol.o wlocal.o wexcept.o wstore.o wretrieve.o whash.o \
 	wtraverse.o whashin.o wtools.o winternal.o wplug.o wcopy.o wequal.o \
@@ -149,14 +149,14 @@ DEF_FILE= c_gameproject.def
 c_gameproject.def: 
 	$(RM) $@
 	@echo LIBRARY libgameproject.dll > $@
-	@type "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/studio/config/win64/templates/cecil.def" >> $@
+	@type "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/studio/config/win64/templates/cecil.def" >> $@
 
 SHARED_CECIL_OBJECT = $(OBJECTS) \
 		E1/emain.o
 SHAREDFLAGS = $(LDSHAREDFLAGS) \
 \
-	--dlltool-name "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/mingw/bin/dlltool" \
-	--as "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/mingw/bin/as" \
+	--dlltool-name "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/mingw/bin/dlltool" \
+	--as "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/mingw/bin/as" \
 	--def $(DEF_FILE) --output-lib c_dll_gameproject.lib -o $(SHARED_CECIL)
 
 $(SHARED_CECIL): $(SHARED_CECIL_OBJECT)  $(DEF_FILE)
@@ -177,8 +177,8 @@ SYSTEM_IN_DYNAMIC_LIB_OBJ = $(OBJECTS) \
 		E1/edynlib.o E1/egc_dynlib.o 
 DYNLIBSHAREDFLAGS = $(LDSHAREDFLAGS) \
 \
-	--dlltool-name "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/mingw/bin/dlltool" \
-	--as "C:\Program Files\Eiffel Software\EiffelStudio 15.11 GPL/gcc/win64/mingw/bin/as" \
+	--dlltool-name "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/mingw/bin/dlltool" \
+	--as "C:\Program Files\Eiffel Software\EiffelStudio 15.12 GPL/gcc/win64/mingw/bin/as" \
 	--def $(DEF_FILE) --output-lib dll_gameproject.lib -o $(SYSTEM_IN_DYNAMIC_LIB)
 
 $(SYSTEM_IN_DYNAMIC_LIB): $(SYSTEM_IN_DYNAMIC_LIB_OBJ)  $(DEF_FILE)

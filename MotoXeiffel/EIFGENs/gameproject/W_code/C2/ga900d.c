@@ -58,8 +58,8 @@ static const struct desc_info desc_900[] = {
 	{EIF_NON_GENERIC(0x0707 /*899*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01AF /*215*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_900), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_900), 15079, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x06E9 /*884*/), 15080, 0},
+	{EIF_GENERIC(egt_13_900), 15084, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x06E9 /*884*/), 15085, 0},
 };
 void Init900(void)
 {

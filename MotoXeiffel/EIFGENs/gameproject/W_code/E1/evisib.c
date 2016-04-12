@@ -499,13 +499,13 @@ static EIF_TYPE_INDEX dyn_types258 [] = {
 853,
 };
 
-static uint32 patterns388 [] = {
+static uint32 patterns384 [] = {
 SK_REF,
 SK_INVALID
 };
 
-static EIF_TYPE_INDEX dyn_types388 [] = {
-932,
+static EIF_TYPE_INDEX dyn_types384 [] = {
+931,
 };
 
 static uint32 patterns99 [] = {
@@ -1650,7 +1650,7 @@ static EIF_TYPE_INDEX dyn_types11 [] = {
 519,
 523,
 528,
-931,
+932,
 };
 
 static uint32 patterns38 [] = {
@@ -2188,13 +2188,13 @@ static struct cecil_info type_val[] = {
 {(int) 0, (EIF_TYPE_INDEX) 118, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 17, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 38, NULL, NULL},
-{(int) 0, (EIF_TYPE_INDEX) 891, NULL, NULL},
+{(int) 0, (EIF_TYPE_INDEX) 890, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 0, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 0, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 228, NULL, NULL},
 {(int) 1, (EIF_TYPE_INDEX) 0, patterns223, dyn_types223},
 {(int) 1, (EIF_TYPE_INDEX) 0, patterns258, dyn_types258},
-{(int) 1, (EIF_TYPE_INDEX) 0, patterns388, dyn_types388},
+{(int) 1, (EIF_TYPE_INDEX) 0, patterns384, dyn_types384},
 {(int) 0, (EIF_TYPE_INDEX) 167, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 7, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 125, NULL, NULL},
@@ -2290,7 +2290,7 @@ static struct cecil_info type_val[] = {
 {(int) 0, (EIF_TYPE_INDEX) 43, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 68, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 0, NULL, NULL},
-{(int) 0, (EIF_TYPE_INDEX) 912, NULL, NULL},
+{(int) 0, (EIF_TYPE_INDEX) 911, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 126, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 0, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 870, NULL, NULL},
@@ -2372,7 +2372,7 @@ static struct cecil_info type_val[] = {
 {(int) 1, (EIF_TYPE_INDEX) 0, patterns77, dyn_types77},
 {(int) 0, (EIF_TYPE_INDEX) 0, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 175, NULL, NULL},
-{(int) 0, (EIF_TYPE_INDEX) 911, NULL, NULL},
+{(int) 0, (EIF_TYPE_INDEX) 912, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 884, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 59, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 103, NULL, NULL},
@@ -2496,7 +2496,7 @@ static struct cecil_info type_val[] = {
 {(int) 0, (EIF_TYPE_INDEX) 45, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 211, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 31, NULL, NULL},
-{(int) 0, (EIF_TYPE_INDEX) 890, NULL, NULL},
+{(int) 0, (EIF_TYPE_INDEX) 891, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 115, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 916, NULL, NULL},
 {(int) 0, (EIF_TYPE_INDEX) 88, NULL, NULL},

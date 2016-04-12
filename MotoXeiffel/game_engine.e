@@ -35,7 +35,7 @@ feature {NONE} -- Initialization
 			l_window:GAME_WINDOW_RENDERED
 		do
 			create l_window_builder
-			l_window_builder.set_dimension (1024, 512)
+			l_window_builder.set_dimension (800, 600)
 			l_window_builder.set_title ("MotoX")
 			l_window := l_window_builder.generate_window
 			l_window.renderer.set_drawing_color (create {GAME_COLOR}.make_rgb (0, 0, 0))

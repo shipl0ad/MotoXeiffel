@@ -10,9 +10,9 @@
 extern "C" {
 #endif
 
-extern void F873_8522(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F873_8523(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F873_8524(EIF_REFERENCE);
+extern void F873_8524(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F873_8525(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F873_8526(EIF_REFERENCE);
 extern void EIF_Minit873(void);
 
 #ifdef __cplusplus
@@ -35,7 +35,7 @@ extern "C" {
 #endif
 
 /* {GAME_FINGER_EVENT_STATE}.make */
-void F873_8522 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x, EIF_TYPED_VALUE arg3x, EIF_TYPED_VALUE arg4x, EIF_TYPED_VALUE arg5x, EIF_TYPED_VALUE arg6x)
+void F873_8524 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x, EIF_TYPED_VALUE arg3x, EIF_TYPED_VALUE arg4x, EIF_TYPED_VALUE arg5x, EIF_TYPED_VALUE arg6x)
 {
 	GTCX
 	char *l_feature_name = "make";
@@ -70,31 +70,31 @@ void F873_8522 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE ar
 	RTLU(SK_REAL32,&arg6);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 872, Current, 0, 6, 14203);
+	RTEAA(l_feature_name, 872, Current, 0, 6, 14207);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(872, Current, 14203);
+	RTDBGEAA(872, Current, 14207);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAA(Current, dtype, 6432, 0x24000000, 1); /* index */
-	*(EIF_INTEGER_64 *)(Current + RTWA(6432, dtype)) = (EIF_INTEGER_64) arg1;
+	RTDBGAA(Current, dtype, 6434, 0x24000000, 1); /* index */
+	*(EIF_INTEGER_64 *)(Current + RTWA(6434, dtype)) = (EIF_INTEGER_64) arg1;
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 6433, 0x18000000, 1); /* x */
-	*(EIF_REAL_32 *)(Current + RTWA(6433, dtype)) = (EIF_REAL_32) arg2;
+	RTDBGAA(Current, dtype, 6435, 0x18000000, 1); /* x */
+	*(EIF_REAL_32 *)(Current + RTWA(6435, dtype)) = (EIF_REAL_32) arg2;
 	RTHOOK(3);
-	RTDBGAA(Current, dtype, 6434, 0x18000000, 1); /* y */
-	*(EIF_REAL_32 *)(Current + RTWA(6434, dtype)) = (EIF_REAL_32) arg3;
+	RTDBGAA(Current, dtype, 6436, 0x18000000, 1); /* y */
+	*(EIF_REAL_32 *)(Current + RTWA(6436, dtype)) = (EIF_REAL_32) arg3;
 	RTHOOK(4);
-	RTDBGAA(Current, dtype, 6435, 0x18000000, 1); /* pressure */
-	*(EIF_REAL_32 *)(Current + RTWA(6435, dtype)) = (EIF_REAL_32) arg6;
+	RTDBGAA(Current, dtype, 6437, 0x18000000, 1); /* pressure */
+	*(EIF_REAL_32 *)(Current + RTWA(6437, dtype)) = (EIF_REAL_32) arg6;
 	RTHOOK(5);
-	RTDBGAA(Current, dtype, 6437, 0x18000000, 1); /* relative_x */
-	*(EIF_REAL_32 *)(Current + RTWA(6437, dtype)) = (EIF_REAL_32) arg4;
+	RTDBGAA(Current, dtype, 6439, 0x18000000, 1); /* relative_x */
+	*(EIF_REAL_32 *)(Current + RTWA(6439, dtype)) = (EIF_REAL_32) arg4;
 	RTHOOK(6);
-	RTDBGAA(Current, dtype, 6438, 0x18000000, 1); /* relative_y */
-	*(EIF_REAL_32 *)(Current + RTWA(6438, dtype)) = (EIF_REAL_32) arg5;
+	RTDBGAA(Current, dtype, 6440, 0x18000000, 1); /* relative_y */
+	*(EIF_REAL_32 *)(Current + RTWA(6440, dtype)) = (EIF_REAL_32) arg5;
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(7);
@@ -112,21 +112,21 @@ void F873_8522 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE ar
 }
 
 /* {GAME_FINGER_EVENT_STATE}.relative_x */
-EIF_TYPED_VALUE F873_8523 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F873_8525 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_REAL32;
-	r.it_r4 = *(EIF_REAL_32 *)(Current + RTWA(6437,Dtype(Current)));
+	r.it_r4 = *(EIF_REAL_32 *)(Current + RTWA(6439,Dtype(Current)));
 	return r;
 }
 
 
 /* {GAME_FINGER_EVENT_STATE}.relative_y */
-EIF_TYPED_VALUE F873_8524 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F873_8526 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_REAL32;
-	r.it_r4 = *(EIF_REAL_32 *)(Current + RTWA(6438,Dtype(Current)));
+	r.it_r4 = *(EIF_REAL_32 *)(Current + RTWA(6440,Dtype(Current)));
 	return r;
 }
 

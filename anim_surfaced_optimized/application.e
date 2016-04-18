@@ -34,6 +34,8 @@ feature {NONE} -- Initialization
 			l_desert:DESERT
 			l_maryo:MARYO
 			l_window:GAME_WINDOW_SURFACED
+			l_coinStart:COIN
+			l_coinEnd:COIN
 		do
 			create l_desert
 			if not l_desert.has_error then
@@ -41,17 +43,31 @@ feature {NONE} -- Initialization
 				l_maryo.y := 340
 				l_maryo.x := 200
 				if not l_maryo.has_error then
-					create l_window_builder
-					l_window_builder.set_dimension (l_desert.width, l_desert.height)
-					l_window_builder.set_title ("Example Animation with optimization")
-					l_window := l_window_builder.generate_window
-					game_library.quit_signal_actions.extend (agent on_quit)
-					l_window.key_pressed_actions.extend (agent on_key_pressed(?, ?, l_maryo))
-					l_window.key_released_actions.extend (agent on_key_released(?,?,  l_maryo))
-					game_library.iteration_actions.extend (agent on_iteration(?, l_maryo, l_desert, l_window, False))
-					on_iteration(0, l_maryo, l_desert, l_window, True)
-					last_redraw_time := game_library.time_since_create
-					game_library.launch
+					create l_coinStart
+					l_coinStart.y := 200
+					l_coinStart.x := 200
+					if not l_coinStart.has_error then
+						create l_coinEnd
+						l_coinEnd.y := 800
+						l_coinEnd.x := 200
+						if not l_coinEnd.has_error then
+							create l_window_builder
+							l_window_builder.set_dimension (l_desert.width, l_desert.height)
+							l_window_builder.set_title ("Example Animation with optimization")
+							l_window := l_window_builder.generate_window
+							game_library.quit_signal_actions.extend (agent on_quit)
+							l_window.key_pressed_actions.extend (agent on_key_pressed(?, ?, l_maryo))
+							l_window.key_released_actions.extend (agent on_key_released(?,?,  l_maryo))
+							game_library.iteration_actions.extend (agent on_iteration(?, l_maryo, l_desert, l_window, False))
+							on_iteration(0, l_maryo, l_desert, l_window, True)
+							last_redraw_time := game_library.time_since_create
+							game_library.launch
+						else
+							print("Cannot create the Coin End surface.")
+						end
+					else
+						print("Cannot create the Coin Start surface.")
+					end
 				else
 					print("Cannot create the Maryo surface.")
 				end

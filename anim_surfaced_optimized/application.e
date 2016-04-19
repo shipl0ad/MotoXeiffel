@@ -58,8 +58,8 @@ feature {NONE} -- Initialization
 							game_library.quit_signal_actions.extend (agent on_quit)
 							l_window.key_pressed_actions.extend (agent on_key_pressed(?, ?, l_maryo))
 							l_window.key_released_actions.extend (agent on_key_released(?,?,  l_maryo))
-							game_library.iteration_actions.extend (agent on_iteration(?, l_maryo, l_desert, l_window, False))
-							on_iteration(0, l_maryo, l_desert, l_window, True)
+							game_library.iteration_actions.extend (agent on_iteration(?, l_maryo, l_desert, l_coinStart, l_coinEnd, l_window, False))
+							on_iteration(0, l_maryo, l_desert, l_coinStart, l_coinEnd, l_window, True)
 							last_redraw_time := game_library.time_since_create
 							game_library.launch
 						else
@@ -79,7 +79,7 @@ feature {NONE} -- Initialization
 
 feature {NONE} -- Implementation
 
-	on_iteration(a_timestamp:NATURAL_32; a_maryo:MARYO; a_desert:GAME_SURFACE; l_window:GAME_WINDOW_SURFACED; a_must_redraw:BOOLEAN)
+	on_iteration(a_timestamp:NATURAL_32; a_maryo:MARYO; a_desert:GAME_SURFACE; a_coinStart:COIN ; a_coinEnd:COIN; l_window:GAME_WINDOW_SURFACED; a_must_redraw:BOOLEAN)
 			-- Event that is launch at each iteration.
 		local
 			l_area_dirty:ARRAYED_LIST[TUPLE[x,y,width,height:INTEGER]]
@@ -122,6 +122,25 @@ feature {NONE} -- Implementation
 									l_area_dirty.first.width, l_area_dirty.first.height,
 									l_area_dirty.first.x, l_area_dirty.first.y
 								)
+
+				l_window.surface.draw_sub_surface (
+									a_desert,
+									l_area_dirty.first.x, l_area_dirty.first.y,
+									l_area_dirty.first.width, l_area_dirty.first.height,
+									l_area_dirty.first.x, l_area_dirty.first.y
+								)
+				l_window.surface.draw_sub_surface (
+									a_coinStart,
+									l_area_dirty.first.x, l_area_dirty.first.y,
+									l_area_dirty.first.width, l_area_dirty.first.height,
+									l_area_dirty.first.x, l_area_dirty.first.y
+								)
+				l_window.surface.draw_sub_surface (
+									a_coinEnd,
+									l_area_dirty.first.x, l_area_dirty.first.y,
+									l_area_dirty.first.width, l_area_dirty.first.height,
+									l_area_dirty.first.x, l_area_dirty.first.y
+									)
 				l_window.surface.draw_sub_surface (a_maryo.surface, a_maryo.sub_image_x, a_maryo.sub_image_y,
 										a_maryo.sub_image_width, a_maryo.sub_image_height, a_maryo.x, a_maryo.y)
 

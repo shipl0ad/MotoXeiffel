@@ -57,8 +57,8 @@ OBJECTS = big_file_C3_c.o
 
 OLDOBJECTS =  ty944.o ty944d.o ga937.o ga937d.o ga931.o ga931d.o ga935.o ga935d.o \
 	ga932.o ga932d.o ga930.o ga930d.o ga929.o ga929d.o ga934.o ga934d.o \
-	ga941.o ga941d.o ch943.o ch943d.o ga928.o ga928d.o ga940.o ga940d.o \
-	ga936.o ga936d.o ga927.o ga927d.o ga926.o ga926d.o ga933.o ga933d.o \
+	ch943.o ch943d.o ga941.o ga941d.o ga928.o ga928d.o ga936.o ga936d.o \
+	ga927.o ga927d.o ga940.o ga940d.o au926.o au926d.o ga933.o ga933d.o \
 	ga938.o ga938d.o ga939.o ga939d.o th942.o th942d.o 
 
 all: Cobj3.o

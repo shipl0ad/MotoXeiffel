@@ -80,263 +80,256 @@ void _A235_159_2 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE) , EIF_TYPED_VALU
 }
 
 	/* THREAD thr_main */
-void A876_49 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
+void A879_49 (EIF_REFERENCE Current, EIF_INTEGER_32 arg1)
 {
 	EIF_TYPED_VALUE u [1];
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(6513, "thr_main", Current))(Current, ((u [0].type = SK_INT32), (u [0].it_i4 = arg1), u [0]));
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(6525, "thr_main", Current))(Current, ((u [0].type = SK_INT32), (u [0].it_i4 = arg1), u [0]));
 }
 
 	/* AUDIO_SOURCE close */
-void _A924_84_1 (void(*f_ptr) (EIF_REFERENCE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+void _A926_84_1 (void(*f_ptr) (EIF_REFERENCE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(7626, "close", open [1].it_r))(open [1].it_r);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(7645, "close", open [1].it_r))(open [1].it_r);
 }
 
 	/* AUDIO_SOURCE set_thread_safe */
-void _A924_83_1 (void(*f_ptr) (EIF_REFERENCE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+void _A926_83_1 (void(*f_ptr) (EIF_REFERENCE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(7625, "set_thread_safe", open [1].it_r))(open [1].it_r);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(7644, "set_thread_safe", open [1].it_r))(open [1].it_r);
 }
 
 	/* AUDIO_SOURCE update_playing */
-void _A924_79_1 (void(*f_ptr) (EIF_REFERENCE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+void _A926_79_1 (void(*f_ptr) (EIF_REFERENCE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(7621, "update_playing", open [1].it_r))(open [1].it_r);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(7640, "update_playing", open [1].it_r))(open [1].it_r);
 }
 
 	/* GAME_EVENTS clear */
 void _A900_50 (void(*f_ptr) (EIF_REFERENCE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(7164, "clear", closed [1].it_r))(closed [1].it_r);
-}
-
-	/* GAME_TOUCH_DEVICE_EVENTS inline-agent#1 of make */
-void _A901_79_2_3_4_5_6_7_8_9 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
-{
-	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F901_10430)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6], open [7], open [8]);
-}
-
-	/* GAME_TOUCH_DEVICE_EVENTS inline-agent#2 of make */
-void _A901_80_2_3_4_5_6_7_8_9 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
-{
-	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F901_10431)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6], open [7], open [8]);
-}
-
-	/* GAME_TOUCH_DEVICE_EVENTS inline-agent#3 of make */
-void _A901_81_2_3_4_5_6_7_8_9 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
-{
-	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F901_10432)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6], open [7], open [8]);
-}
-
-	/* GAME_TOUCH_DEVICE_EVENTS inline-agent#4 of make */
-void _A901_82_2_3_4_5_6_7_8 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
-{
-	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F901_10433)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6], open [7]);
-}
-
-	/* GAME_TOUCH_DEVICE_EVENTS inline-agent#5 of make */
-void _A901_83_2_3_4_5_6_7_8 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
-{
-	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F901_10434)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6], open [7]);
-}
-
-	/* GAME_TOUCH_DEVICE_EVENTS inline-agent#6 of make */
-void _A901_84_2_3_4 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
-{
-	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F901_10435)(closed [1].it_r, open [1], open [2], open [3]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(7166, "clear", closed [1].it_r))(closed [1].it_r);
 }
 
 	/* GAME_JOYSTICK_EVENTS inline-agent#1 of make */
-void _A902_78_2_3_4_5 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+void _A901_78_2_3_4_5 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F902_10436)(closed [1].it_r, open [1], open [2], open [3], open [4]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F901_10447)(closed [1].it_r, open [1], open [2], open [3], open [4]);
 }
 
 	/* GAME_JOYSTICK_EVENTS inline-agent#2 of make */
-void _A902_79_2_3_4_5_6 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+void _A901_79_2_3_4_5_6 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F902_10437)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F901_10448)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5]);
 }
 
 	/* GAME_JOYSTICK_EVENTS inline-agent#3 of make */
-void _A902_80_2_3_4_5 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+void _A901_80_2_3_4_5 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F902_10438)(closed [1].it_r, open [1], open [2], open [3], open [4]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F901_10449)(closed [1].it_r, open [1], open [2], open [3], open [4]);
 }
 
 	/* GAME_JOYSTICK_EVENTS inline-agent#4 of make */
-void _A902_81_2_3_4 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+void _A901_81_2_3_4 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F902_10439)(closed [1].it_r, open [1], open [2], open [3]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F901_10450)(closed [1].it_r, open [1], open [2], open [3]);
 }
 
 	/* GAME_JOYSTICK_EVENTS inline-agent#5 of make */
-void _A902_82_2_3_4 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+void _A901_82_2_3_4 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F902_10440)(closed [1].it_r, open [1], open [2], open [3]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F901_10451)(closed [1].it_r, open [1], open [2], open [3]);
 }
 
 	/* GAME_JOYSTICK_EVENTS inline-agent#6 of make */
-void _A902_83_2_3 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+void _A901_83_2_3 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F902_10441)(closed [1].it_r, open [1], open [2]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F901_10452)(closed [1].it_r, open [1], open [2]);
+}
+
+	/* GAME_TOUCH_DEVICE_EVENTS inline-agent#1 of make */
+void _A902_79_2_3_4_5_6_7_8_9 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+{
+	GTCX
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F902_10453)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6], open [7], open [8]);
+}
+
+	/* GAME_TOUCH_DEVICE_EVENTS inline-agent#2 of make */
+void _A902_80_2_3_4_5_6_7_8_9 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+{
+	GTCX
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F902_10454)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6], open [7], open [8]);
+}
+
+	/* GAME_TOUCH_DEVICE_EVENTS inline-agent#3 of make */
+void _A902_81_2_3_4_5_6_7_8_9 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+{
+	GTCX
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F902_10455)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6], open [7], open [8]);
+}
+
+	/* GAME_TOUCH_DEVICE_EVENTS inline-agent#4 of make */
+void _A902_82_2_3_4_5_6_7_8 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+{
+	GTCX
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F902_10456)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6], open [7]);
+}
+
+	/* GAME_TOUCH_DEVICE_EVENTS inline-agent#5 of make */
+void _A902_83_2_3_4_5_6_7_8 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+{
+	GTCX
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F902_10457)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6], open [7]);
+}
+
+	/* GAME_TOUCH_DEVICE_EVENTS inline-agent#6 of make */
+void _A902_84_2_3_4 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+{
+	GTCX
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F902_10458)(closed [1].it_r, open [1], open [2], open [3]);
 }
 
 	/* GAME_COMMON_EVENTS inline-agent#1 of make */
 void _A903_68_2_3 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F903_10442)(closed [1].it_r, open [1], open [2]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F903_10459)(closed [1].it_r, open [1], open [2]);
 }
 
 	/* GAME_COMMON_EVENTS inline-agent#2 of make */
 void _A903_69_2_3 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F903_10443)(closed [1].it_r, open [1], open [2]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F903_10460)(closed [1].it_r, open [1], open [2]);
 }
 
 	/* GAME_COMMON_EVENTS inline-agent#3 of make */
 void _A903_70_2_3 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F903_10444)(closed [1].it_r, open [1], open [2]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F903_10461)(closed [1].it_r, open [1], open [2]);
 }
 
 	/* GAME_COMMON_EVENTS inline-agent#4 of make */
 void _A903_71_2 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) F903_10445)(closed [1].it_r, open [1]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) F903_10462)(closed [1].it_r, open [1]);
 }
 
 	/* GAME_COMMON_EVENTS inline-agent#5 of make */
 void _A903_72_2 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) F903_10446)(closed [1].it_r, open [1]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) F903_10463)(closed [1].it_r, open [1]);
 }
 
 	/* GAME_WINDOW_EVENTS inline-agent#1 of make */
 void _A904_116_2_3_4_5_6 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10447)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10464)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5]);
 }
 
 	/* GAME_WINDOW_EVENTS inline-agent#2 of make */
 void _A904_117_2_3_4_5_6_7 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10448)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10465)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6]);
 }
 
 	/* GAME_WINDOW_EVENTS inline-agent#3 of make */
 void _A904_118_2_3_4_5_6_7 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10449)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10466)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6]);
 }
 
 	/* GAME_WINDOW_EVENTS inline-agent#4 of make */
 void _A904_119_2_3_4_5_6 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10450)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10467)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5]);
 }
 
 	/* GAME_WINDOW_EVENTS inline-agent#5 of make */
 void _A904_120_2_3_4 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10451)(closed [1].it_r, open [1], open [2], open [3]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10468)(closed [1].it_r, open [1], open [2], open [3]);
 }
 
 	/* GAME_WINDOW_EVENTS inline-agent#6 of make */
 void _A904_121_2_3_4_5_6_7_8_9 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10452)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6], open [7], open [8]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10469)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6], open [7], open [8]);
 }
 
 	/* GAME_WINDOW_EVENTS inline-agent#7 of make */
 void _A904_122_2_3_4_5_6_7_8 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10453)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6], open [7]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10470)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6], open [7]);
 }
 
 	/* GAME_WINDOW_EVENTS inline-agent#8 of make */
 void _A904_123_2_3_4_5_6_7_8 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10454)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6], open [7]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10471)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5], open [6], open [7]);
 }
 
 	/* GAME_WINDOW_EVENTS inline-agent#9 of make */
 void _A904_124_2_3_4_5_6 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10455)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F904_10472)(closed [1].it_r, open [1], open [2], open [3], open [4], open [5]);
 }
 
 	/* GAME_TOUCH_DEVICE clear_events */
-void _A913_85_1 (void(*f_ptr) (EIF_REFERENCE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+void _A912_85_1 (void(*f_ptr) (EIF_REFERENCE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(7164, "clear_events", open [1].it_r))(open [1].it_r);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTVF(7166, "clear_events", open [1].it_r))(open [1].it_r);
 }
 
 	/* GAME_LIBRARY_CONTROLLER inline-agent#1 of close_all_haptics */
-void _A905_155_2 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
-{
-	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) F905_10456)(closed [1].it_r, open [1]);
-}
-
-	/* GAME_LIBRARY_CONTROLLER inline-agent#1 of open_all_haptic */
-void _A905_156_2 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
-{
-	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) F905_10457)(closed [1].it_r, open [1]);
-}
-
-	/* GAME_LIBRARY_CONTROLLER inline-agent#1 of close_all_joysticks */
-void _A905_157_2 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
-{
-	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) F905_10458)(closed [1].it_r, open [1]);
-}
-
-	/* GAME_LIBRARY_CONTROLLER inline-agent#1 of open_all_joystick */
 void _A905_158_2 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) F905_10459)(closed [1].it_r, open [1]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) F905_10473)(closed [1].it_r, open [1]);
 }
 
-	/* GAME_ENGINE on_quit */
-void _A912_97_2 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+	/* GAME_LIBRARY_CONTROLLER inline-agent#1 of open_all_haptic */
+void _A905_159_2 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
 {
 	GTCX
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(8244, "on_quit", closed [1].it_r))(closed [1].it_r, open [1]);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) F905_10474)(closed [1].it_r, open [1]);
+}
+
+	/* GAME_LIBRARY_CONTROLLER inline-agent#1 of close_all_joysticks */
+void _A905_160_2 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+{
+	GTCX
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) F905_10475)(closed [1].it_r, open [1]);
+}
+
+	/* GAME_LIBRARY_CONTROLLER inline-agent#1 of open_all_joystick */
+void _A905_161_2 (void(*f_ptr) (EIF_REFERENCE, EIF_TYPED_VALUE) , EIF_TYPED_VALUE * closed, EIF_TYPED_VALUE * open)
+{
+	GTCX
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) F905_10476)(closed [1].it_r, open [1]);
 }
 
 
@@ -346,7 +339,7 @@ static fnptr feif_address_table[] = {
 (fnptr)A170_91,
 (fnptr)A170_157,
 (fnptr)A170_158,
-(fnptr)A876_49,
+(fnptr)A879_49,
 };
 
 fnptr *egc_address_table_init = feif_address_table;

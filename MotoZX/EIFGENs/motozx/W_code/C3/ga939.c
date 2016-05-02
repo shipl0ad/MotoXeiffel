@@ -10,9 +10,9 @@
 extern "C" {
 #endif
 
-extern void F939_10397(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F939_10398(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F939_10399(EIF_REFERENCE);
+extern void F939_10414(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F939_10415(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F939_10416(EIF_REFERENCE);
 extern void EIF_Minit939(void);
 
 #ifdef __cplusplus
@@ -35,7 +35,7 @@ extern "C" {
 #endif
 
 /* {GAME_HAPTIC_JOYSTICK}.make */
-void F939_10397 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F939_10414 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "make";
@@ -60,30 +60,30 @@ void F939_10397 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_REF,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 938, Current, 0, 1, 16141);
+	RTEAA(l_feature_name, 938, Current, 0, 1, 16159);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(938, Current, 16141);
+	RTDBGEAA(938, Current, 16159);
 	RTCC(arg1, 938, l_feature_name, 1, eif_new_type(926, 0x01), 0x01);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("is_haptic_enabled", EX_PRE);
-		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7397, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7402, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 		RTNHOOK(1,1);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7308, "is_haptic_enable", tr1))(tr1)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7310, "is_haptic_enable", tr1))(tr1)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTHOOK(2);
 		RTCT("is_joystick_opened", EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7659, "is_open", arg1))(arg1)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7667, "is_open", arg1))(arg1)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTHOOK(3);
 		RTCT("is_joystick_haptic", EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7670, "is_haptic_capable", arg1))(arg1)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7678, "is_haptic_capable", arg1))(arg1)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -94,9 +94,9 @@ body:;
 	RTHOOK(4);
 	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(32, dtype))(Current);
 	RTHOOK(5);
-	RTDBGAA(Current, dtype, 8187, 0xF800039E, 0); /* joystick */
+	RTDBGAA(Current, dtype, 8205, 0xF800039E, 0); /* joystick */
 	RTAR(Current, arg1);
-	*(EIF_REFERENCE *)(Current + RTWA(8187, dtype)) = (EIF_REFERENCE) RTCCL(arg1);
+	*(EIF_REFERENCE *)(Current + RTWA(8205, dtype)) = (EIF_REFERENCE) RTCCL(arg1);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(6);
@@ -110,17 +110,17 @@ body:;
 }
 
 /* {GAME_HAPTIC_JOYSTICK}.joystick */
-EIF_TYPED_VALUE F939_10398 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F939_10415 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_REF;
-	r.it_r = *(EIF_REFERENCE *)(Current + RTWA(8187,Dtype(Current)));
+	r.it_r = *(EIF_REFERENCE *)(Current + RTWA(8205,Dtype(Current)));
 	return r;
 }
 
 
 /* {GAME_HAPTIC_JOYSTICK}.internal_open */
-EIF_TYPED_VALUE F939_10399 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F939_10416 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "internal_open";
@@ -142,20 +142,20 @@ EIF_TYPED_VALUE F939_10399 (EIF_REFERENCE Current)
 	RTLU (SK_POINTER, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 938, Current, 0, 0, 16143);
+	RTEAA(l_feature_name, 938, Current, 0, 0, 16158);
 	RTSA(Dtype(Current));
 	RTSC;
 	RTME(Dtype(Current), 0);
 	RTGC;
-	RTDBGEAA(938, Current, 16143);
+	RTDBGEAA(938, Current, 16158);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x40000000, 1,0); /* Result */
-	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8187, Dtype(Current)))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8205, Dtype(Current)))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(1,1);
-	tp1 = *(EIF_POINTER *)(tr1 + RTVA(7672, "item", tr1));
+	tp1 = *(EIF_POINTER *)(tr1 + RTVA(7680, "item", tr1));
 	up1 = tp1;
-	Result = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5161, 863))(Current, up1x)).it_p);
+	Result = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5162, 863))(Current, up1x)).it_p);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);

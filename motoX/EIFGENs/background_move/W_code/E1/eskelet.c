@@ -19840,160 +19840,72 @@ static const int32 cn_attr860 [] =
 3312,
 };
 
-extern const char *names861[];
-static const uint32 types861 [] =
+extern const char *names862[];
+static const uint32 types862 [] =
 {
 SK_UINT8,
 };
 
-static const uint16 attr_flags861 [] =
+static const uint16 attr_flags862 [] =
 {0,};
 
-static const EIF_TYPE_INDEX g_atype861_0 [] = {197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype862_0 [] = {197,0xFFFF};
 
-static const EIF_TYPE_INDEX *gtypes861 [] = {
-g_atype861_0,
+static const EIF_TYPE_INDEX *gtypes862 [] = {
+g_atype862_0,
 };
 
-static const int32 cn_attr861 [] =
+static const int32 cn_attr862 [] =
 {
-4907,
-};
-
-extern const char *names865[];
-static const uint32 types865 [] =
-{
-SK_UINT32,
-SK_INT32,
-SK_INT32,
-};
-
-static const uint16 attr_flags865 [] =
-{0,0,0,};
-
-static const EIF_TYPE_INDEX g_atype865_0 [] = {200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype865_1 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype865_2 [] = {206,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes865 [] = {
-g_atype865_0,
-g_atype865_1,
-g_atype865_2,
-};
-
-static const int32 cn_attr865 [] =
-{
-6441,
-6434,
-6435,
-};
-
-extern const char *names866[];
-static const uint32 types866 [] =
-{
-SK_BOOL,
-SK_BOOL,
-};
-
-static const uint16 attr_flags866 [] =
-{0,0,};
-
-static const EIF_TYPE_INDEX g_atype866_0 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype866_1 [] = {191,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes866 [] = {
-g_atype866_0,
-g_atype866_1,
-};
-
-static const int32 cn_attr866 [] =
-{
-6444,
-6445,
-};
-
-extern const char *names867[];
-static const uint32 types867 [] =
-{
-SK_UINT32,
-};
-
-static const uint16 attr_flags867 [] =
-{0,};
-
-static const EIF_TYPE_INDEX g_atype867_0 [] = {200,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes867 [] = {
-g_atype867_0,
-};
-
-static const int32 cn_attr867 [] =
-{
-6447,
+4911,
 };
 
 extern const char *names868[];
 static const uint32 types868 [] =
 {
 SK_UINT32,
-SK_UINT32,
 SK_INT32,
 SK_INT32,
 };
 
 static const uint16 attr_flags868 [] =
-{0,0,0,0,};
+{0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype868_0 [] = {200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype868_1 [] = {200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype868_1 [] = {206,0xFFFF};
 static const EIF_TYPE_INDEX g_atype868_2 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype868_3 [] = {206,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes868 [] = {
 g_atype868_0,
 g_atype868_1,
 g_atype868_2,
-g_atype868_3,
 };
 
 static const int32 cn_attr868 [] =
 {
-6441,
-6447,
-6434,
-6435,
+6460,
+6453,
+6454,
 };
 
 extern const char *names869[];
 static const uint32 types869 [] =
 {
 SK_UINT32,
-SK_UINT32,
-SK_INT32,
-SK_INT32,
 };
 
 static const uint16 attr_flags869 [] =
-{0,0,0,0,};
+{0,};
 
 static const EIF_TYPE_INDEX g_atype869_0 [] = {200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype869_1 [] = {200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype869_2 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype869_3 [] = {206,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes869 [] = {
 g_atype869_0,
-g_atype869_1,
-g_atype869_2,
-g_atype869_3,
 };
 
 static const int32 cn_attr869 [] =
 {
-6441,
-6447,
-6434,
-6435,
+6462,
 };
 
 extern const char *names870[];
@@ -20022,146 +19934,98 @@ g_atype870_3,
 
 static const int32 cn_attr870 [] =
 {
-6441,
-6447,
-6434,
-6435,
+6460,
+6462,
+6453,
+6454,
 };
 
 extern const char *names871[];
 static const uint32 types871 [] =
 {
-SK_REF,
-SK_BOOL,
+SK_UINT32,
+SK_UINT32,
+SK_INT32,
+SK_INT32,
 };
 
 static const uint16 attr_flags871 [] =
-{0,0,};
+{0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype871_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype871_1 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype871_0 [] = {200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype871_1 [] = {200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype871_2 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype871_3 [] = {206,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes871 [] = {
 g_atype871_0,
 g_atype871_1,
+g_atype871_2,
+g_atype871_3,
 };
 
 static const int32 cn_attr871 [] =
 {
-6452,
-6458,
+6460,
+6462,
+6453,
+6454,
 };
 
 extern const char *names872[];
 static const uint32 types872 [] =
 {
-SK_REF,
-SK_BOOL,
-SK_BOOL,
+SK_UINT32,
+SK_UINT32,
+SK_INT32,
+SK_INT32,
 };
 
 static const uint16 attr_flags872 [] =
-{0,0,0,};
+{0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype872_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype872_1 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype872_2 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype872_0 [] = {200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype872_1 [] = {200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype872_2 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype872_3 [] = {206,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes872 [] = {
 g_atype872_0,
 g_atype872_1,
 g_atype872_2,
+g_atype872_3,
 };
 
 static const int32 cn_attr872 [] =
 {
-6452,
-6458,
-6463,
-};
-
-extern const char *names873[];
-static const uint32 types873 [] =
-{
-SK_REF,
-SK_REF,
-SK_REF,
-SK_BOOL,
-SK_BOOL,
-SK_INT32,
-};
-
-static const uint16 attr_flags873 [] =
-{0,0,0,0,0,0,};
-
-static const EIF_TYPE_INDEX g_atype873_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype873_1 [] = {0xFF01,932,0xFFFF};
-static const EIF_TYPE_INDEX g_atype873_2 [] = {0xFF01,913,0xFFFF};
-static const EIF_TYPE_INDEX g_atype873_3 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype873_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype873_5 [] = {206,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes873 [] = {
-g_atype873_0,
-g_atype873_1,
-g_atype873_2,
-g_atype873_3,
-g_atype873_4,
-g_atype873_5,
-};
-
-static const int32 cn_attr873 [] =
-{
-6452,
-6466,
-6467,
-6458,
-6463,
-6465,
+6460,
+6462,
+6453,
+6454,
 };
 
 extern const char *names874[];
 static const uint32 types874 [] =
 {
 SK_REF,
-SK_BOOL,
-SK_BOOL,
-SK_REAL32,
-SK_REAL32,
-SK_REAL32,
-SK_INT64,
+SK_INT32,
 };
 
 static const uint16 attr_flags874 [] =
-{0,0,0,0,0,0,0,};
+{0,0,};
 
-static const EIF_TYPE_INDEX g_atype874_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype874_1 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype874_2 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype874_3 [] = {179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype874_4 [] = {179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype874_5 [] = {179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype874_6 [] = {188,0xFFFF};
+static const EIF_TYPE_INDEX g_atype874_0 [] = {0xFF01,941,0xFFFF};
+static const EIF_TYPE_INDEX g_atype874_1 [] = {206,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes874 [] = {
 g_atype874_0,
 g_atype874_1,
-g_atype874_2,
-g_atype874_3,
-g_atype874_4,
-g_atype874_5,
-g_atype874_6,
 };
 
 static const int32 cn_attr874 [] =
 {
-6452,
-6458,
-6463,
-6477,
-6478,
-6479,
-6476,
+6466,
+6467,
 };
 
 extern const char *names875[];
@@ -20169,50 +20033,22 @@ static const uint32 types875 [] =
 {
 SK_REF,
 SK_BOOL,
-SK_BOOL,
-SK_REAL32,
-SK_REAL32,
-SK_REAL32,
-SK_REAL32,
-SK_REAL32,
-SK_INT64,
 };
 
 static const uint16 attr_flags875 [] =
-{0,0,0,0,0,0,0,0,0,};
+{0,0,};
 
 static const EIF_TYPE_INDEX g_atype875_0 [] = {217,0xFFFF};
 static const EIF_TYPE_INDEX g_atype875_1 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype875_2 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype875_3 [] = {179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype875_4 [] = {179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype875_5 [] = {179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype875_6 [] = {179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype875_7 [] = {179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype875_8 [] = {188,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes875 [] = {
 g_atype875_0,
 g_atype875_1,
-g_atype875_2,
-g_atype875_3,
-g_atype875_4,
-g_atype875_5,
-g_atype875_6,
-g_atype875_7,
-g_atype875_8,
 };
 
 static const int32 cn_attr875 [] =
 {
-6452,
-6458,
-6463,
-6477,
-6478,
-6479,
-6481,
-6482,
+6470,
 6476,
 };
 
@@ -20222,58 +20058,48 @@ static const uint32 types876 [] =
 SK_REF,
 SK_BOOL,
 SK_BOOL,
-SK_INT32,
-SK_INT32,
 };
 
 static const uint16 attr_flags876 [] =
-{0,0,0,0,0,};
+{0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype876_0 [] = {217,0xFFFF};
 static const EIF_TYPE_INDEX g_atype876_1 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype876_2 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype876_3 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype876_4 [] = {206,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes876 [] = {
 g_atype876_0,
 g_atype876_1,
 g_atype876_2,
-g_atype876_3,
-g_atype876_4,
 };
 
 static const int32 cn_attr876 [] =
 {
-6452,
-6458,
-6463,
-6485,
-6486,
+6470,
+6476,
+6481,
 };
 
 extern const char *names877[];
 static const uint32 types877 [] =
 {
 SK_REF,
+SK_REF,
+SK_REF,
 SK_BOOL,
 SK_BOOL,
-SK_UINT8,
-SK_UINT16,
-SK_INT32,
 SK_INT32,
 };
 
 static const uint16 attr_flags877 [] =
-{0,0,0,0,0,0,0,};
+{0,0,0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype877_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype877_1 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype877_2 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype877_3 [] = {197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype877_4 [] = {203,0xFFFF};
+static const EIF_TYPE_INDEX g_atype877_1 [] = {0xFF01,944,0xFFFF};
+static const EIF_TYPE_INDEX g_atype877_2 [] = {0xFF01,920,0xFFFF};
+static const EIF_TYPE_INDEX g_atype877_3 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype877_4 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype877_5 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype877_6 [] = {206,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes877 [] = {
 g_atype877_0,
@@ -20282,18 +20108,16 @@ g_atype877_2,
 g_atype877_3,
 g_atype877_4,
 g_atype877_5,
-g_atype877_6,
 };
 
 static const int32 cn_attr877 [] =
 {
-6452,
-6458,
-6463,
-6983,
-6984,
+6470,
+6484,
 6485,
-6486,
+6476,
+6481,
+6483,
 };
 
 extern const char *names878[];
@@ -20302,26 +20126,42 @@ static const uint32 types878 [] =
 SK_REF,
 SK_BOOL,
 SK_BOOL,
+SK_REAL32,
+SK_REAL32,
+SK_REAL32,
+SK_INT64,
 };
 
 static const uint16 attr_flags878 [] =
-{0,0,0,};
+{0,0,0,0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype878_0 [] = {217,0xFFFF};
 static const EIF_TYPE_INDEX g_atype878_1 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype878_2 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype878_3 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype878_4 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype878_5 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype878_6 [] = {188,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes878 [] = {
 g_atype878_0,
 g_atype878_1,
 g_atype878_2,
+g_atype878_3,
+g_atype878_4,
+g_atype878_5,
+g_atype878_6,
 };
 
 static const int32 cn_attr878 [] =
 {
-6452,
-6458,
-6463,
+6470,
+6476,
+6481,
+6495,
+6496,
+6497,
+6494,
 };
 
 extern const char *names879[];
@@ -20330,26 +20170,50 @@ static const uint32 types879 [] =
 SK_REF,
 SK_BOOL,
 SK_BOOL,
+SK_REAL32,
+SK_REAL32,
+SK_REAL32,
+SK_REAL32,
+SK_REAL32,
+SK_INT64,
 };
 
 static const uint16 attr_flags879 [] =
-{0,0,0,};
+{0,0,0,0,0,0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype879_0 [] = {217,0xFFFF};
 static const EIF_TYPE_INDEX g_atype879_1 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype879_2 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype879_3 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype879_4 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype879_5 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype879_6 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype879_7 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype879_8 [] = {188,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes879 [] = {
 g_atype879_0,
 g_atype879_1,
 g_atype879_2,
+g_atype879_3,
+g_atype879_4,
+g_atype879_5,
+g_atype879_6,
+g_atype879_7,
+g_atype879_8,
 };
 
 static const int32 cn_attr879 [] =
 {
-6452,
-6458,
-6463,
+6470,
+6476,
+6481,
+6495,
+6496,
+6497,
+6499,
+6500,
+6494,
 };
 
 extern const char *names880[];
@@ -20381,11 +20245,11 @@ g_atype880_4,
 
 static const int32 cn_attr880 [] =
 {
-6452,
-6458,
-6463,
-7000,
-7001,
+6470,
+6476,
+6481,
+6503,
+6504,
 };
 
 extern const char *names881[];
@@ -20394,26 +20258,42 @@ static const uint32 types881 [] =
 SK_REF,
 SK_BOOL,
 SK_BOOL,
+SK_UINT8,
+SK_UINT16,
+SK_INT32,
+SK_INT32,
 };
 
 static const uint16 attr_flags881 [] =
-{0,0,0,};
+{0,0,0,0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype881_0 [] = {217,0xFFFF};
 static const EIF_TYPE_INDEX g_atype881_1 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype881_2 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype881_3 [] = {197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype881_4 [] = {203,0xFFFF};
+static const EIF_TYPE_INDEX g_atype881_5 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype881_6 [] = {206,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes881 [] = {
 g_atype881_0,
 g_atype881_1,
 g_atype881_2,
+g_atype881_3,
+g_atype881_4,
+g_atype881_5,
+g_atype881_6,
 };
 
 static const int32 cn_attr881 [] =
 {
-6452,
-6458,
-6463,
+6470,
+6476,
+6481,
+7001,
+7002,
+6503,
+6504,
 };
 
 extern const char *names882[];
@@ -20422,152 +20302,74 @@ static const uint32 types882 [] =
 SK_REF,
 SK_BOOL,
 SK_BOOL,
-SK_BOOL,
 };
 
 static const uint16 attr_flags882 [] =
-{0,0,0,0,};
+{0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype882_0 [] = {217,0xFFFF};
 static const EIF_TYPE_INDEX g_atype882_1 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype882_2 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype882_3 [] = {191,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes882 [] = {
 g_atype882_0,
 g_atype882_1,
 g_atype882_2,
-g_atype882_3,
 };
 
 static const int32 cn_attr882 [] =
 {
-6452,
-6458,
-6463,
-7021,
+6470,
+6476,
+6481,
 };
 
 extern const char *names883[];
 static const uint32 types883 [] =
 {
 SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_BOOL,
 SK_BOOL,
 SK_BOOL,
 };
 
 static const uint16 attr_flags883 [] =
-{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+{0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype883_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype883_1 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,874,0xFFFF};
-static const EIF_TYPE_INDEX g_atype883_2 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype883_3 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,874,0xFFFF};
-static const EIF_TYPE_INDEX g_atype883_4 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype883_5 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,874,0xFFFF};
-static const EIF_TYPE_INDEX g_atype883_6 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype883_7 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,892,0xFFFF};
-static const EIF_TYPE_INDEX g_atype883_8 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,188,203,179,179,179,179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype883_9 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,893,0xFFFF};
-static const EIF_TYPE_INDEX g_atype883_10 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,188,188,200,179,179,179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype883_11 [] = {422,0xFF01,0xFFF9,2,174,200,188,0xFFFF};
-static const EIF_TYPE_INDEX g_atype883_12 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,188,188,0xFFFF};
-static const EIF_TYPE_INDEX g_atype883_13 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype883_14 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype883_15 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype883_1 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype883_2 [] = {191,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes883 [] = {
 g_atype883_0,
 g_atype883_1,
 g_atype883_2,
-g_atype883_3,
-g_atype883_4,
-g_atype883_5,
-g_atype883_6,
-g_atype883_7,
-g_atype883_8,
-g_atype883_9,
-g_atype883_10,
-g_atype883_11,
-g_atype883_12,
-g_atype883_13,
-g_atype883_14,
-g_atype883_15,
 };
 
 static const int32 cn_attr883 [] =
 {
-6452,
-7030,
-7031,
-7033,
-7034,
-7036,
-7037,
-7039,
-7040,
-7042,
-7043,
-7045,
-7046,
-6458,
-6463,
-7021,
+6470,
+6476,
+6481,
 };
 
 extern const char *names884[];
 static const uint32 types884 [] =
 {
 SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
 SK_BOOL,
 SK_BOOL,
-SK_BOOL,
+SK_INT32,
+SK_INT32,
 };
 
 static const uint16 attr_flags884 [] =
-{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+{0,0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype884_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype884_1 [] = {422,0xFF01,0xFFF9,3,174,200,197,209,0xFFFF};
-static const EIF_TYPE_INDEX g_atype884_2 [] = {0xFF01,250,0xFF01,0xFFF9,4,174,200,206,197,209,0xFFFF};
-static const EIF_TYPE_INDEX g_atype884_3 [] = {422,0xFF01,0xFFF9,4,174,200,197,209,209,0xFFFF};
-static const EIF_TYPE_INDEX g_atype884_4 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,206,197,209,209,0xFFFF};
-static const EIF_TYPE_INDEX g_atype884_5 [] = {422,0xFF01,0xFFF9,3,174,200,197,0xFF01,860,0xFFFF};
-static const EIF_TYPE_INDEX g_atype884_6 [] = {0xFF01,250,0xFF01,0xFFF9,4,174,200,206,197,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype884_7 [] = {422,0xFF01,0xFFF9,2,174,200,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype884_8 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,206,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype884_9 [] = {422,0xFF01,0xFFF9,2,174,200,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype884_10 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,206,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype884_11 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype884_12 [] = {0xFF01,250,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype884_13 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype884_14 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype884_15 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype884_1 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype884_2 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype884_3 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype884_4 [] = {206,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes884 [] = {
 g_atype884_0,
@@ -20575,208 +20377,48 @@ g_atype884_1,
 g_atype884_2,
 g_atype884_3,
 g_atype884_4,
-g_atype884_5,
-g_atype884_6,
-g_atype884_7,
-g_atype884_8,
-g_atype884_9,
-g_atype884_10,
-g_atype884_11,
-g_atype884_12,
-g_atype884_13,
-g_atype884_14,
-g_atype884_15,
 };
 
 static const int32 cn_attr884 [] =
 {
-6452,
-7055,
-7056,
-7058,
-7059,
-7061,
-7062,
-7064,
-7065,
-7067,
-7068,
-7070,
-7071,
-6458,
-6463,
-7021,
+6470,
+6476,
+6481,
+7018,
+7019,
 };
 
 extern const char *names885[];
 static const uint32 types885 [] =
 {
 SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_BOOL,
 SK_BOOL,
 SK_BOOL,
 };
 
 static const uint16 attr_flags885 [] =
-{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+{0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype885_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_1 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_2 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_3 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_4 [] = {422,0xFF01,0xFFF9,3,174,200,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_5 [] = {422,0xFF01,0xFFF9,3,174,200,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_6 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_7 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_8 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_9 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_10 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_11 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_12 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_13 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_14 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_15 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,197,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_16 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,876,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_17 [] = {0xFF01,250,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_18 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,876,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_19 [] = {0xFF01,250,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_20 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,226,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_21 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,0xFF01,226,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_22 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,226,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_23 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,200,0xFF01,226,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_24 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,867,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_25 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,200,200,200,206,206,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_26 [] = {422,0xFF01,0xFFF9,3,174,200,0xFF01,868,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_27 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_28 [] = {422,0xFF01,0xFFF9,3,174,200,0xFF01,869,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_29 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_30 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,866,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_31 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,200,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_32 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_33 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype885_34 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype885_1 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype885_2 [] = {191,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes885 [] = {
 g_atype885_0,
 g_atype885_1,
 g_atype885_2,
-g_atype885_3,
-g_atype885_4,
-g_atype885_5,
-g_atype885_6,
-g_atype885_7,
-g_atype885_8,
-g_atype885_9,
-g_atype885_10,
-g_atype885_11,
-g_atype885_12,
-g_atype885_13,
-g_atype885_14,
-g_atype885_15,
-g_atype885_16,
-g_atype885_17,
-g_atype885_18,
-g_atype885_19,
-g_atype885_20,
-g_atype885_21,
-g_atype885_22,
-g_atype885_23,
-g_atype885_24,
-g_atype885_25,
-g_atype885_26,
-g_atype885_27,
-g_atype885_28,
-g_atype885_29,
-g_atype885_30,
-g_atype885_31,
-g_atype885_32,
-g_atype885_33,
-g_atype885_34,
 };
 
 static const int32 cn_attr885 [] =
 {
-6452,
-7096,
-7097,
-7098,
-7099,
-7100,
-7101,
-7102,
-7103,
-7104,
-7105,
-7106,
-7107,
-7108,
-7109,
-7110,
-7112,
-7113,
-7115,
-7116,
-7118,
-7119,
-7121,
-7122,
-7124,
-7125,
-7127,
-7128,
-7130,
-7131,
-7133,
-7134,
-6458,
-6463,
-7021,
+6470,
+6476,
+6481,
 };
 
 extern const char *names886[];
 static const uint32 types886 [] =
 {
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
 SK_REF,
 SK_BOOL,
 SK_BOOL,
@@ -20784,56 +20426,26 @@ SK_BOOL,
 };
 
 static const uint16 attr_flags886 [] =
-{0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+{0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype886_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype886_1 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype886_2 [] = {0xFF01,250,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype886_3 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype886_4 [] = {0xFF01,250,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype886_5 [] = {422,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype886_6 [] = {0xFF01,250,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype886_7 [] = {422,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype886_8 [] = {0xFF01,250,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype886_9 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype886_10 [] = {0xFF01,250,0xFF01,0xFFF9,2,174,200,0xFF01,217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype886_11 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype886_12 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype886_13 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype886_1 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype886_2 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype886_3 [] = {191,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes886 [] = {
 g_atype886_0,
 g_atype886_1,
 g_atype886_2,
 g_atype886_3,
-g_atype886_4,
-g_atype886_5,
-g_atype886_6,
-g_atype886_7,
-g_atype886_8,
-g_atype886_9,
-g_atype886_10,
-g_atype886_11,
-g_atype886_12,
-g_atype886_13,
 };
 
 static const int32 cn_attr886 [] =
 {
-6452,
-7142,
-7143,
-7144,
-7145,
-7146,
-7147,
-7148,
-7149,
-7150,
-7151,
-6458,
-6463,
-7021,
+6470,
+6476,
+6481,
+7039,
 };
 
 extern const char *names887[];
@@ -20852,50 +20464,30 @@ SK_REF,
 SK_REF,
 SK_REF,
 SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_UINT32,
-SK_UINT32,
-SK_INT32,
-SK_INT32,
 };
 
 static const uint16 attr_flags887 [] =
-{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype887_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_1 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_2 [] = {0xFF01,250,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_3 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_4 [] = {0xFF01,250,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_5 [] = {422,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_6 [] = {0xFF01,250,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_7 [] = {422,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_8 [] = {0xFF01,250,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_9 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_10 [] = {0xFF01,250,0xFF01,0xFFF9,2,174,200,0xFF01,217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_11 [] = {0xFF01,358,0xFF01,920,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_12 [] = {0xFF01,358,0xFF01,934,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_13 [] = {327,0xFF01,906,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_14 [] = {0xFF01,311,0xFF01,927,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_15 [] = {935,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_16 [] = {0xFF01,930,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_17 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_18 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_19 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_20 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_21 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_22 [] = {200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_23 [] = {200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_24 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype887_25 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype887_1 [] = {422,0xFF01,0xFFF9,3,174,200,197,209,0xFFFF};
+static const EIF_TYPE_INDEX g_atype887_2 [] = {0xFF01,250,0xFF01,0xFFF9,4,174,200,206,197,209,0xFFFF};
+static const EIF_TYPE_INDEX g_atype887_3 [] = {422,0xFF01,0xFFF9,4,174,200,197,209,209,0xFFFF};
+static const EIF_TYPE_INDEX g_atype887_4 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,206,197,209,209,0xFFFF};
+static const EIF_TYPE_INDEX g_atype887_5 [] = {422,0xFF01,0xFFF9,3,174,200,197,0xFF01,861,0xFFFF};
+static const EIF_TYPE_INDEX g_atype887_6 [] = {0xFF01,250,0xFF01,0xFFF9,4,174,200,206,197,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype887_7 [] = {422,0xFF01,0xFFF9,2,174,200,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype887_8 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,206,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype887_9 [] = {422,0xFF01,0xFFF9,2,174,200,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype887_10 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,206,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype887_11 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype887_12 [] = {0xFF01,250,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype887_13 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype887_14 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype887_15 [] = {191,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes887 [] = {
 g_atype887_0,
@@ -20914,178 +20506,550 @@ g_atype887_12,
 g_atype887_13,
 g_atype887_14,
 g_atype887_15,
-g_atype887_16,
-g_atype887_17,
-g_atype887_18,
-g_atype887_19,
-g_atype887_20,
-g_atype887_21,
-g_atype887_22,
-g_atype887_23,
-g_atype887_24,
-g_atype887_25,
 };
 
 static const int32 cn_attr887 [] =
 {
-6452,
-7142,
-7143,
-7144,
-7145,
-7146,
-7147,
-7148,
-7149,
-7150,
-7151,
-7188,
-7195,
-7205,
-7222,
-7229,
-7231,
-6458,
-6463,
-7021,
-7201,
-7226,
-7227,
-7228,
-7000,
-7001,
+6470,
+7047,
+7048,
+7050,
+7051,
+7053,
+7054,
+7056,
+7057,
+7059,
+7060,
+7062,
+7063,
+6476,
+6481,
+7039,
 };
 
 extern const char *names888[];
 static const uint32 types888 [] =
 {
-SK_UINT8,
-SK_UINT8,
-SK_UINT8,
-SK_UINT8,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
 };
 
 static const uint16 attr_flags888 [] =
-{0,0,0,0,};
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype888_0 [] = {197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype888_1 [] = {197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype888_2 [] = {197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype888_3 [] = {197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype888_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype888_1 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,878,0xFFFF};
+static const EIF_TYPE_INDEX g_atype888_2 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype888_3 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,878,0xFFFF};
+static const EIF_TYPE_INDEX g_atype888_4 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype888_5 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,878,0xFFFF};
+static const EIF_TYPE_INDEX g_atype888_6 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype888_7 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,896,0xFFFF};
+static const EIF_TYPE_INDEX g_atype888_8 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,188,203,179,179,179,179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype888_9 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,895,0xFFFF};
+static const EIF_TYPE_INDEX g_atype888_10 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,188,188,200,179,179,179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype888_11 [] = {422,0xFF01,0xFFF9,2,174,200,188,0xFFFF};
+static const EIF_TYPE_INDEX g_atype888_12 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,188,188,0xFFFF};
+static const EIF_TYPE_INDEX g_atype888_13 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype888_14 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype888_15 [] = {191,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes888 [] = {
 g_atype888_0,
 g_atype888_1,
 g_atype888_2,
 g_atype888_3,
+g_atype888_4,
+g_atype888_5,
+g_atype888_6,
+g_atype888_7,
+g_atype888_8,
+g_atype888_9,
+g_atype888_10,
+g_atype888_11,
+g_atype888_12,
+g_atype888_13,
+g_atype888_14,
+g_atype888_15,
 };
 
 static const int32 cn_attr888 [] =
 {
-7248,
-7249,
-7250,
-7251,
+6470,
+7073,
+7074,
+7076,
+7077,
+7079,
+7080,
+7082,
+7083,
+7085,
+7086,
+7088,
+7089,
+6476,
+6481,
+7039,
 };
 
 extern const char *names889[];
 static const uint32 types889 [] =
 {
-SK_UINT8,
-SK_UINT8,
-SK_UINT8,
-SK_UINT8,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
 };
 
 static const uint16 attr_flags889 [] =
-{0,0,0,0,};
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype889_0 [] = {197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype889_1 [] = {197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype889_2 [] = {197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype889_3 [] = {197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_1 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_2 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_3 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_4 [] = {422,0xFF01,0xFFF9,3,174,200,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_5 [] = {422,0xFF01,0xFFF9,3,174,200,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_6 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_7 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_8 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_9 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_10 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_11 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_12 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_13 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_14 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_15 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,197,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_16 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,880,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_17 [] = {0xFF01,250,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_18 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,880,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_19 [] = {0xFF01,250,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_20 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,226,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_21 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,0xFF01,226,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_22 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,226,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_23 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,200,0xFF01,226,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_24 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,869,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_25 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,200,200,200,206,206,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_26 [] = {422,0xFF01,0xFFF9,3,174,200,0xFF01,870,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_27 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_28 [] = {422,0xFF01,0xFFF9,3,174,200,0xFF01,871,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_29 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_30 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,868,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_31 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,200,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_32 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_33 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype889_34 [] = {191,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes889 [] = {
 g_atype889_0,
 g_atype889_1,
 g_atype889_2,
 g_atype889_3,
+g_atype889_4,
+g_atype889_5,
+g_atype889_6,
+g_atype889_7,
+g_atype889_8,
+g_atype889_9,
+g_atype889_10,
+g_atype889_11,
+g_atype889_12,
+g_atype889_13,
+g_atype889_14,
+g_atype889_15,
+g_atype889_16,
+g_atype889_17,
+g_atype889_18,
+g_atype889_19,
+g_atype889_20,
+g_atype889_21,
+g_atype889_22,
+g_atype889_23,
+g_atype889_24,
+g_atype889_25,
+g_atype889_26,
+g_atype889_27,
+g_atype889_28,
+g_atype889_29,
+g_atype889_30,
+g_atype889_31,
+g_atype889_32,
+g_atype889_33,
+g_atype889_34,
 };
 
 static const int32 cn_attr889 [] =
 {
+6470,
+7114,
+7115,
+7116,
+7117,
+7118,
+7119,
+7120,
+7121,
+7122,
+7123,
+7124,
+7125,
+7126,
+7127,
+7128,
+7130,
+7131,
+7133,
+7134,
+7136,
+7137,
+7139,
+7140,
+7142,
+7143,
+7145,
+7146,
+7148,
+7149,
+7151,
+7152,
+6476,
+6481,
+7039,
+};
+
+extern const char *names890[];
+static const uint32 types890 [] =
+{
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+};
+
+static const uint16 attr_flags890 [] =
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype890_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype890_1 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype890_2 [] = {0xFF01,250,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype890_3 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype890_4 [] = {0xFF01,250,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype890_5 [] = {422,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype890_6 [] = {0xFF01,250,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype890_7 [] = {422,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype890_8 [] = {0xFF01,250,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype890_9 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype890_10 [] = {0xFF01,250,0xFF01,0xFFF9,2,174,200,0xFF01,217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype890_11 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype890_12 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype890_13 [] = {191,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes890 [] = {
+g_atype890_0,
+g_atype890_1,
+g_atype890_2,
+g_atype890_3,
+g_atype890_4,
+g_atype890_5,
+g_atype890_6,
+g_atype890_7,
+g_atype890_8,
+g_atype890_9,
+g_atype890_10,
+g_atype890_11,
+g_atype890_12,
+g_atype890_13,
+};
+
+static const int32 cn_attr890 [] =
+{
+6470,
+7160,
+7161,
+7162,
+7163,
+7164,
+7165,
+7166,
+7167,
+7168,
+7169,
+6476,
+6481,
+7039,
+};
+
+extern const char *names891[];
+static const uint32 types891 [] =
+{
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_UINT32,
+SK_UINT32,
+SK_INT32,
+SK_INT32,
+};
+
+static const uint16 attr_flags891 [] =
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype891_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_1 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_2 [] = {0xFF01,250,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_3 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_4 [] = {0xFF01,250,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_5 [] = {422,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_6 [] = {0xFF01,250,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_7 [] = {422,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_8 [] = {0xFF01,250,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_9 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_10 [] = {0xFF01,250,0xFF01,0xFFF9,2,174,200,0xFF01,217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_11 [] = {0xFF01,358,0xFF01,927,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_12 [] = {0xFF01,358,0xFF01,947,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_13 [] = {327,0xFF01,910,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_14 [] = {0xFF01,311,0xFF01,937,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_15 [] = {946,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_16 [] = {0xFF01,942,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_17 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_18 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_19 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_20 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_21 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_22 [] = {200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_23 [] = {200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_24 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype891_25 [] = {206,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes891 [] = {
+g_atype891_0,
+g_atype891_1,
+g_atype891_2,
+g_atype891_3,
+g_atype891_4,
+g_atype891_5,
+g_atype891_6,
+g_atype891_7,
+g_atype891_8,
+g_atype891_9,
+g_atype891_10,
+g_atype891_11,
+g_atype891_12,
+g_atype891_13,
+g_atype891_14,
+g_atype891_15,
+g_atype891_16,
+g_atype891_17,
+g_atype891_18,
+g_atype891_19,
+g_atype891_20,
+g_atype891_21,
+g_atype891_22,
+g_atype891_23,
+g_atype891_24,
+g_atype891_25,
+};
+
+static const int32 cn_attr891 [] =
+{
+6470,
+7160,
+7161,
+7162,
+7163,
+7164,
+7165,
+7166,
+7167,
+7168,
+7169,
+7209,
+7216,
+7226,
+7243,
+7250,
+7252,
+6476,
+6481,
+7039,
+7222,
+7247,
 7248,
 7249,
-7250,
-7251,
+7018,
+7019,
 };
 
 extern const char *names892[];
 static const uint32 types892 [] =
 {
-SK_UINT32,
-SK_REAL32,
-SK_REAL32,
+SK_UINT8,
+SK_UINT8,
+SK_UINT8,
+SK_UINT8,
 };
 
 static const uint16 attr_flags892 [] =
-{0,0,0,};
+{0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype892_0 [] = {200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype892_1 [] = {179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype892_2 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype892_0 [] = {197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype892_1 [] = {197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype892_2 [] = {197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype892_3 [] = {197,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes892 [] = {
 g_atype892_0,
 g_atype892_1,
 g_atype892_2,
+g_atype892_3,
 };
 
 static const int32 cn_attr892 [] =
 {
-7277,
-7275,
-7276,
+7269,
+7270,
+7271,
+7272,
 };
 
 extern const char *names893[];
 static const uint32 types893 [] =
 {
-SK_UINT32,
-SK_REAL32,
-SK_REAL32,
-SK_REAL32,
-SK_REAL32,
+SK_UINT8,
+SK_UINT8,
+SK_UINT8,
+SK_UINT8,
 };
 
 static const uint16 attr_flags893 [] =
-{0,0,0,0,0,};
+{0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype893_0 [] = {200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype893_1 [] = {179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype893_2 [] = {179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype893_3 [] = {179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype893_4 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype893_0 [] = {197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype893_1 [] = {197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype893_2 [] = {197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype893_3 [] = {197,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes893 [] = {
 g_atype893_0,
 g_atype893_1,
 g_atype893_2,
 g_atype893_3,
-g_atype893_4,
 };
 
 static const int32 cn_attr893 [] =
 {
-7277,
-7275,
-7276,
-7279,
-7280,
+7269,
+7270,
+7271,
+7272,
 };
 
-extern const char *names894[];
-static const uint32 types894 [] =
+extern const char *names895[];
+static const uint32 types895 [] =
+{
+SK_UINT32,
+SK_REAL32,
+SK_REAL32,
+};
+
+static const uint16 attr_flags895 [] =
+{0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype895_0 [] = {200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype895_1 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype895_2 [] = {179,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes895 [] = {
+g_atype895_0,
+g_atype895_1,
+g_atype895_2,
+};
+
+static const int32 cn_attr895 [] =
+{
+7297,
+7295,
+7296,
+};
+
+extern const char *names896[];
+static const uint32 types896 [] =
 {
 SK_UINT32,
 SK_REAL32,
@@ -21094,265 +21058,100 @@ SK_REAL32,
 SK_INT64,
 };
 
-static const uint16 attr_flags894 [] =
+static const uint16 attr_flags896 [] =
 {0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype894_0 [] = {200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype894_1 [] = {179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype894_2 [] = {179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype894_3 [] = {179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype894_4 [] = {188,0xFFFF};
+static const EIF_TYPE_INDEX g_atype896_0 [] = {200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype896_1 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype896_2 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype896_3 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype896_4 [] = {188,0xFFFF};
 
-static const EIF_TYPE_INDEX *gtypes894 [] = {
-g_atype894_0,
-g_atype894_1,
-g_atype894_2,
-g_atype894_3,
-g_atype894_4,
+static const EIF_TYPE_INDEX *gtypes896 [] = {
+g_atype896_0,
+g_atype896_1,
+g_atype896_2,
+g_atype896_3,
+g_atype896_4,
 };
 
-static const int32 cn_attr894 [] =
+static const int32 cn_attr896 [] =
 {
-7277,
-7275,
-7276,
-7283,
-7282,
-};
-
-extern const char *names898[];
-static const uint32 types898 [] =
-{
-SK_REF,
-SK_BOOL,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-};
-
-static const uint16 attr_flags898 [] =
-{0,0,0,0,0,0,0,0,0,};
-
-static const EIF_TYPE_INDEX g_atype898_0 [] = {0xFF01,921,0xFFFF};
-static const EIF_TYPE_INDEX g_atype898_1 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype898_2 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype898_3 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype898_4 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype898_5 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype898_6 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype898_7 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype898_8 [] = {206,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes898 [] = {
-g_atype898_0,
-g_atype898_1,
-g_atype898_2,
-g_atype898_3,
-g_atype898_4,
-g_atype898_5,
-g_atype898_6,
-g_atype898_7,
-g_atype898_8,
-};
-
-static const int32 cn_attr898 [] =
-{
-7306,
-7305,
-7295,
 7297,
-7298,
-7299,
+7295,
+7296,
 7300,
+7299,
+};
+
+extern const char *names897[];
+static const uint32 types897 [] =
+{
+SK_UINT32,
+SK_REAL32,
+SK_REAL32,
+SK_REAL32,
+SK_REAL32,
+};
+
+static const uint16 attr_flags897 [] =
+{0,0,0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype897_0 [] = {200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype897_1 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype897_2 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype897_3 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype897_4 [] = {179,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes897 [] = {
+g_atype897_0,
+g_atype897_1,
+g_atype897_2,
+g_atype897_3,
+g_atype897_4,
+};
+
+static const int32 cn_attr897 [] =
+{
+7297,
+7295,
+7296,
+7302,
 7303,
-7304,
 };
 
 extern const char *names899[];
 static const uint32 types899 [] =
 {
-SK_REF,
 SK_BOOL,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
+SK_BOOL,
 };
 
 static const uint16 attr_flags899 [] =
-{0,0,0,0,0,0,0,0,0,0,};
+{0,0,};
 
-static const EIF_TYPE_INDEX g_atype899_0 [] = {0xFF01,921,0xFFFF};
+static const EIF_TYPE_INDEX g_atype899_0 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype899_1 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype899_2 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype899_3 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype899_4 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype899_5 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype899_6 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype899_7 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype899_8 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype899_9 [] = {206,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes899 [] = {
 g_atype899_0,
 g_atype899_1,
-g_atype899_2,
-g_atype899_3,
-g_atype899_4,
-g_atype899_5,
-g_atype899_6,
-g_atype899_7,
-g_atype899_8,
-g_atype899_9,
 };
 
 static const int32 cn_attr899 [] =
 {
-7306,
-7305,
-7295,
-7297,
-7298,
-7299,
-7300,
-7303,
-7304,
-7312,
-};
-
-extern const char *names900[];
-static const uint32 types900 [] =
-{
-SK_REF,
-SK_BOOL,
-SK_BOOL,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-};
-
-static const uint16 attr_flags900 [] =
-{0,0,0,0,0,0,0,0,0,0,0,};
-
-static const EIF_TYPE_INDEX g_atype900_0 [] = {0xFF01,921,0xFFFF};
-static const EIF_TYPE_INDEX g_atype900_1 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype900_2 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype900_3 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype900_4 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype900_5 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype900_6 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype900_7 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype900_8 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype900_9 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype900_10 [] = {206,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes900 [] = {
-g_atype900_0,
-g_atype900_1,
-g_atype900_2,
-g_atype900_3,
-g_atype900_4,
-g_atype900_5,
-g_atype900_6,
-g_atype900_7,
-g_atype900_8,
-g_atype900_9,
-g_atype900_10,
-};
-
-static const int32 cn_attr900 [] =
-{
-7306,
-7305,
-7314,
-7295,
-7297,
-7298,
-7299,
-7300,
-7303,
-7304,
-7323,
-};
-
-extern const char *names901[];
-static const uint32 types901 [] =
-{
-SK_REF,
-SK_REF,
-SK_REF,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-};
-
-static const uint16 attr_flags901 [] =
-{0,0,0,0,0,0,0,0,0,0,};
-
-static const EIF_TYPE_INDEX g_atype901_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype901_1 [] = {0xFF01,925,0xFFFF};
-static const EIF_TYPE_INDEX g_atype901_2 [] = {0xFF01,151,0xFFFF};
-static const EIF_TYPE_INDEX g_atype901_3 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype901_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype901_5 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype901_6 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype901_7 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype901_8 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype901_9 [] = {206,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes901 [] = {
-g_atype901_0,
-g_atype901_1,
-g_atype901_2,
-g_atype901_3,
-g_atype901_4,
-g_atype901_5,
-g_atype901_6,
-g_atype901_7,
-g_atype901_8,
-g_atype901_9,
-};
-
-static const int32 cn_attr901 [] =
-{
-6452,
-7329,
-7332,
-6458,
-6463,
-7330,
-7326,
-7327,
-7328,
-7333,
+7307,
+7308,
 };
 
 extern const char *names902[];
 static const uint32 types902 [] =
 {
 SK_REF,
-SK_REF,
-SK_REF,
 SK_BOOL,
-SK_BOOL,
-SK_BOOL,
+SK_INT32,
+SK_INT32,
+SK_INT32,
 SK_INT32,
 SK_INT32,
 SK_INT32,
@@ -21360,18 +21159,17 @@ SK_INT32,
 };
 
 static const uint16 attr_flags902 [] =
-{0,0,0,0,0,0,0,0,0,0,};
+{0,0,0,0,0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype902_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype902_1 [] = {0xFF01,925,0xFFFF};
-static const EIF_TYPE_INDEX g_atype902_2 [] = {0xFF01,151,0xFFFF};
-static const EIF_TYPE_INDEX g_atype902_3 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype902_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype902_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype902_0 [] = {0xFF01,929,0xFFFF};
+static const EIF_TYPE_INDEX g_atype902_1 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype902_2 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype902_3 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype902_4 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype902_5 [] = {206,0xFFFF};
 static const EIF_TYPE_INDEX g_atype902_6 [] = {206,0xFFFF};
 static const EIF_TYPE_INDEX g_atype902_7 [] = {206,0xFFFF};
 static const EIF_TYPE_INDEX g_atype902_8 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype902_9 [] = {206,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes902 [] = {
 g_atype902_0,
@@ -21383,32 +21181,30 @@ g_atype902_5,
 g_atype902_6,
 g_atype902_7,
 g_atype902_8,
-g_atype902_9,
 };
 
 static const int32 cn_attr902 [] =
 {
-6452,
-7329,
-7332,
-6458,
-6463,
 7330,
-7326,
+7329,
+7319,
+7321,
+7322,
+7323,
+7324,
 7327,
 7328,
-7333,
 };
 
 extern const char *names903[];
 static const uint32 types903 [] =
 {
 SK_REF,
-SK_REF,
-SK_REF,
 SK_BOOL,
-SK_BOOL,
-SK_BOOL,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+SK_INT32,
 SK_INT32,
 SK_INT32,
 SK_INT32,
@@ -21418,12 +21214,12 @@ SK_INT32,
 static const uint16 attr_flags903 [] =
 {0,0,0,0,0,0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype903_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype903_1 [] = {0xFF01,925,0xFFFF};
-static const EIF_TYPE_INDEX g_atype903_2 [] = {0xFF01,151,0xFFFF};
-static const EIF_TYPE_INDEX g_atype903_3 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype903_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype903_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype903_0 [] = {0xFF01,929,0xFFFF};
+static const EIF_TYPE_INDEX g_atype903_1 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype903_2 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype903_3 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype903_4 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype903_5 [] = {206,0xFFFF};
 static const EIF_TYPE_INDEX g_atype903_6 [] = {206,0xFFFF};
 static const EIF_TYPE_INDEX g_atype903_7 [] = {206,0xFFFF};
 static const EIF_TYPE_INDEX g_atype903_8 [] = {206,0xFFFF};
@@ -21444,27 +21240,28 @@ g_atype903_9,
 
 static const int32 cn_attr903 [] =
 {
-6452,
-7329,
-7332,
-6458,
-6463,
 7330,
-7326,
+7329,
+7319,
+7321,
+7322,
+7323,
+7324,
 7327,
 7328,
-7333,
+7336,
 };
 
 extern const char *names904[];
 static const uint32 types904 [] =
 {
 SK_REF,
-SK_REF,
-SK_REF,
 SK_BOOL,
 SK_BOOL,
-SK_BOOL,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+SK_INT32,
 SK_INT32,
 SK_INT32,
 SK_INT32,
@@ -21472,18 +21269,19 @@ SK_INT32,
 };
 
 static const uint16 attr_flags904 [] =
-{0,0,0,0,0,0,0,0,0,0,};
+{0,0,0,0,0,0,0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype904_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype904_1 [] = {0xFF01,925,0xFFFF};
-static const EIF_TYPE_INDEX g_atype904_2 [] = {0xFF01,151,0xFFFF};
-static const EIF_TYPE_INDEX g_atype904_3 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype904_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype904_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype904_0 [] = {0xFF01,929,0xFFFF};
+static const EIF_TYPE_INDEX g_atype904_1 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype904_2 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype904_3 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype904_4 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype904_5 [] = {206,0xFFFF};
 static const EIF_TYPE_INDEX g_atype904_6 [] = {206,0xFFFF};
 static const EIF_TYPE_INDEX g_atype904_7 [] = {206,0xFFFF};
 static const EIF_TYPE_INDEX g_atype904_8 [] = {206,0xFFFF};
 static const EIF_TYPE_INDEX g_atype904_9 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype904_10 [] = {206,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes904 [] = {
 g_atype904_0,
@@ -21496,40 +21294,22 @@ g_atype904_6,
 g_atype904_7,
 g_atype904_8,
 g_atype904_9,
+g_atype904_10,
 };
 
 static const int32 cn_attr904 [] =
 {
-6452,
-7329,
-7332,
-6458,
-6463,
 7330,
-7326,
+7329,
+7338,
+7319,
+7321,
+7322,
+7323,
+7324,
 7327,
 7328,
-7333,
-};
-
-extern const char *names905[];
-static const uint32 types905 [] =
-{
-SK_REF,
-};
-
-static const uint16 attr_flags905 [] =
-{0,};
-
-static const EIF_TYPE_INDEX g_atype905_0 [] = {886,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes905 [] = {
-g_atype905_0,
-};
-
-static const int32 cn_attr905 [] =
-{
-7345,
+7347,
 };
 
 extern const char *names906[];
@@ -21538,22 +21318,28 @@ static const uint32 types906 [] =
 SK_REF,
 SK_REF,
 SK_REF,
-SK_REF,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+SK_INT32,
 };
 
 static const uint16 attr_flags906 [] =
-{0,0,0,0,0,0,0,};
+{0,0,0,0,0,0,0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype906_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype906_1 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype906_2 [] = {0xFF01,923,0xFFFF};
-static const EIF_TYPE_INDEX g_atype906_3 [] = {903,0xFFFF};
+static const EIF_TYPE_INDEX g_atype906_1 [] = {0xFF01,933,0xFFFF};
+static const EIF_TYPE_INDEX g_atype906_2 [] = {0xFF01,151,0xFFFF};
+static const EIF_TYPE_INDEX g_atype906_3 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype906_4 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype906_5 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype906_6 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype906_6 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype906_7 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype906_8 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype906_9 [] = {206,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes906 [] = {
 g_atype906_0,
@@ -21563,21 +21349,215 @@ g_atype906_3,
 g_atype906_4,
 g_atype906_5,
 g_atype906_6,
+g_atype906_7,
+g_atype906_8,
+g_atype906_9,
 };
 
 static const int32 cn_attr906 [] =
 {
-6452,
-7345,
-7361,
-7382,
-6458,
-6463,
-7383,
+6470,
+7354,
+7357,
+6476,
+6481,
+7355,
+7351,
+7352,
+7353,
+7358,
 };
 
 extern const char *names907[];
 static const uint32 types907 [] =
+{
+SK_REF,
+SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+};
+
+static const uint16 attr_flags907 [] =
+{0,0,0,0,0,0,0,0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype907_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype907_1 [] = {0xFF01,933,0xFFFF};
+static const EIF_TYPE_INDEX g_atype907_2 [] = {0xFF01,151,0xFFFF};
+static const EIF_TYPE_INDEX g_atype907_3 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype907_4 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype907_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype907_6 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype907_7 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype907_8 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype907_9 [] = {206,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes907 [] = {
+g_atype907_0,
+g_atype907_1,
+g_atype907_2,
+g_atype907_3,
+g_atype907_4,
+g_atype907_5,
+g_atype907_6,
+g_atype907_7,
+g_atype907_8,
+g_atype907_9,
+};
+
+static const int32 cn_attr907 [] =
+{
+6470,
+7354,
+7357,
+6476,
+6481,
+7355,
+7351,
+7352,
+7353,
+7358,
+};
+
+extern const char *names908[];
+static const uint32 types908 [] =
+{
+SK_REF,
+SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+};
+
+static const uint16 attr_flags908 [] =
+{0,0,0,0,0,0,0,0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype908_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype908_1 [] = {0xFF01,933,0xFFFF};
+static const EIF_TYPE_INDEX g_atype908_2 [] = {0xFF01,151,0xFFFF};
+static const EIF_TYPE_INDEX g_atype908_3 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype908_4 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype908_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype908_6 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype908_7 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype908_8 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype908_9 [] = {206,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes908 [] = {
+g_atype908_0,
+g_atype908_1,
+g_atype908_2,
+g_atype908_3,
+g_atype908_4,
+g_atype908_5,
+g_atype908_6,
+g_atype908_7,
+g_atype908_8,
+g_atype908_9,
+};
+
+static const int32 cn_attr908 [] =
+{
+6470,
+7354,
+7357,
+6476,
+6481,
+7355,
+7351,
+7352,
+7353,
+7358,
+};
+
+extern const char *names909[];
+static const uint32 types909 [] =
+{
+SK_REF,
+SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+};
+
+static const uint16 attr_flags909 [] =
+{0,0,0,0,0,0,0,0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype909_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype909_1 [] = {0xFF01,933,0xFFFF};
+static const EIF_TYPE_INDEX g_atype909_2 [] = {0xFF01,151,0xFFFF};
+static const EIF_TYPE_INDEX g_atype909_3 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype909_4 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype909_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype909_6 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype909_7 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype909_8 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype909_9 [] = {206,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes909 [] = {
+g_atype909_0,
+g_atype909_1,
+g_atype909_2,
+g_atype909_3,
+g_atype909_4,
+g_atype909_5,
+g_atype909_6,
+g_atype909_7,
+g_atype909_8,
+g_atype909_9,
+};
+
+static const int32 cn_attr909 [] =
+{
+6470,
+7354,
+7357,
+6476,
+6481,
+7355,
+7351,
+7352,
+7353,
+7358,
+};
+
+extern const char *names910[];
+static const uint32 types910 [] =
+{
+SK_REF,
+};
+
+static const uint16 attr_flags910 [] =
+{0,};
+
+static const EIF_TYPE_INDEX g_atype910_0 [] = {890,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes910 [] = {
+g_atype910_0,
+};
+
+static const int32 cn_attr910 [] =
+{
+7370,
+};
+
+extern const char *names911[];
+static const uint32 types911 [] =
 {
 SK_REF,
 SK_REF,
@@ -21602,212 +21582,30 @@ SK_INT32,
 SK_INT64,
 };
 
-static const uint16 attr_flags907 [] =
+static const uint16 attr_flags911 [] =
 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype907_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_1 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,874,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_2 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_3 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,874,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_4 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_5 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,874,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_6 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_7 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,892,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_8 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,188,203,179,179,179,179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_9 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,893,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_10 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,188,188,200,179,179,179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_11 [] = {422,0xFF01,0xFFF9,2,174,200,188,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_12 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,188,188,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_13 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_14 [] = {0xFF01,930,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_15 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_16 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_17 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_18 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_19 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype907_20 [] = {188,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes907 [] = {
-g_atype907_0,
-g_atype907_1,
-g_atype907_2,
-g_atype907_3,
-g_atype907_4,
-g_atype907_5,
-g_atype907_6,
-g_atype907_7,
-g_atype907_8,
-g_atype907_9,
-g_atype907_10,
-g_atype907_11,
-g_atype907_12,
-g_atype907_13,
-g_atype907_14,
-g_atype907_15,
-g_atype907_16,
-g_atype907_17,
-g_atype907_18,
-g_atype907_19,
-g_atype907_20,
-};
-
-static const int32 cn_attr907 [] =
-{
-6452,
-7030,
-7031,
-7033,
-7034,
-7036,
-7037,
-7039,
-7040,
-7042,
-7043,
-7045,
-7046,
-7345,
-7388,
-6458,
-6463,
-7021,
-7000,
-7001,
-7389,
-};
-
-extern const char *names908[];
-static const uint32 types908 [] =
-{
-SK_REF,
-SK_REF,
-SK_BOOL,
-SK_BOOL,
-SK_INT32,
-};
-
-static const uint16 attr_flags908 [] =
-{0,0,0,0,0,};
-
-static const EIF_TYPE_INDEX g_atype908_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype908_1 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype908_2 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype908_3 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype908_4 [] = {206,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes908 [] = {
-g_atype908_0,
-g_atype908_1,
-g_atype908_2,
-g_atype908_3,
-g_atype908_4,
-};
-
-static const int32 cn_attr908 [] =
-{
-6452,
-7345,
-6458,
-6463,
-7391,
-};
-
-extern const char *names909[];
-static const uint32 types909 [] =
-{
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_BOOL,
-SK_INT32,
-};
-
-static const uint16 attr_flags909 [] =
-{0,0,0,0,0,0,0,};
-
-static const EIF_TYPE_INDEX g_atype909_0 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype909_1 [] = {0xFF01,929,0xFFFF};
-static const EIF_TYPE_INDEX g_atype909_2 [] = {0xFF01,899,0xFFFF};
-static const EIF_TYPE_INDEX g_atype909_3 [] = {0xFF01,898,0xFFFF};
-static const EIF_TYPE_INDEX g_atype909_4 [] = {0xFF01,327,0xFF01,897,0xFFFF};
-static const EIF_TYPE_INDEX g_atype909_5 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype909_6 [] = {206,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes909 [] = {
-g_atype909_0,
-g_atype909_1,
-g_atype909_2,
-g_atype909_3,
-g_atype909_4,
-g_atype909_5,
-g_atype909_6,
-};
-
-static const int32 cn_attr909 [] =
-{
-7345,
-7405,
-7406,
-7407,
-7408,
-7404,
-7413,
-};
-
-extern const char *names910[];
-static const uint32 types910 [] =
-{
-SK_REF,
-};
-
-static const uint16 attr_flags910 [] =
-{0,};
-
-static const EIF_TYPE_INDEX g_atype910_0 [] = {886,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes910 [] = {
-g_atype910_0,
-};
-
-static const int32 cn_attr910 [] =
-{
-7345,
-};
-
-extern const char *names911[];
-static const uint32 types911 [] =
-{
-SK_REF,
-SK_REF,
-SK_REF,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_UINT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-};
-
-static const uint16 attr_flags911 [] =
-{0,0,0,0,0,0,0,0,0,0,0,0,};
-
-static const EIF_TYPE_INDEX g_atype911_0 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype911_1 [] = {0xFF01,217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype911_2 [] = {907,0xFFFF};
-static const EIF_TYPE_INDEX g_atype911_3 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype911_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype911_5 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype911_6 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype911_7 [] = {200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype911_8 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype911_9 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype911_10 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype911_11 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_1 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,878,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_2 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_3 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,878,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_4 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_5 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,878,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_6 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_7 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,896,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_8 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,188,203,179,179,179,179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_9 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,895,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_10 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,188,188,200,179,179,179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_11 [] = {422,0xFF01,0xFFF9,2,174,200,188,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_12 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,188,188,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_13 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_14 [] = {0xFF01,942,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_15 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_16 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_17 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_18 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_19 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype911_20 [] = {188,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes911 [] = {
 g_atype911_0,
@@ -21822,22 +21620,40 @@ g_atype911_8,
 g_atype911_9,
 g_atype911_10,
 g_atype911_11,
+g_atype911_12,
+g_atype911_13,
+g_atype911_14,
+g_atype911_15,
+g_atype911_16,
+g_atype911_17,
+g_atype911_18,
+g_atype911_19,
+g_atype911_20,
 };
 
 static const int32 cn_attr911 [] =
 {
-7345,
-7454,
-7492,
-7456,
-7460,
-7468,
-7472,
-7420,
-7480,
-7482,
-7486,
-7488,
+6470,
+7073,
+7074,
+7076,
+7077,
+7079,
+7080,
+7082,
+7083,
+7085,
+7086,
+7088,
+7089,
+7370,
+7375,
+6476,
+6481,
+7039,
+7018,
+7019,
+7376,
 };
 
 extern const char *names912[];
@@ -21845,45 +21661,19 @@ static const uint32 types912 [] =
 {
 SK_REF,
 SK_REF,
-SK_REF,
-SK_REF,
 SK_BOOL,
 SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_UINT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
 SK_INT32,
 };
 
 static const uint16 attr_flags912 [] =
-{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+{0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype912_0 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype912_1 [] = {0xFF01,217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype912_2 [] = {907,0xFFFF};
-static const EIF_TYPE_INDEX g_atype912_3 [] = {916,0xFFFF};
-static const EIF_TYPE_INDEX g_atype912_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype912_5 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype912_6 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype912_7 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype912_8 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype912_9 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype912_10 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype912_11 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype912_12 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype912_13 [] = {200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype912_14 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype912_15 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype912_16 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype912_17 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype912_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype912_1 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype912_2 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype912_3 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype912_4 [] = {206,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes912 [] = {
 g_atype912_0,
@@ -21891,41 +21681,15 @@ g_atype912_1,
 g_atype912_2,
 g_atype912_3,
 g_atype912_4,
-g_atype912_5,
-g_atype912_6,
-g_atype912_7,
-g_atype912_8,
-g_atype912_9,
-g_atype912_10,
-g_atype912_11,
-g_atype912_12,
-g_atype912_13,
-g_atype912_14,
-g_atype912_15,
-g_atype912_16,
-g_atype912_17,
 };
 
 static const int32 cn_attr912 [] =
 {
-7345,
-7454,
-7492,
-7516,
-7456,
-7460,
-7468,
-7472,
-7496,
-7500,
-7504,
-7508,
-7512,
-7420,
-7480,
-7482,
-7486,
-7488,
+6470,
+7370,
+6476,
+6481,
+7378,
 };
 
 extern const char *names913[];
@@ -21935,11 +21699,225 @@ SK_REF,
 SK_REF,
 SK_REF,
 SK_REF,
+SK_REF,
+SK_BOOL,
+SK_INT32,
+};
+
+static const uint16 attr_flags913 [] =
+{0,0,0,0,0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype913_0 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype913_1 [] = {0xFF01,939,0xFFFF};
+static const EIF_TYPE_INDEX g_atype913_2 [] = {0xFF01,903,0xFFFF};
+static const EIF_TYPE_INDEX g_atype913_3 [] = {0xFF01,902,0xFFFF};
+static const EIF_TYPE_INDEX g_atype913_4 [] = {0xFF01,327,0xFF01,901,0xFFFF};
+static const EIF_TYPE_INDEX g_atype913_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype913_6 [] = {206,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes913 [] = {
+g_atype913_0,
+g_atype913_1,
+g_atype913_2,
+g_atype913_3,
+g_atype913_4,
+g_atype913_5,
+g_atype913_6,
+};
+
+static const int32 cn_attr913 [] =
+{
+7370,
+7392,
+7393,
+7394,
+7395,
+7391,
+7400,
+};
+
+extern const char *names914[];
+static const uint32 types914 [] =
+{
+SK_REF,
+};
+
+static const uint16 attr_flags914 [] =
+{0,};
+
+static const EIF_TYPE_INDEX g_atype914_0 [] = {890,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes914 [] = {
+g_atype914_0,
+};
+
+static const int32 cn_attr914 [] =
+{
+7370,
+};
+
+extern const char *names915[];
+static const uint32 types915 [] =
+{
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
+};
+
+static const uint16 attr_flags915 [] =
+{0,0,0,0,0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype915_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype915_1 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype915_2 [] = {0xFF01,931,0xFFFF};
+static const EIF_TYPE_INDEX g_atype915_3 [] = {908,0xFFFF};
+static const EIF_TYPE_INDEX g_atype915_4 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype915_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype915_6 [] = {191,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes915 [] = {
+g_atype915_0,
+g_atype915_1,
+g_atype915_2,
+g_atype915_3,
+g_atype915_4,
+g_atype915_5,
+g_atype915_6,
+};
+
+static const int32 cn_attr915 [] =
+{
+6470,
+7370,
+7422,
+7444,
+6476,
+6481,
+7445,
+};
+
+extern const char *names916[];
+static const uint32 types916 [] =
+{
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
 SK_BOOL,
 SK_BOOL,
+SK_BOOL,
+};
+
+static const uint16 attr_flags916 [] =
+{0,0,0,0,0,0,0,0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype916_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype916_1 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype916_2 [] = {0xFF01,931,0xFFFF};
+static const EIF_TYPE_INDEX g_atype916_3 [] = {908,0xFFFF};
+static const EIF_TYPE_INDEX g_atype916_4 [] = {0xFF01,217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype916_5 [] = {0xFF01,935,0xFFFF};
+static const EIF_TYPE_INDEX g_atype916_6 [] = {0xFF01,891,0xFFFF};
+static const EIF_TYPE_INDEX g_atype916_7 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype916_8 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype916_9 [] = {191,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes916 [] = {
+g_atype916_0,
+g_atype916_1,
+g_atype916_2,
+g_atype916_3,
+g_atype916_4,
+g_atype916_5,
+g_atype916_6,
+g_atype916_7,
+g_atype916_8,
+g_atype916_9,
+};
+
+static const int32 cn_attr916 [] =
+{
+6470,
+7370,
+7422,
+7444,
+7447,
+7448,
+7449,
+6476,
+6481,
+7445,
+};
+
+extern const char *names917[];
+static const uint32 types917 [] =
+{
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+};
+
+static const uint16 attr_flags917 [] =
+{0,0,0,0,0,0,0,0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype917_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype917_1 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype917_2 [] = {0xFF01,931,0xFFFF};
+static const EIF_TYPE_INDEX g_atype917_3 [] = {908,0xFFFF};
+static const EIF_TYPE_INDEX g_atype917_4 [] = {0xFF01,217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype917_5 [] = {0xFF01,935,0xFFFF};
+static const EIF_TYPE_INDEX g_atype917_6 [] = {0xFF01,891,0xFFFF};
+static const EIF_TYPE_INDEX g_atype917_7 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype917_8 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype917_9 [] = {191,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes917 [] = {
+g_atype917_0,
+g_atype917_1,
+g_atype917_2,
+g_atype917_3,
+g_atype917_4,
+g_atype917_5,
+g_atype917_6,
+g_atype917_7,
+g_atype917_8,
+g_atype917_9,
+};
+
+static const int32 cn_attr917 [] =
+{
+6470,
+7370,
+7422,
+7444,
+7447,
+7448,
+7449,
+6476,
+6481,
+7445,
+};
+
+extern const char *names918[];
+static const uint32 types918 [] =
+{
+SK_REF,
+SK_REF,
+SK_REF,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
@@ -21951,265 +21929,21 @@ SK_INT32,
 SK_INT32,
 };
 
-static const uint16 attr_flags913 [] =
-{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
-
-static const EIF_TYPE_INDEX g_atype913_0 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype913_1 [] = {0xFF01,217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype913_2 [] = {907,0xFFFF};
-static const EIF_TYPE_INDEX g_atype913_3 [] = {916,0xFFFF};
-static const EIF_TYPE_INDEX g_atype913_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype913_5 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype913_6 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype913_7 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype913_8 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype913_9 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype913_10 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype913_11 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype913_12 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype913_13 [] = {200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype913_14 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype913_15 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype913_16 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype913_17 [] = {206,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes913 [] = {
-g_atype913_0,
-g_atype913_1,
-g_atype913_2,
-g_atype913_3,
-g_atype913_4,
-g_atype913_5,
-g_atype913_6,
-g_atype913_7,
-g_atype913_8,
-g_atype913_9,
-g_atype913_10,
-g_atype913_11,
-g_atype913_12,
-g_atype913_13,
-g_atype913_14,
-g_atype913_15,
-g_atype913_16,
-g_atype913_17,
-};
-
-static const int32 cn_attr913 [] =
-{
-7345,
-7454,
-7492,
-7516,
-7456,
-7460,
-7468,
-7472,
-7496,
-7500,
-7504,
-7508,
-7512,
-7420,
-7480,
-7482,
-7486,
-7488,
-};
-
-extern const char *names914[];
-static const uint32 types914 [] =
-{
-SK_REF,
-SK_BOOL,
-SK_POINTER,
-};
-
-static const uint16 attr_flags914 [] =
-{0,0,0,};
-
-static const EIF_TYPE_INDEX g_atype914_0 [] = {151,0xFFFF};
-static const EIF_TYPE_INDEX g_atype914_1 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype914_2 [] = {215,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes914 [] = {
-g_atype914_0,
-g_atype914_1,
-g_atype914_2,
-};
-
-static const int32 cn_attr914 [] =
-{
-1064,
-1059,
-1063,
-};
-
-extern const char *names915[];
-static const uint32 types915 [] =
-{
-SK_REF,
-SK_REF,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_UINT8,
-SK_UINT8,
-SK_UINT8,
-SK_UINT8,
-SK_POINTER,
-};
-
-static const uint16 attr_flags915 [] =
-{0,0,0,0,0,0,0,0,0,0,};
-
-static const EIF_TYPE_INDEX g_atype915_0 [] = {151,0xFFFF};
-static const EIF_TYPE_INDEX g_atype915_1 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype915_2 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype915_3 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype915_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype915_5 [] = {197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype915_6 [] = {197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype915_7 [] = {197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype915_8 [] = {197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype915_9 [] = {215,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes915 [] = {
-g_atype915_0,
-g_atype915_1,
-g_atype915_2,
-g_atype915_3,
-g_atype915_4,
-g_atype915_5,
-g_atype915_6,
-g_atype915_7,
-g_atype915_8,
-g_atype915_9,
-};
-
-static const int32 cn_attr915 [] =
-{
-1064,
-6452,
-1059,
-6458,
-6463,
-7248,
-7249,
-7250,
-7251,
-1063,
-};
-
-extern const char *names916[];
-static const uint32 types916 [] =
-{
-SK_REF,
-SK_REF,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_POINTER,
-};
-
-static const uint16 attr_flags916 [] =
-{0,0,0,0,0,0,};
-
-static const EIF_TYPE_INDEX g_atype916_0 [] = {151,0xFFFF};
-static const EIF_TYPE_INDEX g_atype916_1 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype916_2 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype916_3 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype916_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype916_5 [] = {215,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes916 [] = {
-g_atype916_0,
-g_atype916_1,
-g_atype916_2,
-g_atype916_3,
-g_atype916_4,
-g_atype916_5,
-};
-
-static const int32 cn_attr916 [] =
-{
-1064,
-6452,
-1059,
-6458,
-6463,
-1063,
-};
-
-extern const char *names917[];
-static const uint32 types917 [] =
-{
-SK_REF,
-SK_REF,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_INT32,
-SK_POINTER,
-};
-
-static const uint16 attr_flags917 [] =
-{0,0,0,0,0,0,0,};
-
-static const EIF_TYPE_INDEX g_atype917_0 [] = {151,0xFFFF};
-static const EIF_TYPE_INDEX g_atype917_1 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype917_2 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype917_3 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype917_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype917_5 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype917_6 [] = {215,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes917 [] = {
-g_atype917_0,
-g_atype917_1,
-g_atype917_2,
-g_atype917_3,
-g_atype917_4,
-g_atype917_5,
-g_atype917_6,
-};
-
-static const int32 cn_attr917 [] =
-{
-1064,
-6452,
-1059,
-6458,
-6463,
-7546,
-1063,
-};
-
-extern const char *names918[];
-static const uint32 types918 [] =
-{
-SK_REF,
-SK_REF,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_INT32,
-SK_POINTER,
-};
-
 static const uint16 attr_flags918 [] =
-{0,0,0,0,0,0,0,0,0,};
+{0,0,0,0,0,0,0,0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype918_0 [] = {151,0xFFFF};
-static const EIF_TYPE_INDEX g_atype918_1 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype918_2 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype918_0 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype918_1 [] = {0xFF01,217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype918_2 [] = {911,0xFFFF};
 static const EIF_TYPE_INDEX g_atype918_3 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype918_4 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype918_5 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype918_6 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype918_7 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype918_8 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype918_7 [] = {200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype918_8 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype918_9 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype918_10 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype918_11 [] = {206,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes918 [] = {
 g_atype918_0,
@@ -22221,39 +21955,113 @@ g_atype918_5,
 g_atype918_6,
 g_atype918_7,
 g_atype918_8,
+g_atype918_9,
+g_atype918_10,
+g_atype918_11,
 };
 
 static const int32 cn_attr918 [] =
 {
-1064,
-6452,
-1059,
-1701,
-6458,
-6463,
-7556,
-7557,
-1063,
+7370,
+7486,
+7524,
+7488,
+7492,
+7500,
+7504,
+7452,
+7512,
+7514,
+7518,
+7520,
 };
 
 extern const char *names919[];
 static const uint32 types919 [] =
 {
-SK_POINTER,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_UINT32,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+SK_INT32,
 };
 
 static const uint16 attr_flags919 [] =
-{0,};
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype919_0 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_0 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_1 [] = {0xFF01,217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_2 [] = {911,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_3 [] = {923,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_4 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_6 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_7 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_8 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_9 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_10 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_11 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_12 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_13 [] = {200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_14 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_15 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_16 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype919_17 [] = {206,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes919 [] = {
 g_atype919_0,
+g_atype919_1,
+g_atype919_2,
+g_atype919_3,
+g_atype919_4,
+g_atype919_5,
+g_atype919_6,
+g_atype919_7,
+g_atype919_8,
+g_atype919_9,
+g_atype919_10,
+g_atype919_11,
+g_atype919_12,
+g_atype919_13,
+g_atype919_14,
+g_atype919_15,
+g_atype919_16,
+g_atype919_17,
 };
 
 static const int32 cn_attr919 [] =
 {
-7565,
+7370,
+7486,
+7524,
+7548,
+7488,
+7492,
+7500,
+7504,
+7528,
+7532,
+7536,
+7540,
+7544,
+7452,
+7512,
+7514,
+7518,
+7520,
 };
 
 extern const char *names920[];
@@ -22261,21 +22069,45 @@ static const uint32 types920 [] =
 {
 SK_REF,
 SK_REF,
+SK_REF,
+SK_REF,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
-SK_POINTER,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_UINT32,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+SK_INT32,
 };
 
 static const uint16 attr_flags920 [] =
-{0,0,0,0,0,0,};
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype920_0 [] = {151,0xFFFF};
-static const EIF_TYPE_INDEX g_atype920_1 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype920_2 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype920_3 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype920_0 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype920_1 [] = {0xFF01,217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype920_2 [] = {911,0xFFFF};
+static const EIF_TYPE_INDEX g_atype920_3 [] = {923,0xFFFF};
 static const EIF_TYPE_INDEX g_atype920_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype920_5 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype920_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype920_6 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype920_7 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype920_8 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype920_9 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype920_10 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype920_11 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype920_12 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype920_13 [] = {200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype920_14 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype920_15 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype920_16 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype920_17 [] = {206,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes920 [] = {
 g_atype920_0,
@@ -22284,116 +22116,68 @@ g_atype920_2,
 g_atype920_3,
 g_atype920_4,
 g_atype920_5,
+g_atype920_6,
+g_atype920_7,
+g_atype920_8,
+g_atype920_9,
+g_atype920_10,
+g_atype920_11,
+g_atype920_12,
+g_atype920_13,
+g_atype920_14,
+g_atype920_15,
+g_atype920_16,
+g_atype920_17,
 };
 
 static const int32 cn_attr920 [] =
 {
-1064,
-6452,
-1059,
-6458,
-6463,
-1063,
+7370,
+7486,
+7524,
+7548,
+7488,
+7492,
+7500,
+7504,
+7528,
+7532,
+7536,
+7540,
+7544,
+7452,
+7512,
+7514,
+7518,
+7520,
 };
 
 extern const char *names921[];
 static const uint32 types921 [] =
 {
 SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
 SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_INT32,
 SK_POINTER,
 };
 
 static const uint16 attr_flags921 [] =
-{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+{0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype921_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_1 [] = {422,0xFF01,0xFFF9,3,174,200,197,209,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_2 [] = {0xFF01,250,0xFF01,0xFFF9,4,174,200,206,197,209,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_3 [] = {422,0xFF01,0xFFF9,4,174,200,197,209,209,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_4 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,206,197,209,209,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_5 [] = {422,0xFF01,0xFFF9,3,174,200,197,0xFF01,860,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_6 [] = {0xFF01,250,0xFF01,0xFFF9,4,174,200,206,197,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_7 [] = {422,0xFF01,0xFFF9,2,174,200,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_8 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,206,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_9 [] = {422,0xFF01,0xFFF9,2,174,200,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_10 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,206,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_11 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_12 [] = {0xFF01,250,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_13 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_14 [] = {933,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_15 [] = {0xFF01,930,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_16 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_17 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_18 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_19 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype921_20 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype921_0 [] = {151,0xFFFF};
+static const EIF_TYPE_INDEX g_atype921_1 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype921_2 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes921 [] = {
 g_atype921_0,
 g_atype921_1,
 g_atype921_2,
-g_atype921_3,
-g_atype921_4,
-g_atype921_5,
-g_atype921_6,
-g_atype921_7,
-g_atype921_8,
-g_atype921_9,
-g_atype921_10,
-g_atype921_11,
-g_atype921_12,
-g_atype921_13,
-g_atype921_14,
-g_atype921_15,
-g_atype921_16,
-g_atype921_17,
-g_atype921_18,
-g_atype921_19,
-g_atype921_20,
 };
 
 static const int32 cn_attr921 [] =
 {
-6452,
-7055,
-7056,
-7058,
-7059,
-7061,
-7062,
-7064,
-7065,
-7067,
-7068,
-7070,
-7071,
-7345,
-7599,
-7600,
-6458,
-6463,
-7021,
-7601,
-7598,
+1064,
+1059,
+1063,
 };
 
 extern const char *names922[];
@@ -22404,22 +22188,26 @@ SK_REF,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
-SK_BOOL,
-SK_BOOL,
+SK_UINT8,
+SK_UINT8,
+SK_UINT8,
+SK_UINT8,
 SK_POINTER,
 };
 
 static const uint16 attr_flags922 [] =
-{0,0,0,0,0,0,0,0,};
+{0,0,0,0,0,0,0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype922_0 [] = {151,0xFFFF};
 static const EIF_TYPE_INDEX g_atype922_1 [] = {217,0xFFFF};
 static const EIF_TYPE_INDEX g_atype922_2 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype922_3 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype922_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype922_5 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype922_6 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype922_7 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype922_5 [] = {197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype922_6 [] = {197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype922_7 [] = {197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype922_8 [] = {197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype922_9 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes922 [] = {
 g_atype922_0,
@@ -22430,17 +22218,21 @@ g_atype922_4,
 g_atype922_5,
 g_atype922_6,
 g_atype922_7,
+g_atype922_8,
+g_atype922_9,
 };
 
 static const int32 cn_attr922 [] =
 {
 1064,
-6452,
+6470,
 1059,
-6458,
-6463,
-7607,
-7612,
+6476,
+6481,
+7269,
+7270,
+7271,
+7272,
 1063,
 };
 
@@ -22449,9 +22241,6 @@ static const uint32 types923 [] =
 {
 SK_REF,
 SK_REF,
-SK_REF,
-SK_REF,
-SK_BOOL,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
@@ -22459,17 +22248,14 @@ SK_POINTER,
 };
 
 static const uint16 attr_flags923 [] =
-{0,0,0,0,0,0,0,0,0,};
+{0,0,0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype923_0 [] = {151,0xFFFF};
 static const EIF_TYPE_INDEX g_atype923_1 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype923_2 [] = {0xFF01,896,0xFFFF};
-static const EIF_TYPE_INDEX g_atype923_3 [] = {0xFF01,929,0xFFFF};
+static const EIF_TYPE_INDEX g_atype923_2 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype923_3 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype923_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype923_5 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype923_6 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype923_7 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype923_8 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype923_5 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes923 [] = {
 g_atype923_0,
@@ -22478,21 +22264,15 @@ g_atype923_2,
 g_atype923_3,
 g_atype923_4,
 g_atype923_5,
-g_atype923_6,
-g_atype923_7,
-g_atype923_8,
 };
 
 static const int32 cn_attr923 [] =
 {
 1064,
-6452,
-7626,
-7627,
+6470,
 1059,
-6458,
-6463,
-7656,
+6476,
+6481,
 1063,
 };
 
@@ -22504,22 +22284,20 @@ SK_REF,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
-SK_BOOL,
-SK_BOOL,
+SK_INT32,
 SK_POINTER,
 };
 
 static const uint16 attr_flags924 [] =
-{0,0,0,0,0,0,0,0,};
+{0,0,0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype924_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype924_1 [] = {886,0xFFFF};
+static const EIF_TYPE_INDEX g_atype924_0 [] = {151,0xFFFF};
+static const EIF_TYPE_INDEX g_atype924_1 [] = {217,0xFFFF};
 static const EIF_TYPE_INDEX g_atype924_2 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype924_3 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype924_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype924_5 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype924_6 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype924_7 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype924_5 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype924_6 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes924 [] = {
 g_atype924_0,
@@ -22529,93 +22307,69 @@ g_atype924_3,
 g_atype924_4,
 g_atype924_5,
 g_atype924_6,
-g_atype924_7,
 };
 
 static const int32 cn_attr924 [] =
 {
-6452,
-7345,
-6444,
-6445,
-6458,
-6463,
-7663,
-7662,
+1064,
+6470,
+1059,
+6476,
+6481,
+7578,
+1063,
 };
 
 extern const char *names925[];
 static const uint32 types925 [] =
 {
-SK_REF,
-SK_REF,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
 SK_POINTER,
 SK_POINTER,
 };
 
 static const uint16 attr_flags925 [] =
-{0,0,0,0,0,0,0,0,0,};
+{0,0,};
 
-static const EIF_TYPE_INDEX g_atype925_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype925_1 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype925_2 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype925_3 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype925_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype925_5 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype925_6 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype925_7 [] = {215,0xFFFF};
-static const EIF_TYPE_INDEX g_atype925_8 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype925_0 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype925_1 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes925 [] = {
 g_atype925_0,
 g_atype925_1,
-g_atype925_2,
-g_atype925_3,
-g_atype925_4,
-g_atype925_5,
-g_atype925_6,
-g_atype925_7,
-g_atype925_8,
 };
 
 static const int32 cn_attr925 [] =
 {
-6452,
-7345,
-6444,
-6445,
-6458,
-6463,
-7663,
-7662,
-7678,
+7585,
+7593,
 };
 
 extern const char *names926[];
 static const uint32 types926 [] =
 {
 SK_REF,
+SK_REF,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
-SK_UINT32,
+SK_BOOL,
+SK_BOOL,
+SK_INT32,
 SK_POINTER,
 };
 
 static const uint16 attr_flags926 [] =
-{0,0,0,0,0,0,};
+{0,0,0,0,0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype926_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype926_1 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype926_0 [] = {151,0xFFFF};
+static const EIF_TYPE_INDEX g_atype926_1 [] = {217,0xFFFF};
 static const EIF_TYPE_INDEX g_atype926_2 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype926_3 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype926_4 [] = {200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype926_5 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype926_4 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype926_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype926_6 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype926_7 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype926_8 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes926 [] = {
 g_atype926_0,
@@ -22624,56 +22378,42 @@ g_atype926_2,
 g_atype926_3,
 g_atype926_4,
 g_atype926_5,
+g_atype926_6,
+g_atype926_7,
+g_atype926_8,
 };
 
 static const int32 cn_attr926 [] =
 {
-6452,
-6458,
-6463,
-7774,
-7768,
-7773,
+1064,
+6470,
+1059,
+1701,
+6476,
+6481,
+7603,
+7604,
+1063,
 };
 
 extern const char *names927[];
 static const uint32 types927 [] =
 {
-SK_REF,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_UINT32,
 SK_POINTER,
 };
 
 static const uint16 attr_flags927 [] =
-{0,0,0,0,0,0,};
+{0,};
 
-static const EIF_TYPE_INDEX g_atype927_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype927_1 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype927_2 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype927_3 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype927_4 [] = {200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype927_5 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype927_0 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes927 [] = {
 g_atype927_0,
-g_atype927_1,
-g_atype927_2,
-g_atype927_3,
-g_atype927_4,
-g_atype927_5,
 };
 
 static const int32 cn_attr927 [] =
 {
-6452,
-6458,
-6463,
-7774,
-7768,
-7773,
+7612,
 };
 
 extern const char *names928[];
@@ -22695,69 +22435,37 @@ SK_REF,
 SK_REF,
 SK_REF,
 SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
+SK_INT32,
 SK_POINTER,
 };
 
 static const uint16 attr_flags928 [] =
-{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype928_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_1 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_2 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_3 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_4 [] = {422,0xFF01,0xFFF9,3,174,200,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_5 [] = {422,0xFF01,0xFFF9,3,174,200,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_6 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_7 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_8 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_9 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_10 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_1 [] = {422,0xFF01,0xFFF9,3,174,200,197,209,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_2 [] = {0xFF01,250,0xFF01,0xFFF9,4,174,200,206,197,209,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_3 [] = {422,0xFF01,0xFFF9,4,174,200,197,209,209,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_4 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,206,197,209,209,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_5 [] = {422,0xFF01,0xFFF9,3,174,200,197,0xFF01,861,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_6 [] = {0xFF01,250,0xFF01,0xFFF9,4,174,200,206,197,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_7 [] = {422,0xFF01,0xFFF9,2,174,200,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_8 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,206,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_9 [] = {422,0xFF01,0xFFF9,2,174,200,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_10 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,206,197,0xFFFF};
 static const EIF_TYPE_INDEX g_atype928_11 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_12 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_13 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_14 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_15 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,197,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_16 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,876,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_17 [] = {0xFF01,250,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_18 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,876,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_19 [] = {0xFF01,250,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_20 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,226,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_21 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,0xFF01,226,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_22 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,226,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_23 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,200,0xFF01,226,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_24 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,867,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_25 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,200,200,200,206,206,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_26 [] = {422,0xFF01,0xFFF9,3,174,200,0xFF01,868,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_27 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_28 [] = {422,0xFF01,0xFFF9,3,174,200,0xFF01,869,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_29 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_30 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,866,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_31 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,200,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_32 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_33 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_34 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_35 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype928_36 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_12 [] = {0xFF01,250,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_13 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_14 [] = {945,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_15 [] = {0xFF01,942,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_16 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_17 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_18 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_19 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype928_20 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes928 [] = {
 g_atype928_0,
@@ -22781,149 +22489,51 @@ g_atype928_17,
 g_atype928_18,
 g_atype928_19,
 g_atype928_20,
-g_atype928_21,
-g_atype928_22,
-g_atype928_23,
-g_atype928_24,
-g_atype928_25,
-g_atype928_26,
-g_atype928_27,
-g_atype928_28,
-g_atype928_29,
-g_atype928_30,
-g_atype928_31,
-g_atype928_32,
-g_atype928_33,
-g_atype928_34,
-g_atype928_35,
-g_atype928_36,
 };
 
 static const int32 cn_attr928 [] =
 {
-6452,
-7096,
-7097,
-7098,
-7099,
-7100,
-7101,
-7102,
-7103,
-7104,
-7105,
-7106,
-7107,
-7108,
-7109,
-7110,
-7112,
-7113,
-7115,
-7116,
-7118,
-7119,
-7121,
-7122,
-7124,
-7125,
-7127,
-7128,
-7130,
-7131,
-7133,
-7134,
-7345,
-6458,
-6463,
-7021,
-7894,
+6470,
+7047,
+7048,
+7050,
+7051,
+7053,
+7054,
+7056,
+7057,
+7059,
+7060,
+7062,
+7063,
+7370,
+7631,
+7632,
+6476,
+6481,
+7039,
+7633,
+7630,
 };
 
 extern const char *names929[];
 static const uint32 types929 [] =
 {
 SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
-SK_POINTER,
 SK_POINTER,
 };
 
 static const uint16 attr_flags929 [] =
-{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+{0,0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype929_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_1 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_2 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_3 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_4 [] = {422,0xFF01,0xFFF9,3,174,200,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_5 [] = {422,0xFF01,0xFFF9,3,174,200,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_6 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_7 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_8 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_9 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_10 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_11 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_12 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_13 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_14 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_15 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,197,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_16 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,876,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_17 [] = {0xFF01,250,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_18 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,876,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_19 [] = {0xFF01,250,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_20 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,226,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_21 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,0xFF01,226,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_22 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,226,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_23 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,200,0xFF01,226,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_24 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,867,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_25 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,200,200,200,206,206,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_26 [] = {422,0xFF01,0xFFF9,3,174,200,0xFF01,868,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_27 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_28 [] = {422,0xFF01,0xFFF9,3,174,200,0xFF01,869,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_29 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_30 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,866,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_31 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,200,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_32 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_33 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_34 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_35 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_36 [] = {215,0xFFFF};
-static const EIF_TYPE_INDEX g_atype929_37 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype929_1 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype929_2 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype929_3 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype929_4 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes929 [] = {
 g_atype929_0,
@@ -22931,81 +22541,15 @@ g_atype929_1,
 g_atype929_2,
 g_atype929_3,
 g_atype929_4,
-g_atype929_5,
-g_atype929_6,
-g_atype929_7,
-g_atype929_8,
-g_atype929_9,
-g_atype929_10,
-g_atype929_11,
-g_atype929_12,
-g_atype929_13,
-g_atype929_14,
-g_atype929_15,
-g_atype929_16,
-g_atype929_17,
-g_atype929_18,
-g_atype929_19,
-g_atype929_20,
-g_atype929_21,
-g_atype929_22,
-g_atype929_23,
-g_atype929_24,
-g_atype929_25,
-g_atype929_26,
-g_atype929_27,
-g_atype929_28,
-g_atype929_29,
-g_atype929_30,
-g_atype929_31,
-g_atype929_32,
-g_atype929_33,
-g_atype929_34,
-g_atype929_35,
-g_atype929_36,
-g_atype929_37,
 };
 
 static const int32 cn_attr929 [] =
 {
-6452,
-7096,
-7097,
-7098,
-7099,
-7100,
-7101,
-7102,
-7103,
-7104,
-7105,
-7106,
-7107,
-7108,
-7109,
-7110,
-7112,
-7113,
-7115,
-7116,
-7118,
-7119,
-7121,
-7122,
-7124,
-7125,
-7127,
-7128,
-7130,
-7131,
-7133,
-7134,
-7345,
-6458,
-6463,
-7021,
-7894,
-7924,
+6470,
+6476,
+6481,
+7652,
+7651,
 };
 
 extern const char *names930[];
@@ -23014,37 +22558,8 @@ static const uint32 types930 [] =
 SK_REF,
 SK_REF,
 SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
+SK_BOOL,
+SK_BOOL,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
@@ -23052,46 +22567,17 @@ SK_POINTER,
 };
 
 static const uint16 attr_flags930 [] =
-{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+{0,0,0,0,0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype930_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_1 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_2 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_3 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_4 [] = {422,0xFF01,0xFFF9,3,174,200,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_5 [] = {422,0xFF01,0xFFF9,3,174,200,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_6 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_7 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_8 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_9 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_10 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_11 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_12 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_13 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_14 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_15 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,197,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_16 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,876,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_17 [] = {0xFF01,250,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_18 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,876,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_19 [] = {0xFF01,250,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_20 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,226,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_21 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,0xFF01,226,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_22 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,226,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_23 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,200,0xFF01,226,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_24 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,867,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_25 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,200,200,200,206,206,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_26 [] = {422,0xFF01,0xFFF9,3,174,200,0xFF01,868,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_27 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_28 [] = {422,0xFF01,0xFFF9,3,174,200,0xFF01,869,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_29 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_30 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,866,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_31 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,200,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_32 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_33 [] = {922,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_34 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_35 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_36 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype930_37 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype930_0 [] = {151,0xFFFF};
+static const EIF_TYPE_INDEX g_atype930_1 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype930_2 [] = {929,0xFFFF};
+static const EIF_TYPE_INDEX g_atype930_3 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype930_4 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype930_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype930_6 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype930_7 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype930_8 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes930 [] = {
 g_atype930_0,
@@ -23103,77 +22589,19 @@ g_atype930_5,
 g_atype930_6,
 g_atype930_7,
 g_atype930_8,
-g_atype930_9,
-g_atype930_10,
-g_atype930_11,
-g_atype930_12,
-g_atype930_13,
-g_atype930_14,
-g_atype930_15,
-g_atype930_16,
-g_atype930_17,
-g_atype930_18,
-g_atype930_19,
-g_atype930_20,
-g_atype930_21,
-g_atype930_22,
-g_atype930_23,
-g_atype930_24,
-g_atype930_25,
-g_atype930_26,
-g_atype930_27,
-g_atype930_28,
-g_atype930_29,
-g_atype930_30,
-g_atype930_31,
-g_atype930_32,
-g_atype930_33,
-g_atype930_34,
-g_atype930_35,
-g_atype930_36,
-g_atype930_37,
 };
 
 static const int32 cn_attr930 [] =
 {
-6452,
-7096,
-7097,
-7098,
-7099,
-7100,
-7101,
-7102,
-7103,
-7104,
-7105,
-7106,
-7107,
-7108,
-7109,
-7110,
-7112,
-7113,
-7115,
-7116,
-7118,
-7119,
-7121,
-7122,
-7124,
-7125,
-7127,
-7128,
-7130,
-7131,
-7133,
-7134,
-7345,
-7934,
-6458,
-6463,
-7021,
-7894,
+1064,
+6470,
+7673,
+1059,
+6476,
+6481,
+7659,
+7664,
+1063,
 };
 
 extern const char *names931[];
@@ -23183,31 +22611,7 @@ SK_REF,
 SK_REF,
 SK_REF,
 SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
+SK_BOOL,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
@@ -23215,41 +22619,17 @@ SK_POINTER,
 };
 
 static const uint16 attr_flags931 [] =
-{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+{0,0,0,0,0,0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype931_0 [] = {151,0xFFFF};
 static const EIF_TYPE_INDEX g_atype931_1 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_2 [] = {0xFF01,422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_3 [] = {0xFF01,422,0xFF01,0xFFF9,1,174,200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_4 [] = {0xFF01,422,0xFF01,0xFFF9,5,174,200,200,197,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_5 [] = {0xFF01,422,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_6 [] = {0xFF01,422,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_7 [] = {0xFF01,422,0xFF01,0xFFF9,5,174,200,200,0xFF01,226,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_8 [] = {0xFF01,422,0xFF01,0xFFF9,3,174,200,200,0xFF01,226,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_9 [] = {0xFF01,422,0xFF01,0xFFF9,8,174,200,200,200,200,206,206,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_10 [] = {0xFF01,422,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_11 [] = {0xFF01,422,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_12 [] = {0xFF01,422,0xFF01,0xFFF9,5,174,200,200,200,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_13 [] = {0xFF01,422,0xFF01,0xFFF9,4,174,200,206,197,209,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_14 [] = {0xFF01,422,0xFF01,0xFFF9,5,174,200,206,197,209,209,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_15 [] = {0xFF01,422,0xFF01,0xFFF9,4,174,200,206,197,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_16 [] = {0xFF01,422,0xFF01,0xFFF9,3,174,200,206,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_17 [] = {0xFF01,422,0xFF01,0xFFF9,3,174,200,206,197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_18 [] = {0xFF01,422,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_19 [] = {0xFF01,422,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_20 [] = {0xFF01,422,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_21 [] = {0xFF01,422,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_22 [] = {0xFF01,422,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_23 [] = {0xFF01,422,0xFF01,0xFFF9,7,174,200,188,203,179,179,179,179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_24 [] = {0xFF01,422,0xFF01,0xFFF9,7,174,200,188,188,200,179,179,179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_25 [] = {0xFF01,422,0xFF01,0xFFF9,3,174,200,188,188,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_26 [] = {0xFF01,422,0xFF01,0xFFF9,2,174,200,0xFF01,217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_27 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_28 [] = {0xFF01,422,0xFF01,0xFFF9,0,174,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_29 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_30 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_31 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype931_32 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype931_2 [] = {0xFF01,900,0xFFFF};
+static const EIF_TYPE_INDEX g_atype931_3 [] = {0xFF01,939,0xFFFF};
+static const EIF_TYPE_INDEX g_atype931_4 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype931_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype931_6 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype931_7 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype931_8 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes931 [] = {
 g_atype931_0,
@@ -23261,66 +22641,18 @@ g_atype931_5,
 g_atype931_6,
 g_atype931_7,
 g_atype931_8,
-g_atype931_9,
-g_atype931_10,
-g_atype931_11,
-g_atype931_12,
-g_atype931_13,
-g_atype931_14,
-g_atype931_15,
-g_atype931_16,
-g_atype931_17,
-g_atype931_18,
-g_atype931_19,
-g_atype931_20,
-g_atype931_21,
-g_atype931_22,
-g_atype931_23,
-g_atype931_24,
-g_atype931_25,
-g_atype931_26,
-g_atype931_27,
-g_atype931_28,
-g_atype931_29,
-g_atype931_30,
-g_atype931_31,
-g_atype931_32,
 };
 
 static const int32 cn_attr931 [] =
 {
 1064,
-6452,
-7938,
-7939,
-7940,
-7941,
-7942,
-7943,
-7944,
-7945,
-7946,
-7947,
-7948,
-7949,
-7950,
-7951,
-7952,
-7953,
-7954,
-7955,
-7956,
-7957,
-7958,
-7959,
-7960,
-7961,
-7962,
-8063,
-8064,
+6470,
+7679,
+7680,
 1059,
-6458,
-6463,
+6476,
+6481,
+7713,
 1063,
 };
 
@@ -23328,28 +22660,48 @@ extern const char *names932[];
 static const uint32 types932 [] =
 {
 SK_REF,
+SK_REF,
 SK_BOOL,
 SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_POINTER,
 };
 
 static const uint16 attr_flags932 [] =
-{0,0,0,};
+{0,0,0,0,0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype932_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype932_1 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype932_1 [] = {890,0xFFFF};
 static const EIF_TYPE_INDEX g_atype932_2 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype932_3 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype932_4 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype932_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype932_6 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype932_7 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes932 [] = {
 g_atype932_0,
 g_atype932_1,
 g_atype932_2,
+g_atype932_3,
+g_atype932_4,
+g_atype932_5,
+g_atype932_6,
+g_atype932_7,
 };
 
 static const int32 cn_attr932 [] =
 {
-6452,
-6458,
-6463,
+6470,
+7370,
+6476,
+6481,
+7307,
+7308,
+7720,
+7719,
 };
 
 extern const char *names933[];
@@ -23357,12 +22709,12 @@ static const uint32 types933 [] =
 {
 SK_REF,
 SK_REF,
-SK_REF,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
-SK_INT32,
+SK_BOOL,
+SK_POINTER,
 SK_POINTER,
 };
 
@@ -23370,13 +22722,13 @@ static const uint16 attr_flags933 [] =
 {0,0,0,0,0,0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype933_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype933_1 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype933_2 [] = {0xFF01,311,0xFF01,872,0xFFFF};
+static const EIF_TYPE_INDEX g_atype933_1 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype933_2 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype933_3 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype933_4 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype933_5 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype933_6 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype933_7 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype933_7 [] = {215,0xFFFF};
 static const EIF_TYPE_INDEX g_atype933_8 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes933 [] = {
@@ -23393,45 +22745,37 @@ g_atype933_8,
 
 static const int32 cn_attr933 [] =
 {
-6452,
-7345,
-8115,
-6458,
-6463,
-8092,
-8093,
-8117,
-8114,
+6470,
+7370,
+6476,
+6481,
+7307,
+7308,
+7720,
+7719,
+7735,
 };
 
 extern const char *names934[];
 static const uint32 types934 [] =
 {
 SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
-SK_BOOL,
-SK_INT32,
+SK_UINT32,
 SK_POINTER,
 };
 
 static const uint16 attr_flags934 [] =
-{0,0,0,0,0,0,0,0,0,0,};
+{0,0,0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype934_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype934_1 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype934_2 [] = {0xFF01,311,0xFF01,872,0xFFFF};
-static const EIF_TYPE_INDEX g_atype934_3 [] = {0xFF01,920,0xFFFF};
-static const EIF_TYPE_INDEX g_atype934_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype934_5 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype934_6 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype934_7 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype934_8 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype934_9 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype934_1 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype934_2 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype934_3 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype934_4 [] = {200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype934_5 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes934 [] = {
 g_atype934_0,
@@ -23440,54 +22784,38 @@ g_atype934_2,
 g_atype934_3,
 g_atype934_4,
 g_atype934_5,
-g_atype934_6,
-g_atype934_7,
-g_atype934_8,
-g_atype934_9,
 };
 
 static const int32 cn_attr934 [] =
 {
-6452,
-7345,
-8115,
-8119,
-6458,
-6463,
-8092,
-8093,
-8117,
-8114,
+6470,
+6476,
+6481,
+7831,
+7825,
+7830,
 };
 
 extern const char *names935[];
 static const uint32 types935 [] =
 {
 SK_REF,
-SK_REF,
-SK_REF,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
-SK_BOOL,
-SK_INT32,
-SK_INT32,
+SK_UINT32,
 SK_POINTER,
 };
 
 static const uint16 attr_flags935 [] =
-{0,0,0,0,0,0,0,0,0,0,};
+{0,0,0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype935_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype935_1 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype935_2 [] = {0xFF01,311,0xFF01,872,0xFFFF};
+static const EIF_TYPE_INDEX g_atype935_1 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype935_2 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype935_3 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype935_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype935_5 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype935_6 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype935_7 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype935_8 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype935_9 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype935_4 [] = {200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype935_5 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes935 [] = {
 g_atype935_0,
@@ -23496,37 +22824,29 @@ g_atype935_2,
 g_atype935_3,
 g_atype935_4,
 g_atype935_5,
-g_atype935_6,
-g_atype935_7,
-g_atype935_8,
-g_atype935_9,
 };
 
 static const int32 cn_attr935 [] =
 {
-6452,
-7345,
-8115,
-6458,
-6463,
-8092,
-8093,
-8117,
-8121,
-8114,
+6470,
+6476,
+6481,
+7831,
+7825,
+7830,
 };
 
 extern const char *names936[];
 static const uint32 types936 [] =
 {
 SK_REF,
-SK_REF,
-SK_REF,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
 SK_BOOL,
 SK_INT32,
+SK_INT32,
+SK_POINTER,
 SK_POINTER,
 };
 
@@ -23534,13 +22854,13 @@ static const uint16 attr_flags936 [] =
 {0,0,0,0,0,0,0,0,0,};
 
 static const EIF_TYPE_INDEX g_atype936_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype936_1 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype936_2 [] = {0xFF01,311,0xFF01,872,0xFFFF};
+static const EIF_TYPE_INDEX g_atype936_1 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype936_2 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype936_3 [] = {191,0xFFFF};
 static const EIF_TYPE_INDEX g_atype936_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype936_5 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype936_6 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype936_7 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype936_5 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype936_6 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype936_7 [] = {215,0xFFFF};
 static const EIF_TYPE_INDEX g_atype936_8 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes936 [] = {
@@ -23557,95 +22877,967 @@ g_atype936_8,
 
 static const int32 cn_attr936 [] =
 {
-6452,
-7345,
-8115,
-6458,
-6463,
-8092,
-8093,
-8117,
-8114,
+6470,
+6476,
+6481,
+7307,
+7308,
+7870,
+7871,
+7918,
+7919,
 };
 
 extern const char *names937[];
 static const uint32 types937 [] =
 {
 SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+SK_POINTER,
+SK_POINTER,
 };
 
 static const uint16 attr_flags937 [] =
-{0,};
+{0,0,0,0,0,0,0,0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype937_0 [] = {228,0xFFFF};
+static const EIF_TYPE_INDEX g_atype937_0 [] = {0xFF01,941,0xFFFF};
+static const EIF_TYPE_INDEX g_atype937_1 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype937_2 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype937_3 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype937_4 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype937_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype937_6 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype937_7 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype937_8 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype937_9 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype937_10 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype937_11 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes937 [] = {
 g_atype937_0,
+g_atype937_1,
+g_atype937_2,
+g_atype937_3,
+g_atype937_4,
+g_atype937_5,
+g_atype937_6,
+g_atype937_7,
+g_atype937_8,
+g_atype937_9,
+g_atype937_10,
+g_atype937_11,
 };
 
 static const int32 cn_attr937 [] =
 {
-3563,
+6466,
+6470,
+6476,
+6481,
+7307,
+7308,
+6467,
+7870,
+7871,
+7924,
+7918,
+7919,
+};
+
+extern const char *names938[];
+static const uint32 types938 [] =
+{
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_POINTER,
+};
+
+static const uint16 attr_flags938 [] =
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype938_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_1 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_2 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_3 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_4 [] = {422,0xFF01,0xFFF9,3,174,200,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_5 [] = {422,0xFF01,0xFFF9,3,174,200,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_6 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_7 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_8 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_9 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_10 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_11 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_12 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_13 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_14 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_15 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,197,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_16 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,880,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_17 [] = {0xFF01,250,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_18 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,880,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_19 [] = {0xFF01,250,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_20 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,226,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_21 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,0xFF01,226,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_22 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,226,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_23 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,200,0xFF01,226,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_24 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,869,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_25 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,200,200,200,206,206,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_26 [] = {422,0xFF01,0xFFF9,3,174,200,0xFF01,870,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_27 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_28 [] = {422,0xFF01,0xFFF9,3,174,200,0xFF01,871,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_29 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_30 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,868,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_31 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,200,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_32 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_33 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_34 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_35 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype938_36 [] = {215,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes938 [] = {
+g_atype938_0,
+g_atype938_1,
+g_atype938_2,
+g_atype938_3,
+g_atype938_4,
+g_atype938_5,
+g_atype938_6,
+g_atype938_7,
+g_atype938_8,
+g_atype938_9,
+g_atype938_10,
+g_atype938_11,
+g_atype938_12,
+g_atype938_13,
+g_atype938_14,
+g_atype938_15,
+g_atype938_16,
+g_atype938_17,
+g_atype938_18,
+g_atype938_19,
+g_atype938_20,
+g_atype938_21,
+g_atype938_22,
+g_atype938_23,
+g_atype938_24,
+g_atype938_25,
+g_atype938_26,
+g_atype938_27,
+g_atype938_28,
+g_atype938_29,
+g_atype938_30,
+g_atype938_31,
+g_atype938_32,
+g_atype938_33,
+g_atype938_34,
+g_atype938_35,
+g_atype938_36,
+};
+
+static const int32 cn_attr938 [] =
+{
+6470,
+7114,
+7115,
+7116,
+7117,
+7118,
+7119,
+7120,
+7121,
+7122,
+7123,
+7124,
+7125,
+7126,
+7127,
+7128,
+7130,
+7131,
+7133,
+7134,
+7136,
+7137,
+7139,
+7140,
+7142,
+7143,
+7145,
+7146,
+7148,
+7149,
+7151,
+7152,
+7370,
+6476,
+6481,
+7039,
+8008,
+};
+
+extern const char *names939[];
+static const uint32 types939 [] =
+{
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_POINTER,
+SK_POINTER,
+};
+
+static const uint16 attr_flags939 [] =
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype939_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_1 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_2 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_3 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_4 [] = {422,0xFF01,0xFFF9,3,174,200,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_5 [] = {422,0xFF01,0xFFF9,3,174,200,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_6 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_7 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_8 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_9 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_10 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_11 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_12 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_13 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_14 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_15 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,197,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_16 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,880,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_17 [] = {0xFF01,250,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_18 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,880,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_19 [] = {0xFF01,250,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_20 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,226,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_21 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,0xFF01,226,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_22 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,226,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_23 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,200,0xFF01,226,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_24 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,869,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_25 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,200,200,200,206,206,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_26 [] = {422,0xFF01,0xFFF9,3,174,200,0xFF01,870,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_27 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_28 [] = {422,0xFF01,0xFFF9,3,174,200,0xFF01,871,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_29 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_30 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,868,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_31 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,200,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_32 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_33 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_34 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_35 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_36 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype939_37 [] = {215,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes939 [] = {
+g_atype939_0,
+g_atype939_1,
+g_atype939_2,
+g_atype939_3,
+g_atype939_4,
+g_atype939_5,
+g_atype939_6,
+g_atype939_7,
+g_atype939_8,
+g_atype939_9,
+g_atype939_10,
+g_atype939_11,
+g_atype939_12,
+g_atype939_13,
+g_atype939_14,
+g_atype939_15,
+g_atype939_16,
+g_atype939_17,
+g_atype939_18,
+g_atype939_19,
+g_atype939_20,
+g_atype939_21,
+g_atype939_22,
+g_atype939_23,
+g_atype939_24,
+g_atype939_25,
+g_atype939_26,
+g_atype939_27,
+g_atype939_28,
+g_atype939_29,
+g_atype939_30,
+g_atype939_31,
+g_atype939_32,
+g_atype939_33,
+g_atype939_34,
+g_atype939_35,
+g_atype939_36,
+g_atype939_37,
+};
+
+static const int32 cn_attr939 [] =
+{
+6470,
+7114,
+7115,
+7116,
+7117,
+7118,
+7119,
+7120,
+7121,
+7122,
+7123,
+7124,
+7125,
+7126,
+7127,
+7128,
+7130,
+7131,
+7133,
+7134,
+7136,
+7137,
+7139,
+7140,
+7142,
+7143,
+7145,
+7146,
+7148,
+7149,
+7151,
+7152,
+7370,
+6476,
+6481,
+7039,
+8008,
+8038,
+};
+
+extern const char *names940[];
+static const uint32 types940 [] =
+{
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_POINTER,
+};
+
+static const uint16 attr_flags940 [] =
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype940_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_1 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_2 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_3 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_4 [] = {422,0xFF01,0xFFF9,3,174,200,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_5 [] = {422,0xFF01,0xFFF9,3,174,200,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_6 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_7 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_8 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_9 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_10 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_11 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_12 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_13 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_14 [] = {422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_15 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,197,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_16 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,880,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_17 [] = {0xFF01,250,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_18 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,880,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_19 [] = {0xFF01,250,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_20 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,226,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_21 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,0xFF01,226,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_22 [] = {422,0xFF01,0xFFF9,2,174,200,0xFF01,226,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_23 [] = {0xFF01,250,0xFF01,0xFFF9,3,174,200,200,0xFF01,226,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_24 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,869,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_25 [] = {0xFF01,250,0xFF01,0xFFF9,8,174,200,200,200,200,206,206,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_26 [] = {422,0xFF01,0xFFF9,3,174,200,0xFF01,870,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_27 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_28 [] = {422,0xFF01,0xFFF9,3,174,200,0xFF01,871,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_29 [] = {0xFF01,250,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_30 [] = {422,0xFF01,0xFFF9,4,174,200,0xFF01,868,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_31 [] = {0xFF01,250,0xFF01,0xFFF9,5,174,200,200,200,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_32 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_33 [] = {930,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_34 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_35 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_36 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype940_37 [] = {215,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes940 [] = {
+g_atype940_0,
+g_atype940_1,
+g_atype940_2,
+g_atype940_3,
+g_atype940_4,
+g_atype940_5,
+g_atype940_6,
+g_atype940_7,
+g_atype940_8,
+g_atype940_9,
+g_atype940_10,
+g_atype940_11,
+g_atype940_12,
+g_atype940_13,
+g_atype940_14,
+g_atype940_15,
+g_atype940_16,
+g_atype940_17,
+g_atype940_18,
+g_atype940_19,
+g_atype940_20,
+g_atype940_21,
+g_atype940_22,
+g_atype940_23,
+g_atype940_24,
+g_atype940_25,
+g_atype940_26,
+g_atype940_27,
+g_atype940_28,
+g_atype940_29,
+g_atype940_30,
+g_atype940_31,
+g_atype940_32,
+g_atype940_33,
+g_atype940_34,
+g_atype940_35,
+g_atype940_36,
+g_atype940_37,
+};
+
+static const int32 cn_attr940 [] =
+{
+6470,
+7114,
+7115,
+7116,
+7117,
+7118,
+7119,
+7120,
+7121,
+7122,
+7123,
+7124,
+7125,
+7126,
+7127,
+7128,
+7130,
+7131,
+7133,
+7134,
+7136,
+7137,
+7139,
+7140,
+7142,
+7143,
+7145,
+7146,
+7148,
+7149,
+7151,
+7152,
+7370,
+8048,
+6476,
+6481,
+7039,
+8008,
 };
 
 extern const char *names941[];
 static const uint32 types941 [] =
 {
 SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_CHAR8,
+SK_CHAR8,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_UINT8,
+SK_INT8,
+SK_UINT16,
+SK_INT16,
+SK_UINT32,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+SK_REAL32,
+SK_POINTER,
+SK_UINT64,
+SK_INT64,
+SK_REAL64,
 };
 
 static const uint16 attr_flags941 [] =
-{0,};
+{0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype941_0 [] = {0xFF01,939,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_0 [] = {0xFF01,220,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_1 [] = {0xFF01,217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_2 [] = {151,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_3 [] = {0xFF01,924,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_4 [] = {151,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_5 [] = {185,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_6 [] = {185,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_7 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_8 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_9 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_10 [] = {197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_11 [] = {176,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_12 [] = {203,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_13 [] = {209,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_14 [] = {200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_15 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_16 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_17 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_18 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_19 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_20 [] = {212,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_21 [] = {188,0xFFFF};
+static const EIF_TYPE_INDEX g_atype941_22 [] = {194,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes941 [] = {
 g_atype941_0,
+g_atype941_1,
+g_atype941_2,
+g_atype941_3,
+g_atype941_4,
+g_atype941_5,
+g_atype941_6,
+g_atype941_7,
+g_atype941_8,
+g_atype941_9,
+g_atype941_10,
+g_atype941_11,
+g_atype941_12,
+g_atype941_13,
+g_atype941_14,
+g_atype941_15,
+g_atype941_16,
+g_atype941_17,
+g_atype941_18,
+g_atype941_19,
+g_atype941_20,
+g_atype941_21,
+g_atype941_22,
 };
 
 static const int32 cn_attr941 [] =
 {
-7257,
+2828,
+3186,
+3188,
+8068,
+8072,
+2827,
+3106,
+1701,
+3253,
+8065,
+2838,
+2833,
+2837,
+2832,
+2835,
+2829,
+2841,
+3243,
+2839,
+3107,
+2834,
+2831,
+2840,
 };
 
 extern const char *names942[];
 static const uint32 types942 [] =
 {
 SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_CHAR8,
+SK_CHAR8,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_UINT8,
+SK_INT8,
+SK_UINT16,
+SK_INT16,
+SK_UINT32,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+SK_INT32,
+SK_REAL32,
+SK_POINTER,
+SK_UINT64,
+SK_INT64,
+SK_REAL64,
 };
 
 static const uint16 attr_flags942 [] =
-{0,};
+{0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype942_0 [] = {0xFF01,939,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_0 [] = {0xFF01,220,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_1 [] = {0xFF01,217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_2 [] = {151,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_3 [] = {0xFF01,924,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_4 [] = {151,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_5 [] = {0xFF01,311,0xFF01,0xFFF9,2,174,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_6 [] = {0xFF01,301,215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_7 [] = {185,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_8 [] = {185,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_9 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_10 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_11 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_12 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_13 [] = {197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_14 [] = {176,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_15 [] = {203,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_16 [] = {209,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_17 [] = {200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_18 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_19 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_20 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_21 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_22 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_23 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_24 [] = {179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_25 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_26 [] = {212,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_27 [] = {188,0xFFFF};
+static const EIF_TYPE_INDEX g_atype942_28 [] = {194,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes942 [] = {
 g_atype942_0,
+g_atype942_1,
+g_atype942_2,
+g_atype942_3,
+g_atype942_4,
+g_atype942_5,
+g_atype942_6,
+g_atype942_7,
+g_atype942_8,
+g_atype942_9,
+g_atype942_10,
+g_atype942_11,
+g_atype942_12,
+g_atype942_13,
+g_atype942_14,
+g_atype942_15,
+g_atype942_16,
+g_atype942_17,
+g_atype942_18,
+g_atype942_19,
+g_atype942_20,
+g_atype942_21,
+g_atype942_22,
+g_atype942_23,
+g_atype942_24,
+g_atype942_25,
+g_atype942_26,
+g_atype942_27,
+g_atype942_28,
 };
 
 static const int32 cn_attr942 [] =
 {
-7257,
+2828,
+3186,
+3188,
+8068,
+8072,
+8094,
+8098,
+2827,
+3106,
+1701,
+3253,
+8065,
+8081,
+2838,
+2833,
+2837,
+2832,
+2835,
+2829,
+2841,
+3243,
+8090,
+8092,
+8093,
+2839,
+3107,
+2834,
+2831,
+2840,
 };
 
 extern const char *names943[];
 static const uint32 types943 [] =
 {
 SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_POINTER,
 };
 
 static const uint16 attr_flags943 [] =
-{0,};
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype943_0 [] = {0xFF01,939,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_0 [] = {151,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_1 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_2 [] = {0xFF01,422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_3 [] = {0xFF01,422,0xFF01,0xFFF9,1,174,200,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_4 [] = {0xFF01,422,0xFF01,0xFFF9,5,174,200,200,197,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_5 [] = {0xFF01,422,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_6 [] = {0xFF01,422,0xFF01,0xFFF9,6,174,200,200,197,206,206,203,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_7 [] = {0xFF01,422,0xFF01,0xFFF9,5,174,200,200,0xFF01,226,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_8 [] = {0xFF01,422,0xFF01,0xFFF9,3,174,200,200,0xFF01,226,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_9 [] = {0xFF01,422,0xFF01,0xFFF9,8,174,200,200,200,200,206,206,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_10 [] = {0xFF01,422,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_11 [] = {0xFF01,422,0xFF01,0xFFF9,7,174,200,200,200,197,197,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_12 [] = {0xFF01,422,0xFF01,0xFFF9,5,174,200,200,200,206,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_13 [] = {0xFF01,422,0xFF01,0xFFF9,4,174,200,206,197,209,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_14 [] = {0xFF01,422,0xFF01,0xFFF9,5,174,200,206,197,209,209,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_15 [] = {0xFF01,422,0xFF01,0xFFF9,4,174,200,206,197,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_16 [] = {0xFF01,422,0xFF01,0xFFF9,3,174,200,206,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_17 [] = {0xFF01,422,0xFF01,0xFFF9,3,174,200,206,197,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_18 [] = {0xFF01,422,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_19 [] = {0xFF01,422,0xFF01,0xFFF9,2,174,200,206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_20 [] = {0xFF01,422,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_21 [] = {0xFF01,422,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_22 [] = {0xFF01,422,0xFF01,0xFFF9,8,174,200,188,188,179,179,179,179,179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_23 [] = {0xFF01,422,0xFF01,0xFFF9,7,174,200,188,203,179,179,179,179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_24 [] = {0xFF01,422,0xFF01,0xFFF9,7,174,200,188,188,200,179,179,179,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_25 [] = {0xFF01,422,0xFF01,0xFFF9,3,174,200,188,188,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_26 [] = {0xFF01,422,0xFF01,0xFFF9,2,174,200,0xFF01,217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_27 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_28 [] = {0xFF01,422,0xFF01,0xFFF9,0,174,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_29 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_30 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_31 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype943_32 [] = {215,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes943 [] = {
 g_atype943_0,
+g_atype943_1,
+g_atype943_2,
+g_atype943_3,
+g_atype943_4,
+g_atype943_5,
+g_atype943_6,
+g_atype943_7,
+g_atype943_8,
+g_atype943_9,
+g_atype943_10,
+g_atype943_11,
+g_atype943_12,
+g_atype943_13,
+g_atype943_14,
+g_atype943_15,
+g_atype943_16,
+g_atype943_17,
+g_atype943_18,
+g_atype943_19,
+g_atype943_20,
+g_atype943_21,
+g_atype943_22,
+g_atype943_23,
+g_atype943_24,
+g_atype943_25,
+g_atype943_26,
+g_atype943_27,
+g_atype943_28,
+g_atype943_29,
+g_atype943_30,
+g_atype943_31,
+g_atype943_32,
 };
 
 static const int32 cn_attr943 [] =
 {
-7288,
+1064,
+6470,
+8103,
+8104,
+8105,
+8106,
+8107,
+8108,
+8109,
+8110,
+8111,
+8112,
+8113,
+8114,
+8115,
+8116,
+8117,
+8118,
+8119,
+8120,
+8121,
+8122,
+8123,
+8124,
+8125,
+8126,
+8127,
+8228,
+8229,
+1059,
+6476,
+6481,
+1063,
 };
 
 extern const char *names944[];
@@ -23653,37 +23845,257 @@ static const uint32 types944 [] =
 {
 SK_REF,
 SK_BOOL,
+SK_BOOL,
 };
 
 static const uint16 attr_flags944 [] =
-{0,0,};
+{0,0,0,};
 
-static const EIF_TYPE_INDEX g_atype944_0 [] = {0xFF01,327,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX g_atype944_0 [] = {217,0xFFFF};
 static const EIF_TYPE_INDEX g_atype944_1 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype944_2 [] = {191,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes944 [] = {
 g_atype944_0,
 g_atype944_1,
+g_atype944_2,
 };
 
 static const int32 cn_attr944 [] =
 {
-7338,
-1701,
+6470,
+6476,
+6481,
+};
+
+extern const char *names945[];
+static const uint32 types945 [] =
+{
+SK_REF,
+SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_INT32,
+SK_POINTER,
+};
+
+static const uint16 attr_flags945 [] =
+{0,0,0,0,0,0,0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype945_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype945_1 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype945_2 [] = {0xFF01,311,0xFF01,876,0xFFFF};
+static const EIF_TYPE_INDEX g_atype945_3 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype945_4 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype945_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype945_6 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype945_7 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype945_8 [] = {215,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes945 [] = {
+g_atype945_0,
+g_atype945_1,
+g_atype945_2,
+g_atype945_3,
+g_atype945_4,
+g_atype945_5,
+g_atype945_6,
+g_atype945_7,
+g_atype945_8,
+};
+
+static const int32 cn_attr945 [] =
+{
+6470,
+7370,
+8280,
+6476,
+6481,
+8257,
+8258,
+8282,
+8279,
+};
+
+extern const char *names946[];
+static const uint32 types946 [] =
+{
+SK_REF,
+SK_REF,
+SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_INT32,
+SK_POINTER,
+};
+
+static const uint16 attr_flags946 [] =
+{0,0,0,0,0,0,0,0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype946_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype946_1 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype946_2 [] = {0xFF01,311,0xFF01,876,0xFFFF};
+static const EIF_TYPE_INDEX g_atype946_3 [] = {0xFF01,927,0xFFFF};
+static const EIF_TYPE_INDEX g_atype946_4 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype946_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype946_6 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype946_7 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype946_8 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype946_9 [] = {215,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes946 [] = {
+g_atype946_0,
+g_atype946_1,
+g_atype946_2,
+g_atype946_3,
+g_atype946_4,
+g_atype946_5,
+g_atype946_6,
+g_atype946_7,
+g_atype946_8,
+g_atype946_9,
+};
+
+static const int32 cn_attr946 [] =
+{
+6470,
+7370,
+8280,
+8284,
+6476,
+6481,
+8257,
+8258,
+8282,
+8279,
+};
+
+extern const char *names947[];
+static const uint32 types947 [] =
+{
+SK_REF,
+SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_INT32,
+SK_POINTER,
+};
+
+static const uint16 attr_flags947 [] =
+{0,0,0,0,0,0,0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype947_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype947_1 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype947_2 [] = {0xFF01,311,0xFF01,876,0xFFFF};
+static const EIF_TYPE_INDEX g_atype947_3 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype947_4 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype947_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype947_6 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype947_7 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype947_8 [] = {215,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes947 [] = {
+g_atype947_0,
+g_atype947_1,
+g_atype947_2,
+g_atype947_3,
+g_atype947_4,
+g_atype947_5,
+g_atype947_6,
+g_atype947_7,
+g_atype947_8,
+};
+
+static const int32 cn_attr947 [] =
+{
+6470,
+7370,
+8280,
+6476,
+6481,
+8257,
+8258,
+8282,
+8279,
+};
+
+extern const char *names948[];
+static const uint32 types948 [] =
+{
+SK_REF,
+SK_REF,
+SK_REF,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_BOOL,
+SK_INT32,
+SK_INT32,
+SK_POINTER,
+};
+
+static const uint16 attr_flags948 [] =
+{0,0,0,0,0,0,0,0,0,0,};
+
+static const EIF_TYPE_INDEX g_atype948_0 [] = {217,0xFFFF};
+static const EIF_TYPE_INDEX g_atype948_1 [] = {890,0xFFFF};
+static const EIF_TYPE_INDEX g_atype948_2 [] = {0xFF01,311,0xFF01,876,0xFFFF};
+static const EIF_TYPE_INDEX g_atype948_3 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype948_4 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype948_5 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype948_6 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype948_7 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype948_8 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype948_9 [] = {215,0xFFFF};
+
+static const EIF_TYPE_INDEX *gtypes948 [] = {
+g_atype948_0,
+g_atype948_1,
+g_atype948_2,
+g_atype948_3,
+g_atype948_4,
+g_atype948_5,
+g_atype948_6,
+g_atype948_7,
+g_atype948_8,
+g_atype948_9,
+};
+
+static const int32 cn_attr948 [] =
+{
+6470,
+7370,
+8280,
+6476,
+6481,
+8257,
+8258,
+8282,
+8287,
+8279,
 };
 
 extern const char *names949[];
 static const uint32 types949 [] =
 {
 SK_REF,
-SK_INT32,
+SK_BOOL,
 };
 
 static const uint16 attr_flags949 [] =
 {0,0,};
 
-static const EIF_TYPE_INDEX g_atype949_0 [] = {0xFF01,955,0xFFFF};
-static const EIF_TYPE_INDEX g_atype949_1 [] = {206,0xFFFF};
+static const EIF_TYPE_INDEX g_atype949_0 [] = {0xFF01,327,0xFFF8,1,0xFFFF};
+static const EIF_TYPE_INDEX g_atype949_1 [] = {191,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes949 [] = {
 g_atype949_0,
@@ -23692,500 +24104,88 @@ g_atype949_1,
 
 static const int32 cn_attr949 [] =
 {
-8172,
-8173,
+7363,
+1701,
 };
 
 extern const char *names950[];
 static const uint32 types950 [] =
 {
 SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
 };
 
 static const uint16 attr_flags950 [] =
-{0,0,0,0,0,0,0,0,0,0,};
+{0,};
 
-static const EIF_TYPE_INDEX g_atype950_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype950_1 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype950_2 [] = {0xFF01,923,0xFFFF};
-static const EIF_TYPE_INDEX g_atype950_3 [] = {903,0xFFFF};
-static const EIF_TYPE_INDEX g_atype950_4 [] = {0xFF01,217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype950_5 [] = {0xFF01,952,0xFFFF};
-static const EIF_TYPE_INDEX g_atype950_6 [] = {0xFF01,887,0xFFFF};
-static const EIF_TYPE_INDEX g_atype950_7 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype950_8 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype950_9 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype950_0 [] = {0xFF01,951,0xFFF8,1,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes950 [] = {
 g_atype950_0,
-g_atype950_1,
-g_atype950_2,
-g_atype950_3,
-g_atype950_4,
-g_atype950_5,
-g_atype950_6,
-g_atype950_7,
-g_atype950_8,
-g_atype950_9,
 };
 
 static const int32 cn_attr950 [] =
 {
-6452,
-7345,
-7361,
-7382,
-8175,
-8176,
-8177,
-6458,
-6463,
-7383,
+7278,
 };
 
 extern const char *names951[];
 static const uint32 types951 [] =
 {
 SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
 };
 
 static const uint16 attr_flags951 [] =
-{0,0,0,0,0,0,0,0,0,0,};
+{0,};
 
-static const EIF_TYPE_INDEX g_atype951_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype951_1 [] = {886,0xFFFF};
-static const EIF_TYPE_INDEX g_atype951_2 [] = {0xFF01,923,0xFFFF};
-static const EIF_TYPE_INDEX g_atype951_3 [] = {903,0xFFFF};
-static const EIF_TYPE_INDEX g_atype951_4 [] = {0xFF01,217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype951_5 [] = {0xFF01,952,0xFFFF};
-static const EIF_TYPE_INDEX g_atype951_6 [] = {0xFF01,887,0xFFFF};
-static const EIF_TYPE_INDEX g_atype951_7 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype951_8 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype951_9 [] = {191,0xFFFF};
+static const EIF_TYPE_INDEX g_atype951_0 [] = {0xFF01,951,0xFFF8,1,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes951 [] = {
 g_atype951_0,
-g_atype951_1,
-g_atype951_2,
-g_atype951_3,
-g_atype951_4,
-g_atype951_5,
-g_atype951_6,
-g_atype951_7,
-g_atype951_8,
-g_atype951_9,
 };
 
 static const int32 cn_attr951 [] =
 {
-6452,
-7345,
-7361,
-7382,
-8175,
-8176,
-8177,
-6458,
-6463,
-7383,
-};
-
-extern const char *names952[];
-static const uint32 types952 [] =
-{
-SK_POINTER,
-SK_POINTER,
-};
-
-static const uint16 attr_flags952 [] =
-{0,0,};
-
-static const EIF_TYPE_INDEX g_atype952_0 [] = {215,0xFFFF};
-static const EIF_TYPE_INDEX g_atype952_1 [] = {215,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes952 [] = {
-g_atype952_0,
-g_atype952_1,
-};
-
-static const int32 cn_attr952 [] =
-{
-8181,
-8189,
+7278,
 };
 
 extern const char *names953[];
 static const uint32 types953 [] =
 {
 SK_REF,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_INT32,
-SK_INT32,
-SK_POINTER,
-SK_POINTER,
 };
 
 static const uint16 attr_flags953 [] =
-{0,0,0,0,0,0,0,0,0,};
+{0,};
 
-static const EIF_TYPE_INDEX g_atype953_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype953_1 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype953_2 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype953_3 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype953_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype953_5 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype953_6 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype953_7 [] = {215,0xFFFF};
-static const EIF_TYPE_INDEX g_atype953_8 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype953_0 [] = {0xFF01,951,0xFFF8,1,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes953 [] = {
 g_atype953_0,
-g_atype953_1,
-g_atype953_2,
-g_atype953_3,
-g_atype953_4,
-g_atype953_5,
-g_atype953_6,
-g_atype953_7,
-g_atype953_8,
 };
 
 static const int32 cn_attr953 [] =
 {
-6452,
-6444,
-6445,
-6458,
-6463,
-8197,
-8198,
-8245,
-8246,
+7312,
 };
 
 extern const char *names954[];
 static const uint32 types954 [] =
 {
 SK_REF,
-SK_REF,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_POINTER,
-SK_POINTER,
 };
 
 static const uint16 attr_flags954 [] =
-{0,0,0,0,0,0,0,0,0,0,0,0,};
+{0,};
 
-static const EIF_TYPE_INDEX g_atype954_0 [] = {217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype954_1 [] = {0xFF01,955,0xFFFF};
-static const EIF_TYPE_INDEX g_atype954_2 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype954_3 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype954_4 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype954_5 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype954_6 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype954_7 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype954_8 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype954_9 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype954_10 [] = {215,0xFFFF};
-static const EIF_TYPE_INDEX g_atype954_11 [] = {215,0xFFFF};
+static const EIF_TYPE_INDEX g_atype954_0 [] = {228,0xFFFF};
 
 static const EIF_TYPE_INDEX *gtypes954 [] = {
 g_atype954_0,
-g_atype954_1,
-g_atype954_2,
-g_atype954_3,
-g_atype954_4,
-g_atype954_5,
-g_atype954_6,
-g_atype954_7,
-g_atype954_8,
-g_atype954_9,
-g_atype954_10,
-g_atype954_11,
 };
 
 static const int32 cn_attr954 [] =
 {
-6452,
-8172,
-6444,
-6445,
-6458,
-6463,
-8173,
-8197,
-8198,
-8251,
-8245,
-8246,
-};
-
-extern const char *names955[];
-static const uint32 types955 [] =
-{
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_CHAR8,
-SK_CHAR8,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_UINT8,
-SK_INT8,
-SK_UINT16,
-SK_INT16,
-SK_UINT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_REAL32,
-SK_POINTER,
-SK_UINT64,
-SK_INT64,
-SK_REAL64,
-};
-
-static const uint16 attr_flags955 [] =
-{0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
-
-static const EIF_TYPE_INDEX g_atype955_0 [] = {0xFF01,220,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_1 [] = {0xFF01,217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_2 [] = {151,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_3 [] = {0xFF01,951,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_4 [] = {151,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_5 [] = {185,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_6 [] = {185,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_7 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_8 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_9 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_10 [] = {197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_11 [] = {176,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_12 [] = {203,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_13 [] = {209,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_14 [] = {200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_15 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_16 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_17 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_18 [] = {179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_19 [] = {215,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_20 [] = {212,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_21 [] = {188,0xFFFF};
-static const EIF_TYPE_INDEX g_atype955_22 [] = {194,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes955 [] = {
-g_atype955_0,
-g_atype955_1,
-g_atype955_2,
-g_atype955_3,
-g_atype955_4,
-g_atype955_5,
-g_atype955_6,
-g_atype955_7,
-g_atype955_8,
-g_atype955_9,
-g_atype955_10,
-g_atype955_11,
-g_atype955_12,
-g_atype955_13,
-g_atype955_14,
-g_atype955_15,
-g_atype955_16,
-g_atype955_17,
-g_atype955_18,
-g_atype955_19,
-g_atype955_20,
-g_atype955_21,
-g_atype955_22,
-};
-
-static const int32 cn_attr955 [] =
-{
-2828,
-3186,
-3188,
-8271,
-8275,
-2827,
-3106,
-1701,
-3253,
-8268,
-2838,
-2833,
-2837,
-2832,
-2835,
-2829,
-2841,
-3243,
-2839,
-3107,
-2834,
-2831,
-2840,
-};
-
-extern const char *names956[];
-static const uint32 types956 [] =
-{
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_REF,
-SK_CHAR8,
-SK_CHAR8,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_BOOL,
-SK_UINT8,
-SK_INT8,
-SK_UINT16,
-SK_INT16,
-SK_UINT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_INT32,
-SK_REAL32,
-SK_POINTER,
-SK_UINT64,
-SK_INT64,
-SK_REAL64,
-};
-
-static const uint16 attr_flags956 [] =
-{0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
-
-static const EIF_TYPE_INDEX g_atype956_0 [] = {0xFF01,220,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_1 [] = {0xFF01,217,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_2 [] = {151,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_3 [] = {0xFF01,951,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_4 [] = {151,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_5 [] = {0xFF01,311,0xFF01,0xFFF9,2,174,206,206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_6 [] = {0xFF01,301,215,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_7 [] = {185,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_8 [] = {185,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_9 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_10 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_11 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_12 [] = {191,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_13 [] = {197,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_14 [] = {176,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_15 [] = {203,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_16 [] = {209,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_17 [] = {200,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_18 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_19 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_20 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_21 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_22 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_23 [] = {206,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_24 [] = {179,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_25 [] = {215,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_26 [] = {212,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_27 [] = {188,0xFFFF};
-static const EIF_TYPE_INDEX g_atype956_28 [] = {194,0xFFFF};
-
-static const EIF_TYPE_INDEX *gtypes956 [] = {
-g_atype956_0,
-g_atype956_1,
-g_atype956_2,
-g_atype956_3,
-g_atype956_4,
-g_atype956_5,
-g_atype956_6,
-g_atype956_7,
-g_atype956_8,
-g_atype956_9,
-g_atype956_10,
-g_atype956_11,
-g_atype956_12,
-g_atype956_13,
-g_atype956_14,
-g_atype956_15,
-g_atype956_16,
-g_atype956_17,
-g_atype956_18,
-g_atype956_19,
-g_atype956_20,
-g_atype956_21,
-g_atype956_22,
-g_atype956_23,
-g_atype956_24,
-g_atype956_25,
-g_atype956_26,
-g_atype956_27,
-g_atype956_28,
-};
-
-static const int32 cn_attr956 [] =
-{
-2828,
-3186,
-3188,
-8271,
-8275,
-8297,
-8301,
-2827,
-3106,
-1701,
-3253,
-8268,
-8284,
-2838,
-2833,
-2837,
-2832,
-2835,
-2829,
-2841,
-3243,
-8293,
-8295,
-8296,
-2839,
-3107,
-2834,
-2831,
-2840,
+3563,
 };
 
 const struct cnode egc_fsystem_init[] = {
@@ -38810,15 +38810,32 @@ const struct cnode egc_fsystem_init[] = {
 	NULL
 },
 {
+	(long) 0,
+	(long) 0,
+	"SHARED_EXTERNAL",
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	(uint16) 0,
+	(int32 *) 0,
+	0,
+	0L,
+	(int32) 32,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
 	(long) 1,
 	(long) 1,
 	"GAME_JOYSTICK_HAT_STATE",
-	names861,
-	types861,
-	attr_flags861,
-	gtypes861,
+	names862,
+	types862,
+	attr_flags862,
+	gtypes862,
 	(uint16) 0,
-	cn_attr861,
+	cn_attr862,
 	8,
 	0L,
 	(int32) 0,
@@ -38829,7 +38846,7 @@ const struct cnode egc_fsystem_init[] = {
 {
 	(long) 0,
 	(long) 0,
-	"GAME_TEXT_EXTERNAL",
+	"CPF_EXTERNAL",
 	NULL,
 	NULL,
 	NULL,
@@ -38863,7 +38880,41 @@ const struct cnode egc_fsystem_init[] = {
 {
 	(long) 0,
 	(long) 0,
+	"GAME_TEXT_EXTERNAL",
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	(uint16) 0,
+	(int32 *) 0,
+	0,
+	0L,
+	(int32) 32,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 0,
+	(long) 0,
 	"GAME_SDL_EXTERNAL",
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	(uint16) 0,
+	(int32 *) 0,
+	0,
+	0L,
+	(int32) 32,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 0,
+	(long) 0,
+	"THREAD_ENVIRONMENT",
 	NULL,
 	NULL,
 	NULL,
@@ -38881,12 +38932,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 3,
 	(long) 3,
 	"GAME_MOUSE_STATE",
-	names865,
-	types865,
-	attr_flags865,
-	gtypes865,
+	names868,
+	types868,
+	attr_flags868,
+	gtypes868,
 	(uint16) 0,
-	cn_attr865,
+	cn_attr868,
 	16,
 	0L,
 	(int32) 32,
@@ -38895,32 +38946,15 @@ const struct cnode egc_fsystem_init[] = {
 	NULL
 },
 {
-	(long) 2,
-	(long) 2,
-	"GAME_RESSOURCE",
-	names866,
-	types866,
-	attr_flags866,
-	gtypes866,
-	(uint16) 4096,
-	cn_attr866,
-	8,
-	0L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
 	(long) 1,
 	(long) 1,
 	"GAME_MOUSE_EVENTS_STATE",
-	names867,
-	types867,
-	attr_flags867,
-	gtypes867,
+	names869,
+	types869,
+	attr_flags869,
+	gtypes869,
 	(uint16) 0,
-	cn_attr867,
+	cn_attr869,
 	8,
 	0L,
 	(int32) 0,
@@ -38932,40 +38966,6 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 4,
 	(long) 4,
 	"GAME_MOUSE_MOTION_STATE",
-	names868,
-	types868,
-	attr_flags868,
-	gtypes868,
-	(uint16) 0,
-	cn_attr868,
-	16,
-	0L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 4,
-	(long) 4,
-	"GAME_MOUSE_BUTTON_PRESSED_STATE",
-	names869,
-	types869,
-	attr_flags869,
-	gtypes869,
-	(uint16) 0,
-	cn_attr869,
-	16,
-	0L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 4,
-	(long) 4,
-	"GAME_MOUSE_BUTTON_RELEASED_STATE",
 	names870,
 	types870,
 	attr_flags870,
@@ -38980,15 +38980,83 @@ const struct cnode egc_fsystem_init[] = {
 	NULL
 },
 {
-	(long) 2,
-	(long) 2,
-	"GAME_ERROR_MANAGER",
+	(long) 4,
+	(long) 4,
+	"GAME_MOUSE_BUTTON_PRESSED_STATE",
 	names871,
 	types871,
 	attr_flags871,
 	gtypes871,
-	(uint16) 4096,
+	(uint16) 0,
 	cn_attr871,
+	16,
+	0L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 4,
+	(long) 4,
+	"GAME_MOUSE_BUTTON_RELEASED_STATE",
+	names872,
+	types872,
+	attr_flags872,
+	gtypes872,
+	(uint16) 0,
+	cn_attr872,
+	16,
+	0L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 0,
+	(long) 0,
+	"GAME_RESSOURCE_MANAGER",
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	(uint16) 4096,
+	(int32 *) 0,
+	0,
+	0L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 2,
+	(long) 2,
+	"CPF_RESSOURCE_MANAGER",
+	names874,
+	types874,
+	attr_flags874,
+	gtypes874,
+	(uint16) 4096,
+	cn_attr874,
+	16,
+	1L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 2,
+	(long) 2,
+	"GAME_ERROR_MANAGER",
+	names875,
+	types875,
+	attr_flags875,
+	gtypes875,
+	(uint16) 4096,
+	cn_attr875,
 	16,
 	1L,
 	(int32) 0,
@@ -39000,12 +39068,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 3,
 	(long) 3,
 	"GAME_SDL_ANY",
-	names872,
-	types872,
-	attr_flags872,
-	gtypes872,
+	names876,
+	types876,
+	attr_flags876,
+	gtypes876,
 	(uint16) 4096,
-	cn_attr872,
+	cn_attr876,
 	16,
 	1L,
 	(int32) 0,
@@ -39017,12 +39085,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 6,
 	(long) 6,
 	"GAME_HAPTIC_EFFECT_COMPILED",
-	names873,
-	types873,
-	attr_flags873,
-	gtypes873,
+	names877,
+	types877,
+	attr_flags877,
+	gtypes877,
 	(uint16) 0,
-	cn_attr873,
+	cn_attr877,
 	32,
 	3L,
 	(int32) 0,
@@ -39034,12 +39102,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 7,
 	(long) 7,
 	"GAME_FINGER_STATE",
-	names874,
-	types874,
-	attr_flags874,
-	gtypes874,
+	names878,
+	types878,
+	attr_flags878,
+	gtypes878,
 	(uint16) 0,
-	cn_attr874,
+	cn_attr878,
 	32,
 	1L,
 	(int32) 0,
@@ -39051,12 +39119,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 9,
 	(long) 9,
 	"GAME_FINGER_EVENT_STATE",
-	names875,
-	types875,
-	attr_flags875,
-	gtypes875,
+	names879,
+	types879,
+	attr_flags879,
+	gtypes879,
 	(uint16) 0,
-	cn_attr875,
+	cn_attr879,
 	40,
 	1L,
 	(int32) 0,
@@ -39068,12 +39136,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 5,
 	(long) 5,
 	"GAME_KEY",
-	names876,
-	types876,
-	attr_flags876,
-	gtypes876,
+	names880,
+	types880,
+	attr_flags880,
+	gtypes880,
 	(uint16) 0,
-	cn_attr876,
+	cn_attr880,
 	24,
 	1L,
 	(int32) 0,
@@ -39085,12 +39153,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 7,
 	(long) 7,
 	"GAME_KEY_STATE",
-	names877,
-	types877,
-	attr_flags877,
-	gtypes877,
+	names881,
+	types881,
+	attr_flags881,
+	gtypes881,
 	(uint16) 0,
-	cn_attr877,
+	cn_attr881,
 	24,
 	1L,
 	(int32) 0,
@@ -39102,74 +39170,6 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 3,
 	(long) 3,
 	"IMG_ANY",
-	names878,
-	types878,
-	attr_flags878,
-	gtypes878,
-	(uint16) 4096,
-	cn_attr878,
-	16,
-	1L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 3,
-	(long) 3,
-	"IMG_CONTROLLER",
-	names879,
-	types879,
-	attr_flags879,
-	gtypes879,
-	(uint16) 0,
-	cn_attr879,
-	16,
-	1L,
-	(int32) 32,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 5,
-	(long) 5,
-	"GAME_DOLLAR_GESTURE_MANAGER",
-	names880,
-	types880,
-	attr_flags880,
-	gtypes880,
-	(uint16) 4096,
-	cn_attr880,
-	24,
-	1L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 3,
-	(long) 3,
-	"GAME_BLENDABLE",
-	names881,
-	types881,
-	attr_flags881,
-	gtypes881,
-	(uint16) 4096,
-	cn_attr881,
-	16,
-	1L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 4,
-	(long) 4,
-	"GAME_EVENTS",
 	names882,
 	types882,
 	attr_flags882,
@@ -39184,15 +39184,83 @@ const struct cnode egc_fsystem_init[] = {
 	NULL
 },
 {
-	(long) 16,
-	(long) 16,
-	"GAME_TOUCH_DEVICE_EVENTS",
+	(long) 3,
+	(long) 3,
+	"IMG_CONTROLLER",
 	names883,
 	types883,
 	attr_flags883,
 	gtypes883,
-	(uint16) 4096,
+	(uint16) 0,
 	cn_attr883,
+	16,
+	1L,
+	(int32) 32,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 5,
+	(long) 5,
+	"GAME_DOLLAR_GESTURE_MANAGER",
+	names884,
+	types884,
+	attr_flags884,
+	gtypes884,
+	(uint16) 4096,
+	cn_attr884,
+	24,
+	1L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 3,
+	(long) 3,
+	"GAME_BLENDABLE",
+	names885,
+	types885,
+	attr_flags885,
+	gtypes885,
+	(uint16) 4096,
+	cn_attr885,
+	16,
+	1L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 4,
+	(long) 4,
+	"GAME_EVENTS",
+	names886,
+	types886,
+	attr_flags886,
+	gtypes886,
+	(uint16) 4096,
+	cn_attr886,
+	16,
+	1L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 16,
+	(long) 16,
+	"GAME_JOYSTICK_EVENTS",
+	names887,
+	types887,
+	attr_flags887,
+	gtypes887,
+	(uint16) 4096,
+	cn_attr887,
 	112,
 	13L,
 	(int32) 0,
@@ -39203,13 +39271,13 @@ const struct cnode egc_fsystem_init[] = {
 {
 	(long) 16,
 	(long) 16,
-	"GAME_JOYSTICK_EVENTS",
-	names884,
-	types884,
-	attr_flags884,
-	gtypes884,
+	"GAME_TOUCH_DEVICE_EVENTS",
+	names888,
+	types888,
+	attr_flags888,
+	gtypes888,
 	(uint16) 4096,
-	cn_attr884,
+	cn_attr888,
 	112,
 	13L,
 	(int32) 0,
@@ -39221,12 +39289,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 35,
 	(long) 35,
 	"GAME_WINDOW_EVENTS",
-	names885,
-	types885,
-	attr_flags885,
-	gtypes885,
+	names889,
+	types889,
+	attr_flags889,
+	gtypes889,
 	(uint16) 4096,
-	cn_attr885,
+	cn_attr889,
 	264,
 	32L,
 	(int32) 0,
@@ -39238,12 +39306,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 14,
 	(long) 14,
 	"GAME_COMMON_EVENTS",
-	names886,
-	types886,
-	attr_flags886,
-	gtypes886,
+	names890,
+	types890,
+	attr_flags890,
+	gtypes890,
 	(uint16) 4096,
-	cn_attr886,
+	cn_attr890,
 	96,
 	11L,
 	(int32) 0,
@@ -39255,12 +39323,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 26,
 	(long) 26,
 	"GAME_LIBRARY_CONTROLLER",
-	names887,
-	types887,
-	attr_flags887,
-	gtypes887,
+	names891,
+	types891,
+	attr_flags891,
+	gtypes891,
 	(uint16) 0,
-	cn_attr887,
+	cn_attr891,
 	160,
 	17L,
 	(int32) 32,
@@ -39272,12 +39340,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 4,
 	(long) 4,
 	"GAME_COLOR_READABLE",
-	names888,
-	types888,
-	attr_flags888,
-	gtypes888,
+	names892,
+	types892,
+	attr_flags892,
+	gtypes892,
 	(uint16) 0,
-	cn_attr888,
+	cn_attr892,
 	8,
 	0L,
 	(int32) 0,
@@ -39289,30 +39357,13 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 4,
 	(long) 4,
 	"GAME_COLOR",
-	names889,
-	types889,
-	attr_flags889,
-	gtypes889,
+	names893,
+	types893,
+	attr_flags893,
+	gtypes893,
 	(uint16) 0,
-	cn_attr889,
+	cn_attr893,
 	8,
-	0L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 0,
-	(long) 0,
-	"TEXT_LIBRARY_SHARED",
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	(uint16) 4096,
-	(int32 *) 0,
-	0,
 	0L,
 	(int32) 0,
 	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
@@ -39340,12 +39391,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 3,
 	(long) 3,
 	"GAME_GESTURE",
-	names892,
-	types892,
-	attr_flags892,
-	gtypes892,
+	names895,
+	types895,
+	attr_flags895,
+	gtypes895,
 	(uint16) 4096,
-	cn_attr892,
+	cn_attr895,
 	16,
 	0L,
 	(int32) 0,
@@ -39356,13 +39407,13 @@ const struct cnode egc_fsystem_init[] = {
 {
 	(long) 5,
 	(long) 5,
-	"GAME_FINGERS_GESTURE",
-	names893,
-	types893,
-	attr_flags893,
-	gtypes893,
+	"GAME_DOLLAR_GESTURE",
+	names896,
+	types896,
+	attr_flags896,
+	gtypes896,
 	(uint16) 0,
-	cn_attr893,
+	cn_attr896,
 	24,
 	0L,
 	(int32) 0,
@@ -39373,13 +39424,13 @@ const struct cnode egc_fsystem_init[] = {
 {
 	(long) 5,
 	(long) 5,
-	"GAME_DOLLAR_GESTURE",
-	names894,
-	types894,
-	attr_flags894,
-	gtypes894,
+	"GAME_FINGERS_GESTURE",
+	names897,
+	types897,
+	attr_flags897,
+	gtypes897,
 	(uint16) 0,
-	cn_attr894,
+	cn_attr897,
 	24,
 	0L,
 	(int32) 0,
@@ -39400,6 +39451,23 @@ const struct cnode egc_fsystem_init[] = {
 	0,
 	0L,
 	(int32) 32,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 2,
+	(long) 2,
+	"GAME_RESSOURCE",
+	names899,
+	types899,
+	attr_flags899,
+	gtypes899,
+	(uint16) 4096,
+	cn_attr899,
+	8,
+	0L,
+	(int32) 0,
 	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
 	,
 	NULL
@@ -39442,12 +39510,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 9,
 	(long) 9,
 	"IMAGE",
-	names898,
-	types898,
-	attr_flags898,
-	gtypes898,
+	names902,
+	types902,
+	attr_flags902,
+	gtypes902,
 	(uint16) 4096,
-	cn_attr898,
+	cn_attr902,
 	40,
 	1L,
 	(int32) 0,
@@ -39459,12 +39527,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 10,
 	(long) 10,
 	"BACKGROUND",
-	names899,
-	types899,
-	attr_flags899,
-	gtypes899,
+	names903,
+	types903,
+	attr_flags903,
+	gtypes903,
 	(uint16) 0,
-	cn_attr899,
+	cn_attr903,
 	48,
 	1L,
 	(int32) 0,
@@ -39476,14 +39544,31 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 11,
 	(long) 11,
 	"MOTO",
-	names900,
-	types900,
-	attr_flags900,
-	gtypes900,
+	names904,
+	types904,
+	attr_flags904,
+	gtypes904,
 	(uint16) 0,
-	cn_attr900,
+	cn_attr904,
 	48,
 	1L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 0,
+	(long) 0,
+	"TEXT_LIBRARY_SHARED",
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	(uint16) 4096,
+	(int32 *) 0,
+	0,
+	0L,
 	(int32) 0,
 	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
 	,
@@ -39493,12 +39578,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 10,
 	(long) 10,
 	"GAME_PIXEL_BUFFER",
-	names901,
-	types901,
-	attr_flags901,
-	gtypes901,
+	names906,
+	types906,
+	attr_flags906,
+	gtypes906,
 	(uint16) 0,
-	cn_attr901,
+	cn_attr906,
 	48,
 	3L,
 	(int32) 0,
@@ -39510,12 +39595,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 10,
 	(long) 10,
 	"GAME_PIXEL_WRITER",
-	names902,
-	types902,
-	attr_flags902,
-	gtypes902,
+	names907,
+	types907,
+	attr_flags907,
+	gtypes907,
 	(uint16) 0,
-	cn_attr902,
+	cn_attr907,
 	48,
 	3L,
 	(int32) 0,
@@ -39527,12 +39612,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 10,
 	(long) 10,
 	"GAME_PIXEL_READER",
-	names903,
-	types903,
-	attr_flags903,
-	gtypes903,
+	names908,
+	types908,
+	attr_flags908,
+	gtypes908,
 	(uint16) 0,
-	cn_attr903,
+	cn_attr908,
 	48,
 	3L,
 	(int32) 0,
@@ -39544,12 +39629,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 10,
 	(long) 10,
 	"GAME_PIXEL_READER_WRITER",
-	names904,
-	types904,
-	attr_flags904,
-	gtypes904,
+	names909,
+	types909,
+	attr_flags909,
+	gtypes909,
 	(uint16) 0,
-	cn_attr904,
+	cn_attr909,
 	48,
 	3L,
 	(int32) 0,
@@ -39561,31 +39646,14 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 1,
 	(long) 1,
 	"GAME_LIBRARY_SHARED",
-	names905,
-	types905,
-	attr_flags905,
-	gtypes905,
+	names910,
+	types910,
+	attr_flags910,
+	gtypes910,
 	(uint16) 4096,
-	cn_attr905,
+	cn_attr910,
 	8,
 	1L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 7,
-	(long) 7,
-	"GAME_SURFACE",
-	names906,
-	types906,
-	attr_flags906,
-	gtypes906,
-	(uint16) 0,
-	cn_attr906,
-	40,
-	4L,
 	(int32) 0,
 	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
 	,
@@ -39595,12 +39663,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 21,
 	(long) 21,
 	"GAME_TOUCH_DEVICE",
-	names907,
-	types907,
-	attr_flags907,
-	gtypes907,
+	names911,
+	types911,
+	attr_flags911,
+	gtypes911,
 	(uint16) 0,
-	cn_attr907,
+	cn_attr911,
 	144,
 	15L,
 	(int32) 0,
@@ -39612,12 +39680,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 5,
 	(long) 5,
 	"GAME_DISPLAY",
-	names908,
-	types908,
-	attr_flags908,
-	gtypes908,
+	names912,
+	types912,
+	attr_flags912,
+	gtypes912,
 	(uint16) 0,
-	cn_attr908,
+	cn_attr912,
 	24,
 	2L,
 	(int32) 0,
@@ -39629,12 +39697,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 7,
 	(long) 7,
 	"ENGINE",
-	names909,
-	types909,
-	attr_flags909,
-	gtypes909,
+	names913,
+	types913,
+	attr_flags913,
+	gtypes913,
 	(uint16) 0,
-	cn_attr909,
+	cn_attr913,
 	48,
 	5L,
 	(int32) 0,
@@ -39646,14 +39714,65 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 1,
 	(long) 1,
 	"APPLICATION",
-	names910,
-	types910,
-	attr_flags910,
-	gtypes910,
+	names914,
+	types914,
+	attr_flags914,
+	gtypes914,
 	(uint16) 0,
-	cn_attr910,
+	cn_attr914,
 	8,
 	1L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 7,
+	(long) 7,
+	"GAME_SURFACE",
+	names915,
+	types915,
+	attr_flags915,
+	gtypes915,
+	(uint16) 0,
+	cn_attr915,
+	40,
+	4L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 10,
+	(long) 10,
+	"TEXT_SURFACE",
+	names916,
+	types916,
+	attr_flags916,
+	gtypes916,
+	(uint16) 4096,
+	cn_attr916,
+	64,
+	7L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 10,
+	(long) 10,
+	"TEXT_SURFACE_BLENDED",
+	names917,
+	types917,
+	attr_flags917,
+	gtypes917,
+	(uint16) 0,
+	cn_attr917,
+	64,
+	7L,
 	(int32) 0,
 	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
 	,
@@ -39663,12 +39782,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 12,
 	(long) 12,
 	"GAME_WINDOW_BUILDER",
-	names911,
-	types911,
-	attr_flags911,
-	gtypes911,
+	names918,
+	types918,
+	attr_flags918,
+	gtypes918,
 	(uint16) 4096,
-	cn_attr911,
+	cn_attr918,
 	48,
 	3L,
 	(int32) 0,
@@ -39680,12 +39799,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 18,
 	(long) 18,
 	"GAME_WINDOW_RENDERED_BUILDER",
-	names912,
-	types912,
-	attr_flags912,
-	gtypes912,
+	names919,
+	types919,
+	attr_flags919,
+	gtypes919,
 	(uint16) 768,
-	cn_attr912,
+	cn_attr919,
 	64,
 	4L,
 	(int32) 32,
@@ -39697,12 +39816,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 18,
 	(long) 18,
 	"GAME_WINDOW_RENDERED_BUILDER",
-	names913,
-	types913,
-	attr_flags913,
-	gtypes913,
+	names920,
+	types920,
+	attr_flags920,
+	gtypes920,
 	(uint16) 256,
-	cn_attr913,
+	cn_attr920,
 	64,
 	4L,
 	(int32) 32,
@@ -39714,12 +39833,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 3,
 	(long) 3,
 	"GAME_HAPTIC_EFFECT",
-	names914,
-	types914,
-	attr_flags914,
-	gtypes914,
+	names921,
+	types921,
+	attr_flags921,
+	gtypes921,
 	(uint16) 4096,
-	cn_attr914,
+	cn_attr921,
 	24,
 	1L,
 	(int32) 0,
@@ -39731,12 +39850,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 10,
 	(long) 10,
 	"GAME_SDL_COLOR",
-	names915,
-	types915,
-	attr_flags915,
-	gtypes915,
+	names922,
+	types922,
+	attr_flags922,
+	gtypes922,
 	(uint16) 0,
-	cn_attr915,
+	cn_attr922,
 	32,
 	2L,
 	(int32) 0,
@@ -39748,12 +39867,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 6,
 	(long) 6,
 	"GAME_DISPLAY_MODE",
-	names916,
-	types916,
-	attr_flags916,
-	gtypes916,
+	names923,
+	types923,
+	attr_flags923,
+	gtypes923,
 	(uint16) 0,
-	cn_attr916,
+	cn_attr923,
 	32,
 	2L,
 	(int32) 0,
@@ -39765,14 +39884,31 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 7,
 	(long) 7,
 	"GAME_RENDERER_DRIVER",
-	names917,
-	types917,
-	attr_flags917,
-	gtypes917,
+	names924,
+	types924,
+	attr_flags924,
+	gtypes924,
 	(uint16) 0,
-	cn_attr917,
+	cn_attr924,
 	32,
 	2L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 2,
+	(long) 2,
+	"MUTEX",
+	names925,
+	types925,
+	attr_flags925,
+	gtypes925,
+	(uint16) 1024,
+	cn_attr925,
+	16,
+	0L,
 	(int32) 0,
 	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
 	,
@@ -39782,12 +39918,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 9,
 	(long) 9,
 	"GAME_COLOR_PALETTE",
-	names918,
-	types918,
-	attr_flags918,
-	gtypes918,
+	names926,
+	types926,
+	attr_flags926,
+	gtypes926,
 	(uint16) 1024,
-	cn_attr918,
+	cn_attr926,
 	40,
 	2L,
 	(int32) 0,
@@ -39799,31 +39935,14 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 1,
 	(long) 1,
 	"GAME_WINDOW_MANAGER",
-	names919,
-	types919,
-	attr_flags919,
-	gtypes919,
+	names927,
+	types927,
+	attr_flags927,
+	gtypes927,
 	(uint16) 1024,
-	cn_attr919,
+	cn_attr927,
 	8,
 	0L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 6,
-	(long) 6,
-	"GAME_CURSOR",
-	names920,
-	types920,
-	attr_flags920,
-	gtypes920,
-	(uint16) 1024,
-	cn_attr920,
-	32,
-	2L,
 	(int32) 0,
 	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
 	,
@@ -39833,12 +39952,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 21,
 	(long) 21,
 	"GAME_JOYSTICK",
-	names921,
-	types921,
-	attr_flags921,
-	gtypes921,
+	names928,
+	types928,
+	attr_flags928,
+	gtypes928,
 	(uint16) 1024,
-	cn_attr921,
+	cn_attr928,
 	144,
 	16L,
 	(int32) 0,
@@ -39847,17 +39966,34 @@ const struct cnode egc_fsystem_init[] = {
 	NULL
 },
 {
-	(long) 8,
-	(long) 8,
-	"GAME_TEXTURE",
-	names922,
-	types922,
-	attr_flags922,
-	gtypes922,
+	(long) 5,
+	(long) 5,
+	"GAME_CURSOR",
+	names929,
+	types929,
+	attr_flags929,
+	gtypes929,
 	(uint16) 1024,
-	cn_attr922,
-	32,
-	2L,
+	cn_attr929,
+	24,
+	1L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 9,
+	(long) 9,
+	"GAME_TEXTURE",
+	names930,
+	types930,
+	attr_flags930,
+	gtypes930,
+	(uint16) 1024,
+	cn_attr930,
+	40,
+	3L,
 	(int32) 0,
 	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
 	,
@@ -39867,12 +40003,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 9,
 	(long) 9,
 	"GAME_RENDERER",
-	names923,
-	types923,
-	attr_flags923,
-	gtypes923,
+	names931,
+	types931,
+	attr_flags931,
+	gtypes931,
 	(uint16) 1024,
-	cn_attr923,
+	cn_attr931,
 	48,
 	4L,
 	(int32) 0,
@@ -39884,12 +40020,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 8,
 	(long) 8,
 	"GAME_IMAGE",
-	names924,
-	types924,
-	attr_flags924,
-	gtypes924,
+	names932,
+	types932,
+	attr_flags932,
+	gtypes932,
 	(uint16) 1024,
-	cn_attr924,
+	cn_attr932,
 	32,
 	2L,
 	(int32) 0,
@@ -39901,12 +40037,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 9,
 	(long) 9,
 	"IMG_IMAGE_FILE",
-	names925,
-	types925,
-	attr_flags925,
-	gtypes925,
+	names933,
+	types933,
+	attr_flags933,
+	gtypes933,
 	(uint16) 1024,
-	cn_attr925,
+	cn_attr933,
 	40,
 	2L,
 	(int32) 0,
@@ -39918,12 +40054,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 6,
 	(long) 6,
 	"GAME_PIXEL_FORMAT_READABLE",
-	names926,
-	types926,
-	attr_flags926,
-	gtypes926,
+	names934,
+	types934,
+	attr_flags934,
+	gtypes934,
 	(uint16) 1024,
-	cn_attr926,
+	cn_attr934,
 	24,
 	1L,
 	(int32) 0,
@@ -39935,12 +40071,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 6,
 	(long) 6,
 	"GAME_PIXEL_FORMAT",
-	names927,
-	types927,
-	attr_flags927,
-	gtypes927,
+	names935,
+	types935,
+	attr_flags935,
+	gtypes935,
 	(uint16) 1024,
-	cn_attr927,
+	cn_attr935,
 	24,
 	1L,
 	(int32) 32,
@@ -39949,15 +40085,49 @@ const struct cnode egc_fsystem_init[] = {
 	NULL
 },
 {
+	(long) 9,
+	(long) 9,
+	"TEXT_FONT",
+	names936,
+	types936,
+	attr_flags936,
+	gtypes936,
+	(uint16) 1024,
+	cn_attr936,
+	40,
+	1L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 12,
+	(long) 12,
+	"TEXT_FONT_CPF",
+	names937,
+	types937,
+	attr_flags937,
+	gtypes937,
+	(uint16) 1024,
+	cn_attr937,
+	56,
+	2L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
 	(long) 37,
 	(long) 37,
 	"GAME_WINDOW",
-	names928,
-	types928,
-	attr_flags928,
-	gtypes928,
+	names938,
+	types938,
+	attr_flags938,
+	gtypes938,
 	(uint16) 5120,
-	cn_attr928,
+	cn_attr938,
 	280,
 	33L,
 	(int32) 0,
@@ -39969,12 +40139,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 38,
 	(long) 38,
 	"GAME_WINDOW_GL",
-	names929,
-	types929,
-	attr_flags929,
-	gtypes929,
+	names939,
+	types939,
+	attr_flags939,
+	gtypes939,
 	(uint16) 1024,
-	cn_attr929,
+	cn_attr939,
 	288,
 	33L,
 	(int32) 0,
@@ -39986,14 +40156,48 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 38,
 	(long) 38,
 	"GAME_WINDOW_RENDERED",
-	names930,
-	types930,
-	attr_flags930,
-	gtypes930,
+	names940,
+	types940,
+	attr_flags940,
+	gtypes940,
 	(uint16) 1024,
-	cn_attr930,
+	cn_attr940,
 	288,
 	34L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 23,
+	(long) 22,
+	"GAME_FILE",
+	names941,
+	types941,
+	attr_flags941,
+	gtypes941,
+	(uint16) 1024,
+	cn_attr941,
+	104,
+	5L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 29,
+	(long) 28,
+	"CPF_PACKAGE_FILE",
+	names942,
+	types942,
+	attr_flags942,
+	gtypes942,
+	(uint16) 1024,
+	cn_attr942,
+	136,
+	7L,
 	(int32) 0,
 	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
 	,
@@ -40003,12 +40207,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 33,
 	(long) 33,
 	"GAME_EVENTS_CONTROLLER",
-	names931,
-	types931,
-	attr_flags931,
-	gtypes931,
+	names943,
+	types943,
+	attr_flags943,
+	gtypes943,
 	(uint16) 1024,
-	cn_attr931,
+	cn_attr943,
 	248,
 	29L,
 	(int32) 32,
@@ -40020,12 +40224,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 3,
 	(long) 3,
 	"TEXT_CONTROLLER",
-	names932,
-	types932,
-	attr_flags932,
-	gtypes932,
+	names944,
+	types944,
+	attr_flags944,
+	gtypes944,
 	(uint16) 1024,
-	cn_attr932,
+	cn_attr944,
 	16,
 	1L,
 	(int32) 32,
@@ -40037,12 +40241,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 9,
 	(long) 9,
 	"GAME_HAPTIC",
-	names933,
-	types933,
-	attr_flags933,
-	gtypes933,
+	names945,
+	types945,
+	attr_flags945,
+	gtypes945,
 	(uint16) 5120,
-	cn_attr933,
+	cn_attr945,
 	40,
 	3L,
 	(int32) 0,
@@ -40054,31 +40258,14 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 10,
 	(long) 10,
 	"GAME_HAPTIC_JOYSTICK",
-	names934,
-	types934,
-	attr_flags934,
-	gtypes934,
+	names946,
+	types946,
+	attr_flags946,
+	gtypes946,
 	(uint16) 1024,
-	cn_attr934,
+	cn_attr946,
 	48,
 	4L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 10,
-	(long) 10,
-	"GAME_HAPTIC_DEVICE",
-	names935,
-	types935,
-	attr_flags935,
-	gtypes935,
-	(uint16) 1024,
-	cn_attr935,
-	48,
-	3L,
 	(int32) 0,
 	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
 	,
@@ -40088,14 +40275,116 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 9,
 	(long) 9,
 	"GAME_HAPTIC_MOUSE",
-	names936,
-	types936,
-	attr_flags936,
-	gtypes936,
+	names947,
+	types947,
+	attr_flags947,
+	gtypes947,
 	(uint16) 1024,
-	cn_attr936,
+	cn_attr947,
 	40,
 	3L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 10,
+	(long) 10,
+	"GAME_HAPTIC_DEVICE",
+	names948,
+	types948,
+	attr_flags948,
+	gtypes948,
+	(uint16) 1024,
+	cn_attr948,
+	48,
+	3L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 2,
+	(long) 2,
+	"CHAIN_INDEXABLE_ITERATOR",
+	names949,
+	types949,
+	attr_flags949,
+	gtypes949,
+	(uint16) 0,
+	cn_attr949,
+	16,
+	1L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 1,
+	(long) 1,
+	"QUICK_SORTER",
+	names950,
+	types950,
+	attr_flags950,
+	gtypes950,
+	(uint16) 0,
+	cn_attr950,
+	8,
+	1L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 1,
+	(long) 1,
+	"SORTER",
+	names951,
+	types951,
+	attr_flags951,
+	gtypes951,
+	(uint16) 4096,
+	cn_attr951,
+	8,
+	1L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 0,
+	(long) 0,
+	"PART_COMPARATOR",
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	(uint16) 4096,
+	(int32 *) 0,
+	0,
+	0L,
+	(int32) 0,
+	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
+	,
+	NULL
+},
+{
+	(long) 1,
+	(long) 1,
+	"REVERSE_PART_COMPARATOR",
+	names953,
+	types953,
+	attr_flags953,
+	gtypes953,
+	(uint16) 0,
+	cn_attr953,
+	8,
+	1L,
 	(int32) 0,
 	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
 	,
@@ -40105,12 +40394,12 @@ const struct cnode egc_fsystem_init[] = {
 	(long) 1,
 	(long) 1,
 	"TYPE",
-	names937,
-	types937,
-	attr_flags937,
-	gtypes937,
+	names954,
+	types954,
+	attr_flags954,
+	gtypes954,
 	(uint16) 0,
-	cn_attr937,
+	cn_attr954,
 	8,
 	1L,
 	(int32) 0,
@@ -40148,295 +40437,6 @@ const struct cnode egc_fsystem_init[] = {
 	0,
 	0L,
 	(int32) 32,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 0,
-	(long) 0,
-	"PART_COMPARATOR",
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	(uint16) 4096,
-	(int32 *) 0,
-	0,
-	0L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 1,
-	(long) 1,
-	"QUICK_SORTER",
-	names941,
-	types941,
-	attr_flags941,
-	gtypes941,
-	(uint16) 0,
-	cn_attr941,
-	8,
-	1L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 1,
-	(long) 1,
-	"SORTER",
-	names942,
-	types942,
-	attr_flags942,
-	gtypes942,
-	(uint16) 4096,
-	cn_attr942,
-	8,
-	1L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 1,
-	(long) 1,
-	"REVERSE_PART_COMPARATOR",
-	names943,
-	types943,
-	attr_flags943,
-	gtypes943,
-	(uint16) 0,
-	cn_attr943,
-	8,
-	1L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 2,
-	(long) 2,
-	"CHAIN_INDEXABLE_ITERATOR",
-	names944,
-	types944,
-	attr_flags944,
-	gtypes944,
-	(uint16) 0,
-	cn_attr944,
-	16,
-	1L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 0,
-	(long) 0,
-	"SHARED_EXTERNAL",
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	(uint16) 0,
-	(int32 *) 0,
-	0,
-	0L,
-	(int32) 32,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 0,
-	(long) 0,
-	"CPF_EXTERNAL",
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	(uint16) 0,
-	(int32 *) 0,
-	0,
-	0L,
-	(int32) 32,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 0,
-	(long) 0,
-	"THREAD_ENVIRONMENT",
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	(uint16) 0,
-	(int32 *) 0,
-	0,
-	0L,
-	(int32) 32,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 0,
-	(long) 0,
-	"GAME_RESSOURCE_MANAGER",
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	(uint16) 4096,
-	(int32 *) 0,
-	0,
-	0L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 2,
-	(long) 2,
-	"CPF_RESSOURCE_MANAGER",
-	names949,
-	types949,
-	attr_flags949,
-	gtypes949,
-	(uint16) 4096,
-	cn_attr949,
-	16,
-	1L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 10,
-	(long) 10,
-	"TEXT_SURFACE",
-	names950,
-	types950,
-	attr_flags950,
-	gtypes950,
-	(uint16) 4096,
-	cn_attr950,
-	64,
-	7L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 10,
-	(long) 10,
-	"TEXT_SURFACE_BLENDED",
-	names951,
-	types951,
-	attr_flags951,
-	gtypes951,
-	(uint16) 0,
-	cn_attr951,
-	64,
-	7L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 2,
-	(long) 2,
-	"MUTEX",
-	names952,
-	types952,
-	attr_flags952,
-	gtypes952,
-	(uint16) 1024,
-	cn_attr952,
-	16,
-	0L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 9,
-	(long) 9,
-	"TEXT_FONT",
-	names953,
-	types953,
-	attr_flags953,
-	gtypes953,
-	(uint16) 1024,
-	cn_attr953,
-	40,
-	1L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 12,
-	(long) 12,
-	"TEXT_FONT_CPF",
-	names954,
-	types954,
-	attr_flags954,
-	gtypes954,
-	(uint16) 1024,
-	cn_attr954,
-	56,
-	2L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 23,
-	(long) 22,
-	"GAME_FILE",
-	names955,
-	types955,
-	attr_flags955,
-	gtypes955,
-	(uint16) 1024,
-	cn_attr955,
-	104,
-	5L,
-	(int32) 0,
-	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
-	,
-	NULL
-},
-{
-	(long) 29,
-	(long) 28,
-	"CPF_PACKAGE_FILE",
-	names956,
-	types956,
-	attr_flags956,
-	gtypes956,
-	(uint16) 1024,
-	cn_attr956,
-	136,
-	7L,
-	(int32) 0,
 	{(int32) 0, (int) 0, (char **) 0, (char *) 0}
 	,
 	NULL

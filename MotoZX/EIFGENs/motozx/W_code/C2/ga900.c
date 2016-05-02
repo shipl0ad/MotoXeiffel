@@ -10,9 +10,9 @@
 extern "C" {
 #endif
 
-extern void F900_9266(EIF_REFERENCE);
-extern void F900_9269(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F900_9271(EIF_REFERENCE);
+extern void F900_9268(EIF_REFERENCE);
+extern void F900_9271(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F900_9273(EIF_REFERENCE);
 extern void EIF_Minit900(void);
 extern EIF_REFERENCE _A900_50();
 
@@ -36,7 +36,7 @@ extern "C" {
 #endif
 
 /* {GAME_EVENTS}.make */
-void F900_9266 (EIF_REFERENCE Current)
+void F900_9268 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "make";
@@ -67,17 +67,17 @@ void F900_9266 (EIF_REFERENCE Current)
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 899, Current, 0, 0, 14932);
+	RTEAA(l_feature_name, 899, Current, 0, 0, 14934);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(899, Current, 14932);
+	RTDBGEAA(899, Current, 14934);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7166, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7168, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(1,1);
-	tr2 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(8013, "clear_actions", tr1))(tr1)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
+	tr2 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(8031, "clear_actions", tr1))(tr1)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
 	RTNHOOK(1,2);
 	{
 		static EIF_TYPE_INDEX typarr0[] = {0xFFF9,1,174,0xFF01,0,0xFFFF};
@@ -96,17 +96,17 @@ void F900_9266 (EIF_REFERENCE Current)
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
 		typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(dftype, typarr0)));
-		tr3 = RTLNRW(typres0.id, 0, (EIF_POINTER) _A900_50, (EIF_POINTER)(0),7164, 0, 0, 1, -1, tr1, 0);
+		tr3 = RTLNRW(typres0.id, 0, (EIF_POINTER) _A900_50, (EIF_POINTER)(0),7166, 0, 0, 1, -1, tr1, 0);
 	}
 	ur1 = RTCCL(tr3);
 	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(1711, "extend", tr2))(tr2, ur1x);
 	RTHOOK(2);
-	RTDBGAA(Current, dtype, 7165, 0x04000000, 1); /* is_running */
-	*(EIF_BOOLEAN *)(Current + RTWA(7165, dtype)) = (EIF_BOOLEAN) (EIF_BOOLEAN) 1;
+	RTDBGAA(Current, dtype, 7167, 0x04000000, 1); /* is_running */
+	*(EIF_BOOLEAN *)(Current + RTWA(7167, dtype)) = (EIF_BOOLEAN) (EIF_BOOLEAN) 1;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(3);
 		RTCT("make_event_is_running", EX_POST);
-		tb1 = *(EIF_BOOLEAN *)(Current + RTWA(7165, dtype));
+		tb1 = *(EIF_BOOLEAN *)(Current + RTWA(7167, dtype));
 		if (tb1) {
 			RTCK;
 		} else {
@@ -127,7 +127,7 @@ void F900_9266 (EIF_REFERENCE Current)
 }
 
 /* {GAME_EVENTS}.set_is_running */
-void F900_9269 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F900_9271 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "set_is_running";
@@ -148,25 +148,25 @@ void F900_9269 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_BOOL,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 899, Current, 0, 1, 14930);
+	RTEAA(l_feature_name, 899, Current, 0, 1, 14932);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(899, Current, 14930);
+	RTDBGEAA(899, Current, 14932);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	if (arg1) {
 		RTHOOK(2);
-		(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(7162, dtype))(Current);
+		(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(7164, dtype))(Current);
 	} else {
 		RTHOOK(3);
-		(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(7161, dtype))(Current);
+		(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(7163, dtype))(Current);
 	}
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(4);
 		RTCT("is_assign", EX_POST);
-		tb1 = *(EIF_BOOLEAN *)(Current + RTWA(7165, dtype));
+		tb1 = *(EIF_BOOLEAN *)(Current + RTWA(7167, dtype));
 		if ((tb1 == arg1)) {
 			RTCK;
 		} else {
@@ -185,11 +185,11 @@ void F900_9269 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 }
 
 /* {GAME_EVENTS}.is_running */
-EIF_TYPED_VALUE F900_9271 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F900_9273 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_BOOL;
-	r.it_b = *(EIF_BOOLEAN *)(Current + RTWA(7165,Dtype(Current)));
+	r.it_b = *(EIF_BOOLEAN *)(Current + RTWA(7167,Dtype(Current)));
 	return r;
 }
 

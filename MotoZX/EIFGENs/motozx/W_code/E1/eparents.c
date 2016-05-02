@@ -3444,11 +3444,11 @@ static struct eif_par_types par858 = {858, ptf858, (uint16) 1, (uint16) 2, (char
 static EIF_TYPE_INDEX ptf859[] = {428,0xFFF8,1,0xFFF7,364,0xFFF8,1,0xFFF7,167,0xFFFF};
 static struct eif_par_types par859 = {859, ptf859, (uint16) 3, (uint16) 1, (char) 0};
 
-/* AUDIO_EXTERNAL */
+/* GAME_JOYSTICK_HAT_STATE */
 static EIF_TYPE_INDEX ptf860[] = {0,0xFFFF};
 static struct eif_par_types par860 = {860, ptf860, (uint16) 1, (uint16) 0, (char) 0};
 
-/* GAME_JOYSTICK_HAT_STATE */
+/* AUDIO_EXTERNAL */
 static EIF_TYPE_INDEX ptf861[] = {0,0xFFFF};
 static struct eif_par_types par861 = {861, ptf861, (uint16) 1, (uint16) 0, (char) 0};
 
@@ -3496,43 +3496,43 @@ static struct eif_par_types par871 = {871, ptf871, (uint16) 1, (uint16) 0, (char
 static EIF_TYPE_INDEX ptf872[] = {0,0xFFFF};
 static struct eif_par_types par872 = {872, ptf872, (uint16) 1, (uint16) 0, (char) 0};
 
-/* THREAD_ENVIRONMENT */
+/* GAME_GESTURE */
 static EIF_TYPE_INDEX ptf873[] = {0,0xFFFF};
 static struct eif_par_types par873 = {873, ptf873, (uint16) 1, (uint16) 0, (char) 0};
 
-/* THREAD_CONTROL */
+/* GAME_DOLLAR_GESTURE */
 static EIF_TYPE_INDEX ptf874[] = {873,0xFFFF};
 static struct eif_par_types par874 = {874, ptf874, (uint16) 1, (uint16) 0, (char) 0};
 
-/* THREAD */
-static EIF_TYPE_INDEX ptf875[] = {874,0xFFFF};
+/* GAME_FINGERS_GESTURE */
+static EIF_TYPE_INDEX ptf875[] = {873,0xFFFF};
 static struct eif_par_types par875 = {875, ptf875, (uint16) 1, (uint16) 0, (char) 0};
 
-/* AUDIO_LIBRARY_SHARED */
+/* THREAD_ENVIRONMENT */
 static EIF_TYPE_INDEX ptf876[] = {0,0xFFFF};
 static struct eif_par_types par876 = {876, ptf876, (uint16) 1, (uint16) 0, (char) 0};
 
-/* GAME_GESTURE */
-static EIF_TYPE_INDEX ptf877[] = {0,0xFFFF};
+/* THREAD_CONTROL */
+static EIF_TYPE_INDEX ptf877[] = {876,0xFFFF};
 static struct eif_par_types par877 = {877, ptf877, (uint16) 1, (uint16) 0, (char) 0};
 
-/* GAME_FINGERS_GESTURE */
+/* THREAD */
 static EIF_TYPE_INDEX ptf878[] = {877,0xFFFF};
 static struct eif_par_types par878 = {878, ptf878, (uint16) 1, (uint16) 0, (char) 0};
 
-/* GAME_DOLLAR_GESTURE */
-static EIF_TYPE_INDEX ptf879[] = {877,0xFFFF};
+/* GAME_RESSOURCE */
+static EIF_TYPE_INDEX ptf879[] = {0,0xFFFF};
 static struct eif_par_types par879 = {879, ptf879, (uint16) 1, (uint16) 0, (char) 0};
 
-/* GAME_RESSOURCE */
+/* GAME_DRAWING_TOOLS */
 static EIF_TYPE_INDEX ptf880[] = {0,0xFFFF};
 static struct eif_par_types par880 = {880, ptf880, (uint16) 1, (uint16) 0, (char) 0};
 
-/* GAME_DRAWING_TOOLS */
+/* GAME_RENDER_TARGET */
 static EIF_TYPE_INDEX ptf881[] = {0,0xFFFF};
 static struct eif_par_types par881 = {881, ptf881, (uint16) 1, (uint16) 0, (char) 0};
 
-/* GAME_RENDER_TARGET */
+/* AUDIO_LIBRARY_SHARED */
 static EIF_TYPE_INDEX ptf882[] = {0,0xFFFF};
 static struct eif_par_types par882 = {882, ptf882, (uint16) 1, (uint16) 0, (char) 0};
 
@@ -3541,7 +3541,7 @@ static EIF_TYPE_INDEX ptf883[] = {0,0xFFFF};
 static struct eif_par_types par883 = {883, ptf883, (uint16) 1, (uint16) 0, (char) 0};
 
 /* AUDIO_SOUND */
-static EIF_TYPE_INDEX ptf884[] = {880,0xFFF7,883,0xFFFF};
+static EIF_TYPE_INDEX ptf884[] = {879,0xFFF7,883,0xFFFF};
 static struct eif_par_types par884 = {884, ptf884, (uint16) 2, (uint16) 0, (char) 0};
 
 /* AUDIO_OPENAL_ERROR_MANAGER */
@@ -3549,7 +3549,7 @@ static EIF_TYPE_INDEX ptf885[] = {883,0xFFFF};
 static struct eif_par_types par885 = {885, ptf885, (uint16) 1, (uint16) 0, (char) 0};
 
 /* AUDIO_LIBRARY_CONTROLLER */
-static EIF_TYPE_INDEX ptf886[] = {885,0xFFF7,875,0xFFFF};
+static EIF_TYPE_INDEX ptf886[] = {885,0xFFF7,878,0xFFFF};
 static struct eif_par_types par886 = {886, ptf886, (uint16) 2, (uint16) 0, (char) 0};
 
 /* AUDIO_3D_OBJECT */
@@ -3604,11 +3604,11 @@ static struct eif_par_types par898 = {898, ptf898, (uint16) 1, (uint16) 0, (char
 static EIF_TYPE_INDEX ptf899[] = {889,0xFFFF};
 static struct eif_par_types par899 = {899, ptf899, (uint16) 1, (uint16) 0, (char) 0};
 
-/* GAME_TOUCH_DEVICE_EVENTS */
+/* GAME_JOYSTICK_EVENTS */
 static EIF_TYPE_INDEX ptf900[] = {899,0xFFFF};
 static struct eif_par_types par900 = {900, ptf900, (uint16) 1, (uint16) 0, (char) 0};
 
-/* GAME_JOYSTICK_EVENTS */
+/* GAME_TOUCH_DEVICE_EVENTS */
 static EIF_TYPE_INDEX ptf901[] = {899,0xFFFF};
 static struct eif_par_types par901 = {901, ptf901, (uint16) 1, (uint16) 0, (char) 0};
 
@@ -3648,21 +3648,21 @@ static struct eif_par_types par909 = {909, ptf909, (uint16) 1, (uint16) 0, (char
 static EIF_TYPE_INDEX ptf910[] = {0,0xFFFF};
 static struct eif_par_types par910 = {910, ptf910, (uint16) 1, (uint16) 0, (char) 0};
 
-/* GAME_ENGINE */
-static EIF_TYPE_INDEX ptf911[] = {910,0xFFF7,872,0xFFF7,876,0xFFF7,61,0xFFFF};
-static struct eif_par_types par911 = {911, ptf911, (uint16) 4, (uint16) 0, (char) 0};
-
 /* GAME_TOUCH_DEVICE */
-static EIF_TYPE_INDEX ptf912[] = {900,0xFFF7,910,0xFFF7,897,0xFFFF};
-static struct eif_par_types par912 = {912, ptf912, (uint16) 3, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf911[] = {901,0xFFF7,910,0xFFF7,897,0xFFFF};
+static struct eif_par_types par911 = {911, ptf911, (uint16) 3, (uint16) 0, (char) 0};
 
 /* GAME_SURFACE */
-static EIF_TYPE_INDEX ptf913[] = {910,0xFFF7,881,0xFFF7,898,0xFFFF};
-static struct eif_par_types par913 = {913, ptf913, (uint16) 3, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf912[] = {910,0xFFF7,880,0xFFF7,898,0xFFFF};
+static struct eif_par_types par912 = {912, ptf912, (uint16) 3, (uint16) 0, (char) 0};
 
 /* GAME_DISPLAY */
-static EIF_TYPE_INDEX ptf914[] = {889,0xFFF7,910,0xFFFF};
-static struct eif_par_types par914 = {914, ptf914, (uint16) 2, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf913[] = {889,0xFFF7,910,0xFFFF};
+static struct eif_par_types par913 = {913, ptf913, (uint16) 2, (uint16) 0, (char) 0};
+
+/* GAME_ENGINE */
+static EIF_TYPE_INDEX ptf914[] = {910,0xFFF7,872,0xFFF7,882,0xFFF7,61,0xFFFF};
+static struct eif_par_types par914 = {914, ptf914, (uint16) 4, (uint16) 0, (char) 0};
 
 /* GAME_WINDOW_BUILDER */
 static EIF_TYPE_INDEX ptf915[] = {910,0xFFFF};
@@ -3693,39 +3693,39 @@ static EIF_TYPE_INDEX ptf921[] = {46,0xFFF7,889,0xFFFF};
 static struct eif_par_types par921 = {921, ptf921, (uint16) 2, (uint16) 0, (char) 0};
 
 /* MUTEX */
-static EIF_TYPE_INDEX ptf922[] = {150,0xFFF7,873,0xFFFF};
+static EIF_TYPE_INDEX ptf922[] = {150,0xFFF7,876,0xFFFF};
 static struct eif_par_types par922 = {922, ptf922, (uint16) 2, (uint16) 0, (char) 0};
 
-/* AUDIO_SOURCE */
-static EIF_TYPE_INDEX ptf923[] = {887,0xFFF7,150,0xFFF7,876,0xFFFF};
-static struct eif_par_types par923 = {923, ptf923, (uint16) 3, (uint16) 0, (char) 0};
-
 /* GAME_IMAGE */
-static EIF_TYPE_INDEX ptf924[] = {880,0xFFF7,150,0xFFF7,910,0xFFF7,889,0xFFFF};
-static struct eif_par_types par924 = {924, ptf924, (uint16) 4, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf923[] = {879,0xFFF7,150,0xFFF7,910,0xFFF7,889,0xFFFF};
+static struct eif_par_types par923 = {923, ptf923, (uint16) 4, (uint16) 0, (char) 0};
 
 /* GAME_COLOR_PALETTE */
-static EIF_TYPE_INDEX ptf925[] = {889,0xFFF7,46,0xFFF7,150,0xFFF7,322,0xFF01,870,0xFFF7,326,0xFF01,870,0xFFFF};
-static struct eif_par_types par925 = {925, ptf925, (uint16) 5, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf924[] = {889,0xFFF7,46,0xFFF7,150,0xFFF7,322,0xFF01,870,0xFFF7,326,0xFF01,870,0xFFFF};
+static struct eif_par_types par924 = {924, ptf924, (uint16) 5, (uint16) 0, (char) 0};
+
+/* AUDIO_SOURCE */
+static EIF_TYPE_INDEX ptf925[] = {887,0xFFF7,150,0xFFF7,882,0xFFFF};
+static struct eif_par_types par925 = {925, ptf925, (uint16) 3, (uint16) 0, (char) 0};
 
 /* GAME_JOYSTICK */
-static EIF_TYPE_INDEX ptf926[] = {150,0xFFF7,901,0xFFF7,910,0xFFFF};
+static EIF_TYPE_INDEX ptf926[] = {150,0xFFF7,900,0xFFF7,910,0xFFFF};
 static struct eif_par_types par926 = {926, ptf926, (uint16) 3, (uint16) 0, (char) 0};
 
 /* GAME_CURSOR */
-static EIF_TYPE_INDEX ptf927[] = {46,0xFFF7,889,0xFFF7,150,0xFFFF};
-static struct eif_par_types par927 = {927, ptf927, (uint16) 3, (uint16) 0, (char) 0};
+static EIF_TYPE_INDEX ptf927[] = {889,0xFFF7,150,0xFFFF};
+static struct eif_par_types par927 = {927, ptf927, (uint16) 2, (uint16) 0, (char) 0};
 
 /* GAME_WINDOW_MANAGER */
 static EIF_TYPE_INDEX ptf928[] = {150,0xFFFF};
 static struct eif_par_types par928 = {928, ptf928, (uint16) 1, (uint16) 0, (char) 0};
 
 /* GAME_TEXTURE */
-static EIF_TYPE_INDEX ptf929[] = {889,0xFFF7,150,0xFFF7,882,0xFFF7,46,0xFFF7,898,0xFFFF};
+static EIF_TYPE_INDEX ptf929[] = {889,0xFFF7,150,0xFFF7,881,0xFFF7,46,0xFFF7,898,0xFFFF};
 static struct eif_par_types par929 = {929, ptf929, (uint16) 5, (uint16) 0, (char) 0};
 
 /* GAME_RENDERER */
-static EIF_TYPE_INDEX ptf930[] = {46,0xFFF7,881,0xFFF7,898,0xFFF7,150,0xFFFF};
+static EIF_TYPE_INDEX ptf930[] = {46,0xFFF7,880,0xFFF7,898,0xFFF7,150,0xFFFF};
 static struct eif_par_types par930 = {930, ptf930, (uint16) 4, (uint16) 0, (char) 0};
 
 /* GAME_PIXEL_FORMAT_READABLE */
@@ -3749,7 +3749,7 @@ static EIF_TYPE_INDEX ptf935[] = {934,0xFFFF};
 static struct eif_par_types par935 = {935, ptf935, (uint16) 1, (uint16) 0, (char) 0};
 
 /* GAME_WINDOW_RENDERED */
-static EIF_TYPE_INDEX ptf936[] = {934,0xFFF7,882,0xFFFF};
+static EIF_TYPE_INDEX ptf936[] = {934,0xFFF7,881,0xFFFF};
 static struct eif_par_types par936 = {936, ptf936, (uint16) 2, (uint16) 0, (char) 0};
 
 /* GAME_HAPTIC */

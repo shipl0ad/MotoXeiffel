@@ -10,8 +10,8 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F911_9535(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F911_9536(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F911_9540(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F911_9541(EIF_REFERENCE);
 extern void EIF_Minit911(void);
 
 #ifdef __cplusplus
@@ -34,8 +34,8 @@ extern "C" {
 #endif
 
 /* {GAME_LIBRARY_SHARED}.game_library */
-RTOID (F911_9535)
-EIF_TYPED_VALUE F911_9535 (EIF_REFERENCE Current)
+RTOID (F911_9540)
+EIF_TYPED_VALUE F911_9540 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "game_library";
@@ -49,7 +49,7 @@ EIF_TYPED_VALUE F911_9535 (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOTDR(F911_9535);
+	RTOTDR(F911_9540);
 
 	RTLI(3);
 	RTLR(0,loc1);
@@ -60,16 +60,16 @@ EIF_TYPED_VALUE F911_9535 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Current);
 	RTLU(SK_REF, &loc1);
 	
-	RTEAA(l_feature_name, 910, Current, 1, 0, 15226);
+	RTEAA(l_feature_name, 910, Current, 1, 0, 15231);
 	RTSA(Dtype(Current));
 	RTSC;
 	RTME(Dtype(Current), 0);
 	RTGC;
-	RTDBGEAA(910, Current, 15226);
+	RTDBGEAA(910, Current, 15231);
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
-	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7398, Dtype(Current)))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7403, Dtype(Current)))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	loc1 = RTCCL(tr1);
 	if (EIF_TEST(loc1)) {
 		RTHOOK(2);
@@ -98,11 +98,11 @@ EIF_TYPED_VALUE F911_9535 (EIF_REFERENCE Current)
 }
 
 /* {GAME_LIBRARY_SHARED}.internal_game_library */
-EIF_TYPED_VALUE F911_9536 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F911_9541 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_REF;
-	r.it_r = *(EIF_REFERENCE *)(Current + RTWA(7398,Dtype(Current)));
+	r.it_r = *(EIF_REFERENCE *)(Current + RTWA(7403,Dtype(Current)));
 	return r;
 }
 
@@ -110,7 +110,7 @@ EIF_TYPED_VALUE F911_9536 (EIF_REFERENCE Current)
 void EIF_Minit911 (void)
 {
 	GTCX
-	RTOTS (9535,F911_9535)
+	RTOTS (9540,F911_9540)
 }
 
 

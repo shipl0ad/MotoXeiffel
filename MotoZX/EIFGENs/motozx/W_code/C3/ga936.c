@@ -10,24 +10,7 @@
 extern "C" {
 #endif
 
-extern void F936_10306(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F936_10307(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F936_10308(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F936_10309(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F936_10310(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F936_10311(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F936_10312(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F936_10313(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F936_10314(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F936_10315(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F936_10316(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F936_10317(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F936_10318(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F936_10319(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F936_10320(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F936_10321(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F936_10322(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F936_10323(EIF_REFERENCE);
+extern void F936_10323(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
 extern EIF_TYPED_VALUE F936_10324(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F936_10325(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F936_10326(EIF_REFERENCE);
@@ -40,11 +23,28 @@ extern EIF_TYPED_VALUE F936_10332(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F936_10333(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F936_10334(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F936_10335(EIF_REFERENCE);
-extern void F936_10336(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F936_10336(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F936_10337(EIF_REFERENCE);
-extern void F936_10338(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F936_10338(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F936_10339(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F936_10340(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F936_10341(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F936_10342(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F936_10343(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F936_10344(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F936_10345(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F936_10346(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F936_10347(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F936_10348(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F936_10349(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F936_10350(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F936_10351(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F936_10352(EIF_REFERENCE);
+extern void F936_10353(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F936_10354(EIF_REFERENCE);
+extern void F936_10355(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F936_10356(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F936_10357(EIF_REFERENCE);
 extern void EIF_Minit936(void);
 
 #ifdef __cplusplus
@@ -68,7 +68,7 @@ extern "C" {
 #endif
 
 /* {GAME_WINDOW_GL}.make */
-void F936_10306 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x, EIF_TYPED_VALUE arg3x, EIF_TYPED_VALUE arg4x, EIF_TYPED_VALUE arg5x, EIF_TYPED_VALUE arg6x, EIF_TYPED_VALUE arg7x, EIF_TYPED_VALUE arg8x, EIF_TYPED_VALUE arg9x, EIF_TYPED_VALUE arg10x, EIF_TYPED_VALUE arg11x)
+void F936_10323 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x, EIF_TYPED_VALUE arg3x, EIF_TYPED_VALUE arg4x, EIF_TYPED_VALUE arg5x, EIF_TYPED_VALUE arg6x, EIF_TYPED_VALUE arg7x, EIF_TYPED_VALUE arg8x, EIF_TYPED_VALUE arg9x, EIF_TYPED_VALUE arg10x, EIF_TYPED_VALUE arg11x)
 {
 	GTCX
 	char *l_feature_name = "make";
@@ -149,23 +149,23 @@ void F936_10306 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE a
 	RTLU(SK_UINT32,&arg11);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 935, Current, 0, 11, 16049);
+	RTEAA(l_feature_name, 935, Current, 0, 11, 16066);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16049);
+	RTDBGEAA(935, Current, 16066);
 	RTCC(arg1, 935, l_feature_name, 1, eif_new_type(217, 0x01), 0x01);
 	if (arg2) {
-		RTCC(arg2, 935, l_feature_name, 2, eif_new_type(914, 0x00), 0x00);
+		RTCC(arg2, 935, l_feature_name, 2, eif_new_type(913, 0x00), 0x00);
 	}
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("game_screen_video_enabled", EX_PRE);
-		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7397, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7402, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 		RTNHOOK(1,1);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7300, "is_video_enable", tr1))(tr1)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7302, "is_video_enable", tr1))(tr1)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -201,26 +201,26 @@ body:;
 	ui4_3 = arg9;
 	ui4_4 = arg10;
 	uu4_1 = arg11;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(8018, 934))(Current, ur1x, ur2x, ub1x, ub2x, ub3x, ub4x, ui4_1x, ui4_2x, ui4_3x, ui4_4x, uu4_1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(8036, 934))(Current, ur1x, ur2x, ub1x, ub2x, ub3x, ub4x, ui4_1x, ui4_2x, ui4_3x, ui4_4x, uu4_1x);
 	RTHOOK(7);
-	RTDBGAA(Current, dtype, 8131, 0x40000000, 1); /* gl_context */
-	tp1 = *(EIF_POINTER *)(Current + RTWA(8101, dtype));
+	RTDBGAA(Current, dtype, 8149, 0x40000000, 1); /* gl_context */
+	tp1 = *(EIF_POINTER *)(Current + RTWA(8119, dtype));
 	up1 = tp1;
-	tp1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5205, 863))(Current, up1x)).it_p);
-	*(EIF_POINTER *)(Current + RTWA(8131, dtype)) = (EIF_POINTER) tp1;
+	tp1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5206, 863))(Current, up1x)).it_p);
+	*(EIF_POINTER *)(Current + RTWA(8149, dtype)) = (EIF_POINTER) tp1;
 	RTHOOK(8);
-	tp1 = *(EIF_POINTER *)(Current + RTWA(8131, dtype));
+	tp1 = *(EIF_POINTER *)(Current + RTWA(8149, dtype));
 	up1 = tp1;
 	tr1 = RTMS_EX_H("Cannot create GL context for the Window",39,1769678967);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6605, dtype))(Current, up1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6607, dtype))(Current, up1x, ur1x);
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(9);
 		RTCT("make_window_is_open", EX_POST);
 		tb1 = '\01';
-		tb2 = *(EIF_BOOLEAN *)(Current + RTWA(6544, dtype));
+		tb2 = *(EIF_BOOLEAN *)(Current + RTWA(6546, dtype));
 		if ((EIF_BOOLEAN) !tb2) {
-			tb2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8029, dtype))(Current)).it_b);
+			tb2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8047, dtype))(Current)).it_b);
 			tb1 = tb2;
 		}
 		if (tb1) {
@@ -263,7 +263,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.gl_context_valid */
-EIF_TYPED_VALUE F936_10307 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10324 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "gl_context_valid";
@@ -282,16 +282,16 @@ EIF_TYPED_VALUE F936_10307 (EIF_REFERENCE Current)
 	RTLU (SK_BOOL, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 935, Current, 0, 0, 16050);
+	RTEAA(l_feature_name, 935, Current, 0, 0, 16067);
 	RTSA(Dtype(Current));
 	RTSC;
 	RTME(Dtype(Current), 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16050);
+	RTDBGEAA(935, Current, 16067);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	tp1 = *(EIF_POINTER *)(Current + RTWA(8131, Dtype(Current)));
+	tp1 = *(EIF_POINTER *)(Current + RTWA(8149, Dtype(Current)));
 	tb1 = !tp1;
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN) !tb1;
 	RTVI(Current, RTAL);
@@ -306,7 +306,7 @@ EIF_TYPED_VALUE F936_10307 (EIF_REFERENCE Current)
 }
 
 /* {GAME_WINDOW_GL}.gl_drawable_size */
-EIF_TYPED_VALUE F936_10308 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10325 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "gl_drawable_size";
@@ -339,17 +339,17 @@ EIF_TYPED_VALUE F936_10308 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16051);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16068);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16051);
+	RTDBGEAA(935, Current, 16068);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -358,11 +358,11 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	tp1 = *(EIF_POINTER *)(Current + RTWA(8101, dtype));
+	tp1 = *(EIF_POINTER *)(Current + RTWA(8119, dtype));
 	up1 = tp1;
 	up2 = (EIF_INTEGER_32 *) &(loc1);
 	up3 = (EIF_INTEGER_32 *) &(loc2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5209, 863))(Current, up1x, up2x, up3x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5210, 863))(Current, up1x, up2x, up3x);
 	RTHOOK(3);
 	RTDBGAL(Current, 0, 0xF80000AE, 0,0); /* Result */
 	{
@@ -391,7 +391,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.gl_version */
-EIF_TYPED_VALUE F936_10309 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10326 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "gl_version";
@@ -428,17 +428,17 @@ EIF_TYPED_VALUE F936_10309 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc2);
 	RTLU(SK_INT32, &loc3);
 	
-	RTEAA(l_feature_name, 935, Current, 3, 0, 16052);
+	RTEAA(l_feature_name, 935, Current, 3, 0, 16069);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16052);
+	RTDBGEAA(935, Current, 16069);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -447,21 +447,21 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6395, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6397, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	if ((EIF_BOOLEAN)(loc1 == ((EIF_INTEGER_32) 0L))) {
 		RTHOOK(5);
 		RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6396, 863))(Current)).it_i4);
+		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6398, 863))(Current)).it_i4);
 		ui4_1 = ti4_1;
 		up1 = (EIF_INTEGER_32 *) &(loc3);
-		loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+		loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 		RTHOOK(6);
 		if ((EIF_BOOLEAN)(loc1 == ((EIF_INTEGER_32) 0L))) {
 			RTHOOK(7);
@@ -482,7 +482,7 @@ body:;
 			ui4_1 = loc1;
 			tr1 = RTMS_EX_H("Could not get the OpenGL minor version",38,1527080302);
 			ur1 = tr1;
-			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 			RTHOOK(9);
 			RTDBGAL(Current, 0, 0xF80000AE, 0,0); /* Result */
 			{
@@ -502,7 +502,7 @@ body:;
 		ui4_1 = loc1;
 		tr1 = RTMS_EX_H("Could not get the OpenGL major version",38,228535150);
 		ur1 = tr1;
-		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 		RTHOOK(11);
 		RTDBGAL(Current, 0, 0xF80000AE, 0,0); /* Result */
 		{
@@ -532,7 +532,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.gl_red_size */
-EIF_TYPED_VALUE F936_10310 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10327 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "gl_red_size";
@@ -565,17 +565,17 @@ EIF_TYPED_VALUE F936_10310 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16053);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16070);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16053);
+	RTDBGEAA(935, Current, 16070);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -584,18 +584,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6379, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6381, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL red channel size",41,354061925);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x10000000, 1,0); /* Result */
 	Result = (EIF_INTEGER_32) loc2;
@@ -614,7 +614,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.gl_green_size */
-EIF_TYPED_VALUE F936_10311 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10328 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "gl_green_size";
@@ -647,17 +647,17 @@ EIF_TYPED_VALUE F936_10311 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16054);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16071);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16054);
+	RTDBGEAA(935, Current, 16071);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -666,18 +666,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6380, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6382, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL green channel size",43,663495013);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x10000000, 1,0); /* Result */
 	Result = (EIF_INTEGER_32) loc2;
@@ -696,7 +696,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.gl_blue_size */
-EIF_TYPED_VALUE F936_10312 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10329 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "gl_blue_size";
@@ -729,17 +729,17 @@ EIF_TYPED_VALUE F936_10312 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16055);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16072);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16055);
+	RTDBGEAA(935, Current, 16072);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -748,18 +748,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6381, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6383, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL blue channel size",42,1866625893);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x10000000, 1,0); /* Result */
 	Result = (EIF_INTEGER_32) loc2;
@@ -778,7 +778,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.gl_alpha_size */
-EIF_TYPED_VALUE F936_10313 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10330 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "gl_alpha_size";
@@ -811,17 +811,17 @@ EIF_TYPED_VALUE F936_10313 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16056);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16073);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16056);
+	RTDBGEAA(935, Current, 16073);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -830,18 +830,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6382, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6384, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL alpha channel size",43,1845576293);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x10000000, 1,0); /* Result */
 	Result = (EIF_INTEGER_32) loc2;
@@ -860,7 +860,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.gl_buffer_size */
-EIF_TYPED_VALUE F936_10314 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10331 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "gl_buffer_size";
@@ -893,17 +893,17 @@ EIF_TYPED_VALUE F936_10314 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16057);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16074);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16057);
+	RTDBGEAA(935, Current, 16074);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -912,18 +912,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6383, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6385, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL frame buffer size",42,1200608357);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x10000000, 1,0); /* Result */
 	Result = (EIF_INTEGER_32) loc2;
@@ -942,7 +942,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.is_gl_double_buffer_enabled */
-EIF_TYPED_VALUE F936_10315 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10332 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "is_gl_double_buffer_enabled";
@@ -975,17 +975,17 @@ EIF_TYPED_VALUE F936_10315 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16058);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16075);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16058);
+	RTDBGEAA(935, Current, 16075);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -994,18 +994,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6384, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6386, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL double buffer information",50,1973256558);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(loc2 != ((EIF_INTEGER_32) 0L));
@@ -1024,7 +1024,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.gl_depth_size */
-EIF_TYPED_VALUE F936_10316 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10333 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "gl_depth_size";
@@ -1057,17 +1057,17 @@ EIF_TYPED_VALUE F936_10316 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16059);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16076);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16059);
+	RTDBGEAA(935, Current, 16076);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1076,18 +1076,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6385, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6387, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL depth buffer size",42,584501093);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x10000000, 1,0); /* Result */
 	Result = (EIF_INTEGER_32) loc2;
@@ -1106,7 +1106,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.gl_stencil_size */
-EIF_TYPED_VALUE F936_10317 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10334 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "gl_stencil_size";
@@ -1139,17 +1139,17 @@ EIF_TYPED_VALUE F936_10317 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16060);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16077);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16060);
+	RTDBGEAA(935, Current, 16077);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1158,18 +1158,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6386, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6388, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL stencil buffer size",44,682627685);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x10000000, 1,0); /* Result */
 	Result = (EIF_INTEGER_32) loc2;
@@ -1188,7 +1188,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.gl_accumulation_red_size */
-EIF_TYPED_VALUE F936_10318 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10335 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "gl_accumulation_red_size";
@@ -1221,17 +1221,17 @@ EIF_TYPED_VALUE F936_10318 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16061);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16078);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16061);
+	RTDBGEAA(935, Current, 16078);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1240,18 +1240,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6387, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6389, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL accumulation buffer red channel size",61,1841749093);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x10000000, 1,0); /* Result */
 	Result = (EIF_INTEGER_32) loc2;
@@ -1270,7 +1270,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.gl_accumulation_green_size */
-EIF_TYPED_VALUE F936_10319 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10336 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "gl_accumulation_green_size";
@@ -1303,17 +1303,17 @@ EIF_TYPED_VALUE F936_10319 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16062);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16079);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16062);
+	RTDBGEAA(935, Current, 16079);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1322,18 +1322,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6388, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6390, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL accumulation buffer green channel size",63,2146453861);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x10000000, 1,0); /* Result */
 	Result = (EIF_INTEGER_32) loc2;
@@ -1352,7 +1352,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.gl_accumulation_blue_size */
-EIF_TYPED_VALUE F936_10320 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10337 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "gl_accumulation_blue_size";
@@ -1385,17 +1385,17 @@ EIF_TYPED_VALUE F936_10320 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16063);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16080);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16063);
+	RTDBGEAA(935, Current, 16080);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1404,18 +1404,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6389, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6391, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL accumulation buffer blue channel size",62,463135077);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x10000000, 1,0); /* Result */
 	Result = (EIF_INTEGER_32) loc2;
@@ -1434,7 +1434,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.gl_accumulation_alpha_size */
-EIF_TYPED_VALUE F936_10321 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10338 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "gl_accumulation_alpha_size";
@@ -1467,17 +1467,17 @@ EIF_TYPED_VALUE F936_10321 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16064);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16081);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16064);
+	RTDBGEAA(935, Current, 16081);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1486,18 +1486,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6390, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6392, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL accumulation buffer alpha channel size",63,1181055333);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x10000000, 1,0); /* Result */
 	Result = (EIF_INTEGER_32) loc2;
@@ -1516,7 +1516,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.is_gl_stereo_enabled */
-EIF_TYPED_VALUE F936_10322 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10339 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "is_gl_stereo_enabled";
@@ -1549,17 +1549,17 @@ EIF_TYPED_VALUE F936_10322 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16065);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16082);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16065);
+	RTDBGEAA(935, Current, 16082);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1568,18 +1568,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6391, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6393, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL quad buffer stereo rendering information",65,1447511662);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(loc2 != ((EIF_INTEGER_32) 0L));
@@ -1598,7 +1598,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.is_gl_multi_sample_enabled */
-EIF_TYPED_VALUE F936_10323 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10340 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "is_gl_multi_sample_enabled";
@@ -1631,17 +1631,17 @@ EIF_TYPED_VALUE F936_10323 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16066);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16083);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16066);
+	RTDBGEAA(935, Current, 16083);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1650,18 +1650,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6392, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6394, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL multisample anti-aliasing information",62,1227668078);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(loc2 != ((EIF_INTEGER_32) 0L));
@@ -1680,7 +1680,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.gl_multi_sample_count */
-EIF_TYPED_VALUE F936_10324 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10341 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "gl_multi_sample_count";
@@ -1713,22 +1713,22 @@ EIF_TYPED_VALUE F936_10324 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16067);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16084);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16067);
+	RTDBGEAA(935, Current, 16084);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTHOOK(2);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8118, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8136, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1737,18 +1737,18 @@ label_1:
 	}
 body:;
 	RTHOOK(3);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(4);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6393, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6395, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(5);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL multisample anti-aliasing information",62,1227668078);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(6);
 	RTDBGAL(Current, 0, 0x10000000, 1,0); /* Result */
 	Result = (EIF_INTEGER_32) loc2;
@@ -1767,7 +1767,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.is_gl_software_rendering_enable */
-EIF_TYPED_VALUE F936_10325 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10342 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "is_gl_software_rendering_enable";
@@ -1800,17 +1800,17 @@ EIF_TYPED_VALUE F936_10325 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16068);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16085);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16068);
+	RTDBGEAA(935, Current, 16085);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1819,18 +1819,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6394, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6396, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL software rendering information",55,81123694);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(loc2 == ((EIF_INTEGER_32) 0L));
@@ -1849,7 +1849,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.is_gl_hardware_rendering_enable */
-EIF_TYPED_VALUE F936_10326 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10343 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "is_gl_hardware_rendering_enable";
@@ -1882,17 +1882,17 @@ EIF_TYPED_VALUE F936_10326 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16069);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16086);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16069);
+	RTDBGEAA(935, Current, 16086);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1901,18 +1901,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6394, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6396, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL software rendering information",55,81123694);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(loc2 == ((EIF_INTEGER_32) 0L));
@@ -1931,7 +1931,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.is_gl_debug_enabled */
-EIF_TYPED_VALUE F936_10327 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10344 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "is_gl_debug_enabled";
@@ -1954,17 +1954,17 @@ EIF_TYPED_VALUE F936_10327 (EIF_REFERENCE Current)
 	RTLU (SK_BOOL, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 935, Current, 0, 0, 16070);
+	RTEAA(l_feature_name, 935, Current, 0, 0, 16087);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16070);
+	RTDBGEAA(935, Current, 16087);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -1974,9 +1974,9 @@ label_1:
 body:;
 	RTHOOK(2);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8132, dtype))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8150, dtype))(Current)).it_i4);
 	RTNHOOK(2,1);
-	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6401, 863))(Current)).it_i4);
+	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6403, 863))(Current)).it_i4);
 	ui4_1 = ti4_2;
 	ti4_2 = eif_bit_and(ti4_1,ui4_1);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_2 != ((EIF_INTEGER_32) 0L));
@@ -1993,7 +1993,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.is_gl_forward_compatibility_enabled */
-EIF_TYPED_VALUE F936_10328 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10345 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "is_gl_forward_compatibility_enabled";
@@ -2016,17 +2016,17 @@ EIF_TYPED_VALUE F936_10328 (EIF_REFERENCE Current)
 	RTLU (SK_BOOL, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 935, Current, 0, 0, 16071);
+	RTEAA(l_feature_name, 935, Current, 0, 0, 16088);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16071);
+	RTDBGEAA(935, Current, 16088);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -2036,9 +2036,9 @@ label_1:
 body:;
 	RTHOOK(2);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8132, dtype))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8150, dtype))(Current)).it_i4);
 	RTNHOOK(2,1);
-	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6402, 863))(Current)).it_i4);
+	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6404, 863))(Current)).it_i4);
 	ui4_1 = ti4_2;
 	ti4_2 = eif_bit_and(ti4_1,ui4_1);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_2 != ((EIF_INTEGER_32) 0L));
@@ -2055,7 +2055,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.is_gl_robust_access_enabled */
-EIF_TYPED_VALUE F936_10329 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10346 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "is_gl_robust_access_enabled";
@@ -2078,17 +2078,17 @@ EIF_TYPED_VALUE F936_10329 (EIF_REFERENCE Current)
 	RTLU (SK_BOOL, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 935, Current, 0, 0, 16072);
+	RTEAA(l_feature_name, 935, Current, 0, 0, 16089);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16072);
+	RTDBGEAA(935, Current, 16089);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -2098,9 +2098,9 @@ label_1:
 body:;
 	RTHOOK(2);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8132, dtype))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8150, dtype))(Current)).it_i4);
 	RTNHOOK(2,1);
-	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6403, 863))(Current)).it_i4);
+	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6405, 863))(Current)).it_i4);
 	ui4_1 = ti4_2;
 	ti4_2 = eif_bit_and(ti4_1,ui4_1);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_2 != ((EIF_INTEGER_32) 0L));
@@ -2117,7 +2117,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.is_gl_reset_isolation_enabled */
-EIF_TYPED_VALUE F936_10330 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10347 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "is_gl_reset_isolation_enabled";
@@ -2140,17 +2140,17 @@ EIF_TYPED_VALUE F936_10330 (EIF_REFERENCE Current)
 	RTLU (SK_BOOL, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 935, Current, 0, 0, 16073);
+	RTEAA(l_feature_name, 935, Current, 0, 0, 16090);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16073);
+	RTDBGEAA(935, Current, 16090);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -2160,9 +2160,9 @@ label_1:
 body:;
 	RTHOOK(2);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8132, dtype))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8150, dtype))(Current)).it_i4);
 	RTNHOOK(2,1);
-	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6404, 863))(Current)).it_i4);
+	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6406, 863))(Current)).it_i4);
 	ui4_1 = ti4_2;
 	ti4_2 = eif_bit_and(ti4_1,ui4_1);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_2 != ((EIF_INTEGER_32) 0L));
@@ -2179,7 +2179,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.is_gl_core_profile_enabled */
-EIF_TYPED_VALUE F936_10331 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10348 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "is_gl_core_profile_enabled";
@@ -2200,17 +2200,17 @@ EIF_TYPED_VALUE F936_10331 (EIF_REFERENCE Current)
 	RTLU (SK_BOOL, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 935, Current, 0, 0, 16074);
+	RTEAA(l_feature_name, 935, Current, 0, 0, 16091);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16074);
+	RTDBGEAA(935, Current, 16091);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -2220,8 +2220,8 @@ label_1:
 body:;
 	RTHOOK(2);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8133, dtype))(Current)).it_i4);
-	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6405, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8151, dtype))(Current)).it_i4);
+	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6407, 863))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
 	RTRS;
@@ -2235,7 +2235,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.is_gl_compatibility_profile_enabled */
-EIF_TYPED_VALUE F936_10332 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10349 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "is_gl_compatibility_profile_enabled";
@@ -2256,17 +2256,17 @@ EIF_TYPED_VALUE F936_10332 (EIF_REFERENCE Current)
 	RTLU (SK_BOOL, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 935, Current, 0, 0, 16075);
+	RTEAA(l_feature_name, 935, Current, 0, 0, 16092);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16075);
+	RTDBGEAA(935, Current, 16092);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -2276,8 +2276,8 @@ label_1:
 body:;
 	RTHOOK(2);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8133, dtype))(Current)).it_i4);
-	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6406, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8151, dtype))(Current)).it_i4);
+	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6408, 863))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
 	RTRS;
@@ -2291,7 +2291,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.is_gl_es_profile_enabled */
-EIF_TYPED_VALUE F936_10333 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10350 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "is_gl_es_profile_enabled";
@@ -2312,17 +2312,17 @@ EIF_TYPED_VALUE F936_10333 (EIF_REFERENCE Current)
 	RTLU (SK_BOOL, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 935, Current, 0, 0, 16076);
+	RTEAA(l_feature_name, 935, Current, 0, 0, 16093);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16076);
+	RTDBGEAA(935, Current, 16093);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -2332,8 +2332,8 @@ label_1:
 body:;
 	RTHOOK(2);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8133, dtype))(Current)).it_i4);
-	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6407, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8151, dtype))(Current)).it_i4);
+	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6409, 863))(Current)).it_i4);
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(ti4_1 == ti4_2);
 	RTVI(Current, RTAL);
 	RTRS;
@@ -2347,7 +2347,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.is_gl_context_sharing_enabled */
-EIF_TYPED_VALUE F936_10334 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10351 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "is_gl_context_sharing_enabled";
@@ -2380,17 +2380,17 @@ EIF_TYPED_VALUE F936_10334 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16077);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16094);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16077);
+	RTDBGEAA(935, Current, 16094);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -2399,18 +2399,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6399, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6401, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL context sharing information",52,248634990);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(loc2 != ((EIF_INTEGER_32) 0L));
@@ -2429,7 +2429,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.is_gl_srgb_request_enabled */
-EIF_TYPED_VALUE F936_10335 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10352 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "is_gl_srgb_request_enabled";
@@ -2462,17 +2462,17 @@ EIF_TYPED_VALUE F936_10335 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16078);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16095);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16078);
+	RTDBGEAA(935, Current, 16095);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -2481,18 +2481,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6400, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6402, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL sRGB rendering request information",59,356282734);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x04000000, 1,0); /* Result */
 	Result = (EIF_BOOLEAN) (EIF_BOOLEAN)(loc2 != ((EIF_INTEGER_32) 0L));
@@ -2511,7 +2511,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.update */
-void F936_10336 (EIF_REFERENCE Current)
+void F936_10353 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "update";
@@ -2531,17 +2531,17 @@ void F936_10336 (EIF_REFERENCE Current)
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 935, Current, 0, 0, 16079);
+	RTEAA(l_feature_name, 935, Current, 0, 0, 16096);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16079);
+	RTDBGEAA(935, Current, 16096);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("window_not_closed", EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8029, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8047, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -2549,7 +2549,7 @@ label_1:
 		RTCK;
 		RTHOOK(2);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_2);
 		RTCK;
 		RTJB;
@@ -2558,9 +2558,9 @@ label_2:
 	}
 body:;
 	RTHOOK(3);
-	tp1 = *(EIF_POINTER *)(Current + RTWA(8101, dtype));
+	tp1 = *(EIF_POINTER *)(Current + RTWA(8119, dtype));
 	up1 = tp1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5199, 863))(Current, up1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5200, 863))(Current, up1x);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(4);
@@ -2573,17 +2573,17 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.gl_context */
-EIF_TYPED_VALUE F936_10337 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10354 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_POINTER;
-	r.it_p = *(EIF_POINTER *)(Current + RTWA(8131,Dtype(Current)));
+	r.it_p = *(EIF_POINTER *)(Current + RTWA(8149,Dtype(Current)));
 	return r;
 }
 
 
 /* {GAME_WINDOW_GL}.dispose */
-void F936_10338 (EIF_REFERENCE Current)
+void F936_10355 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "dispose";
@@ -2603,21 +2603,21 @@ void F936_10338 (EIF_REFERENCE Current)
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 935, Current, 0, 0, 16081);
+	RTEAA(l_feature_name, 935, Current, 0, 0, 16098);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16081);
+	RTDBGEAA(935, Current, 16098);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	tp1 = *(EIF_POINTER *)(Current + RTWA(8131, dtype));
+	tp1 = *(EIF_POINTER *)(Current + RTWA(8149, dtype));
 	tb1 = !tp1;
 	if ((EIF_BOOLEAN) !tb1) {
 		RTHOOK(2);
-		tp1 = *(EIF_POINTER *)(Current + RTWA(8131, dtype));
+		tp1 = *(EIF_POINTER *)(Current + RTWA(8149, dtype));
 		up1 = tp1;
-		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5206, 863))(Current, up1x);
+		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5207, 863))(Current, up1x);
 	}
 	RTVI(Current, RTAL);
 	RTRS;
@@ -2631,7 +2631,7 @@ void F936_10338 (EIF_REFERENCE Current)
 }
 
 /* {GAME_WINDOW_GL}.gl_context_flags */
-EIF_TYPED_VALUE F936_10339 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10356 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "gl_context_flags";
@@ -2664,17 +2664,17 @@ EIF_TYPED_VALUE F936_10339 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16082);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16099);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16082);
+	RTDBGEAA(935, Current, 16099);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -2683,18 +2683,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6397, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6399, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL context information",44,274904942);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x10000000, 1,0); /* Result */
 	Result = (EIF_INTEGER_32) loc2;
@@ -2713,7 +2713,7 @@ body:;
 }
 
 /* {GAME_WINDOW_GL}.gl_context_profile_flags */
-EIF_TYPED_VALUE F936_10340 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F936_10357 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "gl_context_profile_flags";
@@ -2746,17 +2746,17 @@ EIF_TYPED_VALUE F936_10340 (EIF_REFERENCE Current)
 	RTLU(SK_INT32, &loc1);
 	RTLU(SK_INT32, &loc2);
 	
-	RTEAA(l_feature_name, 935, Current, 2, 0, 16083);
+	RTEAA(l_feature_name, 935, Current, 2, 0, 16100);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(935, Current, 16083);
+	RTDBGEAA(935, Current, 16100);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT(NULL, EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8102, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8120, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -2765,18 +2765,18 @@ label_1:
 	}
 body:;
 	RTHOOK(2);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(3);
 	RTDBGAL(Current, 1, 0x10000000, 1, 0); /* loc1 */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6398, 863))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(6400, 863))(Current)).it_i4);
 	ui4_1 = ti4_1;
 	up1 = (EIF_INTEGER_32 *) &(loc2);
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5201, 863))(Current, ui4_1x, up1x)).it_i4);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5202, 863))(Current, ui4_1x, up1x)).it_i4);
 	RTHOOK(4);
 	ui4_1 = loc1;
 	tr1 = RTMS_EX_H("Could not get the OpenGL context profile information",52,1036231278);
 	ur1 = tr1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 	RTHOOK(5);
 	RTDBGAL(Current, 0, 0x10000000, 1,0); /* Result */
 	Result = (EIF_INTEGER_32) loc2;

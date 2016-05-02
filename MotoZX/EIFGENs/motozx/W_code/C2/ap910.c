@@ -10,7 +10,7 @@
 extern "C" {
 #endif
 
-extern void F910_9514(EIF_REFERENCE);
+extern void F910_9519(EIF_REFERENCE);
 extern void EIF_Minit910(void);
 
 #ifdef __cplusplus
@@ -33,7 +33,7 @@ extern "C" {
 #endif
 
 /* {APPLICATION}.make */
-void F910_9514 (EIF_REFERENCE Current)
+void F910_9519 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "make";
@@ -53,17 +53,17 @@ void F910_9514 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Current);
 	RTLU(SK_REF, &loc1);
 	
-	RTEAA(l_feature_name, 909, Current, 1, 0, 15204);
+	RTEAA(l_feature_name, 909, Current, 1, 0, 15209);
 	RTSA(Dtype(Current));
 	RTSC;
 	RTME(Dtype(Current), 0);
 	RTGC;
-	RTDBGEAA(909, Current, 15204);
+	RTDBGEAA(909, Current, 15209);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAL(Current, 1, 0xF800038F, 0, 0); /* loc1 */
-	tr1 = RTLN(eif_new_type(911, 0x01).id);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(8242, Dtype(tr1)))(tr1);
+	RTDBGAL(Current, 1, 0xF8000392, 0, 0); /* loc1 */
+	tr1 = RTLN(eif_new_type(914, 0x01).id);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWC(7461, Dtype(tr1)))(tr1);
 	RTNHOOK(1,1);
 	loc1 = (EIF_REFERENCE) RTCCL(tr1);
 	RTVI(Current, RTAL);

@@ -1,5 +1,5 @@
 /*
- * Class GAME_RESSOURCE
+ * Class GAME_DRAWING_TOOLS
  */
 
 #include "eif_macros.h"
@@ -22,6 +22,7 @@ static const EIF_TYPE_INDEX egt_9_881 [] = {0xFF01,220,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_881 [] = {0xFF01,220,0xFFFF};
 static const EIF_TYPE_INDEX egt_11_881 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_881 [] = {0xFF01,880,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_881 [] = {0xFF01,0xFFF9,4,174,206,206,206,206,0xFFFF};
 
 
 static const struct desc_info desc_881[] = {
@@ -51,22 +52,19 @@ static const struct desc_info desc_881[] = {
 	{EIF_GENERIC(egt_10_881), 22, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 23, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_11_881), 24, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 14299, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 25, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 26, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 27, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x06E1 /*880*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01AF /*215*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_881), 30, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x017F /*191*/), 0x00, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 0x00, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x017F /*191*/), 14300, 0},
-	{EIF_NON_GENERIC(0x017F /*191*/), 14301, 1},
+	{EIF_GENERIC(egt_13_881), 14303, 0xFFFFFFFF},
 };
 void Init881(void)
 {
 	IDSC(desc_881, 0, 880);
 	IDSC(desc_881 + 1, 1, 880);
-	IDSC(desc_881 + 32, 399, 880);
+	IDSC(desc_881 + 32, 364, 880);
 }
 
 

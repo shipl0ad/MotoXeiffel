@@ -58,7 +58,7 @@ static const struct desc_info desc_873[] = {
 	{EIF_NON_GENERIC(0x06D1 /*872*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01AF /*215*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_873), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_873), 14264, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_873), 14266, 0xFFFFFFFF},
 };
 void Init873(void)
 {

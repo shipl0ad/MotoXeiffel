@@ -10,13 +10,13 @@
 extern "C" {
 #endif
 
-extern void F898_9245(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern void F898_9246(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
 extern void F898_9247(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern void F898_9248(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
 extern void F898_9249(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F898_9250(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F898_9251(EIF_REFERENCE);
+extern void F898_9250(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+extern void F898_9251(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F898_9252(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F898_9253(EIF_REFERENCE);
 extern void EIF_Minit898(void);
 
 #ifdef __cplusplus
@@ -39,7 +39,7 @@ extern "C" {
 #endif
 
 /* {GAME_DOLLAR_GESTURE_MANAGER}.load_dollar_gesture_template */
-void F898_9245 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F898_9247 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "load_dollar_gesture_template";
@@ -103,12 +103,12 @@ void F898_9245 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_REF, &loc5);
 	RTLU(SK_REF, &loc6);
 	
-	RTEAA(l_feature_name, 897, Current, 6, 1, 14913);
+	RTEAA(l_feature_name, 897, Current, 6, 1, 14915);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(897, Current, 14913);
+	RTDBGEAA(897, Current, 14915);
 	RTCC(arg1, 897, l_feature_name, 1, eif_new_type(217, 0x01), 0x01);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
@@ -164,14 +164,14 @@ body:;
 	RTNHOOK(4,1);
 	loc4 = (EIF_REFERENCE) RTCCL(tr1);
 	RTHOOK(5);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(6);
 	RTDBGAL(Current, 1, 0x40000000, 1, 0); /* loc1 */
 	tp1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(1661, "item", loc3))(loc3)).it_p);
 	up1 = tp1;
 	tp2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(1661, "item", loc4))(loc4)).it_p);
 	up2 = tp2;
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5083, 863))(Current, up1x, up2x)).it_p);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5084, 863))(Current, up1x, up2x)).it_p);
 	RTHOOK(7);
 	tb1 = !loc1;
 	if (tb1) {
@@ -179,51 +179,51 @@ body:;
 		up1 = loc1;
 		tr1 = RTMS_EX_H("Cannot open the dollar template file.",37,563977518);
 		ur1 = tr1;
-		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6605, dtype))(Current, up1x, ur1x);
+		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6607, dtype))(Current, up1x, ur1x);
 	} else {
 		RTHOOK(9);
 		RTDBGAL(Current, 2, 0x10000000, 1, 0); /* loc2 */
-		ti8_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7138, dtype))(Current)).it_i8);
+		ti8_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7140, dtype))(Current)).it_i8);
 		ui8_1 = ti8_1;
 		up1 = loc1;
-		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5194, 863))(Current, ui8_1x, up1x)).it_i4);
+		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5195, 863))(Current, ui8_1x, up1x)).it_i4);
 		RTHOOK(10);
 		if ((EIF_BOOLEAN) (loc2 < ((EIF_INTEGER_32) 0L))) {
 			RTHOOK(11);
 			ui4_1 = loc2;
 			tr1 = RTMS_EX_H("Cannot load the dollar template",31,1134539877);
 			ur1 = tr1;
-			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 		} else {
 			RTHOOK(12);
 			if ((EIF_BOOLEAN)(loc2 == ((EIF_INTEGER_32) 0L))) {
 				RTHOOK(13);
-				RTDBGAA(Current, dtype, 7144, 0x10000000, 1); /* last_loaded_dollar_gesture_template */
-				*(EIF_INTEGER_32 *)(Current + RTWA(7144, dtype)) = (EIF_INTEGER_32) loc2;
+				RTDBGAA(Current, dtype, 7146, 0x10000000, 1); /* last_loaded_dollar_gesture_template */
+				*(EIF_INTEGER_32 *)(Current + RTWA(7146, dtype)) = (EIF_INTEGER_32) loc2;
 				RTHOOK(14);
 				tr1 = RTMS_EX_H("The file does not seems to have a dollar template.",50,1787148846);
 				ur1 = tr1;
 				tr2 = RTMS_EX_H("Cannot load the dollar template",31,1134539877);
 				ur2 = tr2;
-				(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6537, dtype))(Current, ur1x, ur2x);
+				(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6539, dtype))(Current, ur1x, ur2x);
 			} else {
 				RTHOOK(15);
-				RTDBGAA(Current, dtype, 7144, 0x10000000, 1); /* last_loaded_dollar_gesture_template */
-				*(EIF_INTEGER_32 *)(Current + RTWA(7144, dtype)) = (EIF_INTEGER_32) loc2;
+				RTDBGAA(Current, dtype, 7146, 0x10000000, 1); /* last_loaded_dollar_gesture_template */
+				*(EIF_INTEGER_32 *)(Current + RTWA(7146, dtype)) = (EIF_INTEGER_32) loc2;
 			}
 		}
 		RTHOOK(16);
 		RTDBGAL(Current, 2, 0x10000000, 1, 0); /* loc2 */
 		up1 = loc1;
-		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5087, 863))(Current, up1x)).it_i4);
+		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5088, 863))(Current, up1x)).it_i4);
 		RTHOOK(17);
-		tb1 = *(EIF_BOOLEAN *)(Current + RTWA(6544, dtype));
+		tb1 = *(EIF_BOOLEAN *)(Current + RTWA(6546, dtype));
 		if ((EIF_BOOLEAN) ((EIF_BOOLEAN) !tb1 && (EIF_BOOLEAN) (loc2 < ((EIF_INTEGER_32) 0L)))) {
 			RTHOOK(18);
 			ui4_1 = loc2;
 			tr1 = RTMS_EX_H("Cannot close the dollar template file",37,1997691749);
 			ur1 = tr1;
-			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 		}
 	}
 	RTVI(Current, RTAL);
@@ -244,7 +244,7 @@ body:;
 }
 
 /* {GAME_DOLLAR_GESTURE_MANAGER}.save_dollar_gesture_template */
-void F898_9246 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x)
+void F898_9248 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x)
 {
 	GTCX
 	char *l_feature_name = "save_dollar_gesture_template";
@@ -302,12 +302,12 @@ void F898_9246 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE ar
 	RTLU(SK_REF, &loc4);
 	RTLU(SK_REF, &loc5);
 	
-	RTEAA(l_feature_name, 897, Current, 5, 2, 14914);
+	RTEAA(l_feature_name, 897, Current, 5, 2, 14916);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(897, Current, 14914);
+	RTDBGEAA(897, Current, 14916);
 	RTCC(arg2, 897, l_feature_name, 2, eif_new_type(217, 0x01), 0x01);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
@@ -353,14 +353,14 @@ body:;
 	RTNHOOK(4,1);
 	loc4 = (EIF_REFERENCE) RTCCL(tr1);
 	RTHOOK(5);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(6);
 	RTDBGAL(Current, 1, 0x40000000, 1, 0); /* loc1 */
 	tp1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(1661, "item", loc3))(loc3)).it_p);
 	up1 = tp1;
 	tp2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(1661, "item", loc4))(loc4)).it_p);
 	up2 = tp2;
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5083, 863))(Current, up1x, up2x)).it_p);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5084, 863))(Current, up1x, up2x)).it_p);
 	RTHOOK(7);
 	tb1 = !loc1;
 	if (tb1) {
@@ -368,33 +368,33 @@ body:;
 		up1 = loc1;
 		tr1 = RTMS_EX_H("Cannot create the dollar template file.",39,1938509614);
 		ur1 = tr1;
-		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6605, dtype))(Current, up1x, ur1x);
+		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6607, dtype))(Current, up1x, ur1x);
 	} else {
 		RTHOOK(9);
 		RTDBGAL(Current, 2, 0x10000000, 1, 0); /* loc2 */
 		ui8_1 = arg1;
 		up1 = loc1;
-		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5193, 863))(Current, ui8_1x, up1x)).it_i4);
+		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5194, 863))(Current, ui8_1x, up1x)).it_i4);
 		RTHOOK(10);
 		ui4_1 = (EIF_INTEGER_32) (loc2 - ((EIF_INTEGER_32) 1L));
 		tr1 = RTMS_EX_H("Cannot save the dollar template",31,152237925);
 		ur1 = tr1;
-		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 		RTHOOK(11);
-		RTDBGAA(Current, dtype, 7145, 0x10000000, 1); /* last_saved_dollar_gesture_template */
-		*(EIF_INTEGER_32 *)(Current + RTWA(7145, dtype)) = (EIF_INTEGER_32) loc2;
+		RTDBGAA(Current, dtype, 7147, 0x10000000, 1); /* last_saved_dollar_gesture_template */
+		*(EIF_INTEGER_32 *)(Current + RTWA(7147, dtype)) = (EIF_INTEGER_32) loc2;
 		RTHOOK(12);
 		RTDBGAL(Current, 2, 0x10000000, 1, 0); /* loc2 */
 		up1 = loc1;
-		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5087, 863))(Current, up1x)).it_i4);
+		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5088, 863))(Current, up1x)).it_i4);
 		RTHOOK(13);
-		tb1 = *(EIF_BOOLEAN *)(Current + RTWA(6544, dtype));
+		tb1 = *(EIF_BOOLEAN *)(Current + RTWA(6546, dtype));
 		if ((EIF_BOOLEAN) ((EIF_BOOLEAN) !tb1 && (EIF_BOOLEAN) (loc2 < ((EIF_INTEGER_32) 0L)))) {
 			RTHOOK(14);
 			ui4_1 = loc2;
 			tr1 = RTMS_EX_H("Cannot close the dollar template file",37,1997691749);
 			ur1 = tr1;
-			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 		}
 	}
 	RTVI(Current, RTAL);
@@ -415,7 +415,7 @@ body:;
 }
 
 /* {GAME_DOLLAR_GESTURE_MANAGER}.save_all_dollar_gesture_template */
-void F898_9247 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F898_9249 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "save_all_dollar_gesture_template";
@@ -468,12 +468,12 @@ void F898_9247 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_REF, &loc4);
 	RTLU(SK_REF, &loc5);
 	
-	RTEAA(l_feature_name, 897, Current, 5, 1, 14915);
+	RTEAA(l_feature_name, 897, Current, 5, 1, 14917);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(897, Current, 14915);
+	RTDBGEAA(897, Current, 14917);
 	RTCC(arg1, 897, l_feature_name, 1, eif_new_type(217, 0x01), 0x01);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
@@ -519,14 +519,14 @@ body:;
 	RTNHOOK(4,1);
 	loc4 = (EIF_REFERENCE) RTCCL(tr1);
 	RTHOOK(5);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(6);
 	RTDBGAL(Current, 1, 0x40000000, 1, 0); /* loc1 */
 	tp1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(1661, "item", loc3))(loc3)).it_p);
 	up1 = tp1;
 	tp2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(1661, "item", loc4))(loc4)).it_p);
 	up2 = tp2;
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5083, 863))(Current, up1x, up2x)).it_p);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5084, 863))(Current, up1x, up2x)).it_p);
 	RTHOOK(7);
 	tb1 = !loc1;
 	if (tb1) {
@@ -534,32 +534,32 @@ body:;
 		up1 = loc1;
 		tr1 = RTMS_EX_H("Cannot create the dollar template file.",39,1938509614);
 		ur1 = tr1;
-		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6605, dtype))(Current, up1x, ur1x);
+		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6607, dtype))(Current, up1x, ur1x);
 	} else {
 		RTHOOK(9);
 		RTDBGAL(Current, 2, 0x10000000, 1, 0); /* loc2 */
 		up1 = loc1;
-		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5192, 863))(Current, up1x)).it_i4);
+		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5193, 863))(Current, up1x)).it_i4);
 		RTHOOK(10);
 		ui4_1 = (EIF_INTEGER_32) (loc2 - ((EIF_INTEGER_32) 1L));
 		tr1 = RTMS_EX_H("Cannot save the dollar templates",32,318272371);
 		ur1 = tr1;
-		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 		RTHOOK(11);
-		RTDBGAA(Current, dtype, 7145, 0x10000000, 1); /* last_saved_dollar_gesture_template */
-		*(EIF_INTEGER_32 *)(Current + RTWA(7145, dtype)) = (EIF_INTEGER_32) loc2;
+		RTDBGAA(Current, dtype, 7147, 0x10000000, 1); /* last_saved_dollar_gesture_template */
+		*(EIF_INTEGER_32 *)(Current + RTWA(7147, dtype)) = (EIF_INTEGER_32) loc2;
 		RTHOOK(12);
 		RTDBGAL(Current, 2, 0x10000000, 1, 0); /* loc2 */
 		up1 = loc1;
-		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5087, 863))(Current, up1x)).it_i4);
+		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5088, 863))(Current, up1x)).it_i4);
 		RTHOOK(13);
-		tb1 = *(EIF_BOOLEAN *)(Current + RTWA(6544, dtype));
+		tb1 = *(EIF_BOOLEAN *)(Current + RTWA(6546, dtype));
 		if ((EIF_BOOLEAN) ((EIF_BOOLEAN) !tb1 && (EIF_BOOLEAN) (loc2 < ((EIF_INTEGER_32) 0L)))) {
 			RTHOOK(14);
 			ui4_1 = loc2;
 			tr1 = RTMS_EX_H("Cannot close the dollar template file",37,1997691749);
 			ur1 = tr1;
-			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 		}
 	}
 	RTVI(Current, RTAL);
@@ -578,7 +578,7 @@ body:;
 }
 
 /* {GAME_DOLLAR_GESTURE_MANAGER}.append_dollar_gesture_template */
-void F898_9248 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x)
+void F898_9250 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x)
 {
 	GTCX
 	char *l_feature_name = "append_dollar_gesture_template";
@@ -642,12 +642,12 @@ void F898_9248 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE ar
 	RTLU(SK_REF, &loc5);
 	RTLU(SK_REF, &loc6);
 	
-	RTEAA(l_feature_name, 897, Current, 6, 2, 14916);
+	RTEAA(l_feature_name, 897, Current, 6, 2, 14918);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(897, Current, 14916);
+	RTDBGEAA(897, Current, 14918);
 	RTCC(arg2, 897, l_feature_name, 2, eif_new_type(217, 0x01), 0x01);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
@@ -713,14 +713,14 @@ body:;
 	RTNHOOK(4,1);
 	loc4 = (EIF_REFERENCE) RTCCL(tr1);
 	RTHOOK(5);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(6);
 	RTDBGAL(Current, 1, 0x40000000, 1, 0); /* loc1 */
 	tp1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(1661, "item", loc3))(loc3)).it_p);
 	up1 = tp1;
 	tp2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(1661, "item", loc4))(loc4)).it_p);
 	up2 = tp2;
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5083, 863))(Current, up1x, up2x)).it_p);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5084, 863))(Current, up1x, up2x)).it_p);
 	RTHOOK(7);
 	tb1 = !loc1;
 	if (tb1) {
@@ -728,33 +728,33 @@ body:;
 		up1 = loc1;
 		tr1 = RTMS_EX_H("Cannot create the dollar template file.",39,1938509614);
 		ur1 = tr1;
-		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6605, dtype))(Current, up1x, ur1x);
+		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6607, dtype))(Current, up1x, ur1x);
 	} else {
 		RTHOOK(9);
 		RTDBGAL(Current, 2, 0x10000000, 1, 0); /* loc2 */
 		ui8_1 = arg1;
 		up1 = loc1;
-		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5193, 863))(Current, ui8_1x, up1x)).it_i4);
+		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5194, 863))(Current, ui8_1x, up1x)).it_i4);
 		RTHOOK(10);
 		ui4_1 = (EIF_INTEGER_32) (loc2 - ((EIF_INTEGER_32) 1L));
 		tr1 = RTMS_EX_H("Cannot save the dollar template",31,152237925);
 		ur1 = tr1;
-		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 		RTHOOK(11);
-		RTDBGAA(Current, dtype, 7145, 0x10000000, 1); /* last_saved_dollar_gesture_template */
-		*(EIF_INTEGER_32 *)(Current + RTWA(7145, dtype)) = (EIF_INTEGER_32) loc2;
+		RTDBGAA(Current, dtype, 7147, 0x10000000, 1); /* last_saved_dollar_gesture_template */
+		*(EIF_INTEGER_32 *)(Current + RTWA(7147, dtype)) = (EIF_INTEGER_32) loc2;
 		RTHOOK(12);
 		RTDBGAL(Current, 2, 0x10000000, 1, 0); /* loc2 */
 		up1 = loc1;
-		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5087, 863))(Current, up1x)).it_i4);
+		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5088, 863))(Current, up1x)).it_i4);
 		RTHOOK(13);
-		tb1 = *(EIF_BOOLEAN *)(Current + RTWA(6544, dtype));
+		tb1 = *(EIF_BOOLEAN *)(Current + RTWA(6546, dtype));
 		if ((EIF_BOOLEAN) ((EIF_BOOLEAN) !tb1 && (EIF_BOOLEAN) (loc2 < ((EIF_INTEGER_32) 0L)))) {
 			RTHOOK(14);
 			ui4_1 = loc2;
 			tr1 = RTMS_EX_H("Cannot close the dollar template file",37,1997691749);
 			ur1 = tr1;
-			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 		}
 	}
 	RTVI(Current, RTAL);
@@ -775,7 +775,7 @@ body:;
 }
 
 /* {GAME_DOLLAR_GESTURE_MANAGER}.append_all_dollar_gesture_template */
-void F898_9249 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F898_9251 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "append_all_dollar_gesture_template";
@@ -834,12 +834,12 @@ void F898_9249 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_REF, &loc5);
 	RTLU(SK_REF, &loc6);
 	
-	RTEAA(l_feature_name, 897, Current, 6, 1, 14917);
+	RTEAA(l_feature_name, 897, Current, 6, 1, 14919);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(897, Current, 14917);
+	RTDBGEAA(897, Current, 14919);
 	RTCC(arg1, 897, l_feature_name, 1, eif_new_type(217, 0x01), 0x01);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
@@ -905,14 +905,14 @@ body:;
 	RTNHOOK(4,1);
 	loc4 = (EIF_REFERENCE) RTCCL(tr1);
 	RTHOOK(5);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(6);
 	RTDBGAL(Current, 1, 0x40000000, 1, 0); /* loc1 */
 	tp1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(1661, "item", loc3))(loc3)).it_p);
 	up1 = tp1;
 	tp2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(1661, "item", loc4))(loc4)).it_p);
 	up2 = tp2;
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5083, 863))(Current, up1x, up2x)).it_p);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5084, 863))(Current, up1x, up2x)).it_p);
 	RTHOOK(7);
 	tb1 = !loc1;
 	if (tb1) {
@@ -920,32 +920,32 @@ body:;
 		up1 = loc1;
 		tr1 = RTMS_EX_H("Cannot create the dollar template file.",39,1938509614);
 		ur1 = tr1;
-		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6605, dtype))(Current, up1x, ur1x);
+		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6607, dtype))(Current, up1x, ur1x);
 	} else {
 		RTHOOK(9);
 		RTDBGAL(Current, 2, 0x10000000, 1, 0); /* loc2 */
 		up1 = loc1;
-		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5192, 863))(Current, up1x)).it_i4);
+		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5193, 863))(Current, up1x)).it_i4);
 		RTHOOK(10);
 		ui4_1 = (EIF_INTEGER_32) (loc2 - ((EIF_INTEGER_32) 1L));
 		tr1 = RTMS_EX_H("Cannot save the dollar templates",32,318272371);
 		ur1 = tr1;
-		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 		RTHOOK(11);
-		RTDBGAA(Current, dtype, 7145, 0x10000000, 1); /* last_saved_dollar_gesture_template */
-		*(EIF_INTEGER_32 *)(Current + RTWA(7145, dtype)) = (EIF_INTEGER_32) loc2;
+		RTDBGAA(Current, dtype, 7147, 0x10000000, 1); /* last_saved_dollar_gesture_template */
+		*(EIF_INTEGER_32 *)(Current + RTWA(7147, dtype)) = (EIF_INTEGER_32) loc2;
 		RTHOOK(12);
 		RTDBGAL(Current, 2, 0x10000000, 1, 0); /* loc2 */
 		up1 = loc1;
-		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5087, 863))(Current, up1x)).it_i4);
+		loc2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5088, 863))(Current, up1x)).it_i4);
 		RTHOOK(13);
-		tb1 = *(EIF_BOOLEAN *)(Current + RTWA(6544, dtype));
+		tb1 = *(EIF_BOOLEAN *)(Current + RTWA(6546, dtype));
 		if ((EIF_BOOLEAN) ((EIF_BOOLEAN) !tb1 && (EIF_BOOLEAN) (loc2 < ((EIF_INTEGER_32) 0L)))) {
 			RTHOOK(14);
 			ui4_1 = loc2;
 			tr1 = RTMS_EX_H("Cannot close the dollar template file",37,1997691749);
 			ur1 = tr1;
-			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6604, dtype))(Current, ui4_1x, ur1x);
+			(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6606, dtype))(Current, ui4_1x, ur1x);
 		}
 	}
 	RTVI(Current, RTAL);
@@ -964,21 +964,21 @@ body:;
 }
 
 /* {GAME_DOLLAR_GESTURE_MANAGER}.last_loaded_dollar_gesture_template */
-EIF_TYPED_VALUE F898_9250 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F898_9252 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_INT32;
-	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(7144,Dtype(Current)));
+	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(7146,Dtype(Current)));
 	return r;
 }
 
 
 /* {GAME_DOLLAR_GESTURE_MANAGER}.last_saved_dollar_gesture_template */
-EIF_TYPED_VALUE F898_9251 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F898_9253 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_INT32;
-	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(7145,Dtype(Current)));
+	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(7147,Dtype(Current)));
 	return r;
 }
 

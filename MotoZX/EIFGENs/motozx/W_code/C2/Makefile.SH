@@ -55,15 +55,15 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C2_c.o 
 
-OLDOBJECTS =  ap910.o ap910d.o ga912.o ga912d.o ga917.o ga917d.o ga918.o ga918d.o \
-	ga911.o ga911d.o ga922.o ga922d.o ga916.o ga916d.o ga915.o ga915d.o \
+OLDOBJECTS =  ap910.o ap910d.o ga915.o ga915d.o ga917.o ga917d.o ga918.o ga918d.o \
+	ga911.o ga911d.o ga922.o ga922d.o ga916.o ga916d.o ga914.o ga914d.o \
 	ga905.o ga905d.o im897.o im897d.o ga899.o ga899d.o ga921.o ga921d.o \
-	ga914.o ga914d.o ga904.o ga904d.o ga913.o ga913d.o ga903.o ga903d.o \
+	ga913.o ga913d.o ga904.o ga904d.o ga912.o ga912d.o ga903.o ga903d.o \
 	ga898.o ga898d.o im896.o im896d.o ga925.o ga925d.o ga906.o ga906d.o \
-	ga909.o ga909d.o ga893.o ga893d.o ga900.o ga900d.o ga902.o ga902d.o \
-	ga894.o ga894d.o ga901.o ga901d.o ga920.o ga920d.o ga908.o ga908d.o \
-	ga907.o ga907d.o ga919.o ga919d.o ga895.o ga895d.o au924.o au924d.o \
-	mu923.o mu923d.o 
+	ga924.o ga924d.o ga909.o ga909d.o ga893.o ga893d.o ga900.o ga900d.o \
+	ga894.o ga894d.o ga902.o ga902d.o ga901.o ga901d.o mu923.o mu923d.o \
+	ga920.o ga920d.o ga908.o ga908d.o ga907.o ga907d.o ga895.o ga895d.o \
+	ga919.o ga919d.o 
 
 all: Cobj2.o
 

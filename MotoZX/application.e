@@ -1,5 +1,6 @@
 note
 	description : "MOTOZX application root class"
+	author: "Steve Caya"
 	date        : "$Date$"
 	revision    : "$Revision$"
 

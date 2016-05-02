@@ -58,8 +58,8 @@ static const struct desc_info desc_911[] = {
 	{EIF_NON_GENERIC(0x071D /*910*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01AF /*215*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_911), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_911), 15226, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0711 /*904*/), 15227, 0},
+	{EIF_GENERIC(egt_13_911), 15231, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0711 /*904*/), 15232, 0},
 };
 void Init911(void)
 {

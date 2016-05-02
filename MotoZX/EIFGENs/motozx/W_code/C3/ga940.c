@@ -10,10 +10,10 @@
 extern "C" {
 #endif
 
-extern void F940_10400(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F940_10401(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F940_10402(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F940_10403(EIF_REFERENCE);
+extern void F940_10417(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F940_10418(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F940_10419(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F940_10420(EIF_REFERENCE);
 extern void EIF_Minit940(void);
 
 #ifdef __cplusplus
@@ -36,7 +36,7 @@ extern "C" {
 #endif
 
 /* {GAME_HAPTIC_DEVICE}.make */
-void F940_10400 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F940_10417 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "make";
@@ -64,30 +64,30 @@ void F940_10400 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_INT32,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 939, Current, 0, 1, 16144);
+	RTEAA(l_feature_name, 939, Current, 0, 1, 16161);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(939, Current, 16144);
+	RTDBGEAA(939, Current, 16161);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("is_haptic_enabled", EX_PRE);
-		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7397, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+		tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7402, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 		RTNHOOK(1,1);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7308, "is_haptic_enable", tr1))(tr1)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(7310, "is_haptic_enable", tr1))(tr1)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTHOOK(2);
 		RTCT("is_index_valid", EX_PRE);
-		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5159, 863))(Current)).it_i4);
+		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5160, 863))(Current)).it_i4);
 		RTTE((EIF_BOOLEAN) (arg1 < ti4_1), label_1);
 		RTCK;
 		RTHOOK(3);
 		RTCT("is_haptic_not_already_open", EX_PRE);
 		ui4_1 = arg1;
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5171, 863))(Current, ui4_1x)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5172, 863))(Current, ui4_1x)).it_b);
 		RTTE((EIF_BOOLEAN) !tb1, label_1);
 		RTCK;
 		RTJB;
@@ -98,8 +98,8 @@ body:;
 	RTHOOK(4);
 	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(32, dtype))(Current);
 	RTHOOK(5);
-	RTDBGAA(Current, dtype, 8189, 0x10000000, 1); /* index */
-	*(EIF_INTEGER_32 *)(Current + RTWA(8189, dtype)) = (EIF_INTEGER_32) arg1;
+	RTDBGAA(Current, dtype, 8207, 0x10000000, 1); /* index */
+	*(EIF_INTEGER_32 *)(Current + RTWA(8207, dtype)) = (EIF_INTEGER_32) arg1;
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(6);
@@ -114,17 +114,17 @@ body:;
 }
 
 /* {GAME_HAPTIC_DEVICE}.index */
-EIF_TYPED_VALUE F940_10401 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F940_10418 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_INT32;
-	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(8189,Dtype(Current)));
+	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(8207,Dtype(Current)));
 	return r;
 }
 
 
 /* {GAME_HAPTIC_DEVICE}.name */
-EIF_TYPED_VALUE F940_10402 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F940_10419 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "name";
@@ -159,20 +159,20 @@ EIF_TYPED_VALUE F940_10402 (EIF_REFERENCE Current)
 	RTLU(SK_POINTER, &loc1);
 	RTLU(SK_REF, &loc2);
 	
-	RTEAA(l_feature_name, 939, Current, 2, 0, 16146);
+	RTEAA(l_feature_name, 939, Current, 2, 0, 16163);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(939, Current, 16146);
+	RTDBGEAA(939, Current, 16163);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6536, dtype))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(6538, dtype))(Current);
 	RTHOOK(2);
 	RTDBGAL(Current, 1, 0x40000000, 1, 0); /* loc1 */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(8189, dtype));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(8207, dtype));
 	ui4_1 = ti4_1;
-	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5166, 863))(Current, ui4_1x)).it_p);
+	loc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5167, 863))(Current, ui4_1x)).it_p);
 	RTHOOK(3);
 	tb1 = !loc1;
 	if (tb1) {
@@ -180,7 +180,7 @@ EIF_TYPED_VALUE F940_10402 (EIF_REFERENCE Current)
 		up1 = loc1;
 		tr1 = RTMS_EX_H("Cannot retreive haptic name.",28,1520440622);
 		ur1 = tr1;
-		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6605, dtype))(Current, up1x, ur1x);
+		(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(6607, dtype))(Current, up1x, ur1x);
 		RTHOOK(5);
 		RTDBGAL(Current, 0, 0xF80000D9, 0,0); /* Result */
 		Result = RTMS_EX_H("",0,0);
@@ -212,7 +212,7 @@ EIF_TYPED_VALUE F940_10402 (EIF_REFERENCE Current)
 }
 
 /* {GAME_HAPTIC_DEVICE}.internal_open */
-EIF_TYPED_VALUE F940_10403 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F940_10420 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "internal_open";
@@ -232,18 +232,18 @@ EIF_TYPED_VALUE F940_10403 (EIF_REFERENCE Current)
 	RTLU (SK_POINTER, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 939, Current, 0, 0, 16147);
+	RTEAA(l_feature_name, 939, Current, 0, 0, 16164);
 	RTSA(Dtype(Current));
 	RTSC;
 	RTME(Dtype(Current), 0);
 	RTGC;
-	RTDBGEAA(939, Current, 16147);
+	RTDBGEAA(939, Current, 16164);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x40000000, 1,0); /* Result */
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(8189, Dtype(Current)));
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(8207, Dtype(Current)));
 	ui4_1 = ti4_1;
-	Result = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5160, 863))(Current, ui4_1x)).it_p);
+	Result = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5161, 863))(Current, ui4_1x)).it_p);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);

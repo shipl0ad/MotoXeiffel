@@ -1,6 +1,6 @@
 note
 	description: "Summary description for {GAME_ENGINE}."
-	author: ""
+	author: "Steve Caya"
 	date: "$Date$"
 	revision: "$Revision$"
 

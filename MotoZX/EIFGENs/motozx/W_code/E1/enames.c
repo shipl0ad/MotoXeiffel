@@ -4963,7 +4963,7 @@ char *names860 [] =
 "count",
 };
 
-char *names862 [] =
+char *names861 [] =
 {
 "state",
 };
@@ -5020,30 +5020,14 @@ char *names872 [] =
 "alpha_internal",
 };
 
-char *names876 [] =
-{
-"launch_mutex",
-"terminated",
-"thread_id",
-};
-
-char *names878 [] =
+char *names874 [] =
 {
 "fingers_count",
 "x",
 "y",
 };
 
-char *names879 [] =
-{
-"fingers_count",
-"x",
-"y",
-"distance",
-"angle",
-};
-
-char *names880 [] =
+char *names875 [] =
 {
 "fingers_count",
 "x",
@@ -5052,7 +5036,23 @@ char *names880 [] =
 "template_hash",
 };
 
-char *names881 [] =
+char *names876 [] =
+{
+"fingers_count",
+"x",
+"y",
+"distance",
+"angle",
+};
+
+char *names879 [] =
+{
+"launch_mutex",
+"terminated",
+"thread_id",
+};
+
+char *names880 [] =
 {
 "is_open",
 "has_error",
@@ -5223,26 +5223,6 @@ char *names900 [] =
 char *names901 [] =
 {
 "manual_error",
-"finger_motion_actions_internal",
-"finger_motion_events_callback",
-"finger_touched_actions_internal",
-"finger_touched_events_callback",
-"finger_released_actions_internal",
-"finger_released_events_callback",
-"fingers_gesture_actions_internal",
-"fingers_gesture_events_callback",
-"dollar_gesture_actions_internal",
-"dollar_gesture_events_callback",
-"dollar_record_actions_internal",
-"dollar_record_events_callback",
-"has_error",
-"is_manual_error",
-"is_running",
-};
-
-char *names902 [] =
-{
-"manual_error",
 "axis_motion_actions_internal",
 "axis_motion_events_callback",
 "ball_motion_actions_internal",
@@ -5255,6 +5235,26 @@ char *names902 [] =
 "button_released_events_callback",
 "removed_actions_internal",
 "removed_events_callback",
+"has_error",
+"is_manual_error",
+"is_running",
+};
+
+char *names902 [] =
+{
+"manual_error",
+"finger_motion_actions_internal",
+"finger_motion_events_callback",
+"finger_touched_actions_internal",
+"finger_touched_events_callback",
+"finger_released_actions_internal",
+"finger_released_events_callback",
+"fingers_gesture_actions_internal",
+"fingers_gesture_events_callback",
+"dollar_gesture_actions_internal",
+"dollar_gesture_events_callback",
+"dollar_record_actions_internal",
+"dollar_record_events_callback",
 "has_error",
 "is_manual_error",
 "is_running",
@@ -5410,11 +5410,6 @@ char *names911 [] =
 
 char *names912 [] =
 {
-"internal_game_library",
-};
-
-char *names913 [] =
-{
 "manual_error",
 "finger_motion_actions_internal",
 "finger_motion_events_callback",
@@ -5438,7 +5433,7 @@ char *names913 [] =
 "index",
 };
 
-char *names914 [] =
+char *names913 [] =
 {
 "manual_error",
 "internal_game_library",
@@ -5449,13 +5444,18 @@ char *names914 [] =
 "is_open",
 };
 
-char *names915 [] =
+char *names914 [] =
 {
 "manual_error",
 "internal_game_library",
 "has_error",
 "is_manual_error",
 "index",
+};
+
+char *names915 [] =
+{
+"internal_game_library",
 };
 
 char *names916 [] =
@@ -5569,25 +5569,6 @@ char *names923 [] =
 char *names924 [] =
 {
 "manual_error",
-"sound_al_buffer",
-"sound_queued",
-"g_mutex",
-"has_error",
-"is_manual_error",
-"is_open",
-"is_thread_safe",
-"index",
-"last_al_error_code",
-"last_alc_error_code",
-"buffer_size",
-"buffer_tail",
-"buffer_head",
-"temp_buffer",
-};
-
-char *names925 [] =
-{
-"manual_error",
 "internal_game_library",
 "is_open",
 "has_ressource_error",
@@ -5597,7 +5578,7 @@ char *names925 [] =
 "item",
 };
 
-char *names926 [] =
+char *names925 [] =
 {
 "managed_pointer",
 "manual_error",
@@ -5608,6 +5589,26 @@ char *names926 [] =
 "shared",
 "index",
 "internal_item",
+};
+
+char *names926 [] =
+{
+"manual_error",
+"sound_al_buffer",
+"sound_queued",
+"g_mutex",
+"has_error",
+"is_manual_error",
+"is_open",
+"is_thread_safe",
+"has_been_stop",
+"index",
+"last_al_error_code",
+"last_alc_error_code",
+"buffer_size",
+"buffer_tail",
+"buffer_head",
+"temp_buffer",
 };
 
 char *names927 [] =
@@ -5637,12 +5638,11 @@ char *names927 [] =
 
 char *names928 [] =
 {
-"managed_pointer",
 "manual_error",
-"shared",
 "has_error",
 "is_manual_error",
-"internal_item",
+"shared",
+"item",
 };
 
 char *names929 [] =
@@ -5654,6 +5654,7 @@ char *names930 [] =
 {
 "managed_pointer",
 "manual_error",
+"other",
 "internal_item_exists",
 "has_error",
 "is_manual_error",

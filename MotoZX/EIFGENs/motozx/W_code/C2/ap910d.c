@@ -91,7 +91,7 @@ static const struct desc_info desc_910[] = {
 	{EIF_GENERIC(egt_19_910), 2909, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_20_910), 2915, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_21_910), 0x00, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 15204, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 15209, 0xFFFFFFFF},
 };
 void Init910(void)
 {

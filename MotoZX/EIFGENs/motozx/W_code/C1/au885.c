@@ -10,8 +10,8 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F885_8638(EIF_REFERENCE);
-extern void F885_10427(EIF_REFERENCE, int);
+extern EIF_TYPED_VALUE F885_8640(EIF_REFERENCE);
+extern void F885_10444(EIF_REFERENCE, int);
 extern void EIF_Minit885(void);
 
 #ifdef __cplusplus
@@ -34,17 +34,17 @@ extern "C" {
 #endif
 
 /* {AUDIO_SOUND}.last_buffer_size */
-EIF_TYPED_VALUE F885_8638 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F885_8640 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_INT32;
-	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(6547,Dtype(Current)));
+	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(6549,Dtype(Current)));
 	return r;
 }
 
 
 /* {AUDIO_SOUND}._invariant */
-void F885_10427 (EIF_REFERENCE Current, int where)
+void F885_10444 (EIF_REFERENCE Current, int where)
 {
 	GTCX
 	char *l_feature_name = "_invariant";
@@ -60,12 +60,12 @@ void F885_10427 (EIF_REFERENCE Current, int where)
 	RTLIU(1);
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
-	RTEAINV(l_feature_name, 884, Current, 0, 10426);
+	RTEAINV(l_feature_name, 884, Current, 0, 10443);
 	RTSA(dtype);
 	RTME(dtype, 0);
 	RTIT("errors_valid", Current);
-	tb1 = *(EIF_BOOLEAN *)(Current + RTWA(6544, dtype));
-	tb2 = *(EIF_BOOLEAN *)(Current + RTWA(6534, dtype));
+	tb1 = *(EIF_BOOLEAN *)(Current + RTWA(6546, dtype));
+	tb2 = *(EIF_BOOLEAN *)(Current + RTWA(6535, dtype));
 	if ((tb1 == tb2)) {
 		RTCK;
 	} else {

@@ -10,10 +10,10 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F919_9702(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F919_9703(EIF_REFERENCE);
-extern void F919_9704(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern void F919_10467(EIF_REFERENCE, int);
+extern EIF_TYPED_VALUE F919_9708(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F919_9709(EIF_REFERENCE);
+extern void F919_9710(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern void F919_10484(EIF_REFERENCE, int);
 extern void EIF_Minit919(void);
 
 #ifdef __cplusplus
@@ -36,7 +36,7 @@ extern "C" {
 #endif
 
 /* {GAME_HAPTIC_EFFECT}.structure_size */
-EIF_TYPED_VALUE F919_9702 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F919_9708 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "structure_size";
@@ -54,16 +54,16 @@ EIF_TYPED_VALUE F919_9702 (EIF_REFERENCE Current)
 	RTLU (SK_INT32, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 918, Current, 0, 0, 15420);
+	RTEAA(l_feature_name, 918, Current, 0, 0, 15423);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(918, Current, 15420);
+	RTDBGEAA(918, Current, 15423);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(Current, 0, 0x10000000, 1,0); /* Result */
-	Result = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5572, 863))(Current)).it_i4);
+	Result = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(5574, 863))(Current)).it_i4);
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(2);
 		RTCT("positive_result", EX_POST);
@@ -85,7 +85,7 @@ EIF_TYPED_VALUE F919_9702 (EIF_REFERENCE Current)
 }
 
 /* {GAME_HAPTIC_EFFECT}.type */
-EIF_TYPED_VALUE F919_9703 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F919_9709 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "type";
@@ -107,12 +107,12 @@ EIF_TYPED_VALUE F919_9703 (EIF_REFERENCE Current)
 	RTLU (SK_UINT16, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 918, Current, 0, 0, 15417);
+	RTEAA(l_feature_name, 918, Current, 0, 0, 15424);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(918, Current, 15417);
+	RTDBGEAA(918, Current, 15424);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
@@ -129,7 +129,7 @@ body:;
 	RTDBGAL(Current, 0, 0x34000000, 1,0); /* Result */
 	tp1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1060, dtype))(Current)).it_p);
 	up1 = tp1;
-	Result = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5574, 863))(Current, up1x)).it_n2);
+	Result = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(5576, 863))(Current, up1x)).it_n2);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(3);
@@ -143,7 +143,7 @@ body:;
 }
 
 /* {GAME_HAPTIC_EFFECT}.set_type */
-void F919_9704 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F919_9710 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "set_type";
@@ -170,12 +170,12 @@ void F919_9704 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_UINT16,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 918, Current, 0, 1, 15418);
+	RTEAA(l_feature_name, 918, Current, 0, 1, 15425);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(918, Current, 15418);
+	RTDBGEAA(918, Current, 15425);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
@@ -192,11 +192,11 @@ body:;
 	tp1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1060, dtype))(Current)).it_p);
 	up1 = tp1;
 	uu2_1 = arg1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5573, 863))(Current, up1x, uu2_1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) RTWF(5575, 863))(Current, up1x, uu2_1x);
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(3);
 		RTCT("is_assign", EX_POST);
-		tu2_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7559, dtype))(Current)).it_n2);
+		tu2_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7565, dtype))(Current)).it_n2);
 		if ((EIF_BOOLEAN)(tu2_1 == arg1)) {
 			RTCK;
 		} else {
@@ -217,7 +217,7 @@ body:;
 }
 
 /* {GAME_HAPTIC_EFFECT}._invariant */
-void F919_10467 (EIF_REFERENCE Current, int where)
+void F919_10484 (EIF_REFERENCE Current, int where)
 {
 	GTCX
 	char *l_feature_name = "_invariant";
@@ -232,11 +232,11 @@ void F919_10467 (EIF_REFERENCE Current, int where)
 	RTLIU(1);
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
-	RTEAINV(l_feature_name, 918, Current, 0, 10466);
+	RTEAINV(l_feature_name, 918, Current, 0, 10483);
 	RTSA(dtype);
 	RTME(dtype, 0);
 	RTIT("type_valid", Current);
-	tu2_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7559, dtype))(Current)).it_n2);
+	tu2_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(7565, dtype))(Current)).it_n2);
 	if ((EIF_BOOLEAN) (tu2_1 > (EIF_NATURAL_16) ((EIF_INTEGER_32) 0L))) {
 		RTCK;
 	} else {

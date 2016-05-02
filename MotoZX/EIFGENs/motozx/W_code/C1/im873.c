@@ -10,7 +10,7 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F873_8585(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F873_8587(EIF_REFERENCE);
 extern void EIF_Minit873(void);
 
 #ifdef __cplusplus
@@ -33,8 +33,8 @@ extern "C" {
 #endif
 
 /* {IMG_LIBRARY_SHARED}.image_file_library */
-RTOID (F873_8585)
-EIF_TYPED_VALUE F873_8585 (EIF_REFERENCE Current)
+RTOID (F873_8587)
+EIF_TYPED_VALUE F873_8587 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "image_file_library";
@@ -45,7 +45,7 @@ EIF_TYPED_VALUE F873_8585 (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOTDR(F873_8585);
+	RTOTDR(F873_8587);
 
 	RTLI(2);
 	RTLR(0,tr1);
@@ -54,12 +54,12 @@ EIF_TYPED_VALUE F873_8585 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 872, Current, 0, 0, 14264);
+	RTEAA(l_feature_name, 872, Current, 0, 0, 14266);
 	RTSA(Dtype(Current));
 	RTSC;
 	RTME(Dtype(Current), 0);
 	RTGC;
-	RTDBGEAA(872, Current, 14264);
+	RTDBGEAA(872, Current, 14266);
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
@@ -84,7 +84,7 @@ EIF_TYPED_VALUE F873_8585 (EIF_REFERENCE Current)
 void EIF_Minit873 (void)
 {
 	GTCX
-	RTOTS (8585,F873_8585)
+	RTOTS (8587,F873_8587)
 }
 
 

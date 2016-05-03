@@ -12,6 +12,11 @@ class
 
 inherit
 	AFFICHABLE
+	SOUND
+		redefine
+			jouer_son
+		end
+
 
 create
 	create_moto
@@ -41,6 +46,22 @@ feature {NONE} -- Initialization
 				create right_surface.make(1,1)
 				left_surface := right_surface
 			end
+			create l_sound.make("motor.flac")
+			if l_sound.is_openable then
+				l_sound.open
+				if l_sound.is_open then
+					audio_library.sources_add
+					sound_source:=audio_library.last_source_added	-- The first source will be use for playing the music
+					sound_source.queue_sound_infinite_loop(l_sound)
+				else
+					print("Cannot open sound files.")
+					die(1)
+				end
+			else
+				print("sound files not valid.")
+				die(1)
+			end
+
 			surface := right_surface
 			initialize_animation_coordinate
 		end
@@ -119,6 +140,11 @@ feature -- Access
 				sub_image_y := animation_coordinates.first.y	-- Place the image standing still
 			end
 		end
+
+	jouer_son
+	do
+		sound_source.play					-- Play the source
+	end
 
 	going_left:BOOLEAN
 			-- Is `Current' moving left

@@ -35,14 +35,26 @@ feature {NONE} -- Initialization
 		local
 			l_window_builder:GAME_WINDOW_RENDERED_BUILDER
 			l_window:GAME_WINDOW_RENDERED
+			l_background:NIVEAU
 		do
-			create l_window_builder
-			l_window_builder.set_dimension (800, 600)
-			l_window_builder.set_title ("MotoX")
-			l_window := l_window_builder.generate_window
-			l_window.renderer.set_drawing_color (create {GAME_COLOR}.make_rgb (0, 0, 0))
-			l_window.renderer.clear
-			l_window.renderer.set_drawing_color (create {GAME_COLOR}.make_rgb (0, 128, 255))
+			create l_background.make
+			if not l_background.has_error then
+--				create l_maryo
+--				l_maryo.y := 340
+--				l_maryo.x := 200
+--				if not l_maryo.has_error then
+					create l_window_builder
+					l_window_builder.set_dimension (1500, 1500)
+					l_window_builder.set_title ("MotoX")
+					l_window := l_window_builder.generate_window
+					game_library.quit_signal_actions.extend (agent on_quit)
+					game_library.launch
+--				else
+--					print("Cannot create the Maryo surface.")
+--				end
+			else
+				print("Cannot create the BACKGROUND surface.")
+			end
 
 		end
 

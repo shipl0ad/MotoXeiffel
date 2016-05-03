@@ -9,9 +9,9 @@ deferred class
 
 inherit
 	GAME_SURFACE
-	rename
-		make as make_surface
-	end
+		rename
+			make as make_surface
+		end
 
 feature
 	x:INTEGER assign set_x

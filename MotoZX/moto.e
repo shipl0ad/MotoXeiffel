@@ -12,56 +12,34 @@ class
 
 inherit
 	AFFICHABLE
-	SOUND
-		redefine
-			jouer_son
-		end
-
 
 create
-	create_moto
+	make
 
 feature {NONE} -- Initialization
 
-	create_moto
+	make
+		-- Initialization of `Current'
 		local
 			l_image:IMG_IMAGE_FILE
 		do
-			has_error := False
-			create l_image.make ("moto.png")
+			create l_image.make ("3motopetitefusil.png")
 			if l_image.is_openable then
 				l_image.open
+				create bullet.make
 				if l_image.is_open then
 					create right_surface.make_from_image (l_image)
 					create {GAME_SURFACE_ROTATE_ZOOM} left_surface.make_zoom_x_y (right_surface, -1, 1, True)
 					sub_image_width := right_surface.width // 3
 					sub_image_height := right_surface.height
 				else
-					has_error := False
 					create right_surface.make(1,1)
 					left_surface := right_surface
 				end
 			else
-				has_error := False
 				create right_surface.make(1,1)
 				left_surface := right_surface
 			end
-			create l_sound.make("motor.flac")
-			if l_sound.is_openable then
-				l_sound.open
-				if l_sound.is_open then
-					audio_library.sources_add
-					sound_source:=audio_library.last_source_added	-- The first source will be use for playing the music
-					sound_source.queue_sound_infinite_loop(l_sound)
-				else
-					print("Cannot open sound files.")
-					die(1)
-				end
-			else
-				print("sound files not valid.")
-				die(1)
-			end
-
 			surface := right_surface
 			initialize_animation_coordinate
 		end
@@ -78,10 +56,7 @@ feature {NONE} -- Initialization
 
 feature -- Access
 
---	has_error:BOOLEAN
---			-- Is an error happen when initializing the `surface'
-
-	update(a_timestamp:NATURAL_32)
+		update(a_timestamp:NATURAL_32)
 			-- Update the surface depending on the present `a_timestamp'.
 			-- Each 100 ms, the image change; each 10ms `Current' is moving
 		local
@@ -107,32 +82,20 @@ feature -- Access
 			end
 		end
 
-	go_left(a_timestamp:NATURAL_32)
-			-- Make `Current' starting to move left
-		do
-			old_timestamp := a_timestamp
-			going_left := True
-		end
 
 	go_right(a_timestamp:NATURAL_32)
-			-- Make `Current' starting to move right
 		do
 			old_timestamp := a_timestamp
-			going_right := True
+			going_right:= true
 		end
 
-	stop_left
-			-- Make `Current' stop moving to the left
+	go_left(a_timestamp:NATURAL_32)
 		do
-			going_left := False
-			if not going_right then
-				sub_image_x := animation_coordinates.first.x	-- Place the image standing still
-				sub_image_y := animation_coordinates.first.y	-- Place the image standing still
-			end
+			old_timestamp := a_timestamp
+			going_left:= true
 		end
 
 	stop_right
-			-- Make `Current' stop moving to the right
 		do
 			going_right := False
 			if not going_left then
@@ -141,17 +104,29 @@ feature -- Access
 			end
 		end
 
-	jouer_son
-	do
-		sound_source.play					-- Play the source
-	end
+	stop_left
+		do
+			going_left := False
+			if not going_right then
+				sub_image_x := animation_coordinates.first.x	-- Place the image standing still
+				sub_image_y := animation_coordinates.first.y	-- Place the image standing still
+			end
+		end
 
-	going_left:BOOLEAN
-			-- Is `Current' moving left
+	is_rip:BOOLEAN assign set_is_rip
+
+	set_is_rip(a_is_rip:BOOLEAN)
+		do
+			is_rip := a_is_rip
+		end
 
 	going_right:BOOLEAN
-			-- Is `Current' moving right
 
+	going_left:BOOLEAN
+
+	animation:ARRAYED_LIST[INTEGER]
+
+	surface:GAME_SURFACE
 
 	sub_image_x, sub_image_y:INTEGER
 			-- Position of the portion of image to show inside `surface'
@@ -159,27 +134,27 @@ feature -- Access
 	sub_image_width, sub_image_height:INTEGER
 			-- Dimension of the portion of image to show inside `surface'
 
-	surface:GAME_SURFACE
-			-- The surface to use when drawing `Current'
+	bullet:BULLET
 
-feature {NONE} -- implementation
+	feature {NONE} -- implementation
 
-	animation_coordinates:LIST[TUPLE[x,y:INTEGER]]
-			-- Every coordinate of portion of images in `surface'
+		animation_coordinates:LIST[TUPLE[x,y:INTEGER]]
+				-- Every coordinate of portion of images in `surface'
 
-	old_timestamp:NATURAL_32
-			-- When appen the last movement (considering `movement_delta')
+		old_timestamp:NATURAL_32
+				-- When appen the last movement (considering `movement_delta')
 
-feature {NONE} -- constants
+	feature {NONE} -- constants
 
-	movement_delta:NATURAL_32 = 10
-			-- The delta time between each movement of `Current'
+		movement_delta:NATURAL_32 = 5
+				-- The delta time between each movement of `Current'
 
-	animation_delta:NATURAL_32 = 100
-			-- The delta time between each animation of `Current'
+		animation_delta:NATURAL_32 = 50
+				-- The delta time between each animation of `Current'
 
-	left_surface:GAME_SURFACE
+		right_surface:GAME_SURFACE
 
-	right_surface:GAME_SURFACE
+		left_surface:GAME_SURFACE
+
 
 end

@@ -11,27 +11,25 @@ inherit
 	AFFICHABLE
 
 create
-	create_enemi
+	make
 
-feature {NONE} -- Initialization
-
-	create_enemi
+feature
+	make
 		local
-			l_image: IMG_IMAGE_FILE
+			l_image:IMG_IMAGE_FILE
 		do
-			create l_image.make ("ENEMI.PNG")
-			if l_image.is_openable then
-				l_image.open
-				if l_image.is_open then
-					make_from_image (l_image)
-				else
-					has_error := True
-					make(1,1)
-				end
-			else
-				has_error := True
-				make(1,1)
-			end
+			create l_image.make("orc.png")
+			l_image.open
+			make_from_image (l_image)
+			is_rip := false
+		end
+
+
+	is_rip:BOOLEAN assign set_is_rip
+
+	set_is_rip(a_is_rip:BOOLEAN)
+		do
+			is_rip := a_is_rip
 		end
 
 

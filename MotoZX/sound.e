@@ -15,12 +15,12 @@ feature {NONE} -- Initialization
 
 	jouer_son
 	do
-		-- Moto will have a sound when it run
-		-- Bullet will have a sound when it fired
+		-- Gun will have a sound when it fire
+		-- Game will have Brainpower playing will running
 	end
 
-	l_sound:AUDIO_SOUND_FILE
 	sound_source:AUDIO_SOURCE
+	l_sound:AUDIO_SOUND_FILE
 end
 
 

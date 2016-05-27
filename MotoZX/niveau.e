@@ -9,9 +9,9 @@ class
 
 inherit
 	AFFICHABLE
-	MUSIQUE
+	SOUND
 		redefine
-			jouer_musique
+			jouer_son
 		end
 
 create
@@ -23,32 +23,31 @@ feature {NONE} -- Initialization
 		local
 			l_image: IMG_IMAGE_FILE
 		do
-			create l_image.make ("fond.png")
+			create l_image.make ("fond3.png")
 			l_image.open
 			make_from_image (l_image)
 
-			create l_music.make("brainpower.flac")
-			if l_music.is_openable then
-				l_music.open
-				if l_music.is_open then
+			create l_sound.make("brainpower.flac")
+			if l_sound.is_openable then
+				l_sound.open
+				if l_sound.is_open then
 					audio_library.sources_add
-					music_source:=audio_library.last_source_added	-- The first source will be use for playing the music
-					music_source.queue_sound_infinite_loop(l_music)
+					sound_source:=audio_library.last_source_added-- The first source will be use for playing the music
+					sound_source.queue_sound_infinite_loop(l_sound)
 				else
-					print("Cannot open music files.")
+
 					die(1)
 				end
 			else
-				print("Music files not valid.")
 				die(1)
 			end
 		end
 
-jouer_musique
+feature
+
+	jouer_son
 	do
-		music_source.play					-- Play the source
+		print("Brainpower Par Nova")
+		sound_source.play
 	end
-
-
-
 end

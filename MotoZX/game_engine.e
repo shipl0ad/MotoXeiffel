@@ -46,11 +46,17 @@ feature {NONE} -- Initialization
 			l_moto:MOTO
 			l_enemi:ENEMI
 			l_font:TEXT_FONT
+			l_fontb:TEXT_FONT
 		do
 
 			create l_font.make ("font.ttf", 32)
 			if l_font.is_openable then
 				l_font.open
+			end
+
+			create l_fontb.make ("font.ttf", 64)
+			if l_fontb.is_openable then
+				l_fontb.open
 			end
 
 			create l_fond.make
@@ -71,7 +77,7 @@ feature {NONE} -- Initialization
 			game_library.quit_signal_actions.extend (agent on_quit)
 			l_window.key_pressed_actions.extend (agent on_key_pressed(?, ?, l_moto))
 			l_window.key_released_actions.extend (agent on_key_released(?,?,  l_moto))
-			game_library.iteration_actions.extend (agent on_iteration(?, l_moto, l_enemi, l_fond, l_font, l_window))
+			game_library.iteration_actions.extend (agent on_iteration(?, l_moto, l_enemi, l_fond, l_font, l_fontb, l_window))
 			game_library.launch
 
 		end
@@ -79,13 +85,15 @@ feature {NONE} -- Initialization
 
 feature {NONE} -- Implementation
 
-	on_iteration(a_timestamp:NATURAL_32; a_moto:MOTO; a_enemi:ENEMI; a_fond:NIVEAU; a_font:TEXT_FONT; a_window:GAME_WINDOW_SURFACED)
+	on_iteration(a_timestamp:NATURAL_32; a_moto:MOTO; a_enemi:ENEMI; a_fond:NIVEAU; a_font:TEXT_FONT; a_fontbig:TEXT_FONT a_window:GAME_WINDOW_SURFACED)
 			-- Event that is launch at each iteration.
 		local
 
 			l_text_gamestart:TEXT_SURFACE_BLENDED
 			l_text_highscore:TEXT_SURFACE_BLENDED
 			l_text_quit:TEXT_SURFACE_BLENDED
+--			l_text_score:TEXT_SURFACE_BLENDED
+			l_text_win:TEXT_SURFACE_BLENDED
 		do
 			-- Draw the scene
 			a_window.surface.draw_rectangle (create {GAME_COLOR}.make_rgb (0, 128, 255), 0, 0, a_fond.width, a_fond.height)
@@ -105,7 +113,13 @@ feature {NONE} -- Implementation
 							a_window.surface.draw_surface (l_text_highscore, 25, 735)
 				end
 			else
+				if a_enemi.is_rip then
+					create l_text_win.make ("YOU WIN", a_font, create {GAME_COLOR}.make_rgb (0, 0, 0))
+														a_window.surface.draw_surface (l_text_win, 100, 500)
+				end
+
 				a_moto.update (a_timestamp)
+
 				a_window.surface.draw_sub_surface (
 									a_moto.surface, a_moto.sub_image_x, a_moto.sub_image_y,
 									a_moto.sub_image_width, a_moto.sub_image_height, a_moto.x, a_moto.y
@@ -116,7 +130,19 @@ feature {NONE} -- Implementation
 				collisions_objet(a_moto, a_moto.bullet, a_enemi, a_timestamp)
 				if not a_enemi.is_rip then
 					a_window.surface.draw_surface (a_enemi, 1500, 630)
+
+--				elseif a_enemi.is_rip then
+-- 					ne fonctionne pas
+--					pointage := pointage+100
+--					print(pointage.out)
+--					create l_text_score.make (pointage.out, a_font, create {GAME_COLOR}.make_rgb (0, 0, 0))
+--							a_window.surface.draw_surface (l_text_score, 25, 735)
 				end
+
+
+
+
+
 
 			end
 
@@ -145,8 +171,6 @@ feature {NONE} -- Implementation
 					a_moto.go_right(a_timestamp)
 				elseif a_key_state.is_left then
 					a_moto.go_left(a_timestamp)
-				elseif a_key_state.is_up then
-					print("upkey")
 				elseif a_key_state.is_escape then
 					print("gamequit")
 					on_quit(a_timestamp)
@@ -175,9 +199,12 @@ feature {NONE} -- Implementation
 		end
 
 	collisions_objet(a_moto:MOTO; a_bullet:BULLET; a_enemi:ENEMI; a_timestamp:NATURAL_32)
+
+		-- Vérifie si la moto touche à l'ennemi.
+		-- Vérifie si la balle touche à l'ennemi.
 		do
 			if a_bullet.y + a_bullet.height >= a_enemi.y and a_bullet.x <= a_enemi.x + a_enemi.width
-																and a_bullet.x + a_bullet.width >= a_enemi.x then
+																and a_bullet.x + a_bullet.width >= a_enemi.x and not a_enemi.is_rip then
 				a_enemi.set_is_rip (true)
 				a_bullet.done
 			end
@@ -200,12 +227,6 @@ feature {NONE} -- Implementation
 			game_library.stop  -- Stop the controller loop (allow game_library.launch to return)
 		end
 
---	calcule_temps(a_timestamp: NATURAL_32)
---		do
---			temps_depart:=a_timestamp
---			temps_final:=
---		end
-
 
 	reset_game(a_moto:MOTO; a_enemi:ENEMI)
 		do
@@ -221,6 +242,8 @@ feature {NONE} -- Implementation
 	is_started: BOOLEAN
 
 	is_over: BOOLEAN
+
+	pointage: INTEGER
 
 
 end

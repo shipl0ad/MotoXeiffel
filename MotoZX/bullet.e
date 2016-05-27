@@ -1,6 +1,6 @@
 note
 	description: "Summary description for {BULLET}."
-	author: ""
+	author: "Steve Caya"
 	date: "$Date$"
 	revision: "$Revision$"
 
@@ -52,7 +52,6 @@ feature
 		end
 
 	fire(a_x:INTEGER)
-			--Rend la flèche "tirée" à la position "x" envoyée en argument.
 			--Joue aussi un son quand une balle es tirée
 		do
 			is_fired:=true
@@ -77,6 +76,5 @@ feature
 		end
 
 	is_fired:BOOLEAN
-			--Attribut qui détermine si la flèche est lancée
 
 end

@@ -3,7 +3,7 @@ note
 					Our main character.
 					Using animation with 4 states using 3 sub images
 				]"
-	author: "Louis Marchand"
+	author: "Steve Caya"
 	date: "Wed, 01 Apr 2015 18:46:46 +0000"
 	revision: "2.0"
 
@@ -146,10 +146,10 @@ feature -- Access
 
 	feature {NONE} -- constants
 
-		movement_delta:NATURAL_32 = 5
+		movement_delta:NATURAL_32 = 1
 				-- The delta time between each movement of `Current'
 
-		animation_delta:NATURAL_32 = 50
+		animation_delta:NATURAL_32 = 5
 				-- The delta time between each animation of `Current'
 
 		right_surface:GAME_SURFACE

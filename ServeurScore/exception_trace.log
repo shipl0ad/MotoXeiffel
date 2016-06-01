@@ -1,0 +1,23 @@
+
+serverscore: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+STRING_8            to_integer @1          is_integer:                  
+<0000000003A407D8>  (From READABLE_STRING_GENERAL)
+                                           Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         pointage_read @6                                    
+<0000000003A405A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @2                                             
+<0000000003A405A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<0000000003A405A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------

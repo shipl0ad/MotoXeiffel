@@ -27,7 +27,7 @@ feature {NONE} -- Initialization
 			l_image.open
 			make_from_image (l_image)
 
-			create l_sound.make("brainpower.flac")
+			create l_sound.make("BrainPower.flac")
 			if l_sound.is_openable then
 				l_sound.open
 				if l_sound.is_open then

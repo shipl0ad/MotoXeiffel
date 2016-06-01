@@ -18,7 +18,7 @@ create
 
 feature
 	make
-			--Constructeur de `Current'
+
 		local
 			l_image:IMG_IMAGE_FILE
 		do
@@ -57,6 +57,7 @@ feature
 			is_fired:=true
 			x:= a_x
 			jouer_son
+
 		end
 
 	done
@@ -76,5 +77,6 @@ feature
 		end
 
 	is_fired:BOOLEAN
+
 
 end

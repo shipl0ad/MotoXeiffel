@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <system xmlns="http://www.eiffel.com/developers/xml/configuration-1-15-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-15-0 http://www.eiffel.com/developers/xml/configuration-1-15-0.xsd" name="motozx" uuid="6AD54D31-D4D5-45D4-AD00-CC07BE5F9B75">
-	<target name="motozx">
+	<target name="client">
 		<root class="APPLICATION" feature="make"/>
-		<option warning="true" is_obsolete_routine_type="true">
+		<option warning="true">
 			<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
 		</option>
 		<setting name="console_application" value="true"/>
@@ -14,7 +14,7 @@
 		<library name="game_effects" location="$EIFFEL_LIBRARY\contrib\library\game2\game_effects\game_effects-safe.ecf"/>
 		<library name="game_image_file" location="$EIFFEL_LIBRARY\contrib\library\game2\game_image_file\game_image_file-safe.ecf"/>
 		<library name="game_text" location="$EIFFEL_LIBRARY\contrib\library\game2\game_text\game_text-safe.ecf"/>
-		<library name="testing" location="$ISE_LIBRARY\library\testing\testing-safe.ecf"/>
+		<library name="net" location="$ISE_LIBRARY\library\net\net-safe.ecf"/>
 		<cluster name="motozx" location=".\" recursive="true">
 			<file_rule>
 				<exclude>/.svn$</exclude>

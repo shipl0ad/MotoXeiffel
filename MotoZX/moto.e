@@ -23,11 +23,12 @@ feature {NONE} -- Initialization
 		local
 			l_image:IMG_IMAGE_FILE
 		do
+			create bullet.make
 			create l_image.make ("3motopetitefusil.png")
 			if l_image.is_openable then
 				l_image.open
-				create bullet.make
 				if l_image.is_open then
+					 share_from_image (l_image)
 					create right_surface.make_from_image (l_image)
 					create {GAME_SURFACE_ROTATE_ZOOM} left_surface.make_zoom_x_y (right_surface, -1, 1, True)
 					sub_image_width := right_surface.width // 3
@@ -40,9 +41,11 @@ feature {NONE} -- Initialization
 				create right_surface.make(1,1)
 				left_surface := right_surface
 			end
+			make_surface(1,1)
 			surface := right_surface
 			initialize_animation_coordinate
 		end
+
 
 	initialize_animation_coordinate
 			-- Create the `animation_coordinates'
@@ -56,31 +59,31 @@ feature {NONE} -- Initialization
 
 feature -- Access
 
-		update(a_timestamp:NATURAL_32)
-			-- Update the surface depending on the present `a_timestamp'.
-			-- Each 100 ms, the image change; each 10ms `Current' is moving
-		local
-			l_coordinate:TUPLE[x,y:INTEGER]
-			l_delta_time:NATURAL_32
-		do
-			if going_left or going_right then
-				l_coordinate := animation_coordinates.at ((((a_timestamp // animation_delta) \\
-												animation_coordinates.count.to_natural_32) + 1).to_integer_32)
-				sub_image_x := l_coordinate.x
-				sub_image_y := l_coordinate.y
-				l_delta_time := a_timestamp - old_timestamp
-				if l_delta_time // movement_delta > 0 then
-					if going_right then
-						surface := right_surface
-						x := x + (l_delta_time // movement_delta).to_integer_32
-					else
-						surface := left_surface
-						x := x - (l_delta_time // movement_delta).to_integer_32
-					end
-					old_timestamp := old_timestamp + (l_delta_time // movement_delta) * movement_delta
+	update(a_timestamp:NATURAL_32)
+		-- Update the surface depending on the present `a_timestamp'.
+		-- Each 100 ms, the image change; each 10ms `Current' is moving
+	local
+		l_coordinate:TUPLE[x,y:INTEGER]
+		l_delta_time:NATURAL_32
+	do
+		if going_left or going_right then
+			l_coordinate := animation_coordinates.at ((((a_timestamp // animation_delta) \\
+											animation_coordinates.count.to_natural_32) + 1).to_integer_32)
+			sub_image_x := l_coordinate.x
+			sub_image_y := l_coordinate.y
+			l_delta_time := a_timestamp - old_timestamp
+			if l_delta_time // movement_delta > 0 then
+				if going_right then
+					surface := right_surface
+					x := x + (l_delta_time // movement_delta).to_integer_32
+				else
+					surface := left_surface
+					x := x - (l_delta_time // movement_delta).to_integer_32
 				end
+				old_timestamp := old_timestamp + (l_delta_time // movement_delta) * movement_delta
 			end
 		end
+	end
 
 
 	go_right(a_timestamp:NATURAL_32)
@@ -120,13 +123,14 @@ feature -- Access
 			is_rip := a_is_rip
 		end
 
-	going_right:BOOLEAN
-
 	going_left:BOOLEAN
+			-- Is `Current' moving left
 
-	animation:ARRAYED_LIST[INTEGER]
+	going_right:BOOLEAN
+			-- Is `Current' moving right
 
-	surface:GAME_SURFACE
+
+	bullet:BULLET
 
 	sub_image_x, sub_image_y:INTEGER
 			-- Position of the portion of image to show inside `surface'
@@ -134,27 +138,26 @@ feature -- Access
 	sub_image_width, sub_image_height:INTEGER
 			-- Dimension of the portion of image to show inside `surface'
 
-	bullet:BULLET
+	surface:GAME_SURFACE
+			-- The surface to use when drawing `Current'
 
-	feature {NONE} -- implementation
+feature {NONE} -- implementation
 
-		animation_coordinates:LIST[TUPLE[x,y:INTEGER]]
-				-- Every coordinate of portion of images in `surface'
+	animation_coordinates:LIST[TUPLE[x,y:INTEGER]]
+			-- Every coordinate of portion of images in `surface'
 
-		old_timestamp:NATURAL_32
-				-- When appen the last movement (considering `movement_delta')
+	old_timestamp:NATURAL_32
+			-- When appen the last movement (considering `movement_delta')
 
-	feature {NONE} -- constants
+feature {NONE} -- constants
 
-		movement_delta:NATURAL_32 = 1
-				-- The delta time between each movement of `Current'
+	movement_delta:NATURAL_32 = 5
+			-- The delta time between each movement of `Current'
 
-		animation_delta:NATURAL_32 = 5
-				-- The delta time between each animation of `Current'
+	animation_delta:NATURAL_32 = 100
+			-- The delta time between each animation of `Current'
 
-		right_surface:GAME_SURFACE
+	left_surface:GAME_SURFACE
 
-		left_surface:GAME_SURFACE
-
-
+	right_surface:GAME_SURFACE
 end

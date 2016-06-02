@@ -68,10 +68,7 @@ feature {NONE} -- Initialization
 			l_enemi.set_y(630)
 			create l_text_gamestart.make ("Press Enter to Start the game", a_font, create {GAME_COLOR}.make_rgb (0, 0, 0))
 			create l_text_quit.make ("Press Escape to quit", a_font, create {GAME_COLOR}.make_rgb (0, 0, 0))
-			create l_text_multiplayer.make ("Press M to see the multiplayer mode", a_font, create {GAME_COLOR}.make_rgb (0, 0, 0))
 			create l_text_win.make ("YOU WIN", a_font, create {GAME_COLOR}.make_rgb (0, 0, 0))
-			create l_text_host.make ("Host a game(h)", a_font, create {GAME_COLOR}.make_rgb (0, 0, 0))
-			create l_text_connect.make ("Connect to a game(c)", a_font, create {GAME_COLOR}.make_rgb (0, 0, 0))
 			create l_window_builder
 			l_window_builder.set_dimension (l_fond.width, l_fond.height)
 			l_window_builder.set_title ("MotoX")
@@ -79,7 +76,7 @@ feature {NONE} -- Initialization
 			game_library.quit_signal_actions.extend (agent on_quit)
 			l_window.key_pressed_actions.extend (agent on_key_pressed(?, ?, l_moto, l_enemi))
 			l_window.key_released_actions.extend (agent on_key_released(?,?,  l_moto))
-			game_library.iteration_actions.extend (agent on_iteration(?, l_moto, l_enemi, l_fond, a_font, l_window, l_text_gamestart, l_text_quit, l_text_multiplayer, l_text_win, l_text_host, l_text_connect))
+			game_library.iteration_actions.extend (agent on_iteration(?, l_moto, l_enemi, l_fond, a_font, l_window, l_text_gamestart, l_text_quit, l_text_win))
 			game_library.launch
 
 		end
@@ -87,7 +84,7 @@ feature {NONE} -- Initialization
 
 feature {NONE} -- Implementation
 
-	on_iteration(a_timestamp:NATURAL_32; a_moto:MOTO; a_enemi:ENEMI; a_fond:NIVEAU; a_font:TEXT_FONT; a_window:GAME_WINDOW_SURFACED; l_text_gamestart, l_text_quit, l_text_multiplayer, l_text_win, l_text_host, l_text_connect:TEXT_SURFACE_BLENDED)
+	on_iteration(a_timestamp:NATURAL_32; a_moto:MOTO; a_enemi:ENEMI; a_fond:NIVEAU; a_font:TEXT_FONT; a_window:GAME_WINDOW_SURFACED; l_text_gamestart, l_text_quit, l_text_win:TEXT_SURFACE_BLENDED)
 			-- Event that is launch at each iteration.
 		local
 
@@ -102,16 +99,16 @@ feature {NONE} -- Implementation
 				if not is_over then
 					a_window.surface.draw_surface (l_text_gamestart, 700, 735)
 					a_window.surface.draw_surface (l_text_quit, 1370, 735)
-					a_window.surface.draw_surface (l_text_multiplayer, 25, 735)
+
 				end
-			if menu_multiplayer then
-				a_window.surface.draw_surface (l_text_host, 500, 350)
-				a_window.surface.draw_surface (l_text_connect, 800, 350)
-			end
+
 
 			else
 				if a_enemi.is_rip then
 					a_window.surface.draw_surface (l_text_win, 100, 500)
+					is_over:= true
+					connexion
+					reset_game(a_moto, a_enemi)
 				end
 				a_moto.update (a_timestamp)
 
@@ -124,6 +121,7 @@ feature {NONE} -- Implementation
 				end
 				create l_text_shot.make ("Nombre de tire :" +shot_tire.out, a_font, create {GAME_COLOR}.make_rgb (0, 0, 0))
 				a_window.surface.draw_surface (l_text_shot, 1300, 30)
+
 
 				collisions_objet(a_moto, a_moto.bullet, a_enemi, a_timestamp)
 				if not a_enemi.is_rip then
@@ -169,10 +167,6 @@ feature {NONE} -- Implementation
 					is_started := true
 				elseif a_key_state.is_r then
 					reset_game(a_moto, a_enemi)
-				elseif a_key_state.is_h then
---
-				elseif a_key_state.is_c then
---
 				elseif a_key_state.is_space then
 					a_moto.bullet.fire(a_moto.x)
 				end
@@ -238,22 +232,22 @@ feature {NONE} -- Implementation
 
 	-- server
 
---	setup_serveur
---			-- Exécution du programme serveur
---		local
---			l_socket: NETWORK_DATAGRAM_SOCKET
---		do
---			create l_socket.make_bound (12345)
---			read_and_write(l_socket, io.output)
---		end
-
---	setup_client
---			-- Exécution du programme client
---		local
-
---		do
-
---		end
+	connexion
+			-- Exécution du programme client
+		local
+			l_socket: NETWORK_DATAGRAM_SOCKET
+			l_port:INTEGER
+			l_host:STRING
+			l_message:STRING
+		do
+			l_message:=shot_tire.out
+			l_port:=12345
+			l_host:="localhost"
+			create l_socket.make_targeted (l_host, l_port)
+			l_socket.put_integer (l_message.count)
+			l_socket.put_string (l_message)
+			l_socket.close
+		end
 
 
 	is_started: BOOLEAN
@@ -265,6 +259,8 @@ feature {NONE} -- Implementation
 	pointage: INTEGER
 
 	shot_tire : INTEGER
+
+
 
 
 

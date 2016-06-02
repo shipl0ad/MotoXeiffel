@@ -18,6 +18,7 @@ feature {NONE} -- Initialization
 			-- Run application.
 		local
 			l_socket: NETWORK_DATAGRAM_SOCKET
+			l_socket_send: NETWORK_DATAGRAM_SOCKET
 			l_port:INTEGER
 			l_taille_message:INTEGER
 			l_message:STRING
@@ -25,12 +26,14 @@ feature {NONE} -- Initialization
 
 			create pointage.make_with_name ("pointage.txt")
 			pointage_read
+			pointage.close
 			l_port:=12345
 			create l_socket.make_bound (l_port)
 			l_socket.read_integer
 			l_taille_message:=l_socket.last_integer
 			l_socket.read_stream (l_taille_message)
 			l_message:=l_socket.last_string
+			print(plus_gros)
 			add_pointage(l_message)
 			io.put_string (l_message)
 			io.put_new_line
@@ -40,7 +43,7 @@ feature {NONE} -- Initialization
 
 		pointage_read
 		do
-			plus_gros:=0
+			plus_gros:= 0
 			pointage.open_read
 			from
 			until
@@ -48,9 +51,11 @@ feature {NONE} -- Initialization
 			loop
 				pointage.read_line
 				pointage_lu:= pointage.last_string
-
+				points_int:= pointage_lu.to_integer
+				if points_int > plus_gros then
+					plus_gros:= points_int
+				end
 			end
-			pointage.close
 		end
 
 		add_pointage (a_pointage: STRING)
@@ -66,6 +71,8 @@ feature {NONE} -- Initialization
 		pointage:PLAIN_TEXT_FILE
 
 		pointage_lu:STRING
+
+		points_int:INTEGER
 
 		plus_gros:INTEGER
 

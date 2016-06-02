@@ -47,11 +47,11 @@ feature {NONE} -- Initialization
 			l_enemi:ENEMI
 			a_font:TEXT_FONT
 			l_text_gamestart:TEXT_SURFACE_BLENDED
-			l_text_multiplayer:TEXT_SURFACE_BLENDED
+
 			l_text_quit:TEXT_SURFACE_BLENDED
 			l_text_win:TEXT_SURFACE_BLENDED
-			l_text_host:TEXT_SURFACE_BLENDED
-			l_text_connect:TEXT_SURFACE_BLENDED
+			l_text_high:TEXT_SURFACE_BLENDED
+
 		do
 
 			create a_font.make ("font.ttf", 32)
@@ -68,15 +68,16 @@ feature {NONE} -- Initialization
 			l_enemi.set_y(630)
 			create l_text_gamestart.make ("Press Enter to Start the game", a_font, create {GAME_COLOR}.make_rgb (0, 0, 0))
 			create l_text_quit.make ("Press Escape to quit", a_font, create {GAME_COLOR}.make_rgb (0, 0, 0))
-			create l_text_win.make ("YOU WIN", a_font, create {GAME_COLOR}.make_rgb (0, 0, 0))
+			create l_text_win.make ("You win ! Your shots number has been sent to the score server", a_font, create {GAME_COLOR}.make_rgb (0, 0, 0))
+			create l_text_high.make("Press H for highscore", a_font, create {GAME_COLOR}.make_rgb (0, 0, 0))
 			create l_window_builder
 			l_window_builder.set_dimension (l_fond.width, l_fond.height)
 			l_window_builder.set_title ("MotoX")
 			l_window := l_window_builder.generate_window
 			game_library.quit_signal_actions.extend (agent on_quit)
-			l_window.key_pressed_actions.extend (agent on_key_pressed(?, ?, l_moto, l_enemi))
+			l_window.key_pressed_actions.extend (agent on_key_pressed(?, ?, l_moto, l_enemi, l_window, a_font))
 			l_window.key_released_actions.extend (agent on_key_released(?,?,  l_moto))
-			game_library.iteration_actions.extend (agent on_iteration(?, l_moto, l_enemi, l_fond, a_font, l_window, l_text_gamestart, l_text_quit, l_text_win))
+			game_library.iteration_actions.extend (agent on_iteration(?, l_moto, l_enemi, l_fond, a_font, l_window, l_text_gamestart, l_text_quit, l_text_win, l_text_high))
 			game_library.launch
 
 		end
@@ -84,11 +85,12 @@ feature {NONE} -- Initialization
 
 feature {NONE} -- Implementation
 
-	on_iteration(a_timestamp:NATURAL_32; a_moto:MOTO; a_enemi:ENEMI; a_fond:NIVEAU; a_font:TEXT_FONT; a_window:GAME_WINDOW_SURFACED; l_text_gamestart, l_text_quit, l_text_win:TEXT_SURFACE_BLENDED)
+	on_iteration(a_timestamp:NATURAL_32; a_moto:MOTO; a_enemi:ENEMI; a_fond:NIVEAU; a_font:TEXT_FONT; a_window:GAME_WINDOW_SURFACED; l_text_gamestart, l_text_quit, l_text_win, l_text_high:TEXT_SURFACE_BLENDED)
 			-- Event that is launch at each iteration.
 		local
 
 			l_text_shot:TEXT_SURFACE_BLENDED
+			l_text_highscore:TEXT_SURFACE_BLENDED
 
 		do
 
@@ -100,6 +102,7 @@ feature {NONE} -- Implementation
 					a_window.surface.draw_surface (l_text_gamestart, 700, 735)
 					a_window.surface.draw_surface (l_text_quit, 1370, 735)
 
+
 				end
 
 
@@ -108,7 +111,11 @@ feature {NONE} -- Implementation
 					a_window.surface.draw_surface (l_text_win, 100, 500)
 					is_over:= true
 					connexion
-					reset_game(a_moto, a_enemi)
+					a_window.surface.draw_surface (l_text_high, 270, 735)
+					if h_press then
+						create l_text_highscore.make ("The highest score on the server is :" +l_high.out, a_font, create {GAME_COLOR}.make_rgb (0, 0, 0))
+						a_window.surface.draw_surface (l_text_highscore, 1000, 100)
+					end
 				end
 				a_moto.update (a_timestamp)
 
@@ -149,9 +156,10 @@ feature {NONE} -- Implementation
 			end
 		end
 
-	on_key_pressed(a_timestamp: NATURAL_32; a_key_state: GAME_KEY_STATE; a_moto:MOTO; a_enemi:ENEMI)
+	on_key_pressed(a_timestamp: NATURAL_32; a_key_state: GAME_KEY_STATE; a_moto:MOTO; a_enemi:ENEMI; a_window:GAME_WINDOW_SURFACED; a_font:TEXT_FONT)
 			-- Action when a keyboard key has been pushed
 		do
+			h_press:=false
 			if not a_key_state.is_repeat then		-- Be sure that the event is not only an automatic repetition of the key
 				if a_key_state.is_right then
 					a_moto.go_right(a_timestamp)
@@ -169,6 +177,9 @@ feature {NONE} -- Implementation
 					reset_game(a_moto, a_enemi)
 				elseif a_key_state.is_space then
 					a_moto.bullet.fire(a_moto.x)
+				elseif a_key_state.is_h then
+--					reception_highscore
+					h_press:=true
 				end
 			end
 
@@ -218,6 +229,7 @@ feature {NONE} -- Implementation
 		end
 
 
+
 	reset_game(a_moto:MOTO; a_enemi:ENEMI)
 		do
 			is_over:=false
@@ -235,7 +247,7 @@ feature {NONE} -- Implementation
 	connexion
 			-- Exécution du programme client
 		local
-			l_socket: NETWORK_DATAGRAM_SOCKET
+			l_socket:NETWORK_DATAGRAM_SOCKET
 			l_port:INTEGER
 			l_host:STRING
 			l_message:STRING
@@ -249,6 +261,26 @@ feature {NONE} -- Implementation
 			l_socket.close
 		end
 
+--	reception_highscore
+
+--		local
+--			l_socket:NETWORK_DATAGRAM_SOCKET
+--			l_port:INTEGER
+--			l_host:STRING
+
+--		do
+--			l_port:=12345
+--			l_host:="localhost"
+--			create l_socket.make_targeted (l_host, l_port)
+--			l_high:=l_socket.last_integer
+
+
+--			io.put_integer (l_high)
+--			io.put_new_line
+--			l_socket.close
+
+--		end
+
 
 	is_started: BOOLEAN
 
@@ -259,6 +291,12 @@ feature {NONE} -- Implementation
 	pointage: INTEGER
 
 	shot_tire : INTEGER
+
+	l_high:INTEGER
+
+
+	h_press:BOOLEAN
+
 
 
 
